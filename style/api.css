@@ -1,0 +1,27 @@
+.login__block{
+	margin-top: 234px !important;
+	margin-bottom: 150px !important;
+	text-align: center !important;
+}
+.block{
+
+
+	
+	border:2px solid #407BFF;
+	border-radius: 50px;
+	position: relative;               /* 2 */
+   left: 50%;                         /* 3 */
+   transform: translate(-50%, 0%) 
+}
+
+.title__block{
+	color: #152956;
+	font-family: Montserrat;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 44px;
+	letter-spacing: 0.02em;
+	text-align: left;
+
+}

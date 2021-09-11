@@ -1,0 +1,119 @@
+
+.login__block{
+	margin-top: 234px !important;
+	margin-bottom: 150px !important;
+	text-align: center !important;
+}
+.block{
+	width: 67%;
+
+	padding: 100px;
+	border:2px solid #407BFF;
+	border-radius: 50px;
+	 position: relative;               /* 2 */
+   left: 50%;                         /* 3 */
+   transform: translate(-50%, 0%) 
+}
+@media only screen and (max-width: 1000px) {
+.block{
+	width: 100%;
+}
+}
+.title__login{
+	color: #152956;
+	font-family: Montserrat;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 44px;
+	letter-spacing: 0.02em;
+	text-align: left;
+
+}
+#active_element_inputes_m{
+	border: 2px solid #407BFF;
+	border-radius: 50px;
+	color: #9F9F9F;
+	padding: 40px;
+	margin-top: 40px;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.02em;
+	color: #263657;
+
+}
+#active_element_inputes_2{
+	border: 2px solid #407BFF;
+	border-radius: 50px;
+	color: #9F9F9F;
+	padding: 40px;
+	margin-top: 30px;
+	height: 87px;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.02em;
+	color: #263657;
+
+}
+.sm_10{
+	margin-top: 30px;
+}
+.blue__link{
+	margin-top: 30px;
+	font-family: Montserrat;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: 0.035em;
+	text-align: left;
+	color: #407BFF;
+	
+}
+.captcha{
+	margin-top: 30px;
+}
+.captcha__block{
+	text-align: left;
+}
+.button__login{
+	text-align: center !important; 
+	width: 100%;
+}
+.first_active_login{
+	text-align: center;
+	border-radius: 50px;
+	border: none;
+	background-color: #FF725E;
+	margin-top: 60px;
+	border: 1px solid rgba(255, 114, 94,0.32);
+}
+.first_active_text_login{
+	font-family: Montserrat;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 0.02em;
+	color: white;
+	padding: 29px 70px ;
+	margin: 0px !important;
+}
+.vopros{
+	margin-top: 30px;
+	font-family: Montserrat;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: 0.035em;
+	text-align: left;
+	color: #263657;
+	text-align: center;
+}
