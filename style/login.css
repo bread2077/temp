@@ -213,7 +213,7 @@ text-align: left;
 	margin-bottom: 75px !important;
 	text-align: center !important;
 }
-#active_element_inputes_m{
+.active_element_inputes_m{
 	border: 2px solid #407BFF;
 	border-radius: 50px;
 	color: #9F9F9F;
