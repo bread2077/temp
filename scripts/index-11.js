@@ -106,11 +106,9 @@ function close__phone__menu() {
 }
 function open__burg() {
   burg.style.transform = 'translateX(0%)';
-  burg.classList.add('_active')
 }
 function close__burg() {
   burg.style.transform = 'translateX(100%)';
-  burg.classList.remove('_active')
 }
 let show = document.getElementById('hidden_Text');
 let open = document.getElementById('open_text');
@@ -163,4 +161,20 @@ function openElement() {
   console.log("asdasd");
   document.getElementById("popup").classList.toggle("message__show")
   document.body.style = "overflow: hidden;"
+}
+let tabsTop = document.querySelector('.table_top_left')
+if (tabsTop != null) {
+  let tabs = tabsTop.querySelectorAll('p, img')
+  console.log(tabs)
+  for (let i = 0; tabs.length > i; i++) {
+    const el = tabs[i]
+    el.addEventListener("click", function (e) {
+      for (let index = 0; index < tabs.length; index++) {
+        const element = tabs[index];
+        element.classList.remove('table_text_active')
+      }
+      el.classList.add('table_text_active')
+    });
+
+  }
 }
