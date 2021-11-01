@@ -214,18 +214,18 @@ text-align: left;
 	text-align: center !important;
 }
 .active_element_inputes_m{
-	border: 2px solid #407BFF;
-	border-radius: 50px;
-	color: #9F9F9F;
-	padding: 40px;
-	margin-top: 20px;
-	font-family: Montserrat;
-	font-size: 20px;
-	font-style: italic;
-	font-weight: 400;
-	line-height: 24px;
-	letter-spacing: 0.02em;
-	color: #263657;
+	border: 2px solid #407BFF !important;
+	border-radius: 50px !important;
+	color: #9F9F9F !important;
+	padding: 40px !important;
+	margin-top: 20px !important;
+	font-family: Montserrat !important;
+	font-size: 20px !important;
+	font-style: italic !important;
+	font-weight: 400 !important;
+	line-height: 24px !important;
+	letter-spacing: 0.02em !important;
+	color: #263657 !important;
 
 }
 .vopros{
