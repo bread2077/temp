@@ -1,9 +1,9 @@
-.error__block{
-text-align: center;
-margin-top: 210px;
-margin-bottom: 152px;
+.error__block {
+	text-align: center;
+	margin-top: 210px;
+	margin-bottom: 152px;
 }
-.error__title{
+.error__title {
 	margin: 0px !important;
 	font-family: Montserrat;
 	font-size: 144px;
@@ -13,24 +13,28 @@ margin-bottom: 152px;
 	letter-spacing: 0.02em;
 	color: #152956;
 }
-.error__body{
-
-
-font-family: Montserrat;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: 0.02em;
-text-align: center;
-
-}
-.home__text{
+.error__body {
 	font-family: Montserrat;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: 22px;
-letter-spacing: 0.02em;
-text-align: center;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: 0.02em;
+	text-align: center;
+	margin: 0px 0px 0px 0px;
+}
+.home__text {
+	font-family: Montserrat;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 22px;
+	letter-spacing: 0.02em;
+	text-align: center;
+}
+.home__text a {
+	font-size: 18px;
+	padding-bottom: 3px;
+	color: #152956;
+	/* border-bottom: 2px solid #152956; */
 }

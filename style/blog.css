@@ -12,8 +12,13 @@
 .blog__body__start{
 	margin-top: 40px;
 }
+@media (max-width: 480px){
+	.blog__body__start{
+		margin-top: 0px;
+	}	  
+}
 .blog__body{
-	margin-top: 90px;
+	margin-top: 45px;
 }
 .blog__body__title{
 	font-family: Montserrat;
@@ -40,7 +45,7 @@
 	background-color: #407BFF;
 	border-radius: 100px;
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 15px;
 }
 .btnn__all__text{
 	font-family: Montserrat;

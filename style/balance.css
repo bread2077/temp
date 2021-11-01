@@ -1,0 +1,257 @@
+.up_balance{
+	margin-top: 150px;
+}
+.title_up_balance{
+	font-family: Montserrat;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 44px;
+	letter-spacing: 0.02em;
+	text-align: left;
+	color: #152956;
+}
+
+.select_card{
+	position: relative;
+	appearance: none;
+	outline: none;
+	border-radius: 50px;
+	border: 2px solid #407BFF;
+	font-family: Montserrat;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #9F9F9F;
+	padding-left: 30px;	
+	width: 100%;
+	padding: 17px 45px !important;
+}
+.form_up{
+	position: relative;
+}
+.form_up::before{
+	content: '';
+	position: absolute;
+	right: 23px;
+	top: 27px;
+	z-index: 4;
+	width: 22px;
+	height: 12px;
+	background: url('../images/sel-arr.svg') 0 0/cover no-repeat;
+}
+@media (max-width: 480px){
+	  .form_up::before{
+		  top: 12px;
+	  }
+	  	  .form_up::before{
+		 background: url('../images/sel-arr.svg') 0 0 no-repeat;
+	  }
+}
+.place{
+
+}
+.form_up{
+	display: block;
+	margin-top: 40px;
+}
+.input_for_up::placeholder{
+	    color: #9F9F9F;
+}
+.input_for_up{
+	outline: none;
+	width: 100%;
+	margin-top: 20px;
+	border-radius: 50px;
+	border: 2px solid #407BFF;
+	font-family: Montserrat;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #9F9F9F;
+	padding: 17px 45px !important;
+}
+.btnn_send{
+	margin-top: 25px;
+	border-radius: 50px;
+	background-color: #FF725E;
+	width: 100%;
+	border: none;
+}
+.btnn_send_text{
+	font-family: Montserrat;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 29px;
+	letter-spacing: 0.02em;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	margin: 0px !important;
+	color: white;
+}
+.cards{
+	margin-top: 90px;
+	text-align: left;
+	margin-left: 80px;
+}
+.title_up_card{
+	font-family: Montserrat;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 34px;
+	letter-spacing: 0.02em;
+	text-align: center;
+
+	color: #152956;
+}
+.cards_block{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.card{
+	margin-top: 20px;
+
+}
+.blue_link_card{
+	margin-top: 20px;
+
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0.035em;
+text-align: left;
+color: #407BFF;
+}
+.img_card{
+	text-align: left;
+}
+.blue_link_card_mini{
+		font-family: Montserrat;
+font-size: 12px;
+font-style: italic;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0.035em;
+text-align: right;
+}
+.feedback__supports
+{
+  
+  width: 95%;
+  position: relative;
+  margin: 0px auto !important;
+  margin-bottom: 50px !important;
+  margin-top: 90px !important;
+}
+.feedback__supports p 
+{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.035em;
+  text-align: center;
+}
+.feedback__supports h2
+{
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+
+}
+.feedback__supports .feedback__background
+{
+  width: 107%;
+}
+.feedbacks_text
+{
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 21px;
+	letter-spacing: 0.035em;
+	text-align: center;
+	margin-top:20px;
+}
+.title_story{
+	margin-top: 150px;
+	font-family: Montserrat;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: 34px;
+	letter-spacing: 0.02em;
+	text-align: center;
+	color: #152956;
+}
+.storyz__row
+{
+	margin-bottom: 70px;
+	margin-right: 125px;
+}.storyzz__row
+{
+	margin-bottom: 70px;
+	margin-right: 0px;
+}
+.storyz
+{
+	padding: 19px 41px;
+	display: inline-flex;
+	justify-content: center;
+	border: 1px solid #407BFF;
+	border-radius: 25px;
+	position: relative;
+
+	overflow-x: hidden;
+	left: 50%;
+	margin-top: 40px;
+	transform: translateX(-50%);
+	align-items: flex-start;
+	margin-bottom: 150px;
+}
+@media only screen and (max-width: 650px) 
+{
+  .feedback__support
+  {
+    width: 100%;
+    padding: 50px 15px;
+    box-shadow: 0px 4px 4px 0px #407BFF40;
+  }  
+  .feedback__support .feedback__background
+  {
+    display: none;
+  }
+  .feedback__support p
+  {
+    font-size: 10px;
+  }  
+  .feedback__support .feedback__title
+  {
+    font-size: 18px !important;
+  }
+.up_balance{
+	margin-top: 50px !important;
+} 
+}
+.feedbacks_text{
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+}
