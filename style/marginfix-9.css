@@ -1,0 +1,146 @@
+.login__block
+{
+	margin-top: 60px !important;
+}
+.info
+{
+	margin-top: 60px !important;
+}
+.auto_title
+{
+	margin-top: 60px !important;
+}
+.title__blog
+{
+	margin-top: 60px !important;
+}
+.error__block
+{
+	margin-top: 60px !important;
+}
+.buy
+{
+	margin-top: 60px !important;
+}
+.block__info
+{
+	margin-top: 60px !important;
+}
+.title__autospin
+{
+	margin-top: 60px !important;
+}
+.title__support
+{
+	margin-top: 60px !important;
+}
+.block__info
+{
+	margin-top: 60px !important;
+}
+.up_balance
+{
+	margin-top: 60px !important;
+}
+@media (max-width: 480px){
+	body .login__block
+{
+	margin-top: 30px !important;
+}
+.info
+{
+	margin-top: 30px !important;
+}
+.auto_title
+{
+	margin-top: 30px !important;
+}
+.title__blog
+{
+	margin-top: 30px !important;
+}
+.error__block
+{
+	margin-top: 30px !important;
+}
+.buy
+{
+	margin-top: 30px !important;
+}
+.block__info
+{
+	margin-top: 30px !important;
+}
+.title__autospin
+{
+	margin-top: 30px !important;
+}
+.title__support
+{
+	margin-top: 30px !important;
+}
+.block__info
+{
+	margin-top: 30px !important;
+}
+.up_balance
+{
+	margin-top: 30px !important;
+}  
+}
+@media (max-width: 480px){
+	  .block{
+		  padding: 25px 25px 40px !important;
+		  border-radius: 15px !important;
+	  }
+	  body .login__block{
+	  }
+	  form input{
+		  font-size: 12px !important;
+		  line-height: 15px !important;
+	  }
+	  .title__login{
+		  margin: 0px 0px 0px 0px;
+	  }
+	  .vopros{
+		  font-size: 8px !important;
+line-height: 10px !important;
+	  }
+	  .vopros span{
+		  font-size: 8px !important;
+line-height: 10px !important;
+
+	  }
+	  .first_active_text_login{
+font-family: Montserrat !important;
+font-style: normal !important;
+font-weight: 900 !important;
+font-size: 16px !important;
+line-height: 20px !important;
+padding: 9px 16px !important;
+	  }
+}
+#active_element_inputes_m{
+	padding: 26px;
+	padding-left: 45px;
+	font-family: Montserrat;
+font-style: italic;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+
+color: #9F9F9F !important;
+
+}
+.textarea_add{
+color: #9F9F9F !important;
+
+}
+@media (max-width: 480px){
+	  body .blue__link{
+		  margin-top: 10px;
+		  margin-bottom: 10px;
+	  }
+}
