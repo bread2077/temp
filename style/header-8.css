@@ -1,0 +1,149 @@
+.menu ul li
+{
+	display: flex;
+	justify-content: space-between;
+	margin-right: 44px;
+	align-items: center;
+}
+.menu ul li:last-child
+{
+	margin-right: 0px;
+}
+.menu h1
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 29px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+.menu__navs li:hover p{
+	color: #407BFF !important;
+
+}
+.menu__navs li{
+	position: relative;
+}
+.menu__navs li::before{
+	position: absolute;
+	transition: all 0.3s ease 0s;
+	bottom: -2px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0%;
+	height: 1px;
+	content: '';
+}
+.menu__navs li:hover::before{
+	position: absolute;
+	bottom: -2px;
+	background: #407BFF;
+	left: 50%;
+	width: 100%;
+	height: 1px;
+	transform: translateX(-50%);
+}
+.menu ul
+{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	margin-left: 108px;
+}
+.menu__navs p
+{
+	font-family: Montserrat;
+	font-size: 12px;
+	font-style: normal;
+	padding: 0px;
+	margin: 0px;
+	font-weight: 400;
+	line-height: 15px;
+	cursor: pointer;
+	letter-spacing: 0.035em;
+	text-align: left;
+}
+.mr-9px
+{
+	margin-right: 9px;
+}
+.menu__contacts button
+{
+	font-family: Montserrat;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 15px;
+	letter-spacing: 0.035em;
+	text-align: left;
+}
+.fa-vk
+{
+	width: 27px;
+	height: 27px;
+	color: white;
+	font-size: 14px !important;
+	border-radius: 50%;
+	background-color: #4D76A1;
+	position: relative;
+}
+.fa-vk:before
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#tel:before
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#tel
+{
+	margin-right: 16px;
+	width: 27px;
+	height: 27px;
+	position: relative;
+	color: white;
+	border-radius: 50%;
+	background-color: #039BE5;
+	font-size: 14px !important;
+}
+.menu__contacts .fa
+{
+	margin-right: 16px;
+}
+.menu__contacts .fa:last-child
+{
+	margin-right: 25px;
+}
+.menu
+{
+	padding: 27px 0px;
+}
+.top_bg img
+{
+	width: 100%;
+}
+.top_bg
+{
+	width: 100%;
+	z-index: -1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	min-width: 690px;
+	left: 0px;	
+}
+.sec1__left
+{
+	margin-top: 130px;
+}

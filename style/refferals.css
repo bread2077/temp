@@ -1,0 +1,37 @@
+.feedback__title__center
+{
+	text-align: center !important;
+}
+.table__bottom1
+{
+	display: inline-block;
+	margin-top: 90px;
+	border-radius: 33px;
+	padding-bottom: 70px !important;
+	width: 80% !important;
+	text-align: center;
+}
+.table__bottom1 .table__bottom__title
+{
+	text-align: center !important;
+}
+.table__bottom1 .table__bottom__value
+{
+	text-align: center !important;
+}
+.cont
+{
+	width: 70%;
+	margin: 0px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.table__bottom__line1
+{
+	top: 57px !important;
+}
+.mb_150
+{
+	margin-bottom: 150px;
+}
