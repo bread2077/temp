@@ -157,9 +157,9 @@ function hide() {
   document.getElementById("+").classList.toggle("d-nonee")
   document.getElementById("-").classList.toggle("d-nonee")
 }
-function openElement() {
+function openElement(id) {
   console.log("asdasd");
-  document.getElementById("popup").classList.toggle("message__show")
+  document.getElementById("popup" + id).classList.toggle("message__show")
   document.body.style = "overflow: hidden;"
 }
 let tabsTop = document.querySelector('.table_top_left')
