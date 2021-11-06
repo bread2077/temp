@@ -159,8 +159,7 @@ function hide() {
   document.getElementById("+").classList.toggle("d-nonee")
   document.getElementById("-").classList.toggle("d-nonee")
 }
-function openElement() {
-  console.log("asdasd");
-  document.getElementById("popup").classList.toggle("message__show")
+function openElement(id) {
+  document.getElementById("popup" + id).classList.toggle("message__show")
   document.body.style = "overflow: hidden;"
 }
