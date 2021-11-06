@@ -174,6 +174,7 @@ if (tabsTop != null) {
         element.classList.remove('table_text_active')
       }
       el.classList.add('table_text_active')
+      el.id = "active_tab"
     });
 
   }
