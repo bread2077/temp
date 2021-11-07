@@ -175,10 +175,15 @@ if (tabsTop != null) {
       }
       el.classList.add('table_text_active')
       el.id = 'active_tab'
+      document.querySelectorAll('[data-service]').forEach(function(element) {
+          if (!(element.getAttribute('data-service').startsWith('document.getElementById("table_text_active").getAttribute("name")'))) {
+          element.setAttribute('hidden', true);
+          }
+        })
     });
 
   }
 }
 function getActiveElementName() {
-  return document.getElementById("active_tab").getAttribute("name")
+  return document.getElementById("table_text_active").getAttribute("name")
 }
