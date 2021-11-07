@@ -177,6 +177,7 @@ if (tabsTop != null) {
       el.id = 'active_tab'
       active_elem = document.getElementsByClassName("table_text_active")[0].getAttribute("name")
       document.querySelectorAll('[data-service]').forEach(function(element) {
+          if (active_elem == 'all') {element.removeAttribute('hidden'); return}
           if (!(element.getAttribute('data-service').startsWith(active_elem))) {
           element.setAttribute('hidden', true);
           }
