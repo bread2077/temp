@@ -161,7 +161,7 @@ color: #9F9F9F !important;
 	color: #9F9F9F;
 	padding-left: 30px;	
 	width: 100%;
-	padding: 15px 45px !important;
+	padding: 17px 45px !important;
 }
 .form-select{
 	position: relative;
@@ -174,7 +174,7 @@ color: #9F9F9F !important;
 	content: '';
 	position: absolute;
 	right: 23px;
-	top: 22px;
+	top: 26px;
 	z-index: 4;
 	width: 22px;
 	height: 12px;
