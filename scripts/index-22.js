@@ -177,11 +177,11 @@ if (tabsTop != null) {
       el.id = 'active_tab'
       active_elem = document.getElementsByClassName("table_text_active")[0].getAttribute("name")
       document.querySelectorAll('[data-service]').forEach(function(element) {
-          if (active_elem == 'all') {element.removeAttribute('hidden'); return}
+          if (active_elem == 'all') {element.classList.remove('hide_elem'); return}
           if (!(element.getAttribute('data-service').startsWith(active_elem))) {
-          element.setAttribute('hidden', true);
+          element.classList.add('hide_elem');
           }
-          else { element.removeAttribute('hidden'); }
+          else { element.classList.remove('hide_elem'); }
         })
     });
 
