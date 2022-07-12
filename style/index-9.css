@@ -823,7 +823,8 @@ padding: 0px;
 	margin: 15px;
 	border-radius: 50px;
 }
-.faq h3
+.faq h3,
+.faq__subtitle
 {
 	font-family: Montserrat;
 	font-size: 24px;
