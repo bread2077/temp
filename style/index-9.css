@@ -823,12 +823,14 @@ padding: 0px;
 	margin: 15px;
 	border-radius: 50px;
 }
+.subtitle {
+	font-family: Montserrat;
+	font-style: normal;
+}
 .faq h3,
 .faq__subtitle
 {
-	font-family: Montserrat;
 	font-size: 24px;
-	font-style: normal;
 	font-weight: 600;
 	line-height: 29px;
 	letter-spacing: 0.035em;
@@ -840,7 +842,6 @@ padding: 0px;
 .faq p
 {
 	margin: 0px;
-
 	font-family: Montserrat;
 	font-size: 14px;
 	font-style: normal;
