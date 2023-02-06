@@ -160,7 +160,6 @@ function hide() {
 function openElement(id) {
   console.log("popup" + id);
   document.getElementById("popup" + id).classList.toggle("message__show")
-  document.body.style = "overflow: hidden;"
 }
 let tabsTop = document.querySelector('.table_top_left')
 if (tabsTop != null) {
