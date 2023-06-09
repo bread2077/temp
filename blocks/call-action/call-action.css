@@ -24,8 +24,9 @@
   .call-action {
     width: 100%;
     background-size: 100%;
-    padding: var(--space-primary) 0;
+    padding: var(--space-primary) 30px;
     background-image: url('../../images/call-action-line-small.svg');
+    box-sizing: border-box;
   }
 
   .call-action__text {
