@@ -1,0 +1,12 @@
+.text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 135%;
+}
+
+@media screen and (max-width: 540px) {
+  .text {
+    font-size: 16px;
+  }
+}

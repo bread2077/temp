@@ -1,0 +1,53 @@
+.culc__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 12px auto 0;
+  color: var(--color-semi-dark);
+  max-width: 86px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.culc__image-container {
+  height: 58px;
+  width: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.culc__image-container_type_service {
+
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #E0E4F8;
+}
+
+.culc__image {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  object-fit: contain;
+  object-position: center;
+}
+
+.culc__image_type_service {
+  height: 60%;
+  width: 60%;
+}
+
+.culc__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .culc__text {
+    font-size: 10px;
+    margin: 10px auto 0;
+  }
+}

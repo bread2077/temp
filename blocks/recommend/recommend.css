@@ -1,0 +1,99 @@
+.recommend {
+  max-width: var(--width-max);
+  margin: calc(var(--space-primary) + 200px) auto 20px;
+  background-image: url('../../images/recommend-bg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  padding: 60px;
+}
+
+.recommend__title {
+  max-width: 488px;
+  color: #fff;
+  margin: 0 0 20px;
+}
+
+.recommend__text {
+  max-width: 488px;
+  color: #fff;
+  margin: 0 0 40px;
+}
+
+.recommend__button {
+  position: relative;
+}
+
+.recommend__button::after,
+.recommend__button::before {
+  content: '';
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  background-size: 36px 36px;
+}
+
+.recommend__button::before {
+  background-image: url('../../images/socials/telegram-icon.svg');
+  top: -20px;
+  right: -10px;
+}
+
+.recommend__button::after {
+  background-image: url('../../images/socials/whatsapp-icon.svg');
+  top: -5px;
+  right: -25px;
+}
+
+.recommend__image {
+  width: 40%;
+  aspect-ratio: 1 / 1.15;
+  object-fit: cover;
+  object-position: top;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 1160px) {
+  .recommend {
+    margin: var(--space-primary) 30px 10px;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .recommend {
+    flex-direction: column;
+    padding: 50px 10px 0;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .recommend__container {
+    display: grid;
+    justify-content: center;
+  }
+
+  .recommend__title {
+    text-align: center;
+    margin: 0 0 16px;
+  }
+
+  .recommend__text {
+    text-align: center;
+    margin: 0 0 32px;
+  }
+
+  .recommend__button {
+    justify-self: center;
+  }
+
+  .recommend__image {
+    position: relative;
+    width: 70%;
+    margin-top: 40px;
+  }
+
+}

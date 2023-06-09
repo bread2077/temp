@@ -1,0 +1,11 @@
+.btn_size_large {
+  font-size: 20px;
+  padding: 14px 24px;
+}
+
+@media screen and (max-width: 690px) {
+  .btn_size_large {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}

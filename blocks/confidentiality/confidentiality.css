@@ -1,0 +1,42 @@
+.confidentiality {
+  max-width: var(--width-max);
+  background-image: url('../../images/conf.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 80px 0;
+  border-radius: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: calc(var(--space-primary) + 20px) auto;
+}
+
+.confidentiality__title {
+  max-width: 658px;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.confidentiality__text {
+  max-width: 658px;
+  text-align: center;
+  color: #fff;
+  margin: 20px auto 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1160px) {
+  .confidentiality {
+    padding: 50px 10px;
+    margin: 0 auto;
+    width: calc(100% - 30px*2);
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .confidentiality {
+    border-radius: 10px;
+  }
+}
