@@ -68,7 +68,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 862px) {
   .connection {
     padding: var(--space-primary) 0;
   }
