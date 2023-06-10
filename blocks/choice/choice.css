@@ -1,7 +1,7 @@
 .choice {
   background-color: var(--bg-color-primary);
   padding: calc(var(--space-primary) + 20px) 0;
-  margin: 20px auto;
+  margin: 20px auto 0;
 }
 
 .choice__container {
@@ -17,19 +17,20 @@
 
 .choice__services,
 .choice__description {
-  margin-top: 40px
+  margin-top: 40px;
 }
 
 .choice__services {
-  transform: translateY(0);
-  transition: transform .4s linear;
+  margin-top: 40px;
+  transition: margin-top .4s linear;
+  overflow: hidden;
 }
 
 .choice__services_hided {
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  transform: translateY(-40px);
+  margin-top: 0;
 }
 
 .choice__description {
@@ -82,7 +83,8 @@
   display: flex;
   justify-content: center;
   gap: 43px;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
 
 }
 
@@ -119,7 +121,7 @@
 @media screen and (max-width: 600px) {
   .choice {
     padding: var(--space-primary) 0;
-    margin: 10px auto;
+    margin: 10px auto 0;
   }
 
   .choice__list,
