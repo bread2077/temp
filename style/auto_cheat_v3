@@ -164,10 +164,6 @@
 	letter-spacing: 0em;
 	text-align: left;
 }
-.table__bottom__value:first-child
-{
-	margin-top: 57px;
-}
 .table__bottom__value_button_red_white:first-child
 {
 	margin-top: 57px;
