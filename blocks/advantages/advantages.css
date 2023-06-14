@@ -1,0 +1,45 @@
+.advantages {
+  max-width: var(--width-max);
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.advantages__phone-list {
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.advantages__item {
+  display: flex;
+  justify-content: center;
+}
+
+.advantages__phone {
+  width: 250px;
+  height: 300px;
+  background-color: red;
+}
+.advantages__item {
+  transform: scale(80%);
+  transition: all .4s linear;
+}
+
+.advantages__item_active {
+  transform: scale(1);
+}
+
+@media screen and (max-width: 700px) {
+  .advantages {
+  }
+
+  .advantages__phone-list {
+    /* transform: translateX(25%); */
+
+    transition: all .4s linear;
+  }
+}

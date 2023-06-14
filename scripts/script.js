@@ -1,37 +1,58 @@
 import ChoiceService from './ChoiceService.js';
+import Faq from './Faq.js';
+
 
 const firstCulc = new ChoiceService('first-culc');
-
 firstCulc.renderSocials();
 firstCulc.setEventListeners();
 
-class Faq {
-  constructor(faqBlock) {
-    this._faqBlock = faqBlock
-    this._descriptionBlock = this._faqBlock.querySelector('.faq__description');
-    this._announceBlock = this._faqBlock.querySelector('.faq__announce');
-    this._descriptionText = this._faqBlock.querySelector('.faq__text');
-    this._button = this._faqBlock.querySelector('.faq__button');
-  }
-
-  _toggleDescription() {
-    this._descriptionBlock.classList.toggle('faq__description_closed');
-    this._descriptionText.classList.toggle('faq__text_closed');
-    this._announceBlock.classList.toggle('faq__announce_opened');
-  }
-
-  setEventListeners() {
-    this._button.addEventListener('click', () => {
-      this._toggleDescription();
-      this._button.classList.toggle('faq__button_type_close');
-    });
-  }
-
-}
-
 const faqList = document.querySelectorAll('.faq__item');
-
 faqList.forEach(faq => {
   const faqItem = new Faq(faq);
   faqItem.setEventListeners();
 });
+
+const phonesBlock = document.querySelector('.advantages__phone-list');
+const phonesList = document.querySelectorAll('.advantages__item_type_phone');
+
+console.log(phonesList);
+
+const touchCoord = {
+  x: 0
+}
+
+function handleTouchStart(e) {
+  touchCoord.x = e.targetTouches[0].clientX;
+}
+
+function handleTouchMove(e) {
+  const xUp = e.targetTouches[0].clientX;
+  const { x } = touchCoord;
+
+  const DETECT_TRESHHOLD = 100;
+
+  if(Math.abs(xUp - x) > DETECT_TRESHHOLD) {
+
+    if(xUp > x) {
+      phonesBlock.style.transform = `translate(${width}px)`;
+      phonesList[0].classList.add('advantages__item_active');
+      phonesList[1].classList.remove('advantages__item_active');
+    } else {
+      phonesBlock.style.transform = `translate(-${width}px)`;
+      phonesList[1].classList.add('advantages__item_active');
+      phonesList[0].classList.remove('advantages__item_active');
+    }
+
+  }
+}
+
+phonesBlock.addEventListener('touchstart', (e) => handleTouchStart(e));
+phonesBlock.addEventListener('touchmove', (e) => handleTouchMove(e));
+
+console.log(window.screen.width);
+console.log(phonesList[0].offsetWidth);
+console.log(window.screen.width - phonesList[0].offsetWidth);
+const width = phonesList[0].offsetWidth / 2;
+
+phonesBlock.style.transform = `translate(${width}px)`;
+
