@@ -8,7 +8,7 @@ export default class HorizontalSwiper {
     this._initialWidth = this._blockHalfWidth;
     this._n = 0;
     this._touchCoord = { x: 0 };
-    this._DETECT_TRESHHOLD = 200;
+    this._DETECT_TRESHHOLD = 150;
     this._swiperActiveClass = 'advantages__item_active';
   }
 
@@ -36,9 +36,9 @@ export default class HorizontalSwiper {
 
   _handleTouchMove(e) {
     this._xUp = e.touches[0].clientX;
-    const DETECT_TRESHHOLD = 200;
+    const difTouches = Math.abs(this._xUp - this._touchCoord.x);
 
-    if((Math.abs(this._xUp - this._touchCoord.x) > DETECT_TRESHHOLD) && (this._n >= 0 && this._n < this._swiperElements.length)) {
+    if((difTouches > this._DETECT_TRESHHOLD) && (this._n >= 0 && this._n < this._swiperElements.length)) {
 
       if(this._xUp > this._touchCoord.x && this._n > 0) {
         this._swipeLeft()

@@ -30,7 +30,7 @@
 @media screen and (max-width: 1160px) {
   .confidentiality {
     padding: 50px 10px;
-    margin: 0 auto;
+    margin: calc(var(--space-primary)*2) auto 0;
     width: calc(100% - 30px*2);
   }
 }

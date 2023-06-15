@@ -12,6 +12,7 @@ faqList.forEach(faq => {
   faqItem.setEventListeners();
 });
 
-const phoneSwiper = new HorizontalSwiper('.advantages__phone-list');
-phoneSwiper.initializeSwiper();
+const phoneSwiper = new HorizontalSwiper('.advantages__phones');
+
+if(document.documentElement.clientWidth < 700) { phoneSwiper.initializeSwiper(); }
 
