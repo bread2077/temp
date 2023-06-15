@@ -7,7 +7,7 @@
   grid-area: review;
   background-color: #FFFFFF;
   border-radius: 20px;
-  border: 1px solid var(--color-secondary);
+  border: 1.5px solid var(--color-secondary);
 }
 .user-review__grade {
   font-style: normal;
