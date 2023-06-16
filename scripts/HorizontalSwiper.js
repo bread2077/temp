@@ -8,7 +8,7 @@ export default class HorizontalSwiper {
     this._initialWidth = this._blockHalfWidth;
     this._n = 0;
     this._touchCoord = { x: 0 };
-    this._DETECT_TRESHHOLD = 150;
+    this._DETECT_TRESHHOLD = 70;
     this._swiperActiveClass = 'advantages__item_active';
   }
 

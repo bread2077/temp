@@ -160,7 +160,6 @@
 
 .advantages__phone-image {
   max-width: 377px;
-  min-width: 300px;
   width: 100%;
   aspect-ratio: 1 / 2;
   object-fit: cover;
@@ -203,13 +202,44 @@
   .advantages__container {
     /* padding: 0 30px; */
   }
+
+  .advantages__items-list {
+    gap: 16px;
+    padding: 0 30px;
+  }
+
+  .advantages__reviews {
+    padding: 60px 30px 0;
+  }
 }
 
-@media screen and (max-width: 865px) {
+@media screen and (max-width: 1023px) {
   .advantages__container {
-    max-width: var(--width-max);
-    margin: 0 auto;
-    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "text phones"
+    "reviews reviews";
+  }
+
+  .advantages__phones {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .advantages__text {
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .advantages {
+    padding: var(--space-primary) 0 0;
+  }
+
+  .advantages__container {
+    padding: var(--space-primary) 0 0;
+    margin: 0;
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas:
@@ -219,25 +249,12 @@
     gap: 60px 50px;
   }
 
-  .advantages__phones {
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-
-@media screen and (max-width: 700px) {
-  .advantages {
-    padding: var(--space-primary) 0 0;
-    margin: 0 0 60px;
-
-  }
-
   .advantages__container {
     gap: 0;
   }
 
-  .advantages__items-list {
+  .advantages__reviews {
+    background-color: #fff;
   }
 
   .advantages__phones {
@@ -245,18 +262,9 @@
     margin-top: 32px;
   }
 
-  .advantages__reviews {
-    padding: 60px 30px 0;
-    background-color: #fff;
-  }
-
-
   .advantages__phone-image {
-    max-width: 377px;
     min-width: 300px;
-    width: 100%;
     aspect-ratio: 1 / 1.5;
-    object-fit: cover;
     object-position: top;
 
   }
@@ -268,14 +276,5 @@
 
   .advantages__item_active {
     transform: scale(1);
-  }
-
-  .advantages__items-list {
-    gap: 16px;
-    padding: 0 30px;
-  }
-
-  .advantages__text {
-    font-size: 20px;
   }
 }
