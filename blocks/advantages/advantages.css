@@ -11,9 +11,16 @@
   grid-template-columns: 40% 60%;
   grid-template-rows: min-content 1fr;
   grid-template-areas:
+  "button button"
   "text phones"
   "reviews phones";
   gap: 60px 50px;
+}
+
+.advantages__button {
+  grid-area: button;
+  justify-self: center;
+  margin: 0 0 80px;
 }
 
 .advantages__phones {
@@ -217,6 +224,7 @@
   .advantages__container {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
+    "button button"
     "text phones"
     "reviews reviews";
   }
@@ -234,23 +242,24 @@
 
 @media screen and (max-width: 700px) {
   .advantages {
-    padding: var(--space-primary) 0 0;
+    padding: 20px 0 0;
   }
 
   .advantages__container {
-    padding: var(--space-primary) 0 0;
+    padding: 0;
     margin: 0;
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas:
+    "button"
     "text"
     "phones"
     "reviews";
-    gap: 60px 50px;
+    gap: 0;
   }
 
-  .advantages__container {
-    gap: 0;
+  .advantages__button {
+    margin: 0 0 60px;
   }
 
   .advantages__reviews {

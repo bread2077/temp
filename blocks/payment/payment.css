@@ -1,0 +1,136 @@
+@keyframes imageslider {
+  0% {
+    transform: translate(0%, 0);
+  }
+  100% {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.payment {
+  background-color: var(--bg-color-secondary);
+}
+.payment__container {
+  margin: 0 auto 100px;
+  padding: calc(var(--space-primary) + 20px) 0 100px;
+  display: grid;
+  align-items: center;
+  position: relative;
+}
+.payment__title {
+  color: var(--color-dark);
+  margin: 0 auto 20px;
+  max-width: 627px;
+  text-align: center;
+}
+.payment__text {
+  color: var(--color-semi-dark);
+  margin: 0 auto 40px;
+  max-width: 627px;
+  text-align: center;
+  align-self: center;
+}
+
+.payment__list-container {
+  --gap: 65px;
+  overflow: hidden;
+  width: 100%;
+  gap: var(--gap);
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+}
+
+.payment__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  flex-wrap: nowrap;
+  animation: imageslider 30s linear infinite;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+.payment__item {}
+.payment__image {
+  object-fit: contain;
+  object-position: center;
+}
+.payment__guarantee {
+  width: 100%;
+  padding: 32px;
+  margin: 0 auto;
+  max-width: 406px;
+  background-color: #FFF;
+  box-shadow: 0px 4px 20px rgba(178, 185, 220, 0.43);
+  border-radius: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.payment__guarantee-title {
+  color: var(--color-secondary);
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0 0 10px;
+}
+.payment__guarantee-text {
+  color: var(--color-dark);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  margin: 0;
+}
+
+@media screen and (max-width: 1160px) {
+  .payment__container {
+    /* padding: var(--space-primary) auto 100px; */
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .payment__container {
+  }
+
+  .payment__list-container {
+    --gap: 20px;
+    gap: var(--gap);
+  }
+
+  .payment__list {
+    gap: var(--gap);
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+
+  .payment__title {
+    margin: 0 30px 16px;
+    text-align: left;
+  }
+  .payment__text {
+    text-align: left;
+    margin: 0 30px 40px;
+  }
+  .payment__guarantee {
+    padding: 20px 10px;
+    margin: 0;
+    border-radius: 10px;
+    max-width: 85%;
+  }
+  .payment__guarantee-title,
+  .payment__guarantee-text {
+    font-size: 14px;
+  }
+}

@@ -54,6 +54,10 @@
 
 @import url('../blocks/advantages/advantages.css');
 
+@import url('../blocks/performe/performe.css');
+
+@import url('../blocks/payment/payment.css');
+
 /* Блок footer*/
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/footer/__copyright/footer__copyright.css');
