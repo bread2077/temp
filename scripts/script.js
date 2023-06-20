@@ -6,6 +6,10 @@ const firstCulc = new ChoiceService('first-culc');
 firstCulc.renderSocials();
 firstCulc.setEventListeners();
 
+const secondCulc = new ChoiceService('second-culc');
+secondCulc.renderSocials();
+secondCulc.setEventListeners();
+
 const faqList = document.querySelectorAll('.faq__item');
 faqList.forEach(faq => {
   const faqItem = new Faq(faq);

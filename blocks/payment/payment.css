@@ -11,6 +11,7 @@
   background-color: var(--bg-color-secondary);
 }
 .payment__container {
+  max-width: 1440px;
   margin: 0 auto 100px;
   padding: calc(var(--space-primary) + 20px) 0 100px;
   display: grid;
