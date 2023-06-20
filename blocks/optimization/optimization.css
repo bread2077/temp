@@ -1,6 +1,7 @@
 .optimization {
   max-width: var(--width-max);
-  margin: calc(var(--space-primary) + 20px) auto;
+  padding: calc(var(--space-primary) + 20px) 0;
+  margin: 0 auto;
   display: grid;
   grid-template-areas:
   "title ."
@@ -13,6 +14,7 @@
 .optimization__description {
   grid-area: review;
   justify-content: start;
+  padding: 0 32px;
 }
 
 .optimization__title {
@@ -29,9 +31,48 @@
   grid-area: culc;
   box-shadow: 0px 4px 20px rgba(178, 185, 220, 0.43);
   border-radius: 20px;
-  padding: 32px;
+  padding: 32px 0;
   box-sizing: border-box;
   align-self: flex-start;
+  position: relative;
+}
+
+.optimization__label {
+  transform: rotate(9.28deg);
+  position: absolute;
+  top: -72px;
+  right: -22px;
+  background-image: url('../../images/bg-star.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 161px;
+  min-height: 160px;
+  margin: 0 auto;
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.optimization__label-title {
+  max-width: 105px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto 10px;
+}
+.optimization__label-text {
+  max-width: 105px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
 }
 
 .optimization__proposal {
@@ -48,6 +89,7 @@
 .optimization__subtitle {
   max-width: 350px;
   margin: 0 0 24px;
+  padding: 0 0 0 32px;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -58,15 +100,8 @@
 .optimization__list,
 .optimization__sublist {
   justify-content: flex-start;
-  padding: 0;
+  padding: 0 32px;
 }
-.optimization__services {}
-.optimization__subtitle {}
-.optimization__sublist {}
-.optimization__culc-description {}
-.optimization__proposal {}
-.optimization__cost {}
-.optimization__amount {}
 
 .optimization__review {
   grid-template-areas:
@@ -115,7 +150,7 @@
 
 @media screen and (max-width: 1160px) {
   .optimization {
-    margin: var(--space-primary) 30px;
+    padding: var(--space-primary) 30px;
   }
 }
 
@@ -127,6 +162,7 @@
     "review"
     "culc";
     gap: 0;
+    overflow: hidden;
   }
 
   .optimization__review {
@@ -158,16 +194,45 @@
 
   .optimization__culc {
     border-radius: 10px;
-    padding: 32px 10px;
-    margin: 40px 0 0;
+    margin: 80px 0 0;
   }
 
-  .optimization__choice-title,
-  .optimization__subtitle {
+  .optimization__list,
+  .optimization__sublist {
+    padding: 0 0 0 10px;
+  }
+
+  .optimization__label {
+    top: -88px;
+    right: -38px;
+    background-size: 130px;
+    min-height: 130px;
+    min-width: 130px;
+  }
+
+  .optimization__label-title {
+    max-width: 105px;
+    font-size: 15px;
+    margin: 0 auto 3px;
+  }
+  .optimization__label-text {
+    max-width: 105px;
+    font-size: 10px;
+  }
+
+  .optimization__choice-title {
     font-size: 14px;
   }
 
+  .optimization__subtitle {
+    max-width: calc(100% / 1.3);
+    font-size: 14px;
+    padding: 0 0 0 10px
+  }
+
+  .optimization__services {}
   .optimization__description  {
     margin: 20px 0 0;
+    padding: 0 10px;
   }
 }
