@@ -25,6 +25,6 @@ const cyrcleItems = cyrcle.querySelectorAll('.cyrcle__item');
 
 cyrcleItems.forEach((item, index) => {
   item.style.transform = `rotate(calc(${360 * (index+1)/ cyrcleItems.length}deg))`;
-  item.querySelector('.cyrcle__image').style.transform = `rotate(calc(-${360 * (index+1)/ cyrcleItems.length}deg)) translateX(-100%)`;
+  item.querySelector('.cyrcle__image').style.transform = `rotate(calc(-${360 * (index+1)/ cyrcleItems.length}deg))`;
 })
 
