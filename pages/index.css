@@ -60,6 +60,8 @@
 
 @import url('../blocks/optimization/optimization.css');
 
+@import url('../blocks/cyrcle/cyrcle.css');
+
 
 /* Блок footer*/
 @import url('../blocks/footer/footer.css');

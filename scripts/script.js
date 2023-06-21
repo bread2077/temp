@@ -20,3 +20,11 @@ const phoneSwiper = new HorizontalSwiper('.advantages__phones');
 
 if(document.documentElement.clientWidth < 700) { phoneSwiper.initializeSwiper(); }
 
+const cyrcle = document.querySelector('.cyrcle__container');
+const cyrcleItems = cyrcle.querySelectorAll('.cyrcle__item');
+
+cyrcleItems.forEach((item, index) => {
+  item.style.transform = `rotate(calc(${360 * (index+1)/ cyrcleItems.length}deg))`;
+  item.querySelector('.cyrcle__image').style.transform = `rotate(calc(-${360 * (index+1)/ cyrcleItems.length}deg)) translateX(-100%)`;
+})
+
