@@ -21,6 +21,7 @@
   grid-area: title;
   color: var(--color-dark);
   margin: 0 0 20px;
+  padding: 0 32px;
 }
 .optimization__text {
   color: var(--color-semi-dark);
@@ -163,6 +164,7 @@
     "culc";
     gap: 0;
     overflow: hidden;
+    grid-auto-rows: min-content;
   }
 
   .optimization__review {
@@ -170,6 +172,10 @@
     "review review"
     "avatar name";
     gap: 34px 16px;
+  }
+
+  .optimization__title {
+    padding: 0;
   }
 
   .optimization__quote {
@@ -233,6 +239,6 @@
   .optimization__services {}
   .optimization__description  {
     margin: 20px 0 0;
-    padding: 0 10px;
+    padding: 0;
   }
 }

@@ -62,6 +62,7 @@
 
 @import url('../blocks/cyrcle/cyrcle.css');
 
+@import url('../blocks/long-read/long-read.css');
 
 /* Блок footer*/
 @import url('../blocks/footer/footer.css');
