@@ -6,7 +6,7 @@
   margin: 0 auto;
   display: grid;
   justify-content: center;
-  overflow-x: hidden;
+  /* overflow: hidden; */
 
 }
 
@@ -157,7 +157,7 @@
 
 @media screen and (max-width: 700px) {
   .cyrcle {
-    --cyrcle-width: 250px;
+    --cyrcle-width: 65vw;
     --cyrcle-item-width: 38px;
     padding: var(--space-primary) 30px;
   }
