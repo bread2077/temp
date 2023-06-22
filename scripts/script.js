@@ -36,7 +36,7 @@ const header = document.querySelector('.header');
 
 
 function toggleHeaderMenu() {
-  header.classList.toggle('header_opened');
+  header.classList.toggle('header__mobile_opened');
   headerMenu.classList.toggle('header__nav_opened');
   menuBurgerSpans.forEach(item => {
     item.classList.toggle('menu-burger__item_active');
@@ -45,6 +45,25 @@ function toggleHeaderMenu() {
 
 menuBurger.addEventListener('click', toggleHeaderMenu);
 // ----------------------------------
+const menu = document.querySelector('.header__links-list');
+const linkSubmenuList = menu.querySelectorAll('.header__link_type_menu');
+
+linkSubmenuList.forEach(link => {
+  const submenu = link.nextElementSibling;
+  console.log(submenu);
+
+    submenu && link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const openedSubmenu =  menu.querySelector('.header__links-sublist_opened');
+      // if(openedSubmenu) {
+      //   openedSubmenu.classList.remove('header__links-sublist_opened');
+      // } else {
+      // }
+      submenu.classList.toggle('header__links-sublist_opened');
+
+    });
+
+});
 
 
 
