@@ -238,7 +238,7 @@
 
   .optimization__services {}
   .optimization__description  {
-    margin: 20px 0 0;
+    margin: 20px 0 0 10px;
     padding: 0;
   }
 }
