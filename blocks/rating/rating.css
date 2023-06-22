@@ -1,6 +1,7 @@
 .rating {
   max-width: var(--width-max);
-  margin: calc(var(--space-primary) + 20px) auto;
+  margin: 0 auto calc(var(--space-primary));
+  transform: translateY(-50%);
 }
 .rating__list {
   margin: 0;
@@ -63,13 +64,12 @@
 
 @media screen and (max-width: 1160px) {
   .rating {
-    margin: calc(var(--space-primary) + 20px) 30px;
+    margin: 0 30px 30px;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .rating {
-    margin: var(--space-primary) 30px;
   }
   .rating__list {
     gap: 6px;

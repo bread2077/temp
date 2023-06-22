@@ -68,6 +68,7 @@
 
 @import url('../blocks/rating/rating.css');
 
+@import url('../blocks/intro/intro.css');
 
 /* Блок footer*/
 @import url('../blocks/footer/footer.css');

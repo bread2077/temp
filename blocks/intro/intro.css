@@ -1,0 +1,212 @@
+@keyframes iconslider {
+  0% {
+    transform: translate(0%, 0);
+  }
+  100% {
+    transform: translateX(calc(-100% - var(--icon-gap)));
+  }
+}
+
+.intro {
+  --icon-gap: 10px;
+  background: linear-gradient(113.85deg, #F8F9FD 16.26%, #F2F2FC 50.24%);
+  padding: 140px 0 230px;
+  overflow: hidden;
+}
+.intro__container {
+  max-width: var(--width-max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  position: relative;
+}
+.intro__section {
+  display: flex;
+  flex-direction: column;
+}
+.intro__section_type_primary {
+  z-index: 1;
+}
+.intro__section_type_secondary {
+  position: absolute;
+  top: -100px;
+  right: 150px;
+  z-index: 0;
+}
+.intro__uppertitle {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 135%;
+  color: var(--color-dark);
+}
+.intro__title {
+  font-size: 46px;
+  color: var(--color-dark);
+  margin: 0 0 24px;
+}
+.intro__text {
+  color: var(--color-dark);
+  margin: 0 0 8px;
+  max-width: 460px;
+}
+.intro__socials-container {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: var(--icon-gap);
+  overflow: hidden;
+  max-width: 160px;
+  background: #E0E4F8;
+  border: 1px solid #B2BEFF;
+  border-radius: 10px;
+  user-select: none;
+}
+.intro__socials {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: var(--icon-gap);
+  animation: iconslider 20s linear infinite;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+.intro__social {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+.intro__social-logo {
+  --width-social-icon: 34px;
+  width: var(--width-social-icon);
+  height: var(--width-social-icon);
+}
+.intro__text-accent {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: var(--color-primary);
+  margin: 0 0 40px;
+}
+.intro__button {
+  align-self: flex-start;
+}
+.intro__image-container {
+  position: relative;
+  display: inline-flex;
+}
+.intro__image {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.intro__image_type_primary {
+  max-width: 575px;
+}
+.intro__image_type_secondary {
+  max-width: 450px;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+.intro__cost {
+  top: 0;
+  right: 60px;
+  transform: translateY(-50%);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  background-color: var(--color-primary);
+  border-radius: 8px;
+  position: absolute;
+}
+.intro__transp-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 1.2;
+  color: var(--color-semi-dark);
+  max-width: 230px;
+  margin: 0px 0 0 25px;
+}
+
+@media screen and (max-width: 1160px) {
+  .intro {
+    padding: 140px 0 230px;
+  }
+  .intro__section_type_primary {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .intro {
+    padding: 40px 0  50px;
+  }
+  .intro__title {
+    font-size: 32px;
+    margin: 0 0 20px;
+  }
+  .intro__title {
+    text-align: 14px;
+  }
+  .intro__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro__socials-container {
+    display: flex;
+    max-width: 100%;
+    margin: 10px 0 0;
+  }
+  .intro__section_type_secondary {
+    position: static;
+    top: 0;
+    left: 0;
+    margin-top: 40px;
+    /* transform: translateX(25%); */
+  }
+  .intro__image_type_primary {
+    max-width: 326px;
+    padding-bottom: 70px;
+  }
+  .intro__image_type_secondary {
+    max-width: 255px;
+    top: 35%;
+    left: 45%;
+  }
+  .intro__button {
+    align-self: center;
+  }
+  .intro__cost {
+    font-size: 9px;
+    padding: 6px 11px;
+    right: 10%;
+    border-radius: 5px;
+  }
+  .intro__image-container {
+    align-self: center;
+  }
+  .intro__text-accent {
+    font-size: 12px;
+  }
+  .intro__transp-text {
+    max-width: 100%;
+    margin: 0px 30px 25px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .intro__image-container {
+    align-self: flex-start;
+  }
+}

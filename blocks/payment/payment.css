@@ -34,7 +34,6 @@
 
 .payment__list-container {
   --gap: 65px;
-  overflow: hidden;
   width: 100%;
   gap: var(--gap);
   display: flex;
