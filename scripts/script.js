@@ -33,9 +33,11 @@ const menuBurger = document.querySelector('.menu-burger');
 const menuBurgerSpans = menuBurger.querySelectorAll('.menu-burger__item');
 const headerMenu = document.querySelector('.header__nav');
 const header = document.querySelector('.header');
+const root = document.querySelector('.root');
 
 
 function toggleHeaderMenu() {
+  // root.style.overflow = 'hidden';
   header.classList.toggle('header__mobile_opened');
   headerMenu.classList.toggle('header__nav_opened');
   menuBurgerSpans.forEach(item => {
