@@ -98,7 +98,6 @@
 }
 .intro__image-container {
   position: relative;
-  display: inline-flex;
 }
 .intro__image {
   width: 100%;
@@ -147,7 +146,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
   .intro {
     padding: 40px 0  50px;
   }
