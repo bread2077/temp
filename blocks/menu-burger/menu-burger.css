@@ -1,0 +1,22 @@
+.menu-burger {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  transition: opacity .4s ease-in-out;
+  width: 24px;
+  height: 28px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  z-index: 10;
+}
+
+.menu-burger:hover {
+  opacity: .6;
+}
+
+@media screen and (max-width: 980px) {
+  .menu-burger {
+    display: block;
+  }
+}

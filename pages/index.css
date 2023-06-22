@@ -18,6 +18,9 @@
 @import url('../blocks/section-title/section-title.css');
 @import url('../blocks/text/text.css');
 @import url('../blocks/user-review/user-review.css');
+@import url('../blocks/menu-burger/menu-burger.css');
+@import url('../blocks/menu-burger/__item/menu-burger__item.css');
+@import url('../blocks/menu-burger/__item/_active/menu-burger__item_active.css');
 
 
 /* Блок root */

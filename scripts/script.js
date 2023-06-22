@@ -26,5 +26,25 @@ const cyrcleItems = cyrcle.querySelectorAll('.cyrcle__item');
 cyrcleItems.forEach((item, index) => {
   item.style.transform = `rotate(calc(${360 * (index+1)/ cyrcleItems.length}deg))`;
   item.querySelector('.cyrcle__image').style.transform = `rotate(calc(-${360 * (index+1)/ cyrcleItems.length}deg))`;
-})
+});
+
+// ----------------------------------
+const menuBurger = document.querySelector('.menu-burger');
+const menuBurgerSpans = menuBurger.querySelectorAll('.menu-burger__item');
+const headerMenu = document.querySelector('.header__nav');
+const header = document.querySelector('.header');
+
+
+function toggleHeaderMenu() {
+  header.classList.toggle('header_opened');
+  headerMenu.classList.toggle('header__nav_opened');
+  menuBurgerSpans.forEach(item => {
+    item.classList.toggle('menu-burger__item_active');
+  });
+}
+
+menuBurger.addEventListener('click', toggleHeaderMenu);
+// ----------------------------------
+
+
 
