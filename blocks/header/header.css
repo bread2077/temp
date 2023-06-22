@@ -166,7 +166,8 @@
   .header__nav {
     position: fixed;
     overflow: hidden;
-    min-height: 100vh;
+    max-height: 100vh;
+    height: 100%;
     min-width: 100vw;
     margin: 0;
     background-color: #fff;
