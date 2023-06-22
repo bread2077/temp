@@ -64,6 +64,11 @@
 
 @import url('../blocks/long-read/long-read.css');
 
+@import url('../blocks/guarantee/guarantee.css');
+
+@import url('../blocks/rating/rating.css');
+
+
 /* Блок footer*/
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/footer/__copyright/footer__copyright.css');

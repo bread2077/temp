@@ -75,7 +75,7 @@
   width: var(--var-cyrcle-btn-w-m);
   height: var(--var-cyrcle-btn-w-m);
   border: 1.5px dashed rgba(60, 90, 243, 0.6);
-  animation: cyrcle 40s linear infinite reverse;
+  animation: cyrcle 80s linear infinite reverse;
 
 }
 
