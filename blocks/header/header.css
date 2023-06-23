@@ -194,11 +194,12 @@
   }
   .header__nav_opened {
     left: 0;
-    display: block;
+    display: flex;
     overflow-y: auto;
   }
   .header__links-list {
     flex-direction: column;
+    flex-basis: 60%;
   }
   .header__link-container {
     display: grid;
@@ -210,6 +211,9 @@
     line-height: 1;
     display: block;
     margin: 10px auto 0;
+  }
+  .header__link::before {
+    content: none;
   }
   .header__link:first-child{
     margin: 0 auto;
@@ -223,11 +227,15 @@
     background-repeat: no-repeat;
     background-size: contain;
     margin-left: 8px;
+    transition: all .4s linear;
+  }
+  .header__link_type_menu_opened::after {
+    transform: scale(-1, -1);
   }
   .header__buttons-container {
     justify-content: center;
     flex-direction: column;
-    margin: 60px 0 0;
+    margin: 40px 0 0;
   }
   .header__button {
     max-width: 300px;
@@ -236,7 +244,7 @@
   }
   .header__socials-container {
     display: flex;
-    margin: 162px 0 0;
+    margin: 40px 0 0;
   }
   .header__links-sublist {
     box-shadow: none;

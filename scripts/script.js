@@ -61,6 +61,7 @@ linkSubmenuList.forEach(link => {
       //   openedSubmenu.classList.remove('header__links-sublist_opened');
       // } else {
       // }
+      link.classList.toggle('header__link_type_menu_opened');
       submenu.classList.toggle('header__links-sublist_opened');
 
     });
