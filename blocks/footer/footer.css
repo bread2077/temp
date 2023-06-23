@@ -86,6 +86,7 @@
   line-height: 1.2;
   color: #1A142D;
   margin: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .footer__subtitle-link {
   text-decoration: none;
@@ -97,6 +98,7 @@
   line-height: 1.25;
   color: var(--color-dark);
   text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .footer__text {
   font-style: normal;
