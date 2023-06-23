@@ -50,19 +50,30 @@ menuBurger.addEventListener('click', toggleHeaderMenu);
 const menu = document.querySelector('.header__links-list');
 const linkSubmenuList = menu.querySelectorAll('.header__link_type_menu');
 
+function closeMenuItem(link, submenu) {
+  link.classList.remove('header__link_type_menu_opened');
+  submenu.classList.remove('header__links-sublist_opened');
+}
+
+function openMenuItem(link, submenu) {
+  link.classList.add('header__link_type_menu_opened');
+  submenu.classList.add('header__links-sublist_opened');
+}
+
 linkSubmenuList.forEach(link => {
   const submenu = link.nextElementSibling;
   console.log(submenu);
 
     submenu && link.addEventListener('click', (e) => {
       e.preventDefault();
-      const openedSubmenu =  menu.querySelector('.header__links-sublist_opened');
-      // if(openedSubmenu) {
-      //   openedSubmenu.classList.remove('header__links-sublist_opened');
-      // } else {
-      // }
-      link.classList.toggle('header__link_type_menu_opened');
-      submenu.classList.toggle('header__links-sublist_opened');
+      const openedMenuLink = menu.querySelector('.header__link_type_menu_opened');
+
+      if(link.classList.contains('header__link_type_menu_opened')) {
+        closeMenuItem(link, submenu);
+      } else {
+        openedMenuLink && closeMenuItem(openedMenuLink, openedMenuLink.nextElementSibling);
+        openMenuItem(link, submenu);
+      }
 
     });
 
