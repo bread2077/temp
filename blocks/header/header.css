@@ -178,7 +178,7 @@
   }
   .header__nav {
     position: fixed;
-    min-height: 100vh;
+    /* height: 100vh; */
     height: 100%;
     min-width: 100vw;
     margin: 0;
@@ -199,7 +199,7 @@
   }
   .header__links-list {
     flex-direction: column;
-    flex-basis: 50%;
+    flex-basis: 60%;
   }
   .header__link-container {
     display: grid;
