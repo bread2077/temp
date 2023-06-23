@@ -218,6 +218,11 @@
   .header__link:first-child{
     margin: 0 auto;
   }
+  .header__link_type_menu {
+    background-color: #fff;
+    position: relative;
+    z-index: 3;
+  }
   .header__link_type_menu::after {
     content: '';
     display: inline-block;
@@ -249,10 +254,19 @@
   .header__links-sublist {
     box-shadow: none;
   }
+  .header__links-sublist {
+    box-shadow: none;
+    transform: none;
+    padding: 10px 15px;
+    transition: all .1s ease-in-out;
+
+  }
   .header__links-sublist_opened {
     position: relative;
     visibility: visible;
     opacity: 1;
+    margin-top: 5%;
+
   }
 }
 
