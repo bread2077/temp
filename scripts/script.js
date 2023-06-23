@@ -110,7 +110,7 @@ const elementsLinks = document.querySelectorAll('.footer__link_type_upper-menu')
     submenu && link.addEventListener('click', (e) => {
       e.preventDefault();
       // const openedMenuLink = menuFooter.querySelector('.link_type_menu_opened');
-
+      link.classList.toggle('footer__link_type_upper-menu_opened');
       submenu.classList.toggle('footer__links_type_upper-sublist_opened');
 
     });

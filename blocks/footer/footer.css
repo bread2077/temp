@@ -186,6 +186,9 @@
   .footer__company-container {
     gap: 10px;
   }
+  .footer__copyright {
+    margin: 8px 0 0;
+  }
   .footer__subtitle-link,
   .footer__subtitle {
     font-size: 16px;
@@ -223,6 +226,9 @@
     margin-left: 8px;
     transition: all .4s linear;
   }
+  .footer__link_type_upper-menu_opened::after {
+    transform: scale(-1, -1);
+  }
   .footer__links_type_upper-sublist {
     visibility: hidden;
     opacity: 0;
@@ -235,6 +241,9 @@
     visibility: visible;
     opacity: 1;
     margin-top: 3%;
+  }
+  .logo-title_pos_footer {
+    font-size: 17.5px;
   }
 }
 
