@@ -37,7 +37,7 @@ const root = document.querySelector('.root');
 
 
 function toggleHeaderMenu() {
-  // root.style.overflow = 'hidden';
+  root.classList.toggle('root_hidden');
   header.classList.toggle('header__mobile_opened');
   headerMenu.classList.toggle('header__nav_opened');
   menuBurgerSpans.forEach(item => {

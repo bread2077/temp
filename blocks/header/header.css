@@ -154,7 +154,7 @@
   }
   .header__mobile {
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
@@ -177,8 +177,9 @@
     box-shadow: 0px 4px 20px rgba(178, 185, 220, 0.43);
   }
   .header__nav {
-    position: absolute;
+    position: fixed;
     min-height: 100vh;
+    height: 100%;
     min-width: 100vw;
     margin: 0;
     background-color: #fff;
