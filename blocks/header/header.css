@@ -184,7 +184,7 @@
     min-width: 100vw;
     margin: 0;
     background-color: #fff;
-    z-index: 2;
+    z-index: 999;
     top: 0;
     left: -100%;
     flex-direction: column;
