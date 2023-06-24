@@ -94,4 +94,9 @@ export const services = {
     link: 'https://cdn.rawgit.com/bread2077/temp/main/images/services/autoviews-icon.svg',
     name: 'Авторосмотры reels/видео'
   },
+  visitors: {
+    img: './images/services/views-icon.svg',
+    link: 'https://cdn.rawgit.com/bread2077/temp/main/images/services/views-icon.svg',
+    name: 'Посещения'
+  },
 };

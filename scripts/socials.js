@@ -4,24 +4,24 @@ export const socials = {
     img: './images/socials/tiktok-icon.svg',
     services: {
       followers: {
-        cost: 12,
+        cost: 260,
         amount: 1000
       },
       reposts: {
-        cost: 13,
-        amount: 10
+        cost: 21,
+        amount: 1000
       },
       views: {
-        cost: 13,
-        amount: 10
+        cost: 1,
+        amount: 1000
       },
       likes: {
-        cost: 13,
-        amount: 10
+        cost: 59,
+        amount: 1000
       },
       conservations: {
-        cost: 13,
-        amount: 10
+        cost: 31,
+        amount: 1000
       },
     }
   },
@@ -30,36 +30,36 @@ export const socials = {
     img: './images/socials/vk-icon.svg',
     services: {
       likes: {
-        cost: 12,
+        cost: 45,
         amount: 1000
       },
       friends: {
-        cost: 13,
-        amount: 10
+        cost: 90,
+        amount: 1000
       },
       listenings: {
         cost: 13,
         amount: 10
       },
       reposts: {
-        cost: 13,
-        amount: 10
+        cost: 165,
+        amount: 1000
       },
       views: {
-        cost: 13,
-        amount: 10
+        cost: 3.2,
+        amount: 1000
       },
       followers: {
-        cost: 13,
-        amount: 10
+        cost: 90,
+        amount: 1000
       },
       autoviews: {
-        cost: 13,
-        amount: 10
+        cost: 2.5,
+        amount: 1000
       },
       comments: {
-        cost: 13,
-        amount: 10
+        cost: 3,
+        amount: 1
       },
     }
   },
@@ -68,16 +68,16 @@ export const socials = {
     img: './images/socials/twitter-icon.svg',
     services: {
       likes: {
-        cost: 12,
+        cost: 280,
         amount: 1000
       },
       retweets: {
-        cost: 13,
-        amount: 10
+        cost: 250,
+        amount: 1000
       },
       followers: {
-        cost: 1,
-        amount: 10
+        cost: 430,
+        amount: 1000
       },
     }
   },
@@ -85,9 +85,13 @@ export const socials = {
     name: 'Спотифай',
     img: './images/socials/spotify-icon.svg',
     services: {
+      listenings: {
+        cost: 40,
+        amount: 1000
+      }
     }
   },
-  ok: {
+  ok: { // пустой
     name: 'Одноклассники',
     img: './images/socials/ok-icon.svg',
     services: {
@@ -98,44 +102,44 @@ export const socials = {
     img: './images/socials/instagram-icon.svg',
     services: {
       followers: {
-        cost: 4,
-        amount: 1
-      },
-      reels: {
-        cost: 5,
-        amount: 10
-      },
-      comments: {
-        cost: 6,
+        cost: 12,
         amount: 1000
       },
+      reels: {
+        cost: 1.5,
+        amount: 1000
+      },
+      comments: {
+        cost: 3.5,
+        amount: 10
+      },
       stories: {
-        cost: 7,
-        amount: 100
+        cost: 15,
+        amount: 1000
       },
       reposts: {
-        cost: 7,
-        amount: 100
+        cost: 13,
+        amount: 1000
       },
       likes: {
-        cost: 7,
-        amount: 100
+        cost: 3,
+        amount: 1000
       },
       autolikes: {
-        cost: 7,
-        amount: 100
+        cost: 3,
+        amount: 1000
       },
       autoreels: {
-        cost: 7,
-        amount: 100
+        cost: 1.5,
+        amount: 1000
       },
       coverages: {
-        cost: 7,
-        amount: 100
+        cost: 5,
+        amount: 1000
       },
       conservations: {
-        cost: 7,
-        amount: 100
+        cost: 6,
+        amount: 1000
       },
     }
   },
@@ -144,16 +148,16 @@ export const socials = {
     img: './images/socials/facebook-icon.svg',
     services: {
       followers: {
-        cost: 12,
+        cost: 58,
         amount: 1000
       },
       comments: {
-        cost: 13,
-        amount: 10
+        cost: 3.5,
+        amount: 1
       },
       likes: {
-        cost: 13,
-        amount: 10
+        cost: 55,
+        amount: 1000
       }
     }
   },
@@ -162,20 +166,20 @@ export const socials = {
     img: './images/socials/youtube-icon.svg',
     services: {
       views: {
-        cost: 12,
+        cost: 90,
         amount: 1000
       },
       followers: {
-        cost: 13,
-        amount: 10
+        cost: 890,
+        amount: 1000
       },
       comments: {
-        cost: 3,
-        amount: 10
+        cost: 780,
+        amount: 1000
       },
       likes: {
-        cost: 132,
-        amount: 10
+        cost: 240,
+        amount: 1000
       },
     }
   },
@@ -185,35 +189,35 @@ export const socials = {
     services: {
       autoviews: {
         cost: 1,
-        amount: 1
+        amount: 1000
       },
       reactions: {
-        cost: 2,
+        cost: 4,
         amount: 1000
       },
       reposts: {
-        cost: 3,
-        amount: 10
+        cost: 34,
+        amount: 1000
       },
       comments: {
-        cost: 1,
+        cost: 3,
         amount: 1
       },
       views: {
         cost: 1,
-        amount: 1
+        amount: 1000
       },
       followers: {
-        cost: 1,
-        amount: 1
+        cost: 40,
+        amount: 1000
       },
       autolikes: {
-        cost: 1,
-        amount: 1
+        cost: 4,
+        amount: 1000
       },
       polls: {
-        cost: 1,
-        amount: 1
+        cost: 32,
+        amount: 1000
       },
     }
   },
@@ -221,6 +225,10 @@ export const socials = {
     name: 'Интернет',
     img: './images/socials/internet-icon.svg',
     services: {
+      visitors: {
+        cost: 12,
+        amount: 1000
+      }
     }
   },
   soundcloud: {
@@ -228,19 +236,19 @@ export const socials = {
     img: './images/socials/soundcloud-icon.svg',
     services: {
       plays: {
-        cost: 12,
+        cost: 6,
         amount: 1000
       },
       followers: {
-        cost: 13,
-        amount: 10
-      },
-      comments: {
-        cost: 12,
+        cost: 200,
         amount: 1000
       },
+      comments: {
+        cost: 1.2,
+        amount: 1
+      },
       likes: {
-        cost: 12,
+        cost: 155,
         amount: 1000
       },
     }
