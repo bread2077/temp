@@ -73,6 +73,20 @@
 
 .choice__button {
   margin-top: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.choice__button::after {
+  content: '';
+  display: inline-block;
+  background-image: url('../../images/white-arrow-right.svg');
+  width: 34px;
+  height: 13px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 10px;
 }
 
 .choice__list,
@@ -141,6 +155,9 @@
 
   .choice__subtitle {
     margin: 0 0 16px;
+  }
+  .choice__button::after {
+    display: none;
   }
 }
 
