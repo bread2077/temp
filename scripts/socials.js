@@ -1,5 +1,6 @@
 export const socials = {
   tiktok: {
+    name: 'ТикТок',
     img: './images/socials/tiktok-icon.svg',
     services: {
       followers: {
@@ -25,6 +26,7 @@ export const socials = {
     }
   },
   vk: {
+    name: 'Вконтакте',
     img: './images/socials/vk-icon.svg',
     services: {
       likes: {
@@ -62,6 +64,7 @@ export const socials = {
     }
   },
   twitter: {
+    name: 'Твиттер',
     img: './images/socials/twitter-icon.svg',
     services: {
       likes: {
@@ -79,16 +82,19 @@ export const socials = {
     }
   },
   spotify: {
+    name: 'Спотифай',
     img: './images/socials/spotify-icon.svg',
     services: {
     }
   },
   ok: {
+    name: 'Одноклассники',
     img: './images/socials/ok-icon.svg',
     services: {
     }
   },
   instagram: {
+    name: 'Инстаграмм',
     img: './images/socials/instagram-icon.svg',
     services: {
       followers: {
@@ -134,6 +140,7 @@ export const socials = {
     }
   },
   facebook: {
+    name: 'Фейсбук',
     img: './images/socials/facebook-icon.svg',
     services: {
       followers: {
@@ -151,6 +158,7 @@ export const socials = {
     }
   },
   youtube: {
+    name: 'Ютуб',
     img: './images/socials/youtube-icon.svg',
     services: {
       views: {
@@ -172,6 +180,7 @@ export const socials = {
     }
   },
   telegram: {
+    name: 'Телеграм',
     img: './images/socials/telegram-icon.svg',
     services: {
       autoviews: {
@@ -209,11 +218,13 @@ export const socials = {
     }
   },
   internet: {
+    name: 'Интернет',
     img: './images/socials/internet-icon.svg',
     services: {
     }
   },
   soundcloud: {
+    name: 'Саундклауд',
     img: './images/socials/soundcloud-icon.svg',
     services: {
       plays: {

@@ -9,7 +9,7 @@
 
 .menu-burger__item::before {
   content: '';
-  border-radius: 5px;
+  border-radius: 3px;
   height: 100%;
   width: 100%;
   position: absolute;

@@ -9,10 +9,12 @@
   border: none;
   padding: 0;
   z-index: 10;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
 }
 
 .menu-burger:hover {
-  opacity: .6;
+  opacity: .8;
 }
 
 @media screen and (max-width: 980px) {

@@ -17,6 +17,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+.culc__image-container_active::before {
+  content: '';
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  border: 1.5px solid var(--color-secondary);
+  border-radius: 50%;
+  z-index: 0;
+}
+.culc__image-container_active::after {
+  content: '';
+  background-image: url('../../images/check-service-icon.svg');
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .culc__image-container_type_service {

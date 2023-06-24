@@ -82,7 +82,7 @@
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 43px;
+  gap: 36px;
   overflow-x: auto;
   overflow-y: hidden;
 }

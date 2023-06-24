@@ -1,12 +1,13 @@
-import ChoiceService from './ChoiceService.js';
+import ChoiceServiceImage from './ChoiceServiceImage.js';
+import ChoiceServiceText from './ChoiceServiceText.js';
 import Faq from './Faq.js';
 import HorizontalSwiper from './HorizontalSwiper.js';
 
-const firstCulc = new ChoiceService('first-culc');
+const firstCulc = new ChoiceServiceImage('second-culc');
 firstCulc.renderSocials();
 firstCulc.setEventListeners();
 
-const secondCulc = new ChoiceService('second-culc');
+const secondCulc = new ChoiceServiceText('first-culc');
 secondCulc.renderSocials();
 secondCulc.setEventListeners();
 
