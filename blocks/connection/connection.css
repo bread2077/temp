@@ -1,6 +1,13 @@
 .connection {
-  background-color: var(--bg-color-secondary);
   padding: calc(var(--space-primary) + 20px) 0;
+}
+
+.connection_bg_white {
+  background-color: white;
+}
+
+.connection_bg_light {
+  background-color: var(--bg-color-secondary);
 }
 
 .connection__container {
@@ -8,7 +15,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 2fr 3fr;
-  gap: 60px
+  gap: 60px;
 }
 
 .connection__title {
@@ -25,8 +32,8 @@
 
 .connection__review {
   grid-template-areas:
-  "review avatar"
-  "name .";
+    "review avatar"
+    "name .";
   gap: 16px 20px;
 }
 
@@ -38,7 +45,7 @@
 
 .connection__quote::before,
 .connection__quote::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 0;
@@ -64,7 +71,7 @@
 
 @media screen and (max-width: 1160px) {
   .connection__container {
-    width: calc(100% - 30px*2);
+    width: calc(100% - 30px * 2);
   }
 }
 
@@ -80,8 +87,8 @@
   .connection__review {
     grid-template-columns: min-content 1fr;
     grid-template-areas:
-    "review review"
-    "avatar name";
+      "review review"
+      "avatar name";
     gap: 34px 16px;
   }
 

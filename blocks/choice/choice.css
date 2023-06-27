@@ -1,7 +1,14 @@
 .choice {
-  background-color: var(--bg-color-primary);
   padding: calc(var(--space-primary) + 20px) 0;
   margin: 20px auto 0;
+}
+
+.choice_bg_white {
+  background-color: #fff;
+}
+
+.choice_bg_light {
+  background-color: var(--bg-color-secondary);
 }
 
 .choice__container {
@@ -22,7 +29,7 @@
 
 .choice__services {
   margin-top: 40px;
-  transition: margin-top .4s linear;
+  transition: margin-top 0.4s linear;
   overflow: hidden;
 }
 
@@ -37,7 +44,7 @@
   display: grid;
   justify-content: center;
   transform: translateY(0);
-  transition: transform .4s linear;
+  transition: transform 0.4s linear;
 }
 
 .choice__description_hided {
@@ -48,7 +55,6 @@
 }
 
 .choice__subtitle {
-  text-align: center;
   color: var(--color-dark);
   margin: 0 0 20px;
   font-style: normal;
@@ -79,9 +85,9 @@
 }
 
 .choice__button::after {
-  content: '';
+  content: "";
   display: inline-block;
-  background-image: url('../../images/white-arrow-right.svg');
+  background-image: url("../../images/white-arrow-right.svg");
   width: 34px;
   height: 13px;
   background-repeat: no-repeat;
@@ -90,13 +96,13 @@
 }
 
 .choice__list,
-.choice__sublist  {
+.choice__sublist {
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 36px;
+  gap: 28px;
   overflow-x: auto;
   overflow-y: hidden;
 }
@@ -124,10 +130,14 @@
     margin: 0 30px 40px;
   }
 
-  .choice__list,
+  .choice__list {
+    justify-content: flex-start;
+    padding: 10px 0 0;
+  }
+
   .choice__sublist {
     justify-content: flex-start;
-    padding: 10px 0 0 30px;
+    padding: 10px 0 0 0;
   }
 }
 
@@ -137,15 +147,23 @@
     margin: 10px auto 0;
   }
 
+  .choice__culc {
+    padding-left: 30px;
+  }
+
   .choice__list,
-  .choice__sublist  {
+  .choice__sublist {
     gap: 18px;
+  }
+
+  .choice__services {
+    /* padding-left: 30px; */
   }
 
   .choice__description {
     justify-items: start;
     justify-content: start;
-    margin: 40px 0 0 30px;
+    margin: 40px 0 0 0;
   }
 
   .choice__proposal {
@@ -155,10 +173,9 @@
 
   .choice__subtitle {
     margin: 0 0 16px;
+    text-align: left;
   }
   .choice__button::after {
     display: none;
   }
 }
-
-

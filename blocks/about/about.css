@@ -1,6 +1,9 @@
 .about {
-  background-color: var(--bg-color-secondary);
   padding: calc(var(--space-primary) + 20px) 0;
+}
+
+.about_bg_light {
+  background-color: var(--bg-color-secondary);
 }
 
 .about__container {
@@ -47,7 +50,7 @@
 }
 
 .about__description {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 4px 20px rgba(178, 185, 220, 0.43);
   border-radius: 20px;
   padding: 106px 16px 24px;
@@ -60,7 +63,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 120%;
-  color: var(--color-secondary)
+  color: var(--color-secondary);
 }
 
 .about__about {
@@ -69,12 +72,12 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 135%;
-  color: var(--semi-dark)
+  color: var(--semi-dark);
 }
 
 @media screen and (max-width: 1160px) {
   .about__container {
-    width: calc(100% - 30px*2);
+    width: calc(100% - 30px * 2);
   }
 }
 

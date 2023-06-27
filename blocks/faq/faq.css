@@ -1,5 +1,5 @@
 .faq {
-  background-color: var(--bg-color-primary);
+  background-color: var(--bg-color-secondary);
   padding: calc(var(--space-primary) + 20px) 0;
 }
 .faq__title {
@@ -20,7 +20,7 @@
 }
 
 .faq__item {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 1px solid var(--color-primary);
   border-radius: 10px;
   display: flex;
@@ -46,7 +46,7 @@
 .faq__description {
   padding: 20px 24px;
   margin-top: 0;
-  transition: margin-top .4s linear;
+  transition: margin-top 0.4s linear;
   position: relative;
   overflow: hidden;
 }
@@ -66,7 +66,7 @@
   color: var(--color-dark);
   margin: 0 0 10px;
   transform: translateY(0);
-  transition: transform .4s linear;
+  transition: transform 0.4s linear;
 }
 
 .faq__text_closed {
@@ -80,11 +80,11 @@
 .faq__button {
   width: 40px;
   height: 40px;
-  background-image: url('../../images/faq-show.svg');
+  background-image: url("../../images/faq-show.svg");
   background-position: center;
   border: none;
   flex-shrink: 0;
-  transition: transform .4s linear;
+  transition: transform 0.4s linear;
 }
 
 .faq__button_type_close {
@@ -108,7 +108,7 @@
 
   .faq__title {
     text-align: left;
-    margin: 0 auto 50px
+    margin: 0 auto 50px;
   }
 
   .faq__list {

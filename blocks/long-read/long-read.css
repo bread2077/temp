@@ -44,7 +44,7 @@
 }
 
 .long-read__section_type_curve::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -108,7 +108,7 @@
 }
 
 .long-read__button::before {
-  content: '';
+  content: "";
   width: 36px;
   height: 36px;
   position: absolute;
@@ -116,7 +116,7 @@
 }
 
 .long-read__button::before {
-  background-image: url('../../images/socials/telegram-icon.svg');
+  background-image: url("../../images/socials/telegram-icon.svg");
   top: -10px;
   right: -10px;
 }
@@ -127,8 +127,8 @@
 
 .long-read__review {
   grid-template-areas:
-  "avatar review"
-  ". name";
+    "avatar review"
+    ". name";
   grid-template-columns: min-content 1fr;
   gap: 16px 20px;
 }
@@ -142,7 +142,7 @@
 
 .long-read__quote::before,
 .long-read__quote::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 0;
@@ -173,6 +173,7 @@
 @media screen and (max-width: 700px) {
   .long-read {
     flex-direction: column;
+    margin-bottom: 40px;
   }
 
   .long-read__section {
@@ -211,8 +212,8 @@
 
   .long-read__review {
     grid-template-areas:
-    "review review"
-    "avatar name";
+      "review review"
+      "avatar name";
     gap: 34px 16px;
   }
 
@@ -238,5 +239,5 @@
 
   .long-read__name {
     justify-self: start;
-}
+  }
 }

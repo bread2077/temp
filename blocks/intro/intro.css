@@ -9,9 +9,12 @@
 
 .intro {
   --icon-gap: 10px;
-  background: linear-gradient(113.85deg, #F8F9FD 16.26%, #F2F2FC 50.24%);
   padding: 140px 0 230px;
   overflow: hidden;
+}
+
+.intro_bg_gradient {
+  background: linear-gradient(113.85deg, #f8f9fd 16.26%, #f2f2fc 50.24%);
 }
 .intro__container {
   max-width: var(--width-max);
@@ -57,8 +60,8 @@
   gap: var(--icon-gap);
   overflow: hidden;
   max-width: 160px;
-  background: #E0E4F8;
-  border: 1px solid #B2BEFF;
+  background: #e0e4f8;
+  border: 1px solid #b2beff;
   border-radius: 10px;
   user-select: none;
 }
@@ -121,7 +124,7 @@
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 10px 20px;
   background-color: var(--color-primary);
   border-radius: 8px;
@@ -148,7 +151,7 @@
 
 @media screen and (max-width: 950px) {
   .intro {
-    padding: 80px 0  50px;
+    padding: 80px 0 50px;
   }
   .intro__title {
     font-size: 32px;

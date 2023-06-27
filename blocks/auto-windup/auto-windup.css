@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 1160px) {
   .auto-windup__container {
-   width: calc(100% - 30px*2);
+    width: calc(100% - 30px * 2);
   }
 }
 

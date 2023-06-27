@@ -7,8 +7,8 @@
     <meta name="author" content="">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link rel="stylesheet" href="./pages/index.css">
-    <title>Главная</title>
+    <link rel="stylesheet" href="./pages/telegram.css">
+    <title>Телеграм</title>
   </head>
   <body class="root">
     <header class="header">
@@ -110,7 +110,219 @@
       </nav>
     </header>
     <main class="content">
-      <section class="intro intro_bg_gradient">
+      <section class="social-intro">
+        <div class="social-intro__container">
+          <div class="social-intro__container-text">
+            <h1 class="social-intro__title">Накрутка подписчиков в&nbsp;Телеграм с гарантией</h1>
+            <p class="text social-intro__text">От 1 рубля за 1000 подписчиков</p>
+            <a href="#" class="btn btn_color_orange btn_size_large social-intro__button">Получить подписчиков</a>
+          </div>
+          <div class="social-intro__container-image">
+            <div class="social-intro__social social-intro__social_pos_up">
+              <h3 class="social-intro__subtitle">Подписки</h3>
+              <img class="social-intro__icon" src="./images/default-icons/user-icon.svg" alt="Пользователь">
+              <p class="social-intro__count-container">
+                +<span class="social-intro__count custom-counter" data-start="0" data-stop="1950"></span>
+              </p>
+            </div>
+            <div class="social-intro__social social-intro__social_pos_buttom">
+              <h3 class="social-intro__subtitle">Лайки</h3>
+              <img class="social-intro__icon" src="./images/default-icons/like-icon.svg" alt="Лайки">
+              <p class="social-intro__count-container">
+                +<span class="social-intro__count custom-counter" data-start="0" data-stop="2500"></span>
+              </p>
+            </div>
+            <img class="social-intro__image" src="./images/social-tel.webp" alt="Телефон">
+          </div>
+        </div>
+      </section>
+      <section class="rating rating_pos_middle">
+        <ul class="rating__list">
+          <li class="rating__item">
+            <div class="rating__logo-container">
+              <img class="rating__logo" src="./images/grades/in-scale-logo.svg" alt="">
+            </div>
+            <h3 class="rating__grade">4,9</h3>
+            <p class="rating__count">73+ отзывов</p>
+          </li>
+          <li class="rating__item">
+            <div class="rating__logo-container">
+              <img class="rating__logo" src="./images/grades/affpartners-logo.svg" alt="">
+            </div>
+            <h3 class="rating__grade">4,9</h3>
+            <p class="rating__count">9+ отзывов</p>
+          </li>
+          <li class="rating__item">
+            <div class="rating__logo-container">
+              <img class="rating__logo" src="./images/grades/otzyv-marketing-logo.svg" alt="">
+            </div>
+            <h3 class="rating__grade">4,88</h3>
+            <p class="rating__count">81+ отзывов</p>
+          </li>
+          <li class="rating__item">
+            <div class="rating__logo-container">
+              <img class="rating__logo" src="./images/grades/eto-razvod-logo.svg" alt="">
+            </div>
+            <h3 class="rating__grade">4,6</h3>
+            <p class="rating__count">73+ отзывов</p>
+          </li>
+        </ul>
+      </section>
+      <section class="result">
+        <h2 class="section-title result__title">Гарантия результата</h2>
+        <p class="text result__text">бесплатно докрутим, если кто-то отпишется в течение 30 дней</p>
+      </section>
+      <section class="optimization optimization_role_social">
+        <div class="optimization__description">
+          <h2 class="section-title optimization__title optimization__title_type_secondary">Низкие цены благодаря оптимизации</h2>
+          <p class="text optimization__text">Мы оптимизировали систему накрутки, чтобы тратить меньше ресурсов.
+            Поэтому и цена ниже конкурентов</p>
+          <figure class="optimization__review user-review">
+              <blockquote class="optimization__quote user-review__quote">
+                <p class="user-review__grade optimization__grade">Оценка: <span class="user-review__span-accent">5.0</span></p>
+                <ul class="user-review__stars">
+                  <li class="user-review__star user-review__star_type_full"></li>
+                  <li class="user-review__star user-review__star_type_full"></li>
+                  <li class="user-review__star user-review__star_type_full"></li>
+                  <li class="user-review__star user-review__star_type_full"></li>
+                  <li class="user-review__star user-review__star_type_full"></li>
+                </ul>
+                <p class="optimization__name user-review__review">Дешевле, чем здесь, я не видела</p>
+              </blockquote>
+              <img src="./images/pankratova.png" alt="" class="user-review__avatar">
+              <figcaption class="user-review__name">Анна Панкратова, <a href="#" class="user-review__link">смотреть отзыв на сервисе</a></figcaption>
+          </figure>
+        </div>
+        <div class="optimization__label optimization__label_role_block">
+          <div class="optimization__label-container optimization__label-container_role_block">
+            <h3 class="optimization__label-title optimization__label-title_role_secondary">Скидка 8% навсегда</h3>
+            <p class="optimization__label-text optimization__label-text_role_secondary">при заказе от 10.000 рублей</p>
+          </div>
+        </div>
+      </section>
+      <section class="optimization optimization_bg_white optimization_type_single">
+        <div class="optimization__container">
+          <div class="optimization__culc choice__culc culc" id="third-culc">
+            <h2 class="optimization__title optimization__title_type_black">Выберите, какую соцсеть вам нужно раскрутить</h2>
+            <ul class="optimization__list optimization__list_pos_center choice__list culc__list"></ul>
+            <div class="optimization__services choice__services choice__services_hided culc__service-container">
+              <h3 class="optimization__subtitle optimization__subtitle_type_black choice__subtitle">Выберите тип услуги:</h3>
+              <ul class="optimization__sublist optimization__sublist_pos_center choice__sublist culc__sublist"></ul>
+            </div>
+            <div class="optimization__description optimization__description_pos_center choice__description choice__description_hided">
+              <h3 class="optimization__choice-title optimization__choice-title_type_black choice__subtitle">Стоимость:</h3>
+              <p class="optimization__proposal optimization__proposal_pos_center choice__proposal">
+                от
+                <span class="choice__cost culc__cost"></span>
+                руб. за
+                <span class="choice__amount culc__amount"></span>
+                шт.
+              </p>
+              <a href="" class="btn btn_color_orange btn_size_large choice__button">Ознакомиться с услугами</a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section class="payment">
+        <div class="payment__container">
+          <h2 class="section-title payment__title">Оплачивай любым способом</h2>
+          <p class="text payment__text">Даже с иностранных карт или с юр. лица</p>
+          <div class="payment__list-container">
+            <ul class="payment__list">
+              <li class="payment__item">
+                <img loading="lazy" src="./images/payments/iomoney-logo.svg" alt="Юмани" class="payment__image">
+              </li>
+              <li class="payment__item">
+                <img loading="lazy" src="./images/payments/mir-logo.svg" alt="Мир" class="payment__image">
+              </li>
+              <li class="payment__item">
+                <img loading="lazy" src="./images/payments/qiwi-logo.svg" alt="Киви" class="payment__image">
+              </li>
+              <li class="payment__item">
+                <img loading="lazy" src="./images/payments/visa-logo.svg" alt="Виза" class="payment__image">
+              </li>
+              <li class="payment__item">
+                <img loading="lazy" src="./images/payments/mastercard-logo.svg" alt="Мастеркард" class="payment__image">
+              </li>
+              <li class="payment__item">
+                <img loading="lazy" src="./images/payments/wm-logo.svg" alt="Вебмани" class="payment__image">
+              </li>
+              <li class="payment__item">
+                <img loading="lazy" src="./images/icons/image 7.png" alt="Оплата" class="payment__image">
+              </li>
+              <li class="payment__item">
+                <img loading="lazy" src="./images/icons/image 8.png" alt="Оплата" class="payment__image">
+              </li>
+            </ul>
+            <ul aria-hidden="true" class="payment__list">
+              <li class="payment__item">
+                <img loading="lazy" src="./images/payments/iomoney-logo.svg" alt="Юмани" class="payment__image">
+              </li>
+              <li class="payment__item">
+                <img loading="lazy" src="./images/payments/mir-logo.svg" alt="Мир" class="payment__image">
+              </li>
+              <li class="payment__item">
+                <img loading="lazy" src="./images/payments/qiwi-logo.svg" alt="Киви" class="payment__image">
+              </li>
+              <li class="payment__item">
+                <img loading="lazy" src="./images/payments/visa-logo.svg" alt="Виза" class="payment__image">
+              </li>
+              <li class="payment__item">
+                <img loading="lazy" src="./images/payments/mastercard-logo.svg" alt="Мастеркард" class="payment__image">
+              </li>
+              <li class="payment__item">
+                <img loading="lazy" src="./images/payments/wm-logo.svg" alt="Вебмани" class="payment__image">
+              </li>
+              <li class="payment__item">
+                <img loading="lazy" src="./images/icons/image 7.png" alt="Оплата" class="payment__image">
+              </li>
+              <li class="payment__item">
+                <img loading="lazy" src="./images/icons/image 8.png" alt="Оплата" class="payment__image">
+              </li>
+            </ul>
+          </div>
+          <div class="payment__guarantee">
+            <h3 class="payment__guarantee-title">Гарантируем возврат</h3>
+            <p class="payment__guarantee-text"> Вернём 100% оплаты, если заказ не выполнится или произойдёт ошибка</p>
+          </div>
+        </div>
+      </section>
+      <section class="performe">
+        <h2 class="section-title performe__title">Выбирай пол, страну и качество исполнителей</h2>
+        <p class="text performe__text">чтобы не получилось так, что на ваш салон красоты подписаны только суровые мужчины 😏</p>
+        <img loading="lazy" src="./images/performe-img.webp" alt="Выбор услуги" class="performe__image">
+      </section>
+      <section class="confidentiality confidentiality_bg_blue">
+        <h2 class="section-title confidentiality__title">100% конфиденциальность</h2>
+        <p class="text confidentiality__text">Никто не узнает, что вы накручивали показатели у нас — это технически невозможно
+          (Если вы не скажете самостоятельно)</p>
+      </section>
+      <section class="connection">
+        <div class="connection__container">
+          <div class="connection__description">
+            <h2 class="section-title connection__title">Мы на связи 24/7</h2>
+            <p class="text connection__text">Ответим на любой вопрос и поможем воспользоваться сервисом</p>
+            <a  href="#" class="btn btn_size_large btn_color_orange connection__button">Написать в поддержку</a>
+          </div>
+          <figure class="connection__review user-review">
+            <blockquote class="connection__quote user-review__quote">
+              <p class="user-review__grade connection__grade">Оценка: <span class="user-review__span-accent">4.8</span></p>
+              <ul class="user-review__stars">
+                <li class="user-review__star user-review__star_type_full"></li>
+                <li class="user-review__star user-review__star_type_full"></li>
+                <li class="user-review__star user-review__star_type_full"></li>
+                <li class="user-review__star user-review__star_type_full"></li>
+                <li class="user-review__star user-review__star_type_semi"></li>
+              </ul>
+              <p class="user-review__review">Стоит отметить, что тех поддержка на высшем уровне. Если что-то не ясно, они точно ответят, и достаточно быстро!</p>
+            </blockquote>
+            <img src="./images/urmeeva.png" alt="" class="user-review__avatar">
+            <figcaption class="user-review__name">Диана Урмеева, <a href="#" class="user-review__link">смотреть отзыв на сервисе</a></figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="intro">
         <div class="intro__container">
           <div class="intro__section intro__section_type_primary">
             <p class="intro__uppertitle">SMM-накрутка в социальных сетях</p>
@@ -209,72 +421,6 @@
           </div>
         </div>
       </section>
-      <section class="rating rating_pos_top">
-        <ul class="rating__list">
-          <li class="rating__item">
-            <div class="rating__logo-container">
-              <img class="rating__logo" src="./images/grades/in-scale-logo.svg" alt="">
-            </div>
-            <h3 class="rating__grade">4,9</h3>
-            <p class="rating__count">73+ отзывов</p>
-          </li>
-          <li class="rating__item">
-            <div class="rating__logo-container">
-              <img class="rating__logo" src="./images/grades/affpartners-logo.svg" alt="">
-            </div>
-            <h3 class="rating__grade">4,9</h3>
-            <p class="rating__count">9+ отзывов</p>
-          </li>
-          <li class="rating__item">
-            <div class="rating__logo-container">
-              <img class="rating__logo" src="./images/grades/otzyv-marketing-logo.svg" alt="">
-            </div>
-            <h3 class="rating__grade">4,88</h3>
-            <p class="rating__count">81+ отзывов</p>
-          </li>
-          <li class="rating__item">
-            <div class="rating__logo-container">
-              <img class="rating__logo" src="./images/grades/eto-razvod-logo.svg" alt="">
-            </div>
-            <h3 class="rating__grade">4,6</h3>
-            <p class="rating__count">73+ отзывов</p>
-          </li>
-        </ul>
-      </section>
-      <section class="guarantee">
-        <div class="guarantee__section guarantee__section_size_l">
-          <h2 class="section-title guarantee__title">Зарегистрируйся, чтобы попробовать бесплатную накрутку</h2>
-          <ul class="guarantee__services">
-            <li class="guarantee__service">
-              <img class="guarantee__service-icon" src="./images/like-icon.svg" alt="">
-              <span class="text guarantee__service-name">30 лайков</span>
-            </li>
-            <li class="guarantee__service">
-              <img class="guarantee__service-icon" src="./images/user-icon.svg" alt="">
-              <span class="text guarantee__service-name">100 подписчиков</span>
-            </li>
-          </ul>
-          <a href="" class="btn btn_size_large btn_color_white guarantee__button">Попробовать бесплатно</a>
-        </div>
-        <div class="guarantee__section guarantee__section_size_s">
-          <h2 class="section-title guarantee__title">Гарантия результата</h2>
-          <p class="text guarantee__text">бесплатно докрутим, если кто-то отпишется в течение 30 дней</p>
-        </div>
-      </section>
-      <section class="registration">
-        <h2 class="section-title registration__title">Вход</h2>
-        <form class="registration__form" action="" name="registration">
-          <input placeholder="Логин" name="login" class="registration__input registration__input_type_text registration__input_grid_login" type="text">
-          <input placeholder="Пароль" name="password" class="registration__input registration__input_type_text registration__input_grid_password" type="password">
-          <label for="remember-checkbox" class="registration__checkbox-label registration__input_grid_remember">
-            <input name="remember" id="remember-checkbox" class="registration__input registration__input_type_checkbox" type="checkbox">
-            <p class="registration__text">Запомнить меня</p>
-          </label>
-          <p class="registration__text registration__text_grid_registration">Нет аккаунта? <a class="registration__link" href="#">Зарегистрироваться</a></p>
-          <a class="registration__link registration__link_grid_forget" href="#">Забыли пароль?</a>
-          <button class="btn btn_color_orange registration__button">Войти в кабинет</button>
-        </form>
-      </section>
       <article class="long-read">
         <section class="long-read__section long-read__section_theme_dark long-read__section_pos_first">
           <h2 class="section-title long-read__title">Обычная накрутка всегда заметна</h2>
@@ -334,6 +480,107 @@
           <a href="" class="btn btn_size_large btn_color_orange long-read__button">Написать менеджеру</a>
         </section>
       </article>
+      <section class="auto-windup">
+        <div class="auto-windup__container">
+          <h2 class="section-title auto-windup__title">Автоматизируй все действия</h2>
+          <p class="text auto-windup__text">Больше не нужно на каждый новый пост запускать накрутку вручную: настрой один раз —
+            и увеличивай показатели автоматически</p>
+          <div class="auto-windup__image-container">
+            <img loading="lazy" src="./images/auto.webp" alt="Автонакрутка" class="auto-windup__image">
+          </div>
+          <a href="#" type="button" class="btn btn_color_orange btn_size_large auto-windup__button">
+            Зарегистрироваться и автоматизировать
+          </a>
+        </div>
+      </section>
+      <article class="about">
+        <div class="about__container">
+          <h2 class="section-title about__title">Мы официальная компания</h2>
+          <p class="text about__text">поэтому не боимся показывать нашу команду</p>
+          <ul class="about__list">
+            <li class="about__item">
+              <img loading="lazy" class="about__avatar" src="./images/nikita.png" alt="Никита">
+              <div class="about__description">
+                <h3 class="about__name">Это Никита, ему 26 лет</h3>
+                <p class="about__about">СЕО проекта SMMPRIME. Он отвечает за техническую часть работы сервиса. Благодаря нему работа идет стабильно и без сбоев</p>
+              </div>
+            </li>
+            <li class="about__item">
+              <img loading="lazy" class="about__avatar" src="./images/oleg.png" alt="Олег">
+              <div class="about__description">
+                <h3 class="about__name">Это Олег, ему тоже 26 лет</h3>
+                <p class="about__about">Он — лицо компании. Обеспечивает взаимодействие с
+                  клиентами и помогает нашему Николаю</p>
+            </li>
+            <li class="about__item">
+              <img loading="lazy" class="about__avatar" src="./images/nikolay.png" alt="Николай">
+              <div class="about__description">
+                <h3 class="about__name">А это Николай, он вечно молодой:)</h3>
+                <p class="about__about">Николай - жемчужина нашего проекта. Именно этот парень находится на
+                  передовой и помогает вам с решением возникающих вопросов. Не обижайте Николая —
+                  он старается изо всех сил</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <section class="advantages">
+        <div class="advantages__container">
+          <ul class="advantages__items-list">
+            <li class="advantages__text">Увеличивай доверие</li>
+            <li class="advantages__text">Становись популярнее</li>
+            <li class="advantages__text">Прокачивай имидж</li>
+            <li class="advantages__text">Продавай рекламу дороже</li>
+            <li class="advantages__text">Зарабатывай больше</li>
+          </ul>
+          <ul class="advantages__reviews">
+            <li class="advantages__review-container">
+              <figure class="advantages__review advantages__review_pos_left user-review">
+                <blockquote class="advantages__quote advantages__quote_pos_left user-review__quote">
+                  <p class="user-review__grade advantages__grade">Оценка: <span class="user-review__span-accent">4.8</span></p>
+                  <ul class="user-review__stars">
+                    <li class="user-review__star user-review__star_type_full"></li>
+                    <li class="user-review__star user-review__star_type_full"></li>
+                    <li class="user-review__star user-review__star_type_full"></li>
+                    <li class="user-review__star user-review__star_type_full"></li>
+                    <li class="user-review__star user-review__star_type_semi"></li>
+                  </ul>
+                  <p class="advantages-review__review user-review__review">Теперь даже в рекомендациях болтаюсь иногда</p>
+                </blockquote>
+                <img src="./images/orlova.png" alt="" class="user-review__avatar">
+                <figcaption class="advantages__name advantages__name_pos_left user-review__name">Анна Орлова, <a href="#" class="user-review__link">смотреть отзыв на сервисе</a></figcaption>
+              </figure>
+            </li>
+            <li class="advantages__review-container advantages__review-container_pos_right">
+              <figure class="advantages__review advantages__review_pos_right user-review">
+                <blockquote class="advantages__quote advantages__quote_pos_right user-review__quote">
+                  <p class="user-review__grade advantages__grade">Оценка: <span class="user-review__span-accent">4.8</span></p>
+                  <ul class="user-review__stars">
+                    <li class="user-review__star user-review__star_type_full"></li>
+                    <li class="user-review__star user-review__star_type_full"></li>
+                    <li class="user-review__star user-review__star_type_full"></li>
+                    <li class="user-review__star user-review__star_type_full"></li>
+                    <li class="user-review__star user-review__star_type_semi"></li>
+                  </ul>
+                  <p class="advantages-review__review  user-review__review">Продажи товаров стали потихонечку увеличиваться</p>
+                </blockquote>
+                <img src="./images/default-user-avatar.svg" alt="" class="user-review__avatar">
+                <figcaption class="advantages__name advantages__name_pos_right user-review__name">Марина Захарова, <a href="#" class="user-review__link">смотреть отзыв на сервисе</a></figcaption>
+              </figure>
+            </li>
+          </ul>
+          <ul class="advantages__phones">
+            <li class="advantages__item advantages__item_type_phone advantages__item_active">
+              <p class="advantages__phone-text">До:</p>
+              <img loading="lazy" class="advantages__phone-image" src="./images/advantages-before.webp" alt="Аккаунт до накрутки">
+            </li>
+            <li class="advantages__item advantages__item_type_phone advantages__item_pos_left">
+              <p class="advantages__phone-text">После:</p>
+              <img loading="lazy" class="advantages__phone-image" src="./images/advantages-after.webp" alt="Аккаунт после накрутки">
+            </li>
+          </ul>
+        </div>
+      </section>
       <section class="cyrcle">
         <h2 class="section-title cyrcle__title">У нас есть накрутка под любые бюджеты и цели</h2>
         <p class="text cyrcle__text">В том числе и быстрая, если нужны мгновенные результаты</p>
@@ -405,261 +652,6 @@
           </div>
         </div>
       </section>
-      <section class="optimization optimization_role_main">
-        <h2 class="section-title optimization__title">Низкие цены благодаря оптимизации</h2>
-        <div class="optimization__description">
-          <p class="text optimization__text">Мы оптимизировали систему накрутки, чтобы тратить меньше ресурсов.
-            Поэтому и цена ниже конкурентов</p>
-          <figure class="optimization__review user-review">
-              <blockquote class="optimization__quote user-review__quote">
-                <p class="user-review__grade optimization__grade">Оценка: <span class="user-review__span-accent">5.0</span></p>
-                <ul class="user-review__stars">
-                  <li class="user-review__star user-review__star_type_full"></li>
-                  <li class="user-review__star user-review__star_type_full"></li>
-                  <li class="user-review__star user-review__star_type_full"></li>
-                  <li class="user-review__star user-review__star_type_full"></li>
-                  <li class="user-review__star user-review__star_type_full"></li>
-                </ul>
-                <p class="optimization__name user-review__review">Дешевле, чем здесь, я не видела</p>
-              </blockquote>
-              <img src="./images/pankratova.png" alt="" class="user-review__avatar">
-              <figcaption class="user-review__name">Анна Панкратова, <a href="#" class="user-review__link">смотреть отзыв на сервисе</a></figcaption>
-          </figure>
-        </div>
-        <div class="optimization__culc choice__culc culc" id="first-culc">
-          <div class="optimization__label">
-            <div class="optimization__label-container optimization__label-container_role_bg">
-              <h3 class="optimization__label-title optimization__label-title_role_primary">Скидка 8% навсегда</h3>
-              <p class="optimization__label-text optimization__label-text_role_primary">при заказе от 10.000 рублей</p>
-            </div>
-          </div>
-          <h3 class="optimization__subtitle">Выберите, какую соцсеть вам нужно раскрутить</h3>
-          <ul class="optimization__list choice__list culc__list"></ul>
-          <div class="optimization__services choice__services choice__services_hided culc__service-container">
-            <h3 class="optimization__subtitle choice__subtitle">Выберите тип услуги:</h3>
-            <ul class="optimization__sublist  choice__sublist culc__sublist"></ul>
-          </div>
-          <div class="optimization__description choice__description choice__description_hided">
-            <h3 class="optimization__choice-title  choice__subtitle">Стоимость:</h3>
-            <p class="optimization__proposal choice__proposal">
-              от
-              <span class="choice__cost culc__cost"></span>
-              руб. за
-              <span class="choice__amount culc__amount"></span>
-              шт.
-            </p>
-            <a href="" class="btn btn_color_orange btn_size_large choice__button">Ознакомиться с услугами</a>
-          </div>
-        </div>
-      </section>
-      <section class="payment">
-        <div class="payment__container">
-          <h2 class="section-title payment__title">Оплачивай любым способом</h2>
-          <p class="text payment__text">Даже с иностранных карт или с юр. лица</p>
-          <div class="payment__list-container">
-            <ul class="payment__list">
-              <li class="payment__item">
-                <img loading="lazy" src="./images/payments/iomoney-logo.svg" alt="Юмани" class="payment__image">
-              </li>
-              <li class="payment__item">
-                <img loading="lazy" src="./images/payments/mir-logo.svg" alt="Мир" class="payment__image">
-              </li>
-              <li class="payment__item">
-                <img loading="lazy" src="./images/payments/qiwi-logo.svg" alt="Киви" class="payment__image">
-              </li>
-              <li class="payment__item">
-                <img loading="lazy" src="./images/payments/visa-logo.svg" alt="Виза" class="payment__image">
-              </li>
-              <li class="payment__item">
-                <img loading="lazy" src="./images/payments/mastercard-logo.svg" alt="Мастеркард" class="payment__image">
-              </li>
-              <li class="payment__item">
-                <img loading="lazy" src="./images/payments/wm-logo.svg" alt="Вебмани" class="payment__image">
-              </li>
-              <li class="payment__item">
-                <img loading="lazy" src="./images/icons/image 7.png" alt="Оплата" class="payment__image">
-              </li>
-              <li class="payment__item">
-                <img loading="lazy" src="./images/icons/image 8.png" alt="Оплата" class="payment__image">
-              </li>
-            </ul>
-            <ul aria-hidden="true" class="payment__list">
-              <li class="payment__item">
-                <img loading="lazy" src="./images/payments/iomoney-logo.svg" alt="Юмани" class="payment__image">
-              </li>
-              <li class="payment__item">
-                <img loading="lazy" src="./images/payments/mir-logo.svg" alt="Мир" class="payment__image">
-              </li>
-              <li class="payment__item">
-                <img loading="lazy" src="./images/payments/qiwi-logo.svg" alt="Киви" class="payment__image">
-              </li>
-              <li class="payment__item">
-                <img loading="lazy" src="./images/payments/visa-logo.svg" alt="Виза" class="payment__image">
-              </li>
-              <li class="payment__item">
-                <img loading="lazy" src="./images/payments/mastercard-logo.svg" alt="Мастеркард" class="payment__image">
-              </li>
-              <li class="payment__item">
-                <img loading="lazy" src="./images/payments/wm-logo.svg" alt="Вебмани" class="payment__image">
-              </li>
-              <li class="payment__item">
-                <img loading="lazy" src="./images/icons/image 7.png" alt="Оплата" class="payment__image">
-              </li>
-              <li class="payment__item">
-                <img loading="lazy" src="./images/icons/image 8.png" alt="Оплата" class="payment__image">
-              </li>
-            </ul>
-          </div>
-          <div class="payment__guarantee">
-            <h3 class="payment__guarantee-title">Гарантируем возврат</h3>
-            <p class="payment__guarantee-text"> Вернём 100% оплаты, если заказ не выполнится или произойдёт ошибка</p>
-          </div>
-        </div>
-      </section>
-      <section class="performe">
-        <h2 class="section-title performe__title">Выбирай пол, страну и качество исполнителей</h2>
-        <p class="text performe__text">чтобы не получилось так, что на ваш салон красоты подписаны только суровые мужчины 😏</p>
-        <img loading="lazy" src="./images/performe-img.webp" alt="Выбор услуги" class="performe__image">
-      </section>
-      <section class="advantages">
-        <div class="advantages__container">
-          <a href="#" class="advantages__button btn btn_color_orange btn_size_large">Зарегистрироваться</a>
-          <ul class="advantages__items-list">
-            <li class="advantages__text">Увеличивай доверие</li>
-            <li class="advantages__text">Становись популярнее</li>
-            <li class="advantages__text">Прокачивай имидж</li>
-            <li class="advantages__text">Продавай рекламу дороже</li>
-            <li class="advantages__text">Зарабатывай больше</li>
-          </ul>
-          <ul class="advantages__reviews">
-            <li class="advantages__review-container">
-              <figure class="advantages__review advantages__review_pos_left user-review">
-                <blockquote class="advantages__quote advantages__quote_pos_left user-review__quote">
-                  <p class="user-review__grade advantages__grade">Оценка: <span class="user-review__span-accent">4.8</span></p>
-                  <ul class="user-review__stars">
-                    <li class="user-review__star user-review__star_type_full"></li>
-                    <li class="user-review__star user-review__star_type_full"></li>
-                    <li class="user-review__star user-review__star_type_full"></li>
-                    <li class="user-review__star user-review__star_type_full"></li>
-                    <li class="user-review__star user-review__star_type_semi"></li>
-                  </ul>
-                  <p class="advantages-review__review user-review__review">Теперь даже в рекомендациях болтаюсь иногда</p>
-                </blockquote>
-                <img src="./images/orlova.png" alt="" class="user-review__avatar">
-                <figcaption class="advantages__name advantages__name_pos_left user-review__name">Анна Орлова, <a href="#" class="user-review__link">смотреть отзыв на сервисе</a></figcaption>
-              </figure>
-            </li>
-            <li class="advantages__review-container advantages__review-container_pos_right">
-              <figure class="advantages__review advantages__review_pos_right user-review">
-                <blockquote class="advantages__quote advantages__quote_pos_right user-review__quote">
-                  <p class="user-review__grade advantages__grade">Оценка: <span class="user-review__span-accent">4.8</span></p>
-                  <ul class="user-review__stars">
-                    <li class="user-review__star user-review__star_type_full"></li>
-                    <li class="user-review__star user-review__star_type_full"></li>
-                    <li class="user-review__star user-review__star_type_full"></li>
-                    <li class="user-review__star user-review__star_type_full"></li>
-                    <li class="user-review__star user-review__star_type_semi"></li>
-                  </ul>
-                  <p class="advantages-review__review  user-review__review">Продажи товаров стали потихонечку увеличиваться</p>
-                </blockquote>
-                <img src="./images/default-user-avatar.svg" alt="" class="user-review__avatar">
-                <figcaption class="advantages__name advantages__name_pos_right user-review__name">Марина Захарова, <a href="#" class="user-review__link">смотреть отзыв на сервисе</a></figcaption>
-              </figure>
-            </li>
-          </ul>
-          <ul class="advantages__phones">
-            <li class="advantages__item advantages__item_type_phone advantages__item_active">
-              <p class="advantages__phone-text">До:</p>
-              <img loading="lazy" class="advantages__phone-image" src="./images/advantages-before.webp" alt="Аккаунт до накрутки">
-            </li>
-            <li class="advantages__item advantages__item_type_phone advantages__item_pos_left">
-              <p class="advantages__phone-text">После:</p>
-              <img loading="lazy" class="advantages__phone-image" src="./images/advantages-after.webp" alt="Аккаунт после накрутки">
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="confidentiality confidentiality_bg_orange">
-        <h2 class="section-title confidentiality__title">100% конфиденциальность</h2>
-        <p class="text confidentiality__text">Никто не узнает, что вы накручивали показатели у нас — это технически невозможно
-          (Если вы не скажете самостоятельно)</p>
-      </section>
-      <section class="non-block">
-        <h2 class="section-title non-block__title">За накрутку не блокируют</h2>
-        <p class="text non-block__text">Вк, Инста, Тикток, Ютуб и т. д. блокируют только за спам-действия: массовые подписки, спам в сообщения и т.д.</p>
-        <div class="non-block__img-container">
-          <img loading="lazy" class="non-block__img non-block__img_pos_left" src="./images/non-block-left.svg" alt="Соцсети">
-          <img loading="lazy" class="non-block__img non-block__img_pos_right" src="./images/non-block-right.svg" alt="Блокировка">
-        </div>
-      </section>
-      <section class="connection connection_bg_light">
-        <div class="connection__container">
-          <div class="connection__description">
-            <h2 class="section-title connection__title">Мы на связи 24/7</h2>
-            <p class="text connection__text">Ответим на любой вопрос и поможем воспользоваться сервисом</p>
-            <a  href="#" class="btn btn_size_large btn_color_orange connection__button">Написать в поддержку</a>
-          </div>
-          <figure class="connection__review user-review">
-            <blockquote class="connection__quote user-review__quote">
-              <p class="user-review__grade connection__grade">Оценка: <span class="user-review__span-accent">4.8</span></p>
-              <ul class="user-review__stars">
-                <li class="user-review__star user-review__star_type_full"></li>
-                <li class="user-review__star user-review__star_type_full"></li>
-                <li class="user-review__star user-review__star_type_full"></li>
-                <li class="user-review__star user-review__star_type_full"></li>
-                <li class="user-review__star user-review__star_type_semi"></li>
-              </ul>
-              <p class="user-review__review">Стоит отметить, что тех поддержка на высшем уровне. Если что-то не ясно, они точно ответят, и достаточно быстро!</p>
-            </blockquote>
-            <img src="./images/urmeeva.png" alt="" class="user-review__avatar">
-            <figcaption class="user-review__name">Диана Урмеева, <a href="#" class="user-review__link">смотреть отзыв на сервисе</a></figcaption>
-          </figure>
-        </div>
-      </section>
-      <section class="auto-windup">
-        <div class="auto-windup__container">
-          <h2 class="section-title auto-windup__title">Автоматизируй все действия</h2>
-          <p class="text auto-windup__text">Больше не нужно на каждый новый пост запускать накрутку вручную: настрой один раз —
-            и увеличивай показатели автоматически</p>
-          <div class="auto-windup__image-container">
-            <img loading="lazy" src="./images/auto.webp" alt="Автонакрутка" class="auto-windup__image">
-          </div>
-          <a href="#" type="button" class="btn btn_color_orange btn_size_large auto-windup__button">
-            Зарегистрироваться и автоматизировать
-          </a>
-        </div>
-      </section>
-      <article class="about about_bg_light">
-        <div class="about__container">
-          <h2 class="section-title about__title">Мы официальная компания</h2>
-          <p class="text about__text">поэтому не боимся показывать нашу команду</p>
-          <ul class="about__list">
-            <li class="about__item">
-              <img loading="lazy" class="about__avatar" src="./images/nikita.png" alt="Никита">
-              <div class="about__description">
-                <h3 class="about__name">Это Никита, ему 26 лет</h3>
-                <p class="about__about">СЕО проекта SMMPRIME. Он отвечает за техническую часть работы сервиса. Благодаря нему работа идет стабильно и без сбоев</p>
-              </div>
-            </li>
-            <li class="about__item">
-              <img loading="lazy" class="about__avatar" src="./images/oleg.png" alt="Олег">
-              <div class="about__description">
-                <h3 class="about__name">Это Олег, ему тоже 26 лет</h3>
-                <p class="about__about">Он — лицо компании. Обеспечивает взаимодействие с
-                  клиентами и помогает нашему Николаю</p>
-            </li>
-            <li class="about__item">
-              <img loading="lazy" class="about__avatar" src="./images/nikolay.png" alt="Николай">
-              <div class="about__description">
-                <h3 class="about__name">А это Николай, он вечно молодой:)</h3>
-                <p class="about__about">Николай - жемчужина нашего проекта. Именно этот парень находится на
-                  передовой и помогает вам с решением возникающих вопросов. Не обижайте Николая —
-                  он старается изо всех сил</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </article>
       <section class="recommend">
         <div class="recommend__container">
           <h2 class="section-title recommend__title">Рекомендуй нас и получай 6% с каждой оплаты</h2>
@@ -668,32 +660,26 @@
         </div>
         <img src="./images/recommend-tel.webp" alt="" class="recommend__image">
       </section>
-      <section class="call-action">
-        <p class="call-action__text call-action__text_pos_top"><span class="call-action__span-accent">Чем раньше</span> начнешь развивать аккаунты,</p>
-        <p class="call-action__text call-action__text_pos_bottom">тем быстрее станешь <span class="call-action__span-accent">популярным</span> и <span class="call-action__span-accent">больше заработаешь</span></p>
-      </section>
-      <section class="choice choice_bg_light">
-        <div class="choice__container">
-          <h2 class="section-title choice__title">Выбери платформу, чтобы начать:</h2>
-          <div class="choice__culc culc" id="second-culc">
-            <ul class="choice__list culc__list"></ul>
-            <div class="choice__services choice__services_hided culc__service-container">
-              <h3 class="choice__subtitle">Выберите тип услуги:</h3>
-              <ul class="choice__sublist culc__sublist"></ul>
-            </div>
-            <div class="choice__description choice__description_hided">
-              <h3 class="choice__subtitle">Стоимость:</h3>
-              <p class="choice__proposal">
-                от
-                <span class="choice__cost culc__cost"></span>
-                руб. за
-                <span class="choice__amount culc__amount"></span>
-                шт.
-              </p>
-              <a href="" class="btn btn_color_orange btn_size_large choice__button">Ознакомиться с услугами</a>
-            </div>
-          </div>
+      <section class="know">
+        <div class="know__container">
+          <h2 class="section-title know__title">Не знаешь, что выбрать?</h2>
+          <p class="text know__subtitle">Ответим в течение 30 минут</p>
+          <p class="know__text">Если ты не можешь выбрать, с чего начать, или есть какие-то вопросы — напиши нам
+            и мы поможем подобрать самую эффективную накрутку для твоей задачи</p>
+          <a class="btn btn_color_orange btn_size_large know__button">Написать менеджеру</a>
         </div>
+      </section>
+      <section class="social">
+        <h2 class="section-title social__title">Телеграм позволяет зарабатывать деньги?</h2>
+        <p class="text social__text">В настоящее время Telegram стал одной из самых популярных
+          и быстро развивающихся социальных сетей не только в России, но и в мире. Телеграм-каналы
+          позволяют зарабатывать деньги, как на реализации своей собственной продукции, так и на размещении рекламы.
+          Но такой вид заработка доступен только группам с большой аудиторией.</p>
+          <h3 class="social__subtitle">Что же делать новичкам? </h3>
+          <p class="text social__text">Мы предлагаем накрутку живых подписчиков в Телеграмм-каналы
+            и группы. Данная услуга поможет поднять популярность нового канала и привлечь много
+            новых пользователей. А там дело уже за вами. Вы размещаете годный контент, а мы накручиваем
+            вам реальных подписчиков, которые поднимают популярность вашей группы.</p>
       </section>
       <section class="faq">
         <h2 class="section-title faq__title">FAQ</h2>
@@ -808,15 +794,6 @@
             </div>
           </li>
         </ul>
-      </section>
-      <section class="know">
-        <div class="know__container">
-          <h2 class="section-title know__title">Не знаешь, что выбрать?</h2>
-          <p class="text know__subtitle">Ответим в течение 30 минут</p>
-          <p class="know__text">Если ты не можешь выбрать, с чего начать, или есть какие-то вопросы — напиши нам
-            и мы поможем подобрать самую эффективную накрутку для твоей задачи</p>
-          <a class="btn btn_color_orange btn_size_large know__button">Написать менеджеру</a>
-        </div>
       </section>
     </main>
     <footer class="footer">
@@ -953,6 +930,6 @@
       </li>
     </template>
     <script type="module" src="./scripts/base.js"></script>
-    <script type="module" src="./scripts/pages/index.js"></script>
+    <script type="module" src="./scripts/pages/social.js"></script>
   </body>
 </html>

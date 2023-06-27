@@ -1,6 +1,11 @@
 .rating {
   max-width: var(--width-max);
   margin: 0 auto calc(var(--space-primary));
+}
+.rating_pos_top {
+  transform: translateY(-50%);
+}
+.rating_pos_middle {
   transform: translateY(-50%);
 }
 .rating__list {
@@ -51,7 +56,7 @@
   font-size: 40px;
   line-height: 120%;
   text-transform: uppercase;
-  color: var(--color-primary)
+  color: var(--color-primary);
 }
 .rating__count {
   text-align: center;
@@ -69,7 +74,8 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .rating {
+  .rating_pos_middle {
+    transform: translateY(0);
   }
   .rating__list {
     gap: 6px;
@@ -80,13 +86,11 @@
   }
   .rating__logo-container {
     --logo-width: 37px;
-    border: .5px solid var(--color-primary);
+    border: 0.5px solid var(--color-primary);
   }
   .rating__logo {
     width: 70%;
     height: 70%;
-    /* object-fit: contain; */
-
   }
   .rating__grade {
     font-size: 16px;

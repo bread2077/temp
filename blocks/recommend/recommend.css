@@ -1,7 +1,7 @@
 .recommend {
   max-width: var(--width-max);
   margin: calc(var(--space-primary) + 200px) auto 20px;
-  background-image: url('../../images/recommend-bg.webp');
+  background-image: url("../../images/recommend-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -9,6 +9,7 @@
   position: relative;
   border-radius: 20px;
   padding: 60px;
+  box-sizing: border-box;
 }
 
 .recommend__title {
@@ -29,7 +30,7 @@
 
 .recommend__button::after,
 .recommend__button::before {
-  content: '';
+  content: "";
   width: 36px;
   height: 36px;
   position: absolute;
@@ -37,13 +38,13 @@
 }
 
 .recommend__button::before {
-  background-image: url('../../images/socials/telegram-icon.svg');
+  background-image: url("../../images/socials/telegram-icon.svg");
   top: -20px;
   right: -10px;
 }
 
 .recommend__button::after {
-  background-image: url('../../images/socials/whatsapp-icon.svg');
+  background-image: url("../../images/socials/whatsapp-icon.svg");
   top: -5px;
   right: -25px;
 }
@@ -95,5 +96,4 @@
     width: 70%;
     margin-top: 40px;
   }
-
 }

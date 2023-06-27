@@ -1,22 +1,17 @@
-.confidentiality {
+.result {
   max-width: var(--width-max);
+  background-image: url("../../images/recommend-bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 80px 0;
+  padding: 60px 0;
   border-radius: 20px;
   width: 100%;
   box-sizing: border-box;
-  margin: calc(var(--space-primary) + 20px) auto;
-}
-.confidentiality_bg_blue {
-  background-image: url("../../images/recommend-bg.webp");
-}
-.confidentiality_bg_orange {
-  background-image: url("../../images/conf.webp");
+  margin: var(--space-primary) auto calc(var(--space-primary) + 20px);
 }
 
-.confidentiality__title {
+.result__title {
   max-width: 658px;
   text-align: center;
   color: #fff;
@@ -24,7 +19,7 @@
   padding: 0;
 }
 
-.confidentiality__text {
+.result__text {
   max-width: 658px;
   text-align: center;
   color: #fff;
@@ -33,16 +28,10 @@
 }
 
 @media screen and (max-width: 1160px) {
-  .confidentiality {
+  .result {
     padding: 50px 10px;
-    margin: calc(var(--space-primary) * 2) auto 0;
+    margin: var(--space-primary) auto 0;
     width: calc(100% - 30px * 2);
     border-radius: 10px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .confidentiality__title {
-    font-size: 23px;
   }
 }

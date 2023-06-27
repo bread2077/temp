@@ -70,4 +70,10 @@
 
 @import url("../blocks/registration/registration.css");
 
+@import url("../blocks/result/result.css");
+
+@import url("../blocks/social/social.css");
+
+@import url("../blocks/social-intro/social-intro.css");
+
 @import url("../blocks/footer/footer.css");
