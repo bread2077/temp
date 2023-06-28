@@ -11,6 +11,7 @@ const upperFooterLinks = footer.querySelectorAll(
   ".footer__link_type_upper-menu"
 );
 const dateElement = footer.querySelector(".footer__current-data");
+const listContainer = document.querySelector(".service-list__body");
 
 export {
   cyrcleItems,
@@ -22,4 +23,5 @@ export {
   root,
   upperFooterLinks,
   dateElement,
+  listContainer,
 };

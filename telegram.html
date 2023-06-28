@@ -200,6 +200,31 @@
           </div>
         </div>
       </section>
+      <section class="service-list">
+        <h2 class="section-title service-list__title">Накрутка Телеграм</h2>
+        <div class="service-list__description">
+          <h3 class="service-list__description-subtitle">Обозначения</h3>
+          <ul class="service-list__description-list">
+            <li class="service-list__description-item">⭐ - пользователи рекомендуют</li>
+            <li class="service-list__description-item">🔞  - любая тематика</li>
+            <li class="service-list__description-item">♻️ - бесплатное восстановление</li>
+            <li class="service-list__description-item">🌱 - органическая накрутка</li>
+          </ul>
+        </div>
+        <div class="service-list__list-container">
+          <ul class="service-list__headers-list">
+            <li class="service-list__header-item">ID</li>
+            <li class="service-list__header-item">Название</li>
+            <li class="service-list__header-item">Стоимость за 1 000</li>
+            <li class="service-list__header-item">Гарантия</li>
+            <li class="service-list__header-item">Время запуска услуги</li>
+            <li class="service-list__header-item"></li>
+          </ul>
+          <ul class="service-list__body">
+          </ul>
+        </div>
+        <a href="#" class="btn btn_color_orange btn_size_large service-list__button">Смотреть все цены</a>
+      </section>
       <section class="optimization optimization_bg_white optimization_type_single">
         <div class="optimization__container">
           <div class="optimization__culc choice__culc culc" id="third-culc">
@@ -916,13 +941,6 @@
         </div>
       </div>
     </footer>
-    <template id="culc-template-image">
-      <li class="culc__item culc-template-image-container">
-        <div class="culc__image-container">
-          <img class="culc__image" src="" alt="">
-        </div>
-      </li>
-    </template>
     <template id="culc-template-text">
       <li class="culc__item culc-template-text-container">
         <div class="culc__image-container culc__image-container_type_service">
@@ -931,6 +949,54 @@
         <p class="culc__text"></p>
       </li>
     </template>
+    <template id="service-element">
+      <li class="service-list__body-container">
+        <ul class="service-list__body-list">
+          <li class="service-list__body-item service-list__body-item_type_id"></li>
+          <li class="service-list__body-item service-list__body-item_type_name"></li>
+          <li class="service-list__body-item">
+            <span class="service-list__text-accent">Стоимость за 1 000:</span>
+            <span class="service-list__body-item_type_cost"></span>
+          </li>
+          <li class="service-list__body-item">
+            <span class="service-list__text-accent">Гарантия:</span>
+            <span class="service-list__body-item_type_guarantee"></span>
+          </li>
+          <li class="service-list__body-item">
+            <span class="service-list__text-accent">Время запуска услуги:</span>
+            <span class="service-list__body-item_type_timetostart"></span>
+          </li>
+          <li class="service-list__body-item service-list__body-item_type_button">
+            <a href="#" class="btn btn_size_small btn_color_light-orange service-list__popup-button">Подробнее</a>
+          </li>
+        </ul>
+      </li>
+    </template>
+    <div class="popup popup_type_service">
+      <div class="popup__container">
+        <div class="popup__header">
+          <span class="popup__id"></span>
+          <h3 class="popup__title"></h3>
+          <button type="button" class="popup__close"></button>
+        </div>
+        <div class="popup__body">
+          <div class="popup__description">
+            <h4 class="popup__subtitle">Описание:</h4>
+            <ul class="popup__description-list">
+            </ul>
+          </div>
+          <div class="popup__information">
+            <h4 class="popup__subtitle">Дополнительная информация:</h4>
+            <p class="popup__text popup__text_type_information"></p>
+          </div>
+          <div class="popup__example">
+            <h4 class="popup__subtitle">🔗 Указывать ссылку на пост</h4>
+            <p class="popup__text popup__text_type_example"></p>
+          </div>
+        </div>
+        <a href="#" class="btn btn_size_small btn_color_orange popup__button">Сделать заказ</a>
+      </div>
+    </div>
     <script type="module" src="./scripts/base.js"></script>
     <script type="module" src="./scripts/pages/social.js"></script>
   </body>
