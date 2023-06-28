@@ -114,6 +114,9 @@
   .popup {
     overflow: scroll;
   }
+  .popup__container {
+    max-width: 90%;
+  }
   .popup__body {
     display: grid;
     grid-template-areas:
@@ -147,7 +150,8 @@
     justify-self: end;
   }
   .popup__button {
-    margin: 0 30px 20px;
     justify-self: stretch;
+    max-width: 300px;
+    margin: 0 auto 20px;
   }
 }
