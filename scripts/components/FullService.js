@@ -11,18 +11,18 @@ export default class FullService {
     this._handleOpenPopup = handleOpenPopup;
     this._serviceItem = this._getTemplate();
     this._button = this._serviceItem.querySelector(
-      ".service-list__popup-button"
+      '.service-list__popup-button'
     );
   }
 
   _getTemplate() {
     return this._serviceTemplate.content
-      .querySelector(".service-list__body-container")
+      .querySelector('.service-list__body-container')
       .cloneNode(true);
   }
 
   createServiceItem() {
-    const serviceQuery = "service-list__body-item_type";
+    const serviceQuery = 'service-list__body-item_type';
 
     this._serviceItem.querySelector(`.${serviceQuery}_id`).textContent =
       this._servicesItem.id;
@@ -40,7 +40,7 @@ export default class FullService {
   }
 
   setEvetListeners() {
-    this._button.addEventListener("click", (e) => {
+    this._button.addEventListener('click', e => {
       e.preventDefault();
       this._handleOpenPopup(this._servicesItem);
     });

@@ -25,7 +25,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(40%, -50%);
+  transform: translate(30%, 10%);
 }
 .service-list__description-list {
   list-style: none;
@@ -120,6 +120,9 @@
     flex-direction: column;
     gap: 10px;
     margin: 0 30px;
+  }
+  .service-list__description-subtitle {
+    transform: translate(40%, -50%);
   }
   .service-list__headers-list {
     display: none;

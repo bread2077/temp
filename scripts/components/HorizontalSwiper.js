@@ -2,7 +2,7 @@ export default class HorizontalSwiper {
   constructor(swiperSelector) {
     this._swiperBlock = document.querySelector(swiperSelector);
     this._swiperElements = this._swiperBlock.querySelectorAll(
-      ".advantages__item_type_phone"
+      '.advantages__item_type_phone'
     );
     this._incrementWidth =
       this._swiperElements[0].offsetWidth *
@@ -14,7 +14,7 @@ export default class HorizontalSwiper {
     this._n = 0;
     this._touchCoord = { x: 0 };
     this._DETECT_TRESHHOLD = 70;
-    this._swiperActiveClass = "advantages__item_active";
+    this._swiperActiveClass = 'advantages__item_active';
   }
 
   _swipeRight() {
@@ -60,10 +60,10 @@ export default class HorizontalSwiper {
   }
 
   _setEventListeners() {
-    this._swiperBlock.addEventListener("touchstart", (e) =>
+    this._swiperBlock.addEventListener('touchstart', e =>
       this._handleTouchStart(e)
     );
-    this._swiperBlock.addEventListener("touchmove", (e) =>
+    this._swiperBlock.addEventListener('touchmove', e =>
       this._handleTouchMove(e)
     );
   }

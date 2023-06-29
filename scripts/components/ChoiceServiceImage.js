@@ -1,5 +1,5 @@
-import ChoiceService from "../components/ChoiceService.js";
-import { socials } from "../utils/socials.js";
+import ChoiceService from '../components/ChoiceService.js';
+import { socials } from '../utils/socials.js';
 
 class ChoiceServiceImage extends ChoiceService {
   constructor(choiceSelector) {
@@ -13,7 +13,7 @@ class ChoiceServiceImage extends ChoiceService {
           social,
           socials[social].img,
           social,
-          "culc-template-image"
+          'culc-template-image'
         )
       );
     }

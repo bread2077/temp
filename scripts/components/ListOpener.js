@@ -5,27 +5,27 @@ export default class ListOpener {
   }
 
   _closeListItem(link, submenu) {
-    link.classList.remove("link_type_menu_opened");
-    submenu.classList.remove("links-sublist_opened");
+    link.classList.remove('link_type_menu_opened');
+    submenu.classList.remove('links-sublist_opened');
   }
 
   _openListItem(link, submenu) {
-    link.classList.add("link_type_menu_opened");
-    submenu.classList.add("links-sublist_opened");
+    link.classList.add('link_type_menu_opened');
+    submenu.classList.add('links-sublist_opened');
   }
 
   initializeOpener() {
-    this._list.forEach((link) => {
+    this._list.forEach(link => {
       const submenu = link.nextElementSibling;
 
       submenu &&
-        link.addEventListener("click", (e) => {
+        link.addEventListener('click', e => {
           e.preventDefault();
           const openedMenuLink = this._block.querySelector(
-            ".link_type_menu_opened"
+            '.link_type_menu_opened'
           );
 
-          if (link.classList.contains("link_type_menu_opened")) {
+          if (link.classList.contains('link_type_menu_opened')) {
             this._closeListItem(link, submenu);
           } else {
             openedMenuLink &&
