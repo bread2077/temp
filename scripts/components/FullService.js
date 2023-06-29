@@ -36,6 +36,8 @@ export default class FullService {
     this._serviceItem.querySelector(
       `.${serviceQuery}_timetostart`
     ).textContent = this._servicesItem.timetostart;
+    this._serviceItem.querySelector(`.${serviceQuery}_speed`).textContent =
+      this._servicesItem.speed;
     return this._serviceItem;
   }
 

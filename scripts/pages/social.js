@@ -52,3 +52,46 @@ socials.telegram.services.views.full.forEach(social => {
   serviceItem.setEvetListeners();
   listContainer.append(serviceItem.createServiceItem());
 });
+
+const longRead = document.getElementById('long-read');
+console.log(longRead.scrollWidth);
+let scroll = 0;
+
+function scrollBlock(e) {
+  if (
+    window.pageYOffset >= longRead.offsetTop - 70 &&
+    window.pageYOffset <= longRead.offsetTop + 70
+  ) {
+    e.preventDefault();
+    longRead.scrollTo({
+      top: window.pageYOffset,
+      left: scroll,
+      behavior: 'auto',
+    });
+    scroll -= e.wheelDelta / 10;
+    console.log(scroll);
+  }
+  if (scroll + 800 >= longRead.scrollWidth) {
+    document.removeEventListener('mousewheel', scrollBlock, { passive: false });
+  }
+}
+
+document.addEventListener('mousewheel', scrollBlock, { passive: false });
+
+// document.addEventListener(
+//   'mousewheel',
+//   e => {
+//     console.log(e);
+//     // e.preventDefault();
+//   },
+//   { passive: false }
+// );
+
+// document.addEventListener(
+//   'mousewheel',
+//   e => {
+//     // console.log(e);
+//     // e.preventDefault();
+//   },
+//   { passive: false }
+// );
