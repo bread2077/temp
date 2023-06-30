@@ -53,45 +53,41 @@ socials.telegram.services.views.full.forEach(social => {
   listContainer.append(serviceItem.createServiceItem());
 });
 
-const longRead = document.getElementById('long-read');
-console.log(longRead.scrollWidth);
+const longReadContainer = document.querySelector('.long-read');
+const longRead = longReadContainer.querySelector('.long-read__container');
+const blockWidth = longRead.offsetWidth - 1500;
+console.log(longRead);
+
 let scroll = 0;
+const topOfBlock = longRead.offsetTop;
+// console.log('высота блока' + longRead.offsetWidth);
+// console.log('высота блока' + longRead.offsetTop);
 
 function scrollBlock(e) {
+  // console.log('скролл' + scrollY);
+  // console.log('верхяя точка' + window.pageYOffset);
+  // console.log('верняя точка блока' + longReadContainer.offsetTop);
+  // console.log('скролл' + scroll);
+
+  // scrollY - longReadContainer.offsetTop < longRead.offsetWidth
+
   if (
-    window.pageYOffset >= longRead.offsetTop - 70 &&
-    window.pageYOffset <= longRead.offsetTop + 70
+    window.pageYOffset > longReadContainer.offsetTop - 70 &&
+    scrollY - longReadContainer.offsetTop < longRead.offsetWidth - 1500
   ) {
+    longRead.scrollWidth;
+
+    longRead.style.position = 'fixed';
+    longRead.style.top = '0px';
     e.preventDefault();
-    longRead.scrollTo({
-      top: window.pageYOffset,
-      left: scroll,
-      behavior: 'auto',
-    });
+    longRead.style.left = `-${scrollY - longReadContainer.offsetTop}px`;
     scroll -= e.wheelDelta / 2;
-    console.log(scroll);
-  }
-  if (scroll + 800 >= longRead.scrollWidth) {
-    document.removeEventListener('mousewheel', scrollBlock, { passive: false });
+  } else {
+    longRead.style.position = 'absolute';
   }
 }
 
-document.addEventListener('mousewheel', scrollBlock, { passive: false });
-
-// document.addEventListener(
-//   'mousewheel',
-//   e => {
-//     console.log(e);
-//     // e.preventDefault();
-//   },
-//   { passive: false }
-// );
-
-// document.addEventListener(
-//   'mousewheel',
-//   e => {
-//     // console.log(e);
-//     // e.preventDefault();
-//   },
-//   { passive: false }
-// );
+if (document.documentElement.clientWidth > 1300) {
+  document.addEventListener('scroll', scrollBlock);
+  longReadContainer.style.height = `${6900}px`;
+}
