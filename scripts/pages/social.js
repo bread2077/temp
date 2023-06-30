@@ -68,7 +68,7 @@ function scrollBlock(e) {
       left: scroll,
       behavior: 'auto',
     });
-    scroll -= e.wheelDelta / 10;
+    scroll -= e.wheelDelta / 2;
     console.log(scroll);
   }
   if (scroll + 800 >= longRead.scrollWidth) {
