@@ -12,6 +12,8 @@ const upperFooterLinks = footer.querySelectorAll(
 );
 const dateElement = footer.querySelector('.footer__current-data');
 const listContainer = document.querySelector('.service-list__body');
+const longReadContainer = document.querySelector('.long-read');
+const longRead = longReadContainer.querySelector('.long-read__container');
 
 export {
   cyrcleItems,
@@ -24,4 +26,6 @@ export {
   upperFooterLinks,
   dateElement,
   listContainer,
+  longReadContainer,
+  longRead,
 };

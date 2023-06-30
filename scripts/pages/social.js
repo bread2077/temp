@@ -4,7 +4,13 @@ import HorizontalSwiper from '../components/HorizontalSwiper.js';
 import CustomerCounter from '../components/CustomerCounter.js';
 import FullService from '../components/FullService.js';
 import PopupWithDescription from '../components/PopupWithDescription.js';
-import { cyrcleItems, faqList, listContainer } from '../utils/constants.js';
+import {
+  cyrcleItems,
+  faqList,
+  listContainer,
+  longReadContainer,
+  longRead,
+} from '../utils/constants.js';
 import { socials } from '../utils/socials.js';
 
 const thirdCulc = new ChoiceServiceText('third-culc');
@@ -53,39 +59,21 @@ socials.telegram.services.views.full.forEach(social => {
   listContainer.append(serviceItem.createServiceItem());
 });
 
-const longReadContainer = document.querySelector('.long-read');
-const longRead = longReadContainer.querySelector('.long-read__container');
-
-let scroll = 0;
-const topOfBlock = longRead.offsetTop;
-// console.log('высота блока' + longRead.offsetWidth);
-// console.log('высота блока' + longRead.offsetTop);
-
-function scrollBlock(e) {
-  // console.log('скролл' + scrollY);
-  // console.log('верхяя точка' + window.pageYOffset);
-  // console.log('верняя точка блока' + longReadContainer.offsetTop);
-  // console.log('скролл' + scroll);
-
-  // scrollY - longReadContainer.offsetTop < longRead.offsetWidth
+function addScrollHorizontalBlock() {
+  longReadContainer.style.height = `${longRead.offsetWidth - 800}px`;
 
   if (
     window.pageYOffset > longReadContainer.offsetTop &&
     scrollY - longReadContainer.offsetTop < longRead.offsetWidth - 1500
   ) {
-    e.preventDefault();
-    // longRead.style.position = 'absolute';
-    longRead.style.left = `-${scrollY - longReadContainer.offsetTop}px`;
-    longRead.style.top = `${scrollY - longReadContainer.offsetTop}px`;
-  } else {
+    longRead.style.transform = `translate(-${
+      scrollY - longReadContainer.offsetTop
+    }px, ${scrollY - longReadContainer.offsetTop}px)`;
+    // longRead.style.top = `${scrollY - longReadContainer.offsetTop}px`;
+    // longRead.style.left = `-${scrollY - longReadContainer.offsetTop}px`;
   }
-  // if (scrollY - longReadContainer.offsetTop > longRead.offsetWidth - 1500) {
-  //   longReadContainer.style.height = `100%`;
-  // }
 }
 
 if (document.documentElement.clientWidth > 1300) {
-  document.addEventListener('scroll', scrollBlock);
-  // longReadContainer.style.paddingBottom = `${7400}px`;
-  longReadContainer.style.height = `${7400}px`;
+  document.addEventListener('scroll', addScrollHorizontalBlock);
 }
