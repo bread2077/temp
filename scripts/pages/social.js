@@ -55,8 +55,6 @@ socials.telegram.services.views.full.forEach(social => {
 
 const longReadContainer = document.querySelector('.long-read');
 const longRead = longReadContainer.querySelector('.long-read__container');
-const blockWidth = longRead.offsetWidth - 1500;
-console.log(longRead);
 
 let scroll = 0;
 const topOfBlock = longRead.offsetTop;
@@ -72,22 +70,22 @@ function scrollBlock(e) {
   // scrollY - longReadContainer.offsetTop < longRead.offsetWidth
 
   if (
-    window.pageYOffset > longReadContainer.offsetTop - 70 &&
+    window.pageYOffset > longReadContainer.offsetTop &&
     scrollY - longReadContainer.offsetTop < longRead.offsetWidth - 1500
   ) {
-    longRead.scrollWidth;
-
-    longRead.style.position = 'fixed';
-    longRead.style.top = '0px';
     e.preventDefault();
+    // longRead.style.position = 'absolute';
     longRead.style.left = `-${scrollY - longReadContainer.offsetTop}px`;
-    scroll -= e.wheelDelta / 2;
+    longRead.style.top = `${scrollY - longReadContainer.offsetTop}px`;
   } else {
-    longRead.style.position = 'absolute';
   }
+  // if (scrollY - longReadContainer.offsetTop > longRead.offsetWidth - 1500) {
+  //   longReadContainer.style.height = `100%`;
+  // }
 }
 
 if (document.documentElement.clientWidth > 1300) {
   document.addEventListener('scroll', scrollBlock);
-  longReadContainer.style.height = `${6900}px`;
+  // longReadContainer.style.paddingBottom = `${7400}px`;
+  longReadContainer.style.height = `${7400}px`;
 }
