@@ -1,6 +1,6 @@
 let iconMenu = document.getElementsByClassName('menu__icon__phone')[0];
 let phoneMenu = document.getElementsByClassName('menu__phone')[0];
-let burg = document.getElementsByClassName('burger')[0];
+let burgerMenu = document.getElementsByClassName('burger')[0];
 
 phoneMenu.style.transform = 'translateX(100%)';
 function dropDown(thiss) {
@@ -107,10 +107,10 @@ function close__phoneMenu(){
   document.getElementById("black__background").style.opacity = "0"
 }
 function open__burg(){
-    burg.classList.remove('hide_elem');
+    burgerMenu.classList.remove('hide_elem');
 }
 function close__burg(){
-	burg.classList.add('hide_elem');
+	burgerMenu.classList.add('hide_elem');
 }
 let show = document.getElementById('hidden_Text');
 let open = document.getElementById('open_text');
