@@ -94,13 +94,13 @@ $('.faq__slider').slick({
   
 } catch(e) {
 }
-function open__phoneMenu(){
+function open__phone__menu(){
   icon_menu.style.display = 'none';
   phone__menu.style.transform='translateX(0%)';
   document.body.style = 'overflow-y: hidden !important;'
   document.getElementById("black__background").style.opacity = "1"
 }
-function close__phoneMenu(){
+function close__phone__menu(){
   icon_menu.style.display = 'block';
   document.body.style = 'overflow-y: visble;'
   phone__menu.style.transform='translateX(100%)';
