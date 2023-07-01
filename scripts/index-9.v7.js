@@ -1,8 +1,8 @@
-let iconMenu = document.getElementsByClassName('menu__icon__phone')[0];
-let phoneMenu = document.getElementsByClassName('menu__phone')[0];
-let burgerMenu = document.getElementsByClassName('burger')[0];
+let icon_menu = document.getElementsByClassName('menu__icon__phone')[0];
+let phone__menu = document.getElementsByClassName('menu__phone')[0];
+let burg = document.getElementsByClassName('burger')[0];
 
-phoneMenu.style.transform = 'translateX(100%)';
+phone__menu.style.transform = 'translateX(100%)';
 function dropDown(thiss) {
   if (thiss.parentElement.nextElementSibling.style.display == "none" || thiss.parentElement.nextElementSibling.style.display == "")
   { 
@@ -95,22 +95,22 @@ $('.faq__slider').slick({
 } catch(e) {
 }
 function open__phoneMenu(){
-  iconMenu.style.display = 'none';
-  phoneMenu.style.transform='translateX(0%)';
+  icon_menu.style.display = 'none';
+  phone__menu.style.transform='translateX(0%)';
   document.body.style = 'overflow-y: hidden !important;'
   document.getElementById("black__background").style.opacity = "1"
 }
 function close__phoneMenu(){
-  iconMenu.style.display = 'block';
+  icon_menu.style.display = 'block';
   document.body.style = 'overflow-y: visble;'
-  phoneMenu.style.transform='translateX(100%)';
+  phone__menu.style.transform='translateX(100%)';
   document.getElementById("black__background").style.opacity = "0"
 }
 function open__burg(){
-    burgerMenu.classList.remove('hide_elem');
+    burg.classList.remove('hide_elem');
 }
 function close__burg(){
-	burgerMenu.classList.add('hide_elem');
+	burg.classList.add('hide_elem');
 }
 let show = document.getElementById('hidden_Text');
 let open = document.getElementById('open_text');
