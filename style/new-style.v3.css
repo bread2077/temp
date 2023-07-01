@@ -1211,14 +1211,6 @@ ul {
 	margin: 10px auto;
   	text-align: center;
 }
-
-.service__name {
-  	/*padding: 10px 0 0;*/
-  }
-
-.service__desciption {
-	}
-
 .service__name {
 	width: 80%;
 }
@@ -1261,14 +1253,14 @@ ul {
 }
   
   .service__description-container {
-  	grid-template-columns: 1fr 3fr 3fr 1fr;
+  	grid-template-columns: min-content 1fr repeat(2, 3fr) 1fr;
     text-align: left;
     border: none;
   }
   
   .service__titles-container {
   	display: grid; 
-  	grid-template-columns: 1fr 3fr repeat(4, 1fr);
+  	grid-template-columns: min-content 1fr 3fr repeat(4, 1fr);
     padding: 0 10px;
     position: sticky;
     top: 20px;
