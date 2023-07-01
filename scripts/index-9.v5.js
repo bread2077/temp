@@ -1,8 +1,8 @@
 let iconMenu = document.getElementsByClassName('menu__icon__phone')[0];
-let phone__menu = document.getElementsByClassName('menu__phone')[0];
+let phoneMenu = document.getElementsByClassName('menu__phone')[0];
 let burg = document.getElementsByClassName('burger')[0];
 
-phone__menu.style.transform = 'translateX(100%)';
+phoneMenu.style.transform = 'translateX(100%)';
 function dropDown(thiss) {
   if (thiss.parentElement.nextElementSibling.style.display == "none" || thiss.parentElement.nextElementSibling.style.display == "")
   { 
@@ -94,16 +94,16 @@ $('.faq__slider').slick({
   
 } catch(e) {
 }
-function open__phone__menu(){
+function open__phoneMenu(){
   iconMenu.style.display = 'none';
-  phone__menu.style.transform='translateX(0%)';
+  phoneMenu.style.transform='translateX(0%)';
   document.body.style = 'overflow-y: hidden !important;'
   document.getElementById("black__background").style.opacity = "1"
 }
-function close__phone__menu(){
+function close__phoneMenu(){
   iconMenu.style.display = 'block';
   document.body.style = 'overflow-y: visble;'
-  phone__menu.style.transform='translateX(100%)';
+  phoneMenu.style.transform='translateX(100%)';
   document.getElementById("black__background").style.opacity = "0"
 }
 function open__burg(){
