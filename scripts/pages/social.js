@@ -59,7 +59,11 @@ socials.telegram.services.views.full.forEach(social => {
   listContainer.append(serviceItem.createServiceItem());
 });
 
-function addScrollHorizontalBlock() {
+let customScroll = {
+  x: 0,
+};
+
+function addScrollHorizontalBlock(e) {
   longReadContainer.style.height = `${longRead.offsetWidth - 800}px`;
 
   if (
@@ -69,6 +73,12 @@ function addScrollHorizontalBlock() {
     longRead.style.transform = `translate(-${
       scrollY - longReadContainer.offsetTop
     }px, ${scrollY - longReadContainer.offsetTop}px)`;
+    // customScroll.x += e.wheelDelta / 6;
+    // const a = scrollY - longReadContainer.offsetTop;
+    // console.log('customScroll ' + customScroll.x.toFixed(3));
+    // console.log('scrollY ' + a);
+    // longRead.style.top = `${scrollY - longReadContainer.offsetTop}px`;
+    // longRead.style.left = `-${scrollY - longReadContainer.offsetTop}px`;
     // longRead.style.top = `${scrollY - longReadContainer.offsetTop}px`;
     // longRead.style.left = `-${scrollY - longReadContainer.offsetTop}px`;
   }
