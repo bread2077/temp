@@ -4,13 +4,7 @@ import HorizontalSwiper from '../components/HorizontalSwiper.js';
 import CustomerCounter from '../components/CustomerCounter.js';
 import FullService from '../components/FullService.js';
 import PopupWithDescription from '../components/PopupWithDescription.js';
-import {
-  cyrcleItems,
-  faqList,
-  listContainer,
-  longReadContainer,
-  longRead,
-} from '../utils/constants.js';
+import { cyrcleItems, faqList, listContainer } from '../utils/constants.js';
 import { socials } from '../utils/socials.js';
 
 const thirdCulc = new ChoiceServiceText('third-culc');
@@ -58,32 +52,3 @@ socials.telegram.services.views.full.forEach(social => {
   serviceItem.setEvetListeners();
   listContainer.append(serviceItem.createServiceItem());
 });
-
-// let customScroll = {
-//   x: 0,
-// };
-
-// function addScrollHorizontalBlock(e) {
-//   longReadContainer.style.height = `${longRead.offsetWidth - 800}px`;
-
-//   if (
-//     window.pageYOffset > longReadContainer.offsetTop &&
-//     scrollY - longReadContainer.offsetTop < longRead.offsetWidth - 1500
-//   ) {
-//     longRead.style.transform = `translate(-${
-//       scrollY - longReadContainer.offsetTop
-//     }px, ${scrollY - longReadContainer.offsetTop}px)`;
-//     // customScroll.x += e.wheelDelta / 6;
-//     // const a = scrollY - longReadContainer.offsetTop;
-//     // console.log('customScroll ' + customScroll.x.toFixed(3));
-//     // console.log('scrollY ' + a);
-//     // longRead.style.top = `${scrollY - longReadContainer.offsetTop}px`;
-//     // longRead.style.left = `-${scrollY - longReadContainer.offsetTop}px`;
-//     // longRead.style.top = `${scrollY - longReadContainer.offsetTop}px`;
-//     // longRead.style.left = `-${scrollY - longReadContainer.offsetTop}px`;
-//   }
-// }
-
-// if (document.documentElement.clientWidth > 1300) {
-//   document.addEventListener('scroll', addScrollHorizontalBlock);
-// }
