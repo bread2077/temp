@@ -5,7 +5,7 @@
 .user-review__quote {
   margin: 0;
   grid-area: review;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 20px;
   border: 1.5px solid var(--color-secondary);
 }
@@ -19,7 +19,7 @@
 }
 .user-review__span-accent {
   font-weight: 500;
-  color: var(--color-dark)
+  color: var(--color-dark);
 }
 .user-review__stars {
   padding: 0;
@@ -36,10 +36,10 @@
   background-position: center;
 }
 .user-review__star_type_full {
-  background-image: url('../../images/star.svg');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/star.svg');
 }
 .user-review__star_type_semi {
-  background-image: url('../../images/semi-star.svg');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/semi-star.svg');
 }
 .user-review__review {
   font-style: italic;
@@ -63,7 +63,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  color: var(--color-semi-dark)
+  color: var(--color-semi-dark);
 }
 .user-review__link {
   color: var(--color-primary);

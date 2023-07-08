@@ -14,6 +14,10 @@ const dateElement = footer.querySelector('.footer__current-data');
 const listContainer = document.querySelector('.service-list__body');
 const longReadContainer = document.querySelector('.long-read');
 const longRead = longReadContainer.querySelector('.long-read__container');
+const BASE_URL = 'https://cdn.rawgit.com/bread2077/temp/main';
+const IMAGES_URL = `${BASE_URL}/images`;
+const SOCIAL_IMAGES_URL = `${IMAGES_URL}/socials`;
+const SERVICE_IMAGES_URL = `${IMAGES_URL}/services`;
 
 export {
   cyrcleItems,
@@ -28,4 +32,8 @@ export {
   listContainer,
   longReadContainer,
   longRead,
+  BASE_URL,
+  IMAGES_URL,
+  SOCIAL_IMAGES_URL,
+  SERVICE_IMAGES_URL,
 };

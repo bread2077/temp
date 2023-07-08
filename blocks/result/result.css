@@ -1,6 +1,6 @@
 .result {
   max-width: var(--width-max);
-  background-image: url("../../images/recommend-bg.webp");
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/recommend-bg.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -2,7 +2,7 @@
   display: grid;
   gap: 49px;
   padding: calc(var(--space-primary) + 20px) 0;
-  background-image: url('../../images/call-action-line.svg');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/call-action-line.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -25,7 +25,7 @@
     width: 100%;
     background-size: 100%;
     padding: var(--space-primary) 30px;
-    background-image: url('../../images/call-action-line-small.svg');
+    background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/call-action-line-small.svg');
     box-sizing: border-box;
   }
 
@@ -33,5 +33,4 @@
     text-align: center;
     font-size: 24px;
   }
-
 }

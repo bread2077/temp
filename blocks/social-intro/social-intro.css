@@ -10,7 +10,7 @@
 .social-intro::before,
 .social-intro::after {
   content: '';
-  background-image: url('../../images/bg-social/bg-telegram-head.webp');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram-head.webp');
   background-size: cover;
   background-position: center;
   position: absolute;

@@ -13,10 +13,10 @@
   margin: 0 auto;
 }
 .confidentiality__container_bg_orange {
-  background-image: url("../../images/conf.webp");
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/conf.webp');
 }
 .confidentiality__container_bg_blue {
-  background-image: url("../../images/recommend-bg.webp");
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/recommend-bg.webp');
 }
 .confidentiality_theme_light {
   background-color: var(--bg-color-secondary);

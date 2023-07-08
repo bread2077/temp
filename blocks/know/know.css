@@ -4,7 +4,7 @@
 }
 .know__container {
   padding: 60px 0;
-  background-image: url('../../images/know-bg.svg');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/know-bg.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,13 +52,13 @@
 }
 
 .know__button::before {
-  background-image: url('../../images/socials/telegram-icon.svg');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/socials/telegram-icon.svg');
   top: -20px;
   right: -10px;
 }
 
 .know__button::after {
-  background-image: url('../../images/socials/whatsapp-icon.svg');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/socials/whatsapp-icon.svg');
   top: -5px;
   right: -25px;
 }
