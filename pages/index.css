@@ -1,73 +1,41 @@
-/* Нормализация стилей */
-@import url("../vendor/normalize.css");
+@import url('../blocks/confidentiality/confidentiality.css');
 
-/* Шрифты */
-@import url("../vendor/fonts/fonts.css");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url('../blocks/non-block/non-block.css');
 
-/* Миксы */
-@import url("../blocks/btn/btn.css");
-@import url("../blocks/btn/_color/btn_color_blue.css");
-@import url("../blocks/btn/_color/btn_color_light-orange.css");
-@import url("../blocks/btn/_color/btn_color_orange.css");
-@import url("../blocks/btn/_color/btn_color_light-blue.css");
-@import url("../blocks/btn/_color//btn_color_white.css");
-@import url("../blocks/btn/_size/btn_size_large.css");
-@import url("../blocks/btn/_size/btn_size_small.css");
-@import url("../blocks/btn/_disabled/btn_disabled.css");
-@import url("../blocks/section-title/section-title.css");
-@import url("../blocks/text/text.css");
-@import url("../blocks/user-review/user-review.css");
-@import url("../blocks/menu-burger/menu-burger.css");
-@import url("../blocks/menu-burger/__item/menu-burger__item.css");
-@import url("../blocks/menu-burger/__item/_active/menu-burger__item_active.css");
+@import url('../blocks/connection/connection.css');
 
-@import url("../blocks/root/root.css");
+@import url('../blocks/auto-windup/auto-windup.css');
 
-@import url("../blocks/content/content.css");
+@import url('../blocks/about/about.css');
 
-@import url("../blocks/header/header.css");
+@import url('../blocks/recommend/recommend.css');
 
-@import url("../blocks/confidentiality/confidentiality.css");
+@import url('../blocks/call-action/call-action.css');
 
-@import url("../blocks/non-block/non-block.css");
+@import url('../blocks/choice/choice.css');
 
-@import url("../blocks/connection/connection.css");
+@import url('../blocks/culc/culc.css');
 
-@import url("../blocks/auto-windup/auto-windup.css");
+@import url('../blocks/faq/faq.css');
 
-@import url("../blocks/about/about.css");
+@import url('../blocks/know/know.css');
 
-@import url("../blocks/recommend/recommend.css");
+@import url('../blocks/advantages/advantages.css');
 
-@import url("../blocks/call-action/call-action.css");
+@import url('../blocks/performe/performe.css');
 
-@import url("../blocks/choice/choice.css");
+@import url('../blocks/payment/payment.css');
 
-@import url("../blocks/culc/culc.css");
+@import url('../blocks/optimization/optimization.css');
 
-@import url("../blocks/faq/faq.css");
+@import url('../blocks/cyrcle/cyrcle.css');
 
-@import url("../blocks/know/know.css");
+@import url('../blocks/long-read/long-read.css');
 
-@import url("../blocks/advantages/advantages.css");
+@import url('../blocks/guarantee/guarantee.css');
 
-@import url("../blocks/performe/performe.css");
+@import url('../blocks/rating/rating.css');
 
-@import url("../blocks/payment/payment.css");
+@import url('../blocks/intro/intro.css');
 
-@import url("../blocks/optimization/optimization.css");
-
-@import url("../blocks/cyrcle/cyrcle.css");
-
-@import url("../blocks/long-read/long-read.css");
-
-@import url("../blocks/guarantee/guarantee.css");
-
-@import url("../blocks/rating/rating.css");
-
-@import url("../blocks/intro/intro.css");
-
-@import url("../blocks/registration/registration.css");
-
-@import url("../blocks/footer/footer.css");
+@import url('../blocks/registration/registration.css');

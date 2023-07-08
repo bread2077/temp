@@ -1,0 +1,31 @@
+/* Нормализация стилей */
+@import url('../vendor/normalize.css');
+
+/* Шрифты */
+@import url('../vendor/fonts/fonts.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Миксы */
+@import url('../blocks/btn/btn.css');
+@import url('../blocks/btn/_color/btn_color_blue.css');
+@import url('../blocks/btn/_color/btn_color_light-orange.css');
+@import url('../blocks/btn/_color/btn_color_orange.css');
+@import url('../blocks/btn/_color/btn_color_light-blue.css');
+@import url('../blocks/btn/_color//btn_color_white.css');
+@import url('../blocks/btn/_size/btn_size_large.css');
+@import url('../blocks/btn/_size/btn_size_small.css');
+@import url('../blocks/btn/_disabled/btn_disabled.css');
+@import url('../blocks/section-title/section-title.css');
+@import url('../blocks/text/text.css');
+@import url('../blocks/user-review/user-review.css');
+@import url('../blocks/menu-burger/menu-burger.css');
+@import url('../blocks/menu-burger/__item/menu-burger__item.css');
+@import url('../blocks/menu-burger/__item/_active/menu-burger__item_active.css');
+
+@import url('../blocks/root/root.css');
+
+@import url('../blocks/content/content.css');
+
+@import url('../blocks/header/header.css');
+
+@import url('../blocks/footer/footer.css');
