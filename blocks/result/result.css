@@ -1,0 +1,37 @@
+.result {
+  max-width: var(--width-max);
+  background-image: url("../../images/recommend-bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 60px 0;
+  border-radius: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: var(--space-primary) auto calc(var(--space-primary) + 20px);
+}
+
+.result__title {
+  max-width: 658px;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.result__text {
+  max-width: 658px;
+  text-align: center;
+  color: #fff;
+  margin: 20px auto 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1160px) {
+  .result {
+    padding: 50px 10px;
+    margin: var(--space-primary) auto 0;
+    width: calc(100% - 30px * 2);
+    border-radius: 10px;
+  }
+}

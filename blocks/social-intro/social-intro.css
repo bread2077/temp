@@ -1,0 +1,229 @@
+.social-intro {
+  background: linear-gradient(113.85deg, #f8f9fd 16.26%, #f2f2fc 50.24%);
+  min-height: 603px;
+  display: flex;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.social-intro::before,
+.social-intro::after {
+  content: '';
+  background-image: url('../../images/bg-social/bg-telegram-head.webp');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+.social-intro::before {
+  width: 315px;
+  height: 315px;
+  top: -5%;
+  right: 3%;
+  transform: rotate(10deg) translate(15%, -15%);
+}
+.social-intro::after {
+  width: 114px;
+  height: 114px;
+  top: 10%;
+  right: 27%;
+  transform: rotate(-15deg) translate(15%, -15%);
+}
+.social-intro__container {
+  max-width: var(--width-max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: end;
+}
+.social-intro__container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: center;
+}
+.social-intro__container-image {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.social-intro__title {
+  color: var(--color-dark);
+  margin: 0 0 24px;
+  font-size: 46px;
+  position: relative;
+  z-index: 2;
+}
+.social-intro__text {
+  color: var(--color-dark);
+  margin: 0 0 40px;
+}
+.social-intro__social {
+  background: #ffffff;
+  box-shadow: 0px 3.74141px 28.0606px rgba(178, 185, 220, 0.3);
+  border-radius: 15px;
+  position: absolute;
+  display: grid;
+  gap: 14px 36px;
+  align-items: center;
+  grid-template-areas:
+    'title title'
+    'logo count';
+  padding: 16px 25px;
+  box-sizing: border-box;
+}
+.social-intro__social_pos_up {
+  z-index: 1;
+  right: 200px;
+  top: 10%;
+}
+.social-intro__social_pos_up::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 100%;
+  right: 30px;
+  border-right: 31px solid transparent;
+  border-bottom: 42px solid #fff;
+  transform: scale(-1, 1) rotate(180deg) skew(-50deg);
+}
+.social-intro__social_pos_buttom {
+  z-index: 0;
+  right: 300px;
+  top: 30%;
+}
+.social-intro__social_pos_buttom::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 30px;
+  right: -40px;
+  border-right: 13px solid transparent;
+  border-left: 13px solid transparent;
+  border-bottom: 60px solid #fff;
+  transform: scale(-1, 1) rotate(270deg);
+}
+.social-intro__subtitle {
+  grid-area: title;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--color-dark);
+  margin: 0;
+}
+.social-intro__icon {
+  grid-area: logo;
+  width: 50px;
+  height: 43px;
+  object-fit: contain;
+  object-position: center;
+}
+.social-intro__count-container {
+  grid-area: count;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.22;
+  color: var(--color-dark);
+  margin: 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.social-intro__count {
+  display: inline-block;
+  min-width: 93px;
+}
+.social-intro__image {
+  width: 350px;
+  object-fit: cover;
+  object-position: top;
+  aspect-ratio: 1 / 1.4;
+}
+
+@media screen and (max-width: 1160px) {
+  .social-intro {
+    padding: 0 5px 0 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .social-intro {
+    padding: 90px 5px 0 30px;
+    margin-bottom: 50px;
+  }
+  .social-intro__container {
+    grid-template-columns: 100%;
+  }
+  .social-intro__social {
+    gap: 8px 22px;
+    padding: 10px;
+    border-radius: 9px;
+  }
+  .social-intro::before {
+    width: 110px;
+    height: 110px;
+    top: 5%;
+  }
+  .social-intro::after {
+    width: 41px;
+    height: 41px;
+    top: 25%;
+    right: 5%;
+    transform: rotate(-15deg) translate(15%, -15%);
+  }
+  .social-intro__social_pos_up {
+    right: 140px;
+  }
+  .social-intro__social_pos_up::after {
+    right: 10px;
+    border-right: 22px solid transparent;
+    border-bottom: 25px solid #fff;
+    transform: scale(-1, 1) rotate(180deg) skew(-55deg);
+  }
+  .social-intro__social_pos_buttom {
+    z-index: 0;
+    right: 200px;
+    top: 30%;
+  }
+  .social-intro__social_pos_buttom::after {
+    top: 20px;
+    right: -27px;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-bottom: 40px solid #fff;
+  }
+  .social-intro__title {
+    margin: 0 0 20px;
+    font-size: 32px;
+  }
+  .social-intro__icon {
+    width: 30px;
+    height: 26px;
+  }
+  .social-intro__subtitle {
+    font-size: 11px;
+  }
+  .social-intro__count-container {
+    font-size: 21px;
+  }
+  .social-intro__image {
+    width: 230px;
+  }
+  .social-intro__count {
+    min-width: 55px;
+  }
+  .social-intro__text {
+    margin: 0;
+  }
+  .social-intro__button {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    white-space: nowrap;
+    z-index: 1;
+  }
+}

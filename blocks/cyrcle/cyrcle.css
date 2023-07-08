@@ -1,0 +1,197 @@
+.cyrcle {
+  --cyrcle-width: 560px;
+  --cyrcle-item-width: 80px;
+  max-width: var(--width-max);
+  padding: calc(var(--space-primary) + 20px) 0;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+}
+
+.cyrcle__title {
+  color: var(--color-dark);
+  max-width: 530px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+.cyrcle__text {
+  color: var(--color-semi-dark);
+  margin: 0 auto 16px;
+  max-width: 460px;
+  text-align: center;
+}
+
+.cyrcle__accent {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #fff;
+  margin: 0 auto 80px;
+  padding: 8px 16px;
+  background-color: var(--color-primary);
+  border-radius: 8px;
+}
+
+.cyrcle__socials,
+.cyrcle__figure {
+  position: relative;
+
+}
+
+.cyrcle__container  {
+  width: var(--cyrcle-width);
+  height: var(--cyrcle-width);;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-primary);
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
+}
+
+.cyrcle__container::after,
+.cyrcle__container::before {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.cyrcle__container::before  {
+  --var-cyrcle-btn-w-m: 80%;
+  width: var(--var-cyrcle-btn-w-m);
+  height: var(--var-cyrcle-btn-w-m);
+  border: 1.5px dashed rgba(60, 90, 243, 0.6);
+}
+
+.cyrcle__container::after  {
+  --var-cyrcle-btn-w-s: 65%;
+  width: var(--var-cyrcle-btn-w-s);
+  height: var(--var-cyrcle-btn-w-s);
+  border: 1.5px dashed rgba(60, 90, 243, 0.3);
+}
+
+.cyrcle__item {
+  position: absolute;
+  top: calc(var(--cyrcle-item-width) * (-1) / 2);
+  left: calc((var(--cyrcle-width) / 2) - var(--cyrcle-item-width) / 2);
+  transform-origin: calc(var(--cyrcle-item-width) / 2) calc((var(--cyrcle-width) / 2) + var(--cyrcle-item-width) / 2);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.cyrcle__image{
+  width: var(--cyrcle-item-width);
+  height: var(--cyrcle-item-width);
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  filter: drop-shadow(0px 4px 20px rgba(178, 185, 220, 0.43));
+}
+.cyrcle__button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(var(--cyrcle-width) / 1.92);
+  height: calc(var(--cyrcle-width) / 1.92);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.cyrcle__service {
+  padding: 32px;
+  box-shadow: 0px 4px 20px rgba(178, 185, 220, 0.43);
+  background-color: #fff;
+  border-radius: 20px;
+  position: absolute;
+  max-width: 400px;
+  box-sizing: border-box;
+  right: -45%;
+  bottom: -15%;
+  z-index: 1;
+}
+
+.cyrcle__service-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  margin: 0 0 10px;
+}
+.cyrcle__service-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--color-semi-dark);
+  margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .cyrcle__service {
+    padding: 20px 10px;
+    border-radius: 10px;
+    position: relative;
+    right: 0;
+    margin: 0 0 80px;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cyrcle {
+    --cyrcle-width: 65vw;
+    --cyrcle-item-width: 38px;
+    padding: var(--space-primary) 30px;
+  }
+  .cyrcle__title {
+    text-align: left;
+  }
+
+  .cyrcle__text {
+    text-align: left;
+  }
+
+  .cyrcle__accent {
+    margin: 0 0 60px;
+    justify-self: start;
+  }
+
+  .cyrcle__container  {
+    border: .5px solid var(--color-primary);
+  }
+  .cyrcle__container::before  {
+    border: .5px dashed rgba(60, 90, 243, 0.6);
+  }
+
+  .cyrcle__container::after  {
+    border: .5px dashed rgba(60, 90, 243, 0.3);
+  }
+  .cyrcle__item {
+  }
+  .cyrcle__button {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .cyrcle__service-title,
+  .cyrcle__service-text {
+    font-size: 14px;
+  }
+}

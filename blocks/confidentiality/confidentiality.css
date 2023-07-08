@@ -1,0 +1,53 @@
+.confidentiality {
+  padding: calc(var(--space-primary) + 20px) 0;
+}
+.confidentiality__container {
+  max-width: var(--width-max);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 80px 0;
+  border-radius: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.confidentiality__container_bg_orange {
+  background-image: url("../../images/conf.webp");
+}
+.confidentiality__container_bg_blue {
+  background-image: url("../../images/recommend-bg.webp");
+}
+.confidentiality_theme_light {
+  background-color: var(--bg-color-secondary);
+}
+
+.confidentiality__title {
+  max-width: 658px;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.confidentiality__text {
+  max-width: 658px;
+  text-align: center;
+  color: #fff;
+  margin: 20px auto 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1160px) {
+  .confidentiality__container {
+    padding: 50px 10px;
+    width: calc(100% - 30px * 2);
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .confidentiality__title {
+    font-size: 23px;
+  }
+}

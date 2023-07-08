@@ -580,8 +580,8 @@ section
 	}
 .element_image
 	{
-		width: 90px;
-		height: 90px;
+		width: 45px;
+		height: 45px;
 	}
 	.bloghide
 	{
@@ -827,6 +827,8 @@ padding: 0px;
 	margin: 15px;
 	border-radius: 50px;
 }
+.faq__subtitle,
+{
 .subtitle {
 	font-family: Montserrat;
 	font-style: normal;

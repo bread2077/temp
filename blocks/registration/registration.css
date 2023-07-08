@@ -1,0 +1,100 @@
+.registration {
+  max-width: var(--width-max);
+  margin: calc(var(--space-primary) + 40px) auto var(--space-primary);
+}
+.registration__title {
+  color: var(--color-dark);
+  margin: 0 0 40px;
+  text-align: center;
+}
+.registration__form {
+  display: grid;
+  grid-template-areas:
+  "login password button"
+  "registration forget remember";
+  gap: 20px 40px;
+}
+.registration__input {}
+.registration__input_grid_login {
+  grid-area: login;
+}
+.registration__input_grid_password {
+  grid-area: password;
+}
+.registration__input_grid_remember {
+  grid-area: remember;
+}
+.registration__input_type_text {
+  padding: 14px 20px;
+  background: #F8F9FD;
+  border: 1px solid var(--color-primary);
+  border-radius: 100px;
+}
+.registration__checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.registration__text,
+.registration__checkbox-label,
+.registration__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  margin: 0;
+  color: var(--color-semi-dark);
+}
+.registration__text_grid_registration {
+  grid-area: registration;
+  text-align: center;
+}
+.registration__link {
+  color: var(--color-primary);
+}
+.registration__link_grid_forget {
+  grid-area: forget;
+}
+.registration__button {
+  grid-area: button;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 21px;
+}
+@media screen and (max-width: 1160px) {
+  .registration {
+    margin: calc(var(--space-primary) + 40px) 30px var(--space-primary);
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .registration {
+    margin: var(--space-primary) 30px;
+  }
+  .registration__form {
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "login login"
+    "password password"
+    "remember forget"
+    "button button"
+    "registration registration";
+    gap: 12px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .registration__link_grid_forget {
+    justify-self: end;
+  }
+  .registration__input_grid_password {
+    margin-bottom: 8px;
+  }
+  .registration__button {
+    font-size: 16px;
+    padding: 12px 0;
+    margin: 20px 0 8px;
+  }
+}

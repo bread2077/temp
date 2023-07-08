@@ -1,0 +1,15 @@
+.menu-burger__item_active:nth-child(1)::before {
+  transform: scale(0);
+}
+
+.menu-burger__item_active:nth-child(2)::before {
+  transform: rotate(45deg);
+}
+
+.menu-burger__item_active:nth-child(3)::before {
+  transform: rotate(-45deg);
+}
+
+.menu-burger__item_active:nth-child(4)::before {
+  transform: scale(0);
+}

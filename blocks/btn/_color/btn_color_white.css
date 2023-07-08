@@ -1,0 +1,9 @@
+.btn_color_white {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: var(--color-secondary);
+}
+
+.btn_color_white:hover {
+  color: var(--color-secondary-hover);
+}

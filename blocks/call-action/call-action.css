@@ -1,0 +1,37 @@
+.call-action {
+  display: grid;
+  gap: 49px;
+  padding: calc(var(--space-primary) + 20px) 0;
+  background-image: url('../../images/call-action-line.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.call-action__text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 135%;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.call-action__span-accent {
+  color: var(--color-primary);
+}
+
+@media screen and (max-width: 660px) {
+  .call-action {
+    width: 100%;
+    background-size: 100%;
+    padding: var(--space-primary) 30px;
+    background-image: url('../../images/call-action-line-small.svg');
+    box-sizing: border-box;
+  }
+
+  .call-action__text {
+    text-align: center;
+    font-size: 24px;
+  }
+
+}

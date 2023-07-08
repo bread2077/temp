@@ -1,0 +1,91 @@
+.know {
+  max-width: var(--width-max);
+  margin: calc(var(--space-primary) + 20px) auto;
+}
+.know__container {
+  padding: 60px 0;
+  background-image: url('../../images/know-bg.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  display: grid;
+  justify-content: center;
+}
+.know__title {
+  max-width: 595px;
+  margin: 0 0 20px;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+}
+.know__subtitle {
+  max-width: 595px;
+  margin: 0 0 40px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+.know__text {
+  max-width: 595px;
+  margin: 0 0 40px;
+  color: #fff;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135%;
+}
+
+.know__button {
+  justify-self: center;
+  position: relative;
+}
+
+.know__button::after,
+.know__button::before {
+  content: '';
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  background-size: 36px 36px;
+}
+
+.know__button::before {
+  background-image: url('../../images/socials/telegram-icon.svg');
+  top: -20px;
+  right: -10px;
+}
+
+.know__button::after {
+  background-image: url('../../images/socials/whatsapp-icon.svg');
+  top: -5px;
+  right: -25px;
+}
+
+@media screen and (max-width: 1161px) {
+  .know {
+    margin: var(--space-primary) 30px;
+  }
+  .know__container {
+    padding: 50px 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .know__text {
+    font-size: 12px;
+  }
+
+  .know__button::after,
+  .know__button::before {
+    width: 28px;
+    height: 28px;
+    background-size: 28px 28px;
+  }
+
+  .know__container {
+    background-position: 20%;
+    border-radius: 10px;
+  }
+}

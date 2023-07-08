@@ -1,0 +1,289 @@
+.advantages {
+  background-color: var(--bg-color-primary);
+  padding: calc(var(--space-primary) + 20px) 0;
+  overflow-x: hidden;
+}
+
+.advantages__container {
+  max-width: var(--width-max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: min-content 1fr;
+  grid-template-areas:
+  "button button"
+  "text phones"
+  "reviews phones";
+  gap: 60px 50px;
+}
+
+.advantages__button {
+  grid-area: button;
+  justify-self: center;
+  margin: 0 0 80px;
+}
+
+.advantages__phones {
+  grid-area: phones;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+}
+
+.advantages__reviews {
+  grid-area: reviews;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  display: grid;
+  gap: 20px;
+}
+
+.advantages__review {
+  gap: 29px 16px;
+}
+
+.advantages__review_pos_left {
+  grid-template-columns: min-content 1fr;
+  grid-template-areas:
+  "review review"
+  "avatar name";
+}
+
+.advantages__review_pos_right {
+  grid-template-columns: 1fr min-content;
+  grid-template-areas:
+  "review review"
+  "name avatar";
+}
+
+.advantages__quote {
+  position: relative;
+  z-index: 1;
+  padding: 20px 16px;
+}
+
+.advantages__quote_pos_left::before,
+.advantages__quote_pos_left::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.advantages__quote_pos_left::before {
+  top: 100%;
+  left: 70px;
+  border-right: 25px solid transparent;
+  border-bottom: 35px solid var(--color-secondary);
+  transform: scale(-1, 1) rotate(180deg) skew(20deg);
+}
+
+.advantages__quote_pos_left::after {
+  top: 100%;
+  left: 72px;
+  border-right: 21px solid transparent;
+  border-bottom: 32px solid #fff;
+  transform: scale(-1, 1) rotate(180deg) skew(20deg);
+}
+
+.advantages__quote_pos_right::before,
+.advantages__quote_pos_right::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.advantages__quote_pos_right::before {
+  top: 100%;
+  right: 70px;
+  border-right: 25px solid transparent;
+  border-bottom: 35px solid var(--color-secondary);
+  transform: scale(-1, 1) rotate(180deg) skew(-45deg);
+}
+
+.advantages__quote_pos_right::after {
+  top: 100%;
+  right: 74px;
+  border-right: 21px solid transparent;
+  border-bottom: 32px solid #fff;
+  transform: scale(-1, 1) rotate(180deg) skew(-44deg);
+}
+
+.advantages__items-list {
+  grid-area: text;
+  padding: 0;
+  list-style: none;
+  margin: 20px 0 0;
+  display: grid;
+  grid-auto-rows: min-content;
+  gap: 24px;
+}
+
+.advantages__review-container {
+  max-width: 300px;
+  display: grid;
+}
+
+.advantages__review-container_pos_right {
+  justify-self: end;
+}
+
+.advantages-review__review {
+  font-size: 14px;
+}
+
+.advantages__name {
+  display: grid;
+  align-content: center;
+}
+
+.advantages__name_pos_left {
+  justify-items: left;
+}
+
+.advantages__name_pos_right {
+  justify-items: right;
+}
+
+.advantages__item {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.advantages__item_type_phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages__item_pos_left {
+  transform: translate(-85px, 70px);
+}
+
+.advantages__phone-image {
+  max-width: 377px;
+  width: 100%;
+  aspect-ratio: 1 / 2;
+  object-fit: cover;
+  object-position: center;
+}
+
+.advantages__phone-text {
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 135%;
+  color: var(--color-semi-dark);
+}
+
+.advantages__text {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 135%;
+  color: var(--color-dark);
+  position: relative;
+}
+
+.advantages__text::before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  transform: translateY(-25%);
+  margin-right: 12px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1160px) {
+  .advantages__container {
+    /* padding: 0 30px; */
+  }
+
+  .advantages__items-list {
+    gap: 16px;
+    padding: 0 30px;
+  }
+
+  .advantages__reviews {
+    padding: 60px 30px 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .advantages__container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "button button"
+    "text phones"
+    "reviews reviews";
+  }
+
+  .advantages__phones {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .advantages__text {
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .advantages {
+    padding: 20px 0 0;
+  }
+
+  .advantages__container {
+    padding: 0;
+    margin: 0;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "button"
+    "text"
+    "phones"
+    "reviews";
+    gap: 0;
+  }
+
+  .advantages__button {
+    margin: 0 0 60px;
+  }
+
+  .advantages__reviews {
+    background-color: #fff;
+  }
+
+  .advantages__phones {
+    transition: all .8s ease-out;
+    margin-top: 32px;
+  }
+
+  .advantages__phone-image {
+    min-width: 300px;
+    aspect-ratio: 1 / 1.5;
+    object-position: top;
+
+  }
+
+  .advantages__item {
+    transform: scale(90%) translate(0, 5.5%);
+    transition: all .8s ease-out;
+  }
+
+  .advantages__item_active {
+    transform: scale(1);
+  }
+}
