@@ -80,7 +80,7 @@
   overflow: hidden;
   display: inline-block;
   align-self: flex-start;
-  margin: 7px 0 0 0;
+  margin: 4px 0 0 0;
   cursor: pointer;
 }
 .header__links-sublist {
@@ -102,6 +102,7 @@
 }
 .header__link:hover {
   color: var(--color-primary);
+  text-decoration: none;
 }
 .header__link::before {
   content: '';
