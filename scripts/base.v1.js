@@ -20,11 +20,13 @@ function toggleHeaderMenu() {
 
 menuBurger.addEventListener('click', toggleHeaderMenu);
 
-const mainMenu = new ListOpener(
-  '.header__links-list',
-  '.header__link_type_menu'
-);
-mainMenu.initializeOpener();
+if (document.documentElement.clientWidth < 980) {
+  const mainMenu = new ListOpener(
+    '.header__links-list',
+    '.header__link_type_menu'
+  );
+  mainMenu.initializeOpener();
+}
 
 const footerMenu = new ListOpener('.footer', '.footer__link_type_menu');
 footerMenu.initializeOpener();
