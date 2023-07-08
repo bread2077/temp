@@ -257,6 +257,7 @@
     box-shadow: none;
   }
   .header__links-sublist {
+    gap: 10px;
     box-shadow: none;
     transform: none;
     padding: 10px 15px;
