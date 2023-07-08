@@ -525,6 +525,10 @@ section
 	margin-top: 70px;
 	align-items: center;
 }
+.element_image{
+			width: 50px;
+			height: 50px;
+}
 @media only screen and (max-width: 1000px) {
 	.row__title
 	{
@@ -547,13 +551,13 @@ section
 			margin-top: 20px;
 			align-items: center;
 	}
-	}
 	.body_element_cont{
 			display: flex;
 	}
 	.element_image{
-			width: 100px;
-			height: 100px;
+			width: 50px;
+			height: 50px;
+}
 
 }
 @media only screen and (max-width: 700px) {
@@ -608,7 +612,7 @@ section
 	}
 
 
-}}
+}
 .element_text_body{
 font-family: Montserrat;
 font-size: 14px;
@@ -825,9 +829,13 @@ padding: 0px;
 }
 .faq__subtitle,
 {
+.subtitle {
 	font-family: Montserrat;
-	font-size: 24px;
 	font-style: normal;
+}
+.faq__subtitle
+{
+	font-size: 24px;
 	font-weight: 600;
 	line-height: 29px;
 	letter-spacing: 0.035em;
@@ -839,7 +847,6 @@ padding: 0px;
 .faq p
 {
 	margin: 0px;
-
 	font-family: Montserrat;
 	font-size: 14px;
 	font-style: normal;
@@ -1727,7 +1734,6 @@ footer
 }
 @media only screen and (max-width: 650px) 
 {
-	.
 	.first_active_text{
 		font-family: Montserrat;
 		font-size: 14px;
