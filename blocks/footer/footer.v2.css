@@ -253,7 +253,6 @@
   transform: scale(-1, -1);
 }
 
-@media screen and (max-width: 980px) {
   .links-sublist_opened {
   display: flex;
   position: relative;
@@ -261,5 +260,4 @@
   opacity: 1;
   transform: translate(0, 0);
   margin-top: 3%;
-}
 }
