@@ -51,7 +51,7 @@
 .popup__close {
   width: 20px;
   height: 20px;
-  background-image: url("../../images/close-icon.svg");
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/close-icon.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -62,8 +62,8 @@
 .popup__body {
   display: grid;
   grid-template-areas:
-    "description info"
-    "description example";
+    'description info'
+    'description example';
   gap: 32px 40px;
   justify-self: start;
   grid-template-rows: min-content 1fr;
@@ -120,9 +120,9 @@
   .popup__body {
     display: grid;
     grid-template-areas:
-      "description"
-      "info"
-      "example";
+      'description'
+      'info'
+      'example';
     grid-template-columns: 1fr;
     row-gap: 20px;
     padding: 30px 20px;
@@ -130,8 +130,8 @@
   .popup__header {
     display: grid;
     grid-template-areas:
-      "id close"
-      "name name";
+      'id close'
+      'name name';
     gap: 10px;
   }
   .popup__id {

@@ -17,11 +17,11 @@
 }
 .guarantee__section_size_l {
   gap: 20px;
-  background-image: url('../../images/recommend-bg.webp');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/recommend-bg.webp');
   background-position: left;
 }
 .guarantee__section_size_s {
-  background-image: url('../../images/conf.webp');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/conf.webp');
   background-position: center;
 }
 .guarantee__title {
@@ -71,7 +71,7 @@
   }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   .guarantee {
     margin: var(--space-primary) 30px;
     display: flex;

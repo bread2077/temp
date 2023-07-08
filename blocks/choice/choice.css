@@ -85,9 +85,9 @@
 }
 
 .choice__button::after {
-  content: "";
+  content: '';
   display: inline-block;
-  background-image: url("../../images/white-arrow-right.svg");
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/white-arrow-right.svg');
   width: 34px;
   height: 13px;
   background-repeat: no-repeat;

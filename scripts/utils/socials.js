@@ -1,7 +1,9 @@
+import { SOCIAL_IMAGES_URL } from './constants.js';
+
 export const socials = {
   telegram: {
     name: 'Телеграм',
-    img: './images/socials/telegram-icon.svg',
+    img: `${SOCIAL_IMAGES_URL}/telegram-icon.svg`,
     services: {
       autoviews: {
         cost: 1,
@@ -141,7 +143,7 @@ export const socials = {
   },
   vk: {
     name: 'Вконтакте',
-    img: './images/socials/vk-icon.svg',
+    img: `${SOCIAL_IMAGES_URL}/vk-icon.svg`,
     services: {
       likes: {
         cost: 45,
@@ -179,7 +181,7 @@ export const socials = {
   },
   instagram: {
     name: 'Инстаграмм',
-    img: './images/socials/instagram-icon.svg',
+    img: `${SOCIAL_IMAGES_URL}/instagram-icon.svg`,
     services: {
       followers: {
         cost: 12,
@@ -225,7 +227,7 @@ export const socials = {
   },
   tiktok: {
     name: 'ТикТок',
-    img: './images/socials/tiktok-icon.svg',
+    img: `${SOCIAL_IMAGES_URL}/tiktok-icon.svg`,
     services: {
       followers: {
         cost: 260,
@@ -251,7 +253,7 @@ export const socials = {
   },
   youtube: {
     name: 'Ютуб',
-    img: './images/socials/youtube-icon.svg',
+    img: `${SOCIAL_IMAGES_URL}/youtube-icon.svg`,
     services: {
       views: {
         cost: 90,
@@ -273,7 +275,7 @@ export const socials = {
   },
   twitter: {
     name: 'Твиттер',
-    img: './images/socials/twitter-icon.svg',
+    img: `${SOCIAL_IMAGES_URL}/twitter-icon.svg`,
     services: {
       likes: {
         cost: 280,
@@ -291,7 +293,7 @@ export const socials = {
   },
   spotify: {
     name: 'Спотифай',
-    img: './images/socials/spotify-icon.svg',
+    img: `${SOCIAL_IMAGES_URL}/spotify-icon.svg`,
     services: {
       listenings: {
         cost: 40,
@@ -302,12 +304,12 @@ export const socials = {
   ok: {
     // пустой
     name: 'Одноклассники',
-    img: './images/socials/ok-icon.svg',
+    img: `${SOCIAL_IMAGES_URL}/ok-icon.svg`,
     services: {},
   },
   facebook: {
     name: 'Фейсбук',
-    img: './images/socials/facebook-icon.svg',
+    img: `${SOCIAL_IMAGES_URL}/facebook-icon.svg`,
     services: {
       followers: {
         cost: 58,
@@ -325,7 +327,7 @@ export const socials = {
   },
   internet: {
     name: 'Интернет',
-    img: './images/socials/internet-icon.svg',
+    img: `${SOCIAL_IMAGES_URL}/internet-icon.svg`,
     services: {
       visitors: {
         cost: 12,
@@ -335,7 +337,7 @@ export const socials = {
   },
   soundcloud: {
     name: 'Саундклауд',
-    img: './images/socials/soundcloud-icon.svg',
+    img: `${SOCIAL_IMAGES_URL}/soundcloud-icon.svg`,
     services: {
       plays: {
         cost: 6,

@@ -7,8 +7,8 @@
 .footer__container {
   display: grid;
   grid-template-areas:
-  "copyright company services contacts social"
-  "meta . . . up";
+    'copyright company services contacts social'
+    'meta . . . up';
   max-width: var(--width-max);
   margin: 0 auto;
   gap: 30px 70px;
@@ -66,7 +66,7 @@
 .footer__links_type_sublist {
   display: none;
   transform: translateY(5%);
-  transition: all .1s linear;
+  transition: all 0.1s linear;
   position: absolute;
 }
 .footer__company-container {
@@ -84,7 +84,7 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
-  color: #1A142D;
+  color: #1a142d;
   margin: 0;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -126,7 +126,7 @@
 }
 .footer__link-up::after {
   content: '';
-  background-image: url('../../images/white-arrow-up.svg');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/white-arrow-up.svg');
   background-size: cover;
   background-position: contain;
   height: 24px;
@@ -149,11 +149,11 @@
   display: inline-block;
   width: 12px;
   height: 10px;
-  background-image: url('../../images/arrow.svg');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/arrow.svg');
   background-repeat: no-repeat;
   background-size: contain;
   margin-left: 8px;
-  transition: all .4s linear;
+  transition: all 0.4s linear;
 }
 
 @media screen and (max-width: 1160px) {
@@ -165,9 +165,9 @@
 @media screen and (max-width: 1023px) {
   .footer__container {
     grid-template-areas:
-    "copyright company up"
-    "services contacts social"
-    "meta meta .";
+      'copyright company up'
+      'services contacts social'
+      'meta meta .';
   }
 }
 
@@ -177,12 +177,12 @@
   }
   .footer__container {
     grid-template-areas:
-    "copyright up"
-    "company company"
-    "services services"
-    "contacts contacts"
-    "social social"
-    "meta meta";
+      'copyright up'
+      'company company'
+      'services services'
+      'contacts contacts'
+      'social social'
+      'meta meta';
     gap: 30px 70px;
   }
   .footer__company-container {
@@ -222,11 +222,11 @@
     display: inline-block;
     width: 12px;
     height: 10px;
-    background-image: url('../../images/arrow.svg');
+    background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/arrow.svg');
     background-repeat: no-repeat;
     background-size: contain;
     margin-left: 8px;
-    transition: all .4s linear;
+    transition: all 0.4s linear;
   }
   .footer__link_type_upper-menu_opened::after {
     transform: scale(-1, -1);
@@ -235,7 +235,7 @@
     visibility: hidden;
     opacity: 0;
     transform: translateY(0);
-    transition: all .1s linear;
+    transition: all 0.1s linear;
     position: absolute;
   }
   .footer__links_type_upper-sublist_opened {
@@ -261,5 +261,3 @@
   transform: translate(0, 0);
   margin-top: 3%;
 }
-
-

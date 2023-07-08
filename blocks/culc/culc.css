@@ -30,7 +30,7 @@
 }
 .culc__image-container_active::after {
   content: '';
-  background-image: url('../../images/check-service-icon.svg');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/check-service-icon.svg');
   background-size: contain;
   width: 20px;
   height: 20px;
@@ -40,10 +40,9 @@
 }
 
 .culc__image-container_type_service {
-
   border-radius: 50%;
   background-color: #fff;
-  border: 1px solid #E0E4F8;
+  border: 1px solid #e0e4f8;
 }
 
 .culc__image {

@@ -15,7 +15,8 @@
   position: relative;
   z-index: 3;
 }
-.header__logo {}
+.header__logo {
+}
 .logo-title {
   position: relative;
   display: flex;
@@ -33,7 +34,7 @@
   display: inline-block;
   width: 32px;
   height: 32px;
-  background-image: url('../../images/logo-main.svg');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/logo-main.svg');
   background-size: cover;
   margin-right: 7px;
 }
@@ -97,7 +98,7 @@
   z-index: 9;
   pointer-events: all;
   transform: translateY(5%);
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 .header__link:hover {
   color: var(--color-primary);
@@ -110,7 +111,7 @@
   width: 100%;
   height: 1px;
   background-color: var(--color-primary);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .header__link:hover::before {
   left: 0;
@@ -134,7 +135,8 @@
   display: flex;
   gap: 20px;
 }
-.header__button {}
+.header__button {
+}
 
 @media screen and (min-width: 1159px) {
   .header__links-list > .header__link-container:hover .header__links-sublist {
@@ -191,7 +193,7 @@
     justify-content: space-between;
     padding: 160px 0 40px;
     box-sizing: border-box;
-    transition: all .2s linear;
+    transition: all 0.2s linear;
   }
   .header__nav_opened {
     left: 0;
@@ -217,7 +219,7 @@
   .header__link::before {
     content: none;
   }
-  .header__link:first-child{
+  .header__link:first-child {
     margin: 0 auto;
   }
   .header__link_type_menu {
@@ -230,11 +232,11 @@
     display: inline-block;
     width: 12px;
     height: 10px;
-    background-image: url('../../images/arrow.svg');
+    background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/arrow.svg');
     background-repeat: no-repeat;
     background-size: contain;
     margin-left: 8px;
-    transition: all .4s linear;
+    transition: all 0.4s linear;
   }
   .header__buttons-container {
     justify-content: center;
@@ -257,8 +259,7 @@
     box-shadow: none;
     transform: none;
     padding: 10px 15px;
-    transition: all .1s ease-in-out;
-
+    transition: all 0.1s ease-in-out;
   }
 }
 
@@ -284,4 +285,3 @@
     max-width: 80%;
   }
 }
-

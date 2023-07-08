@@ -13,13 +13,13 @@
 }
 .optimization_role_main {
   grid-template-areas:
-    "title ."
-    "review culc";
+    'title .'
+    'review culc';
 }
 .optimization_role_social {
   grid-template-areas:
-    "title label"
-    "review label";
+    'title label'
+    'review label';
 }
 
 .optimization__description {
@@ -63,8 +63,8 @@
   position: relative;
 }
 .optimization__label_role_block::before {
-  content: "";
-  background-image: url("../../images/orange-empty-star.svg");
+  content: '';
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/orange-empty-star.svg');
   background-position: center;
   background-size: 150px 150px;
   position: absolute;
@@ -76,8 +76,8 @@
   z-index: -1;
 }
 .optimization__label_role_block::after {
-  content: "";
-  background-image: url("../../images/blue-empty-star.svg");
+  content: '';
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/blue-empty-star.svg');
   background-position: center;
   background-size: 250px;
   position: absolute;
@@ -89,7 +89,7 @@
   z-index: -1;
 }
 .optimization__label-container {
-  background-image: url("../../images/bg-star.svg");
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-star.svg');
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -207,8 +207,8 @@
 
 .optimization__review {
   grid-template-areas:
-    "avatar review"
-    ". name";
+    'avatar review'
+    '. name';
   grid-template-columns: min-content 1fr;
   gap: 16px 20px;
 }
@@ -222,7 +222,7 @@
 
 .optimization__quote::before,
 .optimization__quote::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   height: 0;
@@ -266,21 +266,21 @@
 
   .optimization_role_main {
     grid-template-areas:
-      "title"
-      "review"
-      "culc";
+      'title'
+      'review'
+      'culc';
   }
   .optimization_role_social {
     grid-template-areas:
-      "title"
-      "review"
-      "label";
+      'title'
+      'review'
+      'label';
   }
 
   .optimization__review {
     grid-template-areas:
-      "review review"
-      "avatar name";
+      'review review'
+      'avatar name';
     gap: 34px 16px;
   }
 

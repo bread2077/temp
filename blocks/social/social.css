@@ -8,10 +8,10 @@
 .social::after,
 .social::before {
   --width-bg-social: 514px;
-  content: "";
+  content: '';
   width: var(--width-bg-social);
   height: var(--width-bg-social);
-  background-image: url("../../images/bg-social/bg-telegram.webp");
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -34,7 +34,7 @@
 .long-read__section {
   width: 100%;
   min-height: 280px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -46,9 +46,9 @@
   padding-right: 0;
 }
 
-/* .long-read__section_pos_first {
-  padding-left: 140px;
-} */
+.long-read__section_pos_center {
+  justify-content: center;
+}
 
 .long-read__section_theme_dark {
   background-color: var(--bg-color-primary);
@@ -148,7 +148,7 @@
 }
 
 .long-read__button::before {
-  background-image: url('../../images/socials/telegram-icon.svg');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/socials/telegram-icon.svg');
   top: -10px;
   right: -10px;
 }
