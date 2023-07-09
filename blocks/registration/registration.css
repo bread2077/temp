@@ -10,11 +10,13 @@
 .registration__form {
   display: grid;
   grid-template-areas:
-  "login password button"
-  "registration forget remember";
+    'login password button'
+    'registration forget remember'
+    'capcha . .';
   gap: 20px 40px;
 }
-.registration__input {}
+.registration__input {
+}
 .registration__input_grid_login {
   grid-area: login;
 }
@@ -26,7 +28,7 @@
 }
 .registration__input_type_text {
   padding: 14px 20px;
-  background: #F8F9FD;
+  background: #f8f9fd;
   border: 1px solid var(--color-primary);
   border-radius: 100px;
 }
@@ -56,6 +58,12 @@
 .registration__link_grid_forget {
   grid-area: forget;
 }
+.registration__capcha {
+  grid-area: capcha;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .registration__button {
   grid-area: button;
   font-weight: 600;
@@ -77,11 +85,12 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    "login login"
-    "password password"
-    "remember forget"
-    "button button"
-    "registration registration";
+      'login login'
+      'password password'
+      'remember forget'
+      'capcha capcha'
+      'button button'
+      'registration registration';
     gap: 12px;
     max-width: 400px;
     margin: 0 auto;

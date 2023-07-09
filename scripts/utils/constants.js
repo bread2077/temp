@@ -5,6 +5,7 @@ const menuBurger = document.querySelector('.menu-burger');
 const menuBurgerSpans = menuBurger.querySelectorAll('.menu-burger__item');
 const header = document.querySelector('.header');
 const headerMenu = header.querySelector('.header__nav');
+const signinButton = header.querySelector('.header__button_role_signin');
 const root = document.querySelector('.root');
 const footer = document.querySelector('.footer');
 const upperFooterLinks = footer.querySelectorAll(
@@ -26,6 +27,7 @@ export {
   menuBurgerSpans,
   header,
   headerMenu,
+  signinButton,
   root,
   upperFooterLinks,
   dateElement,

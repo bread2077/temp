@@ -7,6 +7,7 @@ import {
   upperFooterLinks,
   dateElement,
   header,
+  signinButton,
 } from './utils/constants.js';
 
 function toggleHeaderMenu() {
@@ -18,7 +19,17 @@ function toggleHeaderMenu() {
   });
 }
 
+function closeHeaderMenu() {
+  root.classList.remove('root_hidden');
+  header.classList.remove('header__mobile_opened');
+  headerMenu.classList.remove('header__nav_opened');
+  menuBurgerSpans.forEach(item => {
+    item.classList.remove('menu-burger__item_active');
+  });
+}
+
 menuBurger.addEventListener('click', toggleHeaderMenu);
+signinButton.addEventListener('click', closeHeaderMenu);
 
 if (document.documentElement.clientWidth < 980) {
   const mainMenu = new ListOpener(
