@@ -4,12 +4,8 @@
   color: var(--color-primary);
 }
 
-.btn_color_blue:hover {
-  background-color: var(--color-primary);
-  color: #fff;
-}
-
-.btn_color_blue:focus {
+.btn_color_light-blue:hover,
+.btn_color_light-blue:focus {
   background-color: var(--color-primary);
   color: #fff;
 }
