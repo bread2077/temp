@@ -1,7 +1,4 @@
 const cyrcle = document.querySelector('.cyrcle__container');
-if(cyrcle) {
-  const cyrcleItems = cyrcle.querySelectorAll('.cyrcle__item');
-}
 const faqList = document.querySelectorAll('.faq__item');
 const menuBurger = document.querySelector('.menu-burger');
 const menuBurgerSpans = menuBurger.querySelectorAll('.menu-burger__item');
@@ -21,7 +18,6 @@ const SOCIAL_IMAGES_URL = `${IMAGES_URL}/socials`;
 const SERVICE_IMAGES_URL = `${IMAGES_URL}/services`;
 
 export {
-  cyrcleItems,
   faqList,
   menuBurger,
   menuBurgerSpans,
