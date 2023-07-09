@@ -7,14 +7,15 @@ import {
   upperFooterLinks,
   dateElement,
   header,
+  signinButton,
 } from './utils/constants.js';
 
-function openHeaderMenu() {
-  root.classList.add('root_hidden');
-  header.classList.add('header__mobile_opened');
-  headerMenu.classList.add('header__nav_opened');
-  menuBurgerSpans.add(item => {
-    item.classList.add('menu-burger__item_active');
+function toggleHeaderMenu() {
+  root.classList.toggle('root_hidden');
+  header.classList.toggle('header__mobile_opened');
+  headerMenu.classList.toggle('header__nav_opened');
+  menuBurgerSpans.forEach(item => {
+    item.classList.toggle('menu-burger__item_active');
   });
 }
 
@@ -27,11 +28,8 @@ function closeHeaderMenu() {
   });
 }
 
-menuBurger.addEventListener('click', () => {
-  headerMenu.classList.contains('header__nav_opened')
-    ? closeHeaderMenu()
-    : openHeaderMenu();
-});
+menuBurger.addEventListener('click', toggleHeaderMenu);
+signinButton.addEventListener('click', closeHeaderMenu);
 
 if (document.documentElement.clientWidth < 980) {
   const mainMenu = new ListOpener(
