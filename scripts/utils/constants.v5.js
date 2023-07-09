@@ -29,8 +29,6 @@ export {
   upperFooterLinks,
   dateElement,
   listContainer,
-  longReadContainer,
-  longRead,
   BASE_URL,
   IMAGES_URL,
   SOCIAL_IMAGES_URL,
