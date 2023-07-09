@@ -2,7 +2,7 @@ import ChoiceServiceImage from '../components/ChoiceServiceImage.js';
 import ChoiceServiceText from '../components/ChoiceServiceText.js';
 import Faq from '../components/Faq.js';
 import HorizontalSwiper from '../components/HorizontalSwiper.js';
-import { cyrcleItems, faqList } from '../utils/constants.js';
+import { cyrcle, faqList } from '../utils/constants.v4.js';
 
 const secondCulc = new ChoiceServiceText('first-culc');
 secondCulc.renderSocials();
@@ -22,6 +22,7 @@ if (document.documentElement.clientWidth < 700) {
   phoneSwiper.initializeSwiper();
 }
 
+const cyrcleItems = cyrcle.querySelectorAll('.cyrcle__item');
 cyrcleItems.forEach((item, index) => {
   item.style.transform = `rotate(calc(${
     (360 * (index + 1)) / cyrcleItems.length
