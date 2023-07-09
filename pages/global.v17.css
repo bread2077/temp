@@ -7,10 +7,10 @@
 
 /* Миксы */
 @import url('../blocks/btn/btn.v4.css');
-@import url('../blocks/btn/_color/btn_color_blue.v2.css');
+@import url('../blocks/btn/_color/btn_color_blue.v3.css');
 @import url('../blocks/btn/_color/btn_color_light-orange.v1.css');
 @import url('../blocks/btn/_color/btn_color_orange.v1.css');
-@import url('../blocks/btn/_color/btn_color_light-blue.v1.css');
+@import url('../blocks/btn/_color/btn_color_light-blue.v2.css');
 @import url('../blocks/btn/_color//btn_color_white.v1.css');
 @import url('../blocks/btn/_size/btn_size_large.css');
 @import url('../blocks/btn/_size/btn_size_small.css');
