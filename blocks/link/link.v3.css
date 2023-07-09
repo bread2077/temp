@@ -1,4 +1,6 @@
-.link {}
+.link {
+  word-break: inherit;
+}
 
 .link:hover {
   text-decoration: none !important;
