@@ -25,6 +25,9 @@
 .registration__input_grid_password {
   grid-area: password;
 }
+.registration__error {
+  grid-area: error;
+}
 .registration__input_grid_remember {
   grid-area: remember;
 }
