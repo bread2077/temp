@@ -1,5 +1,7 @@
 const cyrcle = document.querySelector('.cyrcle__container');
-const cyrcleItems = cyrcle.querySelectorAll('.cyrcle__item');
+if(cyrcle) {
+  const cyrcleItems = cyrcle.querySelectorAll('.cyrcle__item');
+}
 const faqList = document.querySelectorAll('.faq__item');
 const menuBurger = document.querySelector('.menu-burger');
 const menuBurgerSpans = menuBurger.querySelectorAll('.menu-burger__item');
@@ -13,8 +15,6 @@ const upperFooterLinks = footer.querySelectorAll(
 );
 const dateElement = footer.querySelector('.footer__current-data');
 const listContainer = document.querySelector('.service-list__body');
-const longReadContainer = document.querySelector('.long-read');
-const longRead = longReadContainer.querySelector('.long-read__container');
 const BASE_URL = 'https://cdn.rawgit.com/bread2077/temp/main';
 const IMAGES_URL = `${BASE_URL}/images`;
 const SOCIAL_IMAGES_URL = `${IMAGES_URL}/socials`;
