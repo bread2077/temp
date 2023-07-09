@@ -10,6 +10,7 @@
 .registration__form {
   display: grid;
   grid-template-areas:
+    '. error .'
     'login password button'
     'registration forget remember'
     'capcha . .';
@@ -85,6 +86,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
+      'error error'
       'login login'
       'password password'
       'remember forget'
