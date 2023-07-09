@@ -6,4 +6,10 @@
 
 .btn_color_blue:hover {
   background-color: #6A98FF
+  color: #fff;
+}
+
+.btn_color_blue:focus {
+  background-color: #6A98FF
+  color: #fff;
 }
