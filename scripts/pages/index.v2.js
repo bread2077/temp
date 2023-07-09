@@ -2,7 +2,7 @@ import ChoiceServiceImage from '../components/ChoiceServiceImage.js';
 import ChoiceServiceText from '../components/ChoiceServiceText.js';
 import Faq from '../components/Faq.js';
 import HorizontalSwiper from '../components/HorizontalSwiper.js';
-import { cyrcle, faqList } from '../utils/constants.v4.js';
+import { cyrcle, faqList } from '../utils/constants.v5.js';
 
 const secondCulc = new ChoiceServiceText('first-culc');
 secondCulc.renderSocials();
