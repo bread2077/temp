@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 /* Миксы */
-@import url('../blocks/btn/btn.v1.css');
+@import url('../blocks/btn/btn.v2.css');
 @import url('../blocks/btn/_color/btn_color_blue.css');
 @import url('../blocks/btn/_color/btn_color_light-orange.css');
 @import url('../blocks/btn/_color/btn_color_orange.css');
