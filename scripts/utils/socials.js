@@ -1,4 +1,4 @@
-import { SOCIAL_IMAGES_URL } from './constants.js';
+import { SOCIAL_IMAGES_URL } from './constants.v5.js';
 
 export const socials = {
   telegram: {
