@@ -11,3 +11,8 @@
   text-align: center;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+.btn:hover {
+  text-decoration: none;
+  color: #fff;
+}
