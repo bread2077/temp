@@ -18,6 +18,7 @@ const SOCIAL_IMAGES_URL = `${IMAGES_URL}/socials`;
 const SERVICE_IMAGES_URL = `${IMAGES_URL}/services`;
 
 export {
+  cyrcle,
   faqList,
   menuBurger,
   menuBurgerSpans,
