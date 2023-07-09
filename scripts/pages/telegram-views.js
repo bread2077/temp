@@ -4,7 +4,7 @@ import HorizontalSwiper from '../components/HorizontalSwiper.js';
 import CustomerCounter from '../components/CustomerCounter.js';
 import FullService from '../components/FullService.js';
 import PopupWithDescription from '../components/PopupWithDescription.js';
-import { cyrcleItems, faqList, listContainer } from '../utils/constants.js';
+import { cyrcle, faqList, listContainer } from '../utils/constants.v4.js';
 import { socials } from '../utils/socials.js';
 
 const thirdCulc = new ChoiceServiceText('third-culc');
@@ -21,6 +21,7 @@ if (document.documentElement.clientWidth < 700) {
   phoneSwiper.initializeSwiper();
 }
 
+const cyrcleItems = cyrcle.querySelectorAll('.cyrcle__item');
 cyrcleItems.forEach((item, index) => {
   item.style.transform = `rotate(calc(${
     (360 * (index + 1)) / cyrcleItems.length
