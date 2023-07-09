@@ -8,7 +8,7 @@ import {
   dateElement,
   header,
   signinButton,
-} from './utils/constants.v2.js';
+} from './utils/constants.v4.js';
 
 function toggleHeaderMenu() {
   root.classList.toggle('root_hidden');
