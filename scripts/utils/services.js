@@ -1,4 +1,4 @@
-import { SERVICE_IMAGES_URL } from './constants.js';
+import { SERVICE_IMAGES_URL } from './constants.v5.js';
 
 export const services = {
   friends: {
