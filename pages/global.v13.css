@@ -6,12 +6,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 /* Миксы */
-@import url('../blocks/btn/btn.v3.css');
-@import url('../blocks/btn/_color/btn_color_blue.css');
-@import url('../blocks/btn/_color/btn_color_light-orange.css');
-@import url('../blocks/btn/_color/btn_color_orange.css');
-@import url('../blocks/btn/_color/btn_color_light-blue.css');
-@import url('../blocks/btn/_color//btn_color_white.css');
+@import url('../blocks/btn/btn.v4.css');
+@import url('../blocks/btn/_color/btn_color_blue.v1.css');
+@import url('../blocks/btn/_color/btn_color_light-orange.v1.css');
+@import url('../blocks/btn/_color/btn_color_orange.v1.css');
+@import url('../blocks/btn/_color/btn_color_light-blue.v1.css');
+@import url('../blocks/btn/_color//btn_color_white.v1.css');
 @import url('../blocks/btn/_size/btn_size_large.css');
 @import url('../blocks/btn/_size/btn_size_small.css');
 @import url('../blocks/btn/_disabled/btn_disabled.css');
