@@ -50,7 +50,6 @@
 }
 .registration__text_grid_registration {
   grid-area: registration;
-  text-align: center;
 }
 .registration__link {
   color: var(--color-primary);
@@ -95,6 +94,9 @@
     max-width: 400px;
     margin: 0 auto;
   }
+  .registration__text_grid_registration {
+  text-align: center;
+}
   .registration__link_grid_forget {
     justify-self: end;
   }
