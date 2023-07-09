@@ -87,6 +87,16 @@
   transition: transform 0.4s linear;
 }
 
+.faq__button:focus {
+  outline: none;
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/faq-show.svg');
+}
+
+.faq__button:active {
+  outline: none;
+
+}
+
 .faq__button_type_close {
   transform: rotate(45deg);
 }
