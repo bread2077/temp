@@ -1,5 +1,5 @@
-link {}
+.link {}
 
-link:hover {
+.link:hover {
   text-decoration: none !important;
 }
