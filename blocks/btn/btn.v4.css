@@ -14,11 +14,9 @@
 
 .btn:hover {
   text-decoration: none;
-  color: #fff;
 }
 
 .btn:focus {
   text-decoration: none;
-  color: #fff;
   outline: none;
 }
