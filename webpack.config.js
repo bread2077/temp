@@ -44,16 +44,15 @@ module.exports = {
           'postcss-loader',
         ],
         generator: {
-          filename: 'styles/[name].[hash][ext]',
+          filename: 'styles/[hash][ext]',
         },
       },
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './index.html',
-    }),
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename: '[name].[hash].css',
+    }),
   ],
 };
