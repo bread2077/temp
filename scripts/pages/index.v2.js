@@ -1,3 +1,5 @@
+import '../../pages/index.v10.css';
+
 import ChoiceServiceImage from '../components/ChoiceServiceImage.js';
 import ChoiceServiceText from '../components/ChoiceServiceText.js';
 import Faq from '../components/Faq.js';

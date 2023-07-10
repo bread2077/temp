@@ -1,3 +1,5 @@
+import '../pages/global.v17.css';
+
 import ListOpener from './components/ListOpener.js';
 import {
   menuBurger,
