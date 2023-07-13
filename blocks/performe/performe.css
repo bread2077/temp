@@ -11,23 +11,22 @@
   margin: 0 auto 20px;
   padding: var(--space-primary) 0 0;
   max-width: 693px;
-  color: var(--color-dark)
+  color: var(--color-dark);
 }
 
 .performe__text {
   text-align: center;
   margin: 0 0 40px;
   max-width: 572px;
-  color: var(--color-semi-dark)
-
+  color: var(--color-semi-dark);
 }
 
 .performe__image {
-  max-width: 960px;
+  max-width: 760px;
   width: 100%;
+  margin-bottom: 30px;
   object-fit: cover;
   object-position: top;
-  aspect-ratio: 2 / .95;
 }
 
 @media screen and (max-width: 1160px) {

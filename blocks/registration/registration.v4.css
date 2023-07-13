@@ -1,6 +1,7 @@
 .registration {
   max-width: var(--width-max);
-  margin: calc(var(--space-primary) + 40px) auto var(--space-primary);
+  padding: calc(var(--space-primary) + 40px) 0 var(--space-primary);
+  margin: 0 auto !important;
 }
 .registration__title {
   color: var(--color-dark);
@@ -82,7 +83,8 @@
 
 @media screen and (max-width: 780px) {
   .registration {
-    margin: var(--space-primary) 30px;
+    padding: calc(var(--space-primary) + 20px) 0 var(--space-primary);
+    margin: 0 30px !important;
   }
   .registration__form {
     justify-content: center;
@@ -101,8 +103,8 @@
     margin: 0 auto;
   }
   .registration__text_grid_registration {
-  text-align: center;
-}
+    text-align: center;
+  }
   .registration__link_grid_forget {
     justify-self: end;
   }
