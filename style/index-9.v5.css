@@ -806,7 +806,7 @@ padding: 0px;
 {
 	position: relative;
 	box-shadow: 5px 4px 20px 5px rgba(64, 123, 255, 0.1);
-	margin: 15px 50px !important;
+	margin: 15px 50px;
 	padding: 52px 63px;
 	background-color: white;
 	text-align: center;
