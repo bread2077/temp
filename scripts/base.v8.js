@@ -7,6 +7,7 @@ import {
   upperFooterLinks,
   dateElement,
   header,
+  signInButtons,
 } from './utils/constants.v5.js';
 
 if (menuBurger) {
@@ -66,3 +67,26 @@ function setCurrentDate() {
 }
 
 setCurrentDate();
+
+const scrollToBlock = blockId => {
+  const block = document.getElementById(blockId);
+  window.scrollTo({
+    top: block.offsetTop * 0.9,
+    left: 0,
+    behavior: 'smooth',
+  });
+};
+
+const checkScrollBlock = (e, blockId) => {
+  e.preventDefault();
+
+  if (location.pathname === '/') {
+    scrollToBlock(blockId);
+  } else {
+    location.href = '/signin/#signIn';
+  }
+};
+
+signInButtons.forEach(btn => {
+  btn.addEventListener('click', e => checkScrollBlock(e, 'signIn'));
+});
