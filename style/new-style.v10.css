@@ -1059,9 +1059,8 @@ ul {
   .service__titles-container {
     display: grid;
     grid-template-columns: min-content 1fr 3fr repeat(4, 1fr);
-    padding: 0 10px;
-    position: sticky;
-    top: 20px;
+    margin: 0;
+    padding: 20px 10px;
   }
 
   .service__items {
