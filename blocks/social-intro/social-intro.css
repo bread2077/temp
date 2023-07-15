@@ -200,6 +200,7 @@
   .social-intro__title {
     margin: 0 0 20px;
     font-size: 32px;
+    padding-right: 30px;
   }
   .social-intro__icon {
     width: 30px;

@@ -229,14 +229,14 @@
       <section class="social-intro">
         <div class="social-intro__container">
           <div class="social-intro__container-text">
-            <h1 class="social-intro__title">Получи бесплатную накрутку</h1>
+            <h1 class="social-intro__title">Бесплатная накрутка</h1>
             <p class="text social-intro__text">
-              Бесплатная услуга на выбранную социальную сеть
+              Бесплатная пробная накрутка для пользователей сайта
             </p>
             <a
               href="#free-services"
               class="btn btn_color_orange btn_size_large social-intro__button"
-              >Попробовать</a
+              >Бесплатная накрутка</a
             >
           </div>
           <div class="social-intro__container-image">
@@ -326,11 +326,50 @@
           </li>
         </ul>
       </section>
-      <section class="result">
-        <h2 class="section-title result__title">Гарантия результата</h2>
-        <p class="text result__text">
-          бесплатно докрутим, если кто-то отпишется в течение 30 дней
-        </p>
+      <section class="freeservices" id="free-services">
+        <h2 class="section-title freeservices__title">
+          Получи бесплатную накрутку
+        </h2>
+        <form action="" class="freeservices__form">
+          <p class="text freeservices__description">
+            Введи ссылку на пост/видео в социальной сети, чтобы получить
+            бесплатную накрутку (имеется лимит - если накрутка не идет, то вы
+            всегда можете купить ее по самым выгодным ценам)
+          </p>
+          <p class="text freeservices__waiting">
+            До получения услуги осталось
+            <span class="freeservices__time"></span> сек
+          </p>
+          <p class="text freeservices__response freeservices__responce_hidden">
+            Услуга взята в работу
+          </p>
+          <div class="freeservices__select-container">
+            <select
+              class="freeservices__input freeservices__input_type_select"
+              name="service"
+              id=""
+              required
+            >
+              <option value="708">Telegram Просмотры (100 штук)</option>
+              <option value="869">Telegram Реакции (10 штук)</option>
+              <option value="499">Instagram Лайки (10 штук)</option>
+              <option value="764">Tik-Tok Просмотры (100 штук)</option>
+              <option value="753">Вконтакте Просмотры (100 штук)</option>
+            </select>
+          </div>
+          <input
+            class="freeservices__input freeservices__input_type_link"
+            type="url"
+            placeholder="Введите ссылку"
+            required
+          />
+          <button
+            class="btn btn_color_blue btn_size_small freeservices__submit btn_disabled"
+            type="submit"
+          >
+            Получить
+          </button>
+        </form>
       </section>
       <section class="optimization optimization_role_social">
         <div class="optimization__description">
@@ -390,50 +429,6 @@
             </p>
           </div>
         </div>
-      </section>
-      <section class="freeservices" id="free-services">
-        <h2 class="section-title freeservices__title">
-          Получи бесплатную накрутку
-        </h2>
-        <form action="" class="freeservices__form">
-          <p class="text freeservices__description">
-            Введи ссылку на аккаунт в социальной сети, чтобы получить бесплатную
-            накрутку
-          </p>
-          <p class="text freeservices__waiting">
-            До получения услуги осталось
-            <span class="freeservices__time"></span> сек
-          </p>
-          <p class="text freeservices__response freeservices__responce_hidden">
-            Услуга взята в работу
-          </p>
-          <div class="freeservices__select-container">
-            <select
-              class="freeservices__input freeservices__input_type_select"
-              name="service"
-              id=""
-              required
-            >
-              <option value="708">Telegram Просмотры (100 штук)</option>
-              <option value="869">Telegram Реакции (10 штук)</option>
-              <option value="499">Instagram Лайки (10 штук)</option>
-              <option value="764">Tik-Tok Просмотры (100 штук)</option>
-              <option value="753">Вконтакте Просмотры (100 штук)</option>
-            </select>
-          </div>
-          <input
-            class="freeservices__input freeservices__input_type_link"
-            type="url"
-            placeholder="Введите ссылку"
-            required
-          />
-          <button
-            class="btn btn_color_blue btn_size_small freeservices__submit btn_disabled"
-            type="submit"
-          >
-            Получить
-          </button>
-        </form>
       </section>
       <section
         class="optimization optimization_bg_white optimization_type_single"
