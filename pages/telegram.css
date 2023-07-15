@@ -16,7 +16,7 @@
 
 @import url('../blocks/culc/culc.v1.css');
 
-@import url('../blocks/faq/faq.css');
+@import url('../blocks/faq/faq.v1.css');
 
 @import url('../blocks/know/know.css');
 
@@ -36,9 +36,7 @@
 
 @import url('../blocks/rating/rating.v1.css');
 
-@import url('../blocks/intro/intro.css');
-
-@import url('../blocks/registration/registration.css');
+@import url('../blocks/intro/intro.v2.css');
 
 @import url('../blocks/result/result.css');
 
