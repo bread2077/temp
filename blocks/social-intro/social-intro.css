@@ -58,6 +58,7 @@
 .social-intro__text {
   color: var(--color-dark);
   margin: 0 0 40px;
+  padding: 0 20px 0 0;
 }
 .social-intro__social {
   background: #ffffff;
