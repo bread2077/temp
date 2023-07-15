@@ -53,6 +53,7 @@
   font-size: 46px;
   position: relative;
   z-index: 2;
+  font-weight: 700;
 }
 .social-intro__text {
   color: var(--color-dark);
