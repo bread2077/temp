@@ -7,22 +7,22 @@
   margin: 0 auto;
   overflow: hidden;
 }
-.social-intro::before,
-.social-intro::after {
+.social-intro_type_tg::before,
+.social-intro_type_tg::after {
   content: '';
   background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram-head.webp');
   background-size: cover;
   background-position: center;
   position: absolute;
 }
-.social-intro::before {
+.social-intro_type_tg::before {
   width: 315px;
   height: 315px;
   top: -5%;
   right: 3%;
   transform: rotate(10deg) translate(15%, -15%);
 }
-.social-intro::after {
+.social-intro_type_tg::after {
   width: 114px;
   height: 114px;
   top: 10%;
@@ -31,6 +31,7 @@
 }
 .social-intro__container {
   max-width: var(--width-max);
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -57,6 +58,7 @@
 .social-intro__text {
   color: var(--color-dark);
   margin: 0 0 40px;
+  padding: 0 20px 0 0;
 }
 .social-intro__social {
   background: #ffffff;
@@ -198,6 +200,7 @@
   .social-intro__title {
     margin: 0 0 20px;
     font-size: 32px;
+    padding-right: 30px;
   }
   .social-intro__icon {
     width: 30px;

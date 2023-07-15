@@ -1,8 +1,9 @@
-.btn_disabled {
-  background-color: #C9C9C9;
-  border: 1px solid #C9C9C9;
+.btn_disabled,
+.btn_disabled:focus,
+.btn_disabled:active {
+  background-color: #c9c9c9;
+  border: 1px solid #c9c9c9;
   color: #fff;
   cursor: default;
   pointer-events: none;
 }
-

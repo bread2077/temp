@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" behaviour="smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,8 +8,8 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <link rel="stylesheet" href="./pages/global.v17.css" />
-    <link rel="stylesheet" href="./pages/telegram.css" />
-    <title>Телеграм</title>
+    <link rel="stylesheet" href="./pages/freeservice.css" />
+    <title>Бесплатная накрутка</title>
   </head>
   <body class="root">
     <header class="header">
@@ -226,19 +226,17 @@
       </nav>
     </header>
     <main class="content">
-      <section class="social-intro social-intro_type_tg">
+      <section class="social-intro">
         <div class="social-intro__container">
           <div class="social-intro__container-text">
-            <h1 class="social-intro__title">
-              Накрутка подписчиков в&nbsp;Телеграм с гарантией
-            </h1>
+            <h1 class="social-intro__title">Бесплатная накрутка</h1>
             <p class="text social-intro__text">
-              От 1 рубля за 1000 подписчиков
+              Бесплатная пробная накрутка для пользователей сайта
             </p>
             <a
-              href="#service-list"
+              href="#free-services"
               class="btn btn_color_orange btn_size_large social-intro__button"
-              >Получить подписчиков</a
+              >Бесплатная накрутка</a
             >
           </div>
           <div class="social-intro__container-image">
@@ -328,11 +326,50 @@
           </li>
         </ul>
       </section>
-      <section class="result">
-        <h2 class="section-title result__title">Гарантия результата</h2>
-        <p class="text result__text">
-          бесплатно докрутим, если кто-то отпишется в течение 30 дней
-        </p>
+      <section class="freeservices" id="free-services">
+        <h2 class="section-title freeservices__title">
+          Получи бесплатную накрутку
+        </h2>
+        <form action="" class="freeservices__form">
+          <p class="text freeservices__description">
+            Введи ссылку на пост/видео в социальной сети, чтобы получить
+            бесплатную накрутку (имеется лимит - если накрутка не идет, то вы
+            всегда можете купить ее по самым выгодным ценам)
+          </p>
+          <p class="text freeservices__waiting">
+            До получения услуги осталось
+            <span class="freeservices__time"></span> сек
+          </p>
+          <p class="text freeservices__response freeservices__responce_hidden">
+            Услуга взята в работу
+          </p>
+          <div class="freeservices__select-container">
+            <select
+              class="freeservices__input freeservices__input_type_select"
+              name="service"
+              id=""
+              required
+            >
+              <option value="708">Telegram Просмотры (100 штук)</option>
+              <option value="869">Telegram Реакции (10 штук)</option>
+              <option value="499">Instagram Лайки (10 штук)</option>
+              <option value="764">Tik-Tok Просмотры (100 штук)</option>
+              <option value="753">Вконтакте Просмотры (100 штук)</option>
+            </select>
+          </div>
+          <input
+            class="freeservices__input freeservices__input_type_link"
+            type="url"
+            placeholder="Введите ссылку"
+            required
+          />
+          <button
+            class="btn btn_color_blue btn_size_small freeservices__submit btn_disabled"
+            type="submit"
+          >
+            Получить
+          </button>
+        </form>
       </section>
       <section class="optimization optimization_role_social">
         <div class="optimization__description">
@@ -392,41 +429,6 @@
             </p>
           </div>
         </div>
-      </section>
-      <section class="service-list" id="service-list">
-        <h2 class="section-title service-list__title">Накрутка Телеграм</h2>
-        <div class="service-list__description">
-          <h3 class="service-list__description-subtitle">Обозначения</h3>
-          <ul class="service-list__description-list">
-            <li class="service-list__description-item">
-              ⭐ - пользователи рекомендуют
-            </li>
-            <li class="service-list__description-item">🔞 - любая тематика</li>
-            <li class="service-list__description-item">
-              ♻️ - бесплатное восстановление
-            </li>
-            <li class="service-list__description-item">
-              🌱 - органическая накрутка
-            </li>
-          </ul>
-        </div>
-        <div class="service-list__list-container">
-          <ul class="service-list__headers-list">
-            <li class="service-list__header-item">ID</li>
-            <li class="service-list__header-item">Название</li>
-            <li class="service-list__header-item">Стоимость за 1 000</li>
-            <li class="service-list__header-item">Время запуска</li>
-            <li class="service-list__header-item">Скорость</li>
-            <li class="service-list__header-item">Гарантия</li>
-            <li class="service-list__header-item"></li>
-          </ul>
-          <ul class="service-list__body"></ul>
-        </div>
-        <a
-          href="/services"
-          class="btn btn_color_orange btn_size_large service-list__button"
-          >Смотреть все цены</a
-        >
       </section>
       <section
         class="optimization optimization_bg_white optimization_type_single"
@@ -887,7 +889,7 @@
             <p class="intro__text-accent">*в услугах она отмечена значком 🌱</p>
             <a
               class="btn btn_size_large btn_color_orange intro__button"
-              href="/#signIn"
+              href="#free-services"
               >Попробовать бесплатно</a
             >
           </div>
@@ -1094,13 +1096,6 @@
               class="auto-windup__image"
             />
           </div>
-          <a
-            href="/signup"
-            type="button"
-            class="btn btn_color_orange btn_size_large auto-windup__button"
-          >
-            Зарегистрироваться и автоматизировать
-          </a>
         </div>
       </section>
       <article class="about">
@@ -1450,30 +1445,13 @@
             — напиши нам и мы поможем подобрать самую эффективную накрутку для
             твоей задачи
           </p>
-          <a class="btn btn_color_orange btn_size_large know__button"
+          <a
+            target="_blank"
+            href="https://t.me/Smmprimesupportbot"
+            class="btn btn_color_orange btn_size_large know__button"
             >Написать менеджеру</a
           >
         </div>
-      </section>
-      <section class="social">
-        <h2 class="section-title social__title">
-          Телеграм позволяет зарабатывать деньги?
-        </h2>
-        <p class="text social__text">
-          В настоящее время Telegram стал одной из самых популярных и быстро
-          развивающихся социальных сетей не только в России, но и в мире.
-          Телеграм-каналы позволяют зарабатывать деньги, как на реализации своей
-          собственной продукции, так и на размещении рекламы. Но такой вид
-          заработка доступен только группам с большой аудиторией.
-        </p>
-        <h3 class="social__subtitle">Что же делать новичкам?</h3>
-        <p class="text social__text">
-          Мы предлагаем накрутку живых подписчиков в Телеграмм-каналы и группы.
-          Данная услуга поможет поднять популярность нового канала и привлечь
-          много новых пользователей. А там дело уже за вами. Вы размещаете
-          годный контент, а мы накручиваем вам реальных подписчиков, которые
-          поднимают популярность вашей группы.
-        </p>
       </section>
       <section class="faq">
         <h2 class="section-title faq__title">FAQ</h2>
@@ -1971,33 +1949,7 @@
         </ul>
       </li>
     </template>
-    <div class="popup popup_type_service">
-      <div class="popup__container">
-        <div class="popup__header">
-          <span class="popup__id"></span>
-          <h3 class="popup__title"></h3>
-          <button type="button" class="popup__close"></button>
-        </div>
-        <div class="popup__body">
-          <div class="popup__description">
-            <h4 class="popup__subtitle">Описание:</h4>
-            <ul class="popup__description-list"></ul>
-          </div>
-          <div class="popup__information">
-            <h4 class="popup__subtitle">Дополнительная информация:</h4>
-            <p class="popup__text popup__text_type_information"></p>
-          </div>
-          <div class="popup__example">
-            <h4 class="popup__subtitle">🔗 Указывать ссылку на пост</h4>
-            <p class="popup__text popup__text_type_example"></p>
-          </div>
-        </div>
-        <a href="#" class="btn btn_size_small btn_color_orange popup__button"
-          >Сделать заказ</a
-        >
-      </div>
-    </div>
-    <script type="module" src="./scripts/base.v8.js"></script>
-    <script type="module" src="./scripts/pages/telegram-views.js"></script>
+    <script type="module" src="./dist/base.380ce17cfde36107dc74.js"></script>
+    <script type="module" src="./scripts/pages/freeservises.js"></script>
   </body>
 </html>

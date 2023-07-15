@@ -1,0 +1,105 @@
+.freeservices {
+  max-width: var(--width-max);
+  padding: var(--space-primary) 0;
+  margin: 0 auto;
+}
+.freeservices__title {
+  text-align: center;
+  margin: 0 0 40px;
+  color: var(--color-dark);
+}
+.freeservices__subtitle {
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0 0 10px;
+  padding: 0;
+}
+.freeservices__description {
+  margin: 0 0 10px;
+  color: var(--color-dark);
+  text-align: center;
+}
+.freeservices__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid var(--color-primary);
+  border-radius: 20px;
+  padding: 30px;
+  gap: 20px;
+}
+.freeservices__waiting {
+  margin: 0 0 10px;
+  color: var(--color-dark);
+}
+.freeservices__waiting_hidden {
+  display: none;
+}
+.freeservices__time {
+}
+.freeservices__response {
+  margin: 0 0 10px;
+}
+.freeservices__responce_hidden {
+  display: none;
+}
+.freeservices__select-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.freeservices__select-container::after {
+  content: '';
+  border: solid var(--color-primary);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.freeservices__input {
+  padding: 14px 20px;
+  margin: 0 !important;
+  background: #f8f9fd;
+  border: 1px solid var(--color-primary);
+  border-radius: 100px;
+  align-self: stretch;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.freeservices__input_type_select {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.freeservices__submit {
+}
+
+@media screen and (max-width: 700px) {
+  .freeservices {
+    padding: var(--space-primary) 30px 0;
+  }
+  .freeservices__title {
+    text-align: left;
+    margin: 0 0 30px;
+  }
+
+  .freeservices__form {
+    border-radius: 15px;
+    padding: 15px;
+    gap: 15px;
+  }
+  .freeservices__waiting {
+    font-size: 12px;
+  }
+  .freeservices__input {
+    font-size: 12px;
+    padding: 14px 30px 14px 20px;
+  }
+}

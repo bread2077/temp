@@ -10,6 +10,7 @@ const upperFooterLinks = footer.querySelectorAll(
 const dateElement = footer.querySelector('.footer__current-data');
 const listContainer = document.querySelector('.service-list__body');
 const signInButtons = document.querySelectorAll('a[href*="signIn"]');
+const countersList = document.querySelectorAll('.custom-counter');
 const BASE_URL = 'https://cdn.rawgit.com/bread2077/temp/main';
 const IMAGES_URL = `${BASE_URL}/images`;
 const SOCIAL_IMAGES_URL = `${IMAGES_URL}/socials`;
@@ -25,6 +26,7 @@ export {
   dateElement,
   listContainer,
   signInButtons,
+  countersList,
   BASE_URL,
   IMAGES_URL,
   SOCIAL_IMAGES_URL,
