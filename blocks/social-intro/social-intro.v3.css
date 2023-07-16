@@ -1,10 +1,12 @@
 .social-intro {
-  background: linear-gradient(113.85deg, #f8f9fd 16.26%, #f2f2fc 50.24%);
   min-height: 603px;
   display: flex;
   position: relative;
   margin: 0 auto;
   overflow: hidden;
+}
+.social-intro_bg-styled {
+  background: linear-gradient(113.85deg, #f8f9fd 16.26%, #f2f2fc 50.24%);
 }
 .social-intro_type_tg::before,
 .social-intro_type_tg::after {
