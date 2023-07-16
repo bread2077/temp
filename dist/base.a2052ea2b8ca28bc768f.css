@@ -8,7 +8,7 @@
 .btn_color_white{background-color:#fff;border:1px solid #fff;color:var(--color-secondary)}.btn_color_white:focus,.btn_color_white:hover{color:var(--color-secondary-hover)}
 .btn_size_large{font-size:20px;padding:14px 24px}@media screen and (max-width:690px){.btn_size_large{font-size:16px;padding:12px 24px}}
 .btn_size_small{font-size:14px;padding:12px 20px}
-.btn_disabled{background-color:#c9c9c9;border:1px solid #c9c9c9;color:#fff;cursor:default;pointer-events:none}
+.btn_disabled,.btn_disabled:active,.btn_disabled:focus{background-color:#c9c9c9;border:1px solid #c9c9c9;color:#fff;cursor:default;pointer-events:none}
 .section-title{font-size:32px;font-style:normal;font-weight:700;line-height:120%;margin:0;padding:0}@media screen and (max-width:540px){.section-title{font-size:26px}}
 .text{font-size:20px;font-style:normal;font-weight:400;line-height:135%}@media screen and (max-width:540px){.text{font-size:16px}}
 .link{word-break:inherit}.link:hover{text-decoration:none!important}
