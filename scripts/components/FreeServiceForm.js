@@ -23,7 +23,7 @@ export default class FreeServiceForm {
 
   _fetchFreeService(amount) {
     fetch(
-      `https://smmprime.com/api/v2?key=dc51ab87891560150bbaad9acb6cbb6f&action=add&service=${this._select.value}&link=${this._link.value}&quantity=${amount}`
+      `https://smmprime.com/api/v2?key=679d351793eb6ebf7a8fb1d1ac2ad1cb&action=add&service=${this._select.value}&link=${this._link.value}&quantity=${amount}`
     )
       .then(res => console.log(res))
       .catch(err => console.error(err));
