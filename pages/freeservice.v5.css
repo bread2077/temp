@@ -42,6 +42,6 @@
 
 @import url('../blocks/social/social.css');
 
-@import url('../blocks/social-intro/social-intro.css');
+@import url('../blocks/social-intro/social-intro.v3.css');
 
-@import url('../blocks/freeservices/freeservices.css');
+@import url('../blocks/freeservices/freeservices.v1.css');

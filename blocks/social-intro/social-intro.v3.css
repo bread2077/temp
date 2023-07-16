@@ -3,7 +3,6 @@
   min-height: 603px;
   display: flex;
   position: relative;
-  max-width: 1440px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -54,11 +53,13 @@
   font-size: 46px;
   position: relative;
   z-index: 2;
+  font-weight: 700;
 }
 .social-intro__text {
   color: var(--color-dark);
   margin: 0 0 40px;
   padding: 0 20px 0 0;
+  max-width: 550px;
 }
 .social-intro__social {
   background: #ffffff;
