@@ -5,9 +5,14 @@
   margin: 0 auto;
   overflow: hidden;
 }
-.social-intro_bg-styled {
+.social-intro_reg-styled {
   background: linear-gradient(113.85deg, #f8f9fd 16.26%, #f2f2fc 50.24%);
 }
+
+.social-intro_unreg-styled {
+  background: linear-gradient(0deg, #f8f9fd 5%, #f2f2fc 50.24%);
+}
+
 .social-intro_type_tg::before,
 .social-intro_type_tg::after {
   content: '';
