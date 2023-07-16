@@ -34,5 +34,5 @@ countersList.forEach(counter => {
   customCounter.startTimer();
 });
 
-const freeServiceForm = new FreeServiceForm('freeservices__form', 4, 5);
+const freeServiceForm = new FreeServiceForm('freeservices__form', 90, 120);
 freeServiceForm.setEventListeners();
