@@ -2,7 +2,7 @@
   display: none;
   cursor: pointer;
   position: relative;
-  transition: opacity .4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
   width: 24px;
   height: 28px;
   background-color: transparent;
@@ -10,14 +10,13 @@
   padding: 0;
   z-index: 10;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
 }
 
 .menu-burger:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1100px) {
   .menu-burger {
     display: block;
   }
