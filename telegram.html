@@ -7,7 +7,7 @@
     <meta name="author" content="" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="./pages/global.v17.css" />
+    <link rel="stylesheet" href="./dist/base.aade09a6b63f826502b7.css" />
     <link rel="stylesheet" href="./pages/telegram.css" />
     <title>Телеграм</title>
   </head>
@@ -393,7 +393,7 @@
           </div>
         </div>
       </section>
-      <section class="service-list" id="service-list">
+      <section class="service-list" id="service-list" data-socials="telegram">
         <h2 class="section-title service-list__title">Накрутка Телеграм</h2>
         <div class="service-list__description">
           <h3 class="service-list__description-subtitle">Обозначения</h3>
@@ -410,6 +410,17 @@
             </li>
           </ul>
         </div>
+        <form class="service-list__form service-list__form_hided" action="">
+          <div class="service-list__select-container">
+            <select
+              class="service-list__input service-list__input_type_select"
+              name=""
+              id=""
+            >
+              <option value="" disabled selected>Тип услуги</option>
+            </select>
+          </div>
+        </form>
         <div class="service-list__list-container">
           <ul class="service-list__headers-list">
             <li class="service-list__header-item">ID</li>
@@ -1970,6 +1981,9 @@
           </li>
         </ul>
       </li>
+    </template>
+    <template id="service-select">
+      <option class="service-list__option" value=""></option>
     </template>
     <div class="popup popup_type_service">
       <div class="popup__container">
