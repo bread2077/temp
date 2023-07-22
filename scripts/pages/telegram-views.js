@@ -73,7 +73,7 @@ if (socialsName.length > 1) {
   serviceSelectForm.classList.add('service-list__form_hided');
 } else {
   serviceSelectForm.classList.remove('service-list__form_hided');
-  setServicesItems(socials[socialTitle].shortList.full);
+  setServicesItems(socials[socialTitle].shortList);
   const serviceSelect = document.querySelector(
     '.service-list__input_type_select'
   );
@@ -82,7 +82,7 @@ if (socialsName.length > 1) {
     .getElementById('service-select')
     .content.querySelector('.service-list__option');
 
-  const typesArray = Array.from(socials[socialTitle].shortList.full).map(
+  const typesArray = Array.from(socials[socialTitle].shortList).map(
     type => type.type
   );
 
@@ -99,7 +99,7 @@ if (socialsName.length > 1) {
 
   serviceSelect.addEventListener('input', e => {
     listContainer.innerHTML = '';
-    const filterArray = socials[socialTitle].shortList.full.filter(
+    const filterArray = socials[socialTitle].shortList.filter(
       item => item.type.endsWith(e.target.value) && item
     );
     setServicesItems(filterArray);

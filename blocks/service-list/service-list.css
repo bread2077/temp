@@ -117,11 +117,11 @@
 .service-list__form {
   margin-bottom: 30px;
   grid-area: select;
-  /* max-width: 300px; */
-  /* justify-self: end; */
   display: flex;
 }
-
+.service-list__form_hided {
+  display: none;
+}
 .service-list__select-container {
   width: 100%;
   display: flex;
@@ -181,10 +181,6 @@
   }
   .service-list__form {
     margin: 0 30px 10px;
-    display: flex;
-  }
-  .service-list__form_hided {
-    display: none;
   }
   .service-list__body {
     border: none;
