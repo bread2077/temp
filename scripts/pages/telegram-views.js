@@ -81,7 +81,6 @@ if (socialsName.length > 1) {
   const serviceSelectElement = document
     .getElementById('service-select')
     .content.querySelector('.service-list__option');
-  console.log(serviceSelectElement);
 
   const typesArray = Array.from(socials[socialTitle].shortList.full).map(
     type => type.type
