@@ -63,8 +63,8 @@
 .popup__body {
   display: grid;
   grid-template-areas:
-    'description info'
-    'description example';
+    'description example'
+    'description info';
   gap: 32px 40px;
   justify-self: start;
   grid-template-rows: min-content 1fr;
@@ -102,6 +102,9 @@
 }
 .popup__information {
   grid-area: info;
+}
+.popup__information_hidden {
+  display: none;
 }
 .popup__example {
   grid-area: example;

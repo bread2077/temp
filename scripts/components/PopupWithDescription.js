@@ -10,6 +10,7 @@ export default class PopupWithDescription extends Popup {
     this._descriptionContainer = this._popup.querySelector(
       '.popup__description-list'
     );
+    this.blockInfo = this._popup.querySelector('.popup__information');
   }
 
   openServicePopup(service) {
@@ -27,13 +28,17 @@ export default class PopupWithDescription extends Popup {
   _setServicePopupInfo(service) {
     this._title.textContent = service.name;
     this._id.textContent = service.id;
-    service.information &&
+    this.blockInfo.classList.remove('popup__information_hidden');
+    if (service.information.length) {
       service.information.forEach(text => {
         this._additionalInfoContainer.insertAdjacentHTML(
           'beforeend',
           `<li class="popup__description-item popup__text">${text}</li>`
         );
       });
+    } else {
+      this.blockInfo.classList.add('popup__information_hidden');
+    }
     service.description &&
       service.description.forEach(text => {
         this._descriptionContainer.insertAdjacentHTML(
