@@ -89,6 +89,7 @@
 }
 .popup__description {
   grid-area: description;
+  word-break: break-word;
 }
 .popup__description-list,
 .popup__info-list {
@@ -102,12 +103,14 @@
 }
 .popup__information {
   grid-area: info;
+  word-break: break-word;
 }
 .popup__information_hidden {
   display: none;
 }
 .popup__example {
   grid-area: example;
+  word-break: break-word;
 }
 .popup__button {
   margin-bottom: 40px;

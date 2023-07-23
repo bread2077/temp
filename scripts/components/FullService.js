@@ -3,8 +3,10 @@ export default class FullService {
     blockSelector,
     templateSelector,
     { servicesItem },
-    handleOpenPopup
+    handleOpenPopup,
+    servicesContaner
   ) {
+    this._servicesContaner = servicesContaner;
     this._block = document.querySelector(`.${blockSelector}`);
     this._serviceTemplate = document.getElementById(templateSelector);
     this._servicesItem = servicesItem;
@@ -21,7 +23,7 @@ export default class FullService {
       .cloneNode(true);
   }
 
-  createServiceItem() {
+  _createServiceItem() {
     const serviceQuery = 'service-list__body-item_type';
 
     this._serviceItem.querySelector(`.${serviceQuery}_id`).textContent =
@@ -39,6 +41,10 @@ export default class FullService {
     this._serviceItem.querySelector(`.${serviceQuery}_speed`).textContent =
       this._servicesItem.speed;
     return this._serviceItem;
+  }
+
+  initialize() {
+    this._servicesContaner.append(this._createServiceItem());
   }
 
   setEvetListeners() {
