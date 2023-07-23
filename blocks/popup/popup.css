@@ -119,10 +119,11 @@
 @media screen and (max-width: 700px) {
   .popup {
     overflow: scroll;
+    align-items: flex-start;
   }
   .popup__container {
     max-width: 90%;
-    margin: 160px 0 100px;
+    margin: 60px 0 30px;
   }
   .popup__body {
     display: grid;
