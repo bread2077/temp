@@ -61,7 +61,6 @@
 }
 
 .long-read__section_size_l {
-  min-width: 100vw;
 }
 
 .long-read__section_size_l > .long-read__title {
@@ -71,6 +70,7 @@
 
 .long-read__section_type_curve {
   position: relative;
+  overflow: hidden;
 }
 
 .long-read__section_type_curve::after {
