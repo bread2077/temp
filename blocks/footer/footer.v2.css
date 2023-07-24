@@ -6,12 +6,14 @@
 }
 .footer__container {
   display: grid;
+  grid-template-columns: 1.5fr repeat(3, 1fr);
   grid-template-areas:
     'copyright company services contacts social'
     'meta . . . up';
   max-width: var(--width-max);
   margin: 0 auto;
-  gap: 30px 70px;
+  justify-content: space-between;
+  gap: 30px 0;
 }
 .footer__section_type_copyright {
   grid-area: copyright;
@@ -23,6 +25,7 @@
   grid-area: social;
   display: flex;
   gap: 24px;
+  justify-content: flex-end;
 }
 .footer__section_type_up {
   grid-area: up;
@@ -164,6 +167,7 @@
 
 @media screen and (max-width: 1023px) {
   .footer__container {
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
       'copyright company up'
       'services contacts social'
@@ -176,6 +180,7 @@
     padding: 60px 0;
   }
   .footer__container {
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       'copyright up'
       'company company'
@@ -247,13 +252,16 @@
   .logo-title_pos_footer {
     font-size: 17.5px;
   }
+  .footer__section_type_social {
+    justify-content: flex-start;
+  }
 }
 
 .link_type_menu_opened::after {
   transform: scale(-1, -1);
 }
 
-  .links-sublist_opened {
+.links-sublist_opened {
   display: flex;
   position: relative;
   visibility: visible;

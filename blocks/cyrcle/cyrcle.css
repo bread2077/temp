@@ -37,12 +37,11 @@
 .cyrcle__socials,
 .cyrcle__figure {
   position: relative;
-
 }
 
-.cyrcle__container  {
+.cyrcle__container {
   width: var(--cyrcle-width);
-  height: var(--cyrcle-width);;
+  height: var(--cyrcle-width);
   border-radius: 50%;
   border: 1.5px solid var(--color-primary);
   list-style: none;
@@ -62,14 +61,14 @@
   left: 50%;
 }
 
-.cyrcle__container::before  {
+.cyrcle__container::before {
   --var-cyrcle-btn-w-m: 80%;
   width: var(--var-cyrcle-btn-w-m);
   height: var(--var-cyrcle-btn-w-m);
   border: 1.5px dashed rgba(60, 90, 243, 0.6);
 }
 
-.cyrcle__container::after  {
+.cyrcle__container::after {
   --var-cyrcle-btn-w-s: 65%;
   width: var(--var-cyrcle-btn-w-s);
   height: var(--var-cyrcle-btn-w-s);
@@ -80,10 +79,11 @@
   position: absolute;
   top: calc(var(--cyrcle-item-width) * (-1) / 2);
   left: calc((var(--cyrcle-width) / 2) - var(--cyrcle-item-width) / 2);
-  transform-origin: calc(var(--cyrcle-item-width) / 2) calc((var(--cyrcle-width) / 2) + var(--cyrcle-item-width) / 2);
+  transform-origin: calc(var(--cyrcle-item-width) / 2)
+    calc((var(--cyrcle-width) / 2) + var(--cyrcle-item-width) / 2);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.cyrcle__image{
+.cyrcle__image {
   width: var(--cyrcle-item-width);
   height: var(--cyrcle-item-width);
   object-fit: cover;
@@ -143,7 +143,7 @@
   margin: 0;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1123px) {
   .cyrcle__service {
     padding: 20px 10px;
     border-radius: 10px;
@@ -173,15 +173,15 @@
     justify-self: start;
   }
 
-  .cyrcle__container  {
-    border: .5px solid var(--color-primary);
+  .cyrcle__container {
+    border: 0.5px solid var(--color-primary);
   }
-  .cyrcle__container::before  {
-    border: .5px dashed rgba(60, 90, 243, 0.6);
+  .cyrcle__container::before {
+    border: 0.5px dashed rgba(60, 90, 243, 0.6);
   }
 
-  .cyrcle__container::after  {
-    border: .5px dashed rgba(60, 90, 243, 0.3);
+  .cyrcle__container::after {
+    border: 0.5px dashed rgba(60, 90, 243, 0.3);
   }
   .cyrcle__item {
   }

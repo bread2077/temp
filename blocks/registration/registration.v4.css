@@ -59,6 +59,7 @@
 }
 .registration__link {
   color: var(--color-primary);
+  justify-self: flex-start;
 }
 .registration__link_grid_forget {
   grid-area: forget;
