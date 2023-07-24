@@ -22,11 +22,11 @@
   border: 1px solid var(--color-primary);
   border-radius: 20px;
   display: grid;
+  max-width: 60%;
 }
 .popup__header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 24px;
   padding: 20px 30px;
   border-bottom: 1px solid var(--color-primary);
@@ -58,12 +58,13 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  margin-left: auto;
 }
 .popup__body {
   display: grid;
   grid-template-areas:
-    'description info'
-    'description example';
+    'description example'
+    'description info';
   gap: 32px 40px;
   justify-self: start;
   grid-template-rows: min-content 1fr;
@@ -85,37 +86,50 @@
   font-size: 14px;
   line-height: 120%;
   color: var(--color-dark);
-  max-width: 320px;
 }
 .popup__description {
   grid-area: description;
+  word-break: break-word;
 }
-.popup__description-list {
+.popup__description-list,
+.popup__info-list {
   padding: 0;
   margin: 0;
   list-style: none;
   display: grid;
-  gap: 10px;
+  gap: 7px;
 }
 .popup__description-item {
 }
 .popup__information {
   grid-area: info;
+  word-break: break-word;
+}
+.popup__information_hidden {
+  display: none;
 }
 .popup__example {
   grid-area: example;
+  word-break: break-word;
 }
 .popup__button {
   margin-bottom: 40px;
   justify-self: center;
 }
+@media screen and (max-width: 1280px) {
+  .popup__container {
+    max-width: 80%;
+  }
+}
 
 @media screen and (max-width: 700px) {
   .popup {
     overflow: scroll;
+    align-items: flex-start;
   }
   .popup__container {
     max-width: 90%;
+    margin: 60px 0 30px;
   }
   .popup__body {
     display: grid;

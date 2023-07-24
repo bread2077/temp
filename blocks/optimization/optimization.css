@@ -250,9 +250,10 @@
   justify-self: end;
 }
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1280px) {
   .optimization {
     padding: var(--space-primary) 30px;
+    overflow: hidden;
   }
 }
 

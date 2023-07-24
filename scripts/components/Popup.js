@@ -1,3 +1,5 @@
+import { root } from '../utils/constants.v5.js';
+
 export default class Popup {
   constructor(popupSelector) {
     this._popup = document.querySelector(`.${popupSelector}`);
@@ -15,11 +17,13 @@ export default class Popup {
   }
 
   open() {
+    root.classList.add('root_hidden');
     this._popup.classList.add('popup_is-opened');
     document.addEventListener('keydown', this._handleEscClose);
   }
 
   _close() {
+    root.classList.remove('root_hidden');
     this._popup.classList.remove('popup_is-opened');
     document.removeEventListener('keydown', this._handleEscClose);
   }

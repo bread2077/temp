@@ -2,10 +2,7 @@ import ChoiceServiceText from '../components/ChoiceServiceText.js';
 import Faq from '../components/Faq.js';
 import HorizontalSwiper from '../components/HorizontalSwiper.js';
 import CustomerCounter from '../components/CustomerCounter.js';
-import FullService from '../components/FullService.js';
-import PopupWithDescription from '../components/PopupWithDescription.js';
-import { cyrcle, faqList, listContainer } from '../utils/constants.v5.js';
-import { socials } from '../utils/socials.js';
+import { cyrcle, faqList } from '../utils/constants.v5.js';
 
 const thirdCulc = new ChoiceServiceText('third-culc');
 thirdCulc.renderSocials();
@@ -35,21 +32,4 @@ const countersList = document.querySelectorAll('.custom-counter');
 countersList.forEach(counter => {
   const customCounter = new CustomerCounter(counter);
   customCounter.startTimer();
-});
-
-const popupService = new PopupWithDescription('popup_type_service');
-popupService.setEventListeners();
-
-socials.telegram.services.views.full.forEach(social => {
-  const serviceItem = new FullService(
-    'service-list__body',
-    'service-element',
-    {
-      servicesItem: social,
-    },
-    popupService.openServicePopup.bind(popupService)
-  );
-
-  serviceItem.setEvetListeners();
-  listContainer.append(serviceItem.createServiceItem());
 });

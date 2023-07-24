@@ -7,8 +7,11 @@
     <meta name="author" content="" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="./pages/global.v17.css" />
-    <link rel="stylesheet" href="./pages/telegram.css" />
+    <link rel="stylesheet" href="../styles/global.v17.css" />
+    <link rel="stylesheet" href="../styles/telegram.css" />
+    <script type="module" src="../dist/base.aade09a6b63f826502b7.js"></script>
+    <script type="module" src="../scripts/pages/social.js"></script>
+    <script type="module" src="../scripts/pages/telegram.js"></script>
     <title>Телеграм</title>
   </head>
   <body class="root">
@@ -226,7 +229,9 @@
       </nav>
     </header>
     <main class="content">
-      <section class="social-intro social-intro_type_tg">
+      <section
+        class="social-intro social-intro_type_tg social-intro_unreg-styled"
+      >
         <div class="social-intro__container">
           <div class="social-intro__container-text">
             <h1 class="social-intro__title">
@@ -393,7 +398,11 @@
           </div>
         </div>
       </section>
-      <section class="service-list" id="service-list">
+      <section
+        class="service-list"
+        id="service-list"
+        data-socials="telegram.followers"
+      >
         <h2 class="section-title service-list__title">Накрутка Телеграм</h2>
         <div class="service-list__description">
           <h3 class="service-list__description-subtitle">Обозначения</h3>
@@ -410,11 +419,27 @@
             </li>
           </ul>
         </div>
+        <form
+          class="service-list__form service-list__form_hided service-list__form_role_filter"
+          action=""
+        >
+          <div class="service-list__select-container">
+            <select
+              class="service-list__input service-list__input_type_select"
+              name=""
+              id=""
+            >
+              <option value="" disabled selected>Тип услуги</option>
+            </select>
+          </div>
+        </form>
         <div class="service-list__list-container">
           <ul class="service-list__headers-list">
             <li class="service-list__header-item">ID</li>
             <li class="service-list__header-item">Название</li>
-            <li class="service-list__header-item">Стоимость за 1 000</li>
+            <li class="service-list__header-item">
+              Стоимость за&nbsp;1&nbsp;000
+            </li>
             <li class="service-list__header-item">Время запуска</li>
             <li class="service-list__header-item">Скорость</li>
             <li class="service-list__header-item">Гарантия</li>
@@ -1971,6 +1996,9 @@
         </ul>
       </li>
     </template>
+    <template id="service-select">
+      <option class="service-list__option" value=""></option>
+    </template>
     <div class="popup popup_type_service">
       <div class="popup__container">
         <div class="popup__header">
@@ -1983,13 +2011,17 @@
             <h4 class="popup__subtitle">Описание:</h4>
             <ul class="popup__description-list"></ul>
           </div>
-          <div class="popup__information">
-            <h4 class="popup__subtitle">Дополнительная информация:</h4>
-            <p class="popup__text popup__text_type_information"></p>
-          </div>
           <div class="popup__example">
-            <h4 class="popup__subtitle">🔗 Указывать ссылку на пост</h4>
+            <h4 class="popup__subtitle">🔗 Пример</h4>
             <p class="popup__text popup__text_type_example"></p>
+          </div>
+          <div class="popup__information popup__information_hidden">
+            <h4 class="popup__subtitle popup__subtitle_type_info">
+              Дополнительная информация:
+            </h4>
+            <ul
+              class="popup__text popup__info-list popup__text_type_information"
+            ></ul>
           </div>
         </div>
         <a href="#" class="btn btn_size_small btn_color_orange popup__button"
@@ -1997,7 +2029,5 @@
         >
       </div>
     </div>
-    <script type="module" src="./scripts/base.v8.js"></script>
-    <script type="module" src="./scripts/pages/telegram-views.js"></script>
   </body>
 </html>
