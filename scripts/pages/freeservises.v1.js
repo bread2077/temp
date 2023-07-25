@@ -5,6 +5,8 @@ import CustomerCounter from '../components/CustomerCounter.js';
 import { cyrcle, faqList, countersList } from '../utils/constants.v5.js';
 import FreeServiceForm from '../components/FreeServiceForm.js';
 
+import '../../styles/freeservice.v13.css';
+
 const thirdCulc = new ChoiceServiceText('third-culc');
 thirdCulc.renderSocials();
 thirdCulc.setEventListeners();
