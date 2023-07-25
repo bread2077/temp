@@ -104,7 +104,6 @@
   justify-content: center;
   gap: 28px;
   overflow-x: auto;
-  overflow-y: hidden;
 }
 
 .choice__list::-webkit-scrollbar,
@@ -119,10 +118,13 @@
 }
 
 .culc__image {
-  width: 57px;
-  height: 57px;
   object-fit: contain;
   object-position: center;
+}
+
+.culc__image_type_service {
+  width: 30px;
+  height: 30px;
 }
 
 @media screen and (max-width: 1150px) {
@@ -147,13 +149,10 @@
     margin: 10px auto 0;
   }
 
-  .choice__culc {
-    padding-left: 30px;
-  }
-
   .choice__list,
   .choice__sublist {
     gap: 18px;
+    padding-left: 30px;
   }
 
   .choice__services {
@@ -163,7 +162,7 @@
   .choice__description {
     justify-items: start;
     justify-content: start;
-    margin: 40px 0 0 0;
+    margin: 40px 0 0 30px;
   }
 
   .choice__proposal {
@@ -174,6 +173,9 @@
   .choice__subtitle {
     margin: 0 0 16px;
     text-align: left;
+  }
+  .choice__subtitle_role_cost {
+    margin-left: 30px;
   }
   .choice__button::after {
     display: none;

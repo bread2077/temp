@@ -12,9 +12,9 @@
 
 @import url('../blocks/call-action/call-action.css');
 
-@import url('../blocks/choice/choice.css');
-
 @import url('../blocks/culc/culc.v1.css');
+
+@import url('../blocks/choice/choice.css');
 
 @import url('../blocks/faq/faq.v1.css');
 

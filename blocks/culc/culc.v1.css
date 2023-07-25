@@ -39,6 +39,21 @@
   bottom: 0;
 }
 
+.culc__list {
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+
+.culc__list::-webkit-scrollbar,
+.culc__sublist::-webkit-scrollbar {
+  display: none;
+}
+
 .culc__image-container_type_service {
   border-radius: 50%;
   background-color: #fff;
@@ -59,6 +74,7 @@
 }
 
 .culc__item {
+  border: 1.5px solid transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
