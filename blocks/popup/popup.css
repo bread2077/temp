@@ -129,6 +129,7 @@
   }
   .popup__container {
     max-width: 90%;
+    margin: auto auto 30px;
   }
   .popup__body {
     display: grid;
