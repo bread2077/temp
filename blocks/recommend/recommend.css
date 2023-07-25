@@ -61,12 +61,13 @@
 
 @media screen and (max-width: 1160px) {
   .recommend {
-    margin: var(--space-primary) 30px 10px;
+    margin: calc(var(--space-primary) + 200px) 30px 10px;
   }
 }
 
 @media screen and (max-width: 875px) {
   .recommend {
+    margin: var(--space-primary) 30px 10px;
     flex-direction: column;
     padding: 50px 10px 0;
     align-items: center;
