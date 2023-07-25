@@ -126,10 +126,11 @@
 @media screen and (max-width: 700px) {
   .popup {
     align-items: flex-start;
+    padding: 20px 0 0;
   }
   .popup__container {
     max-width: 90%;
-    margin: auto auto 30px;
+    margin: auto auto 70px;
   }
   .popup__body {
     display: grid;
