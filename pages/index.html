@@ -7,8 +7,10 @@
     <meta name="author" content="" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="./pages/global.v17.css" />
-    <link rel="stylesheet" href="./pages/index.v10.css" />
+    <link rel="stylesheet" href="../styles/global.v17.css" />
+    <link rel="stylesheet" href="../styles/index.v10.css" />
+    <script defer src="../dist/base.0c532c540f9cb2a7c766.js"></script>
+    <script defer src="../dist/index.0c532c540f9cb2a7c766.js"></script>
     <title>Главная</title>
   </head>
   <body class="root">
@@ -920,23 +922,17 @@
           <h3 class="optimization__subtitle">
             Выберите, какую соцсеть вам нужно раскрутить
           </h3>
-          <ul class="optimization__list choice__list culc__list"></ul>
+          <ul class="optimization__list culc__list"></ul>
           <div
             class="optimization__services choice__services choice__services_hided culc__service-container"
           >
-            <h3 class="optimization__subtitle choice__subtitle">
-              Выберите тип услуги:
-            </h3>
-            <ul
-              class="optimization__sublist choice__sublist culc__sublist"
-            ></ul>
+            <h3 class="optimization__subtitle">Выберите тип услуги:</h3>
+            <ul class="optimization__sublist culc__sublist"></ul>
           </div>
           <div
             class="optimization__description choice__description choice__description_hided"
           >
-            <h3 class="optimization__choice-title choice__subtitle">
-              Стоимость:
-            </h3>
+            <h3 class="optimization__choice-title">Стоимость:</h3>
             <p class="optimization__proposal choice__proposal">
               от
               <span class="choice__cost culc__cost"></span>
@@ -1464,7 +1460,9 @@
             <div
               class="choice__services choice__services_hided culc__service-container"
             >
-              <h3 class="choice__subtitle">Выберите тип услуги:</h3>
+              <h3 class="choice__subtitle choice__subtitle_role_cost">
+                Выберите тип услуги:
+              </h3>
               <ul class="choice__sublist culc__sublist"></ul>
             </div>
             <div class="choice__description choice__description_hided">
@@ -1968,7 +1966,5 @@
         <p class="culc__text"></p>
       </li>
     </template>
-    <script type="module" src="./dist/base.a2052ea2b8ca28bc768f.js"></script>
-    <script type="module" src="./dist/index.a2052ea2b8ca28bc768f.js"></script>
   </body>
 </html>

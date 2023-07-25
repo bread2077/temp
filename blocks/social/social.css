@@ -1,29 +1,54 @@
 .social {
-  padding: calc(var(--space-primary) + 20px) 0;
-  margin: 0 auto;
-  position: relative;
-  max-width: 1440px;
   overflow: hidden;
 }
-.social::after,
-.social::before {
+.social__container {
+  padding: calc(var(--space-primary) + 20px) 0;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.social__container::after,
+.social__container::before {
   --width-bg-social: 514px;
   content: '';
   width: var(--width-bg-social);
   height: var(--width-bg-social);
-  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: absolute;
 }
-.social::before {
+.social__container::before {
   top: 0;
   left: -18%;
 }
-.social::after {
+.social__container::after {
   bottom: 0;
   right: -18%;
+}
+.social__container_type_tg:before,
+.social__container_type_tg:after {
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram.webp');
+}
+
+.social__container_type_vk:before,
+.social__container_type_vk:after {
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram.webp');
+}
+
+.social__container_type_ig:before,
+.social__container_type_ig:after {
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram.webp');
+}
+
+.social__container_type_tt:before,
+.social__container_type_tt:after {
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram.webp');
+}
+
+.social__container_type_thr:before,
+.social__container_type_thr:after {
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram.webp');
 }
 .social__title {
   color: #2c2c2c;
@@ -47,7 +72,7 @@
 }
 
 @media screen and (max-width: 1160px) {
-  .social {
+  .social__container {
     padding: var(--space-primary) 30px 280px;
   }
   .social__title {
@@ -57,10 +82,10 @@
     padding: 60px 0 16px;
     font-size: 18px;
   }
-  .social::before {
+  .social__container::before {
     content: none;
   }
-  .social::after {
+  .social__container::after {
     --width-bg-social: 407px;
     bottom: 0;
     right: 50%;

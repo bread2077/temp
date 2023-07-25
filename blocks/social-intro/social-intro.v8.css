@@ -13,28 +13,59 @@
   background: linear-gradient(113.85deg, #f8f9fd 16.26%, #f2f2fc 50.24%);
 }
 
-.social-intro_type_tg::before,
-.social-intro_type_tg::after {
+.social-intro_type_social:before,
+.social-intro_type_social:after {
   content: '';
-  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram-head.webp');
   background-size: cover;
   background-position: center;
   position: absolute;
 }
-.social-intro_type_tg::before {
+
+.social-intro_type_social::before {
   width: 315px;
   height: 315px;
   top: -5%;
   right: 3%;
   transform: rotate(10deg) translate(15%, -15%);
 }
-.social-intro_type_tg::after {
+.social-intro_type_social::after {
   width: 114px;
   height: 114px;
   top: 10%;
   right: 27%;
   transform: rotate(-15deg) translate(15%, -15%);
 }
+
+.social-intro_type_tg::before,
+.social-intro_type_tg::after {
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram-head.webp');
+}
+
+.social-intro_type_vk::before,
+.social-intro_type_vk::after {
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram-head.webp');
+}
+
+.social-intro_type_yt::before,
+.social-intro_type_yt::after {
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram-head.webp');
+}
+
+.social-intro_type_tt::before,
+.social-intro_type_tt::after {
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram-head.webp');
+}
+
+.social-intro_type_ig::before,
+.social-intro_type_ig::after {
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram-head.webp');
+}
+
+.social-intro_type_thr::before,
+.social-intro_type_thr::after {
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram-head.webp');
+}
+
 .social-intro__container {
   max-width: var(--width-max);
   width: 100%;

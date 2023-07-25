@@ -1,4 +1,5 @@
 .popup {
+  overflow: scroll;
   position: fixed;
   top: 0;
   left: 0;
@@ -7,11 +8,12 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
   display: flex;
-  align-items: center;
   justify-content: center;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.2s, opacity 0.2s ease-in-out;
+  box-sizing: border-box;
+  padding: 20px 0 70px;
 }
 .popup_is-opened {
   visibility: visible;
@@ -23,6 +25,7 @@
   border-radius: 20px;
   display: grid;
   max-width: 60%;
+  margin: auto;
 }
 .popup__header {
   display: flex;
@@ -99,8 +102,6 @@
   display: grid;
   gap: 7px;
 }
-.popup__description-item {
-}
 .popup__information {
   grid-area: info;
   word-break: break-word;
@@ -124,12 +125,11 @@
 
 @media screen and (max-width: 700px) {
   .popup {
-    overflow: scroll;
     align-items: flex-start;
+    padding: 20px 0 110px;
   }
   .popup__container {
     max-width: 90%;
-    margin: 60px 0 30px;
   }
   .popup__body {
     display: grid;

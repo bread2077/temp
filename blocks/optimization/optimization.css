@@ -198,6 +198,9 @@
 .optimization__sublist {
   justify-content: flex-start;
   padding: 0 32px;
+  overflow-x: auto;
+  display: flex;
+  gap: 24px;
 }
 
 .optimization__list_pos_center,
@@ -331,7 +334,8 @@
     justify-content: flex-start;
   }
   .optimization__label_role_block {
-    margin-top: 30px;
+    margin-top: 80px;
+    justify-self: end;
     display: grid;
     justify-content: end;
   }
@@ -389,21 +393,25 @@
   .optimization__description_pos_center {
     justify-content: start;
   }
-}
 
-@media screen and (max-width: 600px) {
   .optimization__label_role_block::before {
     background-size: 92px;
     width: 92px;
     height: 92px;
-    top: -10%;
-    left: 40%;
+    top: -15%;
+    left: 20%;
   }
   .optimization__label_role_block::after {
     background-size: 154px;
     width: 154px;
     height: 154px;
-    bottom: -10%;
-    left: 30%;
+    bottom: -20%;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .optimization__sublist {
+    gap: 18px;
   }
 }
