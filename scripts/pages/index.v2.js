@@ -1,4 +1,4 @@
-// import '../../styles/index.v10.css';
+import '../../styles/index.v10.css';
 
 import ChoiceServiceImage from '../components/ChoiceServiceImage.js';
 import ChoiceServiceText from '../components/ChoiceServiceText.js';
