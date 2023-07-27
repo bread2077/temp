@@ -206,7 +206,7 @@
   padding: 0 32px;
   overflow-x: auto;
   display: flex;
-  gap: 18px;
+  gap: 24px;
 }
 
 .optimization__list_pos_center,
@@ -333,6 +333,7 @@
 
   .optimization__list,
   .optimization__sublist {
+    gap: 18px;
     padding: 0 0 0 10px;
   }
   .optimization__list_pos_center,
