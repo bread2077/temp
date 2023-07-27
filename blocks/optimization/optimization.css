@@ -206,7 +206,7 @@
   padding: 0 32px;
   overflow-x: auto;
   display: flex;
-  gap: 24px;
+  gap: 18px;
 }
 
 .optimization__list_pos_center,
