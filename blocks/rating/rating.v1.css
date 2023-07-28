@@ -1,4 +1,6 @@
 .rating {
+  position: relative;
+  z-index: 3;
   max-width: var(--width-max);
   margin: 0 auto calc(var(--space-primary));
 }

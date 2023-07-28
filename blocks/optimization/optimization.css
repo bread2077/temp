@@ -333,6 +333,7 @@
 
   .optimization__list,
   .optimization__sublist {
+    gap: 18px;
     padding: 0 0 0 10px;
   }
   .optimization__list_pos_center,
