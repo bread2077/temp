@@ -1,7 +1,7 @@
 import FullService from '../components/FullService.js';
 import { listContainer } from '../utils/constants.v5.js';
 import PopupWithDescription from '../components/PopupWithDescription.js';
-import { telegramServices as socialTitle } from '../utils/social-services/telegram-services.js';
+import { telegramServices as socialTitle } from '../utils/social-services/telegram-services.v1.js';
 import { ServiceFilter } from '../components/ServiceFilter.js';
 
 const popupService = new PopupWithDescription('popup_type_service');
