@@ -47,38 +47,32 @@
 
 .social-intro__wrapper_type_tg::before,
 .social-intro__wrapper_type_tg::after {
-  /* background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram-head.webp'); */
-  background-image: url('../../images/bg-social/tg/bg-telegram-head.webp');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/tg/bg-telegram-head.webp');
 }
 
 .social-intro__wrapper_type_vk::before,
 .social-intro__wrapper_type_vk::after {
-  /* background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram-head.webp'); */
-  background-image: url('../../images/bg-social/vk/bg-vk-head.webp');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/vk/bg-vk-head.webp');
 }
 
 .social-intro__wrapper_type_yt::before,
 .social-intro__wrapper_type_yt::after {
-  /* background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram-head.webp'); */
-  background-image: url('../../images/bg-social/yt/bg-yt-head.webp');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/yt/bg-yt-head.webp');
 }
 
 .social-intro__wrapper_type_tt::before,
 .social-intro__wrapper_type_tt::after {
-  /* background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram-head.webp'); */
-  background-image: url('../../images/bg-social/tt/bg-tt-head.webp');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/tt/bg-tt-head.webp');
 }
 
 .social-intro__wrapper_type_ig::before,
 .social-intro__wrapper_type_ig::after {
-  /* background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram-head.webp'); */
-  background-image: url('../../images/bg-social/ig/bg-ig-head.webp');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/ig/bg-ig-head.webp');
 }
 
 .social-intro__wrapper_type_thr::before,
 .social-intro__wrapper_type_thr::after {
-  /* background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram-head.webp'); */
-  background-image: url('../../images/bg-social/ig/bg-ig-head.webp');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/ig/bg-ig-head.webp');
 }
 
 .social-intro__content {
@@ -234,7 +228,7 @@
   }
   .social-intro__container-text {
     align-self: center;
-    padding: 40px 0 0px;
+    padding: 0;
   }
   .social-intro__social_pos_up {
     right: 140px;

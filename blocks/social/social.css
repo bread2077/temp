@@ -29,38 +29,32 @@
 }
 .social__container_type_tg:before,
 .social__container_type_tg:after {
-  /* background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram.webp'); */
-  background-image: url('../../images/bg-social/tg/bg-telegram.webp');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/tg/bg-telegram.webp');
 }
 
 .social__container_type_vk:before,
 .social__container_type_vk:after {
-  /* background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram.webp'); */
-  background-image: url('../../images/bg-social/vk/bg-vk.webp');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/vk/bg-vk.webp');
 }
 
 .social__container_type_ig:before,
 .social__container_type_ig:after {
-  /* background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram.webp'); */
-  background-image: url('../../images/bg-social/ig/bg-ig.webp');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/ig/bg-ig.webp');
 }
 
 .social__container_type_tt:before,
 .social__container_type_tt:after {
-  /* background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram.webp'); */
-  background-image: url('../../images/bg-social/tt/bg-tt.webp');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/tt/bg-tt.webp');
 }
 
 .social__container_type_yt:before,
 .social__container_type_yt::after {
-  /* background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram.webp'); */
-  background-image: url('../../images/bg-social/yt/bg-yt.webp');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/yt/bg-yt.webp');
 }
 
 .social__container_type_thr:before,
 .social__container_type_thr:after {
-  /* background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/bg-telegram.webp'); */
-  background-image: url('../../images/bg-social/ig/bg-ig.webp');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/bg-social/ig/bg-ig.webp');
 }
 .social__title {
   color: #2c2c2c;
