@@ -30,6 +30,10 @@
 	box-shadow: 5px 4px 20px 5px rgba(64, 123, 255, 0.1);
 	border-radius: 25px;
 	padding: 18px 25px 35px 25px;
+	transform: none;
+	position: relative;
+	top: 0;
+	left: 0;
 }
 .message__bottom span{
 	display: none;
