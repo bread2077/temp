@@ -5,7 +5,9 @@ const openServicePopup = id => {
   document.body.style = "overflow: hidden;"
 }
 
-const closeServicePopup = () => {
+const closeServicePopup = id => {
+  const servicePopup = document.getElementById("popup" + id);
+  
   servicePopup.classList.remove("message__show")
   document.body.style = "overflow: visible;"
 }
