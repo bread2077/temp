@@ -1,5 +1,5 @@
 export default class FreeServiceForm {
-  constructor(formSelector, min, max) {
+  constructor(formSelector, min, max, linkList) {
     this._formSelector = formSelector;
     this._form = document.querySelector(`.${formSelector}`);
     this._link = this._form.querySelector('.freeservices__input_type_link');
@@ -10,6 +10,7 @@ export default class FreeServiceForm {
     this._timer = this._form.querySelector('.freeservices__time');
     this._MIN_TIMER = min;
     this._MAX_TIMER = max;
+    this._linkList = linkList;
   }
 
   _getRandomInt() {
@@ -19,6 +20,12 @@ export default class FreeServiceForm {
       Math.floor(Math.random() * (this._MAX_TIMER - this._MIN_TIMER)) +
       this._MIN_TIMER
     );
+  }
+
+  _checkSericeLink() {
+    return this._linkList.some(item => {
+      return this._link.value.startsWith(item);
+    });
   }
 
   _fetchFreeService(amount) {
@@ -62,9 +69,16 @@ export default class FreeServiceForm {
 
   _sendFreeService(e) {
     e.preventDefault();
+    this._checkSericeLink();
+
     this._response.classList.remove('freeservices__responce_hidden');
     this._submit.classList.add('btn_disabled');
-    this._choiceAmountFreeService();
+    if (this._checkSericeLink()) {
+      this._response.textContent = 'Лимит исчерпан';
+    } else {
+      this._choiceAmountFreeService();
+      this._response.textContent = 'Услуга взята в работу';
+    }
   }
 
   setEventListeners() {

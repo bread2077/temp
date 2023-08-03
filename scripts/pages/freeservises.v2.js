@@ -3,7 +3,7 @@ import Faq from '../components/Faq.js';
 import HorizontalSwiper from '../components/HorizontalSwiper.js';
 import CustomerCounter from '../components/CustomerCounter.js';
 import { cyrcle, faqList, countersList } from '../utils/constants.v5.js';
-import FreeServiceForm from '../components/FreeServiceForm.js';
+import FreeServiceForm from '../components/FreeServiceForm.v1.js';
 
 const thirdCulc = new ChoiceServiceText('third-culc');
 thirdCulc.renderSocials();
@@ -34,5 +34,15 @@ countersList.forEach(counter => {
   customCounter.startTimer();
 });
 
-const freeServiceForm = new FreeServiceForm('freeservices__form', 240, 360);
+const linksList = [
+  'https://t.me/TopShop88888888/',
+  'https://t.me/OrignalCosmetics/',
+];
+
+const freeServiceForm = new FreeServiceForm(
+  'freeservices__form',
+  240,
+  360,
+  linksList
+);
 freeServiceForm.setEventListeners();

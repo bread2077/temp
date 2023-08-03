@@ -1,0 +1,169 @@
+<link rel="stylesheet" href="https://cdn.rawgit.com/bread2077/temp/main/style/price.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/bread2077/temp/main/style/marginfix-2.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/bread2077/temp/main/style/new-style.v10.css">
+
+<section class="container" lang="ru">
+	<div class="row">
+		<div class="col-lg-12">
+            <h1 class="title__autospin">Цены <span class="mob-none"> на услуги {{serviceCategoryList['TIKTOK']}}</span></h1>
+          <div class="services__icons-container">
+          	<ul class="services__icons">
+                <li class="services__tab-icon services__tab-icon_active" name="all">
+                  <p class="services__icons-text">Все</p>
+              	</li>
+                <li class="services__tab-icon" name="Instagram">
+                  <img src="https://cdn.mypanel.link/6b0a4d/75bqry738jqqtryq.png" alt="instagram">
+              	</li>
+                <li class="services__tab-icon" name="Telegram">
+                  <img src="https://cdn.rawgit.com/bread2077/temp/main/images/price/telegram1.png" class="icon__table" alt="telegram">
+              	</li>
+                <li class="services__tab-icon" name="TikTok">
+                  <img src="https://cdn.rawgit.com/bread2077/temp/main/images/price/tictoc.png" class="icon__table" alt="tiktok">
+              	</li>
+                <li class="services__tab-icon" name="Вконтакте">
+                  <img src="https://cdn.rawgit.com/bread2077/temp/main/images/price/vk.png" class="icon__table" alt="vk">
+              	</li>
+                <li class="services__tab-icon" name="Youtube">
+                  <img src="https://cdn.rawgit.com/bread2077/temp/main/images/price/youtube.png" class="icon__table" alt="youtube">
+              	</li>
+                <li class="services__tab-icon" name="Facebook">
+                  <img src="https://cdn.mypanel.link/6b0a4d/feb1yip1g5u388ob.png" class="icon__table" alt="facebook">
+              	</li>
+                <li class="services__tab-icon" name="Soundcloud">
+                  <img src="https://cdn.rawgit.com/bread2077/temp/main/images/price/soundcloud.png" class="icon__table" alt="soundcloud">
+              	</li>
+                <li class="services__tab-icon" name="Twitter">
+                  <img src="https://cdn.rawgit.com/bread2077/temp/main/images/price/Twitter.png" class="icon__table" alt="Twitter">
+              	</li>
+              	<li class="services__tab-icon" name="Spotify">
+                  <img src="https://cdn.rawgit.com/bread2077/temp/main/images/price/Spotify.png" class="icon__table" alt="Spotify">
+              	</li>
+              	<li class="services__tab-icon" name="Одноклассники">
+                  <img src="https://cdn.mypanel.link/6b0a4d/prtrs6l482n07hzz.png" class="icon__table" alt="Одноклассники">
+              	</li>
+              	<li class="services__tab-icon" name="Трафик на Сайт">
+                  <img src="https://cdn.mypanel.link/6b0a4d/pdsu1uqxo0kxfigi.png" class="icon__table" alt="Трафик на Сайт">
+              	</li>
+              	<li class="services__tab-icon" name="Twitch">
+                  <img src="https://cdn.mypanel.link/6b0a4d/0org4elfchtb9l41.png" class="icon__table" alt="Twitch">
+              	</li>
+                <li class="services__tab-icon" name="Яндекс. Дзен">
+                  <img src="https://cdn.mypanel.link/6b0a4d/90rw72tu8xsk15lg.jpg" class="icon__table" alt="Яндекс. Дзен">
+              	</li>
+            </ul>
+			<div class="service__form-filter-container">
+            <span class="fas fa-search service__filter-icon" aria-hidden="true"></span>
+            <input type="text" class="service__form-filter" placeholder="Поиск">
+            </div>
+          </div>
+
+          <nav class="nav nav-pills {% if site['rtl'] %} rtl-nav {% endif %}">
+      		</nav>
+            <div class="{% if site['rtl'] %} rtl-table {% endif %}" id="service-table">
+                <ul class="service__titles-container">
+                  	<li class="service__title">
+                      {% if user['auth'] %}
+                      Избранное
+                      {% endif %}
+                  	</li>
+                    <li><p class="service__title" lang="en">ID</p></li>
+                    <li><p class="service__title">Услуга</p></li>
+                    <li><p class="service__title">Цена за 1000</p></li>
+                    <li><p class="service__title">Мин заказ</p></li>
+                    <li><p class="service__title">Макс заказ</p></li>
+                    {% if serviceDescription %}
+                    <li><p class="service__title">Описание</p></li>
+                    {% endif %}
+                </ul>
+
+
+                {% for category in serviceCategoryList %}
+              	<div class="cards__item" id="cards-item">
+                    {% if category['name'] %}
+                    <div data-category="{{ category['name'] }}" data-filter-table-category-id="{{ category.id }}">
+                        <div class="category__name-container">
+                            {% if category['icon'] %}
+                            {% set categoryIcon = category['icon'] %}
+                            {% if categoryIcon['icon_type'] == 'icon' %}
+                            <span class="{{ categoryIcon['icon'] }}"></span>
+                            {% elseif categoryIcon['icon_type'] == 'emoji' %}
+                            <span>{{ categoryIcon['icon'] }}</span>
+                            {% elseif categoryIcon['icon_type'] == 'image' %}
+                            <img src="{{ categoryIcon['url'] }}" alt="{{ category['name'] }}" class="img-responsive btn-group-vertical" style="max-width: calc(1em + 6px); max-height: calc(1em + 6px);">
+                            {% endif %}
+                            {% endif %}
+                            <div class="category__name">{{ category['name'] }}</div>
+                        </div>
+                    </div>
+                    {% endif %}
+                  <div class="card__item" id="card-item">
+                    {% for service in category['services'] %}
+                    <ul data-category="{{ category['name'] }}" data-service="{{ category['name'] }}" data-filter-table-category-id="{{ category.id }}" class="service__description-container text">
+                        <li class="service__item">
+                         {% if user['auth'] %}
+                          <div class="service__favorite">
+                           <span role="button" {% if service.favorite %}class="favorite-active"{% endif %}data-favorite-service-id="{{ service.id }}">
+                            <span data-favorite-icon class="{% if service.favorite %}fas fa-star{% else %}far fa-star{% endif %}"></span>
+                          </span>
+                          </div>
+                          {% endif %}
+                        </li>
+                        <li class="service__id service__item" data-filter-table-service-id="{{ service.id }}">{{ service['id'] }}</li>
+                        <li id="service-name" class="service__name service__item text" data-filter-table-service-name="{{true}}" data-service="{{ service['name'] }}">{{ service['name'] }}</li>
+                        <li class="service__items">
+                            <div class="service__item text">
+                            {% if converted %}
+                            <div data-toggle="tooltip" data-placement="top" title="{{ service.original_rate }}" class="service__item text"><span class="services__number-accent">Цена за 1000</span>₽{{ service.rate }}</div>
+                            {% else %}
+                            <div><span class="services__number-accent">Цена за 1000</span>{{ service.rate }} ₽</div>
+                            {% endif %}
+                            </div>
+                            <div class="service__item text"><span class="services__number-accent">Мин заказ</span>{{ service['min'] }}</div>
+                            <div class="service__item text"><span class="services__number-accent">Макс заказ</span>{{ service['max'] }}</div>
+                        </li>
+                        <li>
+                        {% if service['description'] %}
+                            <div class="popup" id="popup{{ service['id'] }}">
+                                <div class="message"  style="margin-bottom: 0px">
+                                    <div class="message__top">
+                                        <h2 style="margin-right: 17px; white-space: normal">{{ service['name'] }}</h2>
+                                        <img onclick="openPopupPrice({{ service['id'] }})" src="https://cdn.rawgit.com/bread2077/temp/main/images/exit.png" alt="">
+                                    </div>
+                                    <div class="message__bottom">
+                                        <p style="margin-left: 17px; white-space: normal;">
+                                            <b>Описание услуги: </b><br><br>{{service['description']}}
+                                            <br>
+                                            <br>
+                                            {% if site['average_time'] %}
+                                            <b>Среднее время накрутки 1000 шт:</b> {{ service['average_time'] }} <br>
+                                            {% endif %}
+                                            <i>
+                                                <b>Минимальный заказ:</b> {{ service['min'] }} <br>
+                                                <b>Максимальный заказ:</b> {{service['max'] }} <br>
+                                            </i>
+                                        </p>
+                                    </div>
+                                    {% if user['auth'] %}
+                                <p class="auto-title_buttons create_order_btn">
+                                    <a href="/?service={{service['id']}}" class="title-buttons_button" style="font-size: 16px;">Сделать заказ</a>
+                                </p>
+                                {% else %}
+                                <p class="auto-title_buttons create_order_btn">
+                                    <a href="signin#anchor" class="title-buttons_button" style="font-size: 16px;">Сделать заказ</a>
+                                </p>
+                                {% endif %}
+                                </div>
+                            </div>
+                            {% endif %}
+                            <p data-service="{{ category['name'] }}" onclick="openPopupPrice({{ service['id'] }})" class="service__item card__btn">Подробнее</p>
+                        </li>
+                    </ul>
+                    {% endfor %}
+                  </div>
+                  </div>
+                {% endfor %}
+
+            </div>
+          </div>
+		</div>
+</section>
