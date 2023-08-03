@@ -7,8 +7,13 @@
     <meta name="author" content="" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="./pages/global.v17.css" />
-    <link rel="stylesheet" href="./pages/freeservice.css" />
+    <link rel="stylesheet" href="../dist/base.5b231c3ecbc15bb5766f.css" />
+    <link
+      rel="stylesheet"
+      href="../dist/freeservice.5b231c3ecbc15bb5766f.css"
+    />
+    <script type="module" src="../scripts/base.v8.js"></script>
+    <script type="module" src="../scripts/pages/freeservises.v2.js"></script>
     <title>Бесплатная накрутка</title>
   </head>
   <body class="root">
@@ -226,55 +231,57 @@
       </nav>
     </header>
     <main class="content">
-      <section class="social-intro">
-        <div class="social-intro__container">
-          <div class="social-intro__container-text">
-            <h1 class="social-intro__title">Бесплатная накрутка</h1>
-            <p class="text social-intro__text">
-              Бесплатная пробная накрутка для пользователей сайта
-            </p>
-            <a
-              href="#free-services"
-              class="btn btn_color_orange btn_size_large social-intro__button"
-              >Бесплатная накрутка</a
-            >
-          </div>
-          <div class="social-intro__container-image">
-            <div class="social-intro__social social-intro__social_pos_up">
-              <h3 class="social-intro__subtitle">Подписки</h3>
-              <img
-                class="social-intro__icon"
-                src="https://cdn.rawgit.com/bread2077/temp/main/images/default-icons/user-icon.svg"
-                alt="Пользователь"
-              />
-              <p class="social-intro__count-container">
-                +<span
-                  class="social-intro__count custom-counter"
-                  data-start="0"
-                  data-stop="1950"
-                ></span>
+      <section class="social-intro social-intro_unreg-styled">
+        <div class="social-intro__wrapper">
+          <div class="social-intro__content">
+            <div class="social-intro__container-text">
+              <h1 class="social-intro__title">Бесплатная накрутка</h1>
+              <p class="text social-intro__text">
+                Бесплатная пробная накрутка для пользователей сайта
               </p>
+              <a
+                href="#service-list"
+                class="btn btn_color_orange btn_size_large social-intro__button"
+                >Бесплатная накрутка</a
+              >
             </div>
-            <div class="social-intro__social social-intro__social_pos_buttom">
-              <h3 class="social-intro__subtitle">Лайки</h3>
+            <div class="social-intro__container-image">
+              <div class="social-intro__social social-intro__social_pos_up">
+                <h3 class="social-intro__subtitle">Подписки</h3>
+                <img
+                  class="social-intro__icon"
+                  src="https://cdn.rawgit.com/bread2077/temp/main/images/default-icons/user-icon.svg"
+                  alt="Пользователь"
+                />
+                <p class="social-intro__count-container">
+                  +<span
+                    class="social-intro__count custom-counter"
+                    data-start="0"
+                    data-stop="1950"
+                  ></span>
+                </p>
+              </div>
+              <div class="social-intro__social social-intro__social_pos_buttom">
+                <h3 class="social-intro__subtitle">Лайки</h3>
+                <img
+                  class="social-intro__icon"
+                  src="https://cdn.rawgit.com/bread2077/temp/main/images/default-icons/like-icon.svg"
+                  alt="Лайки"
+                />
+                <p class="social-intro__count-container">
+                  +<span
+                    class="social-intro__count custom-counter"
+                    data-start="0"
+                    data-stop="2500"
+                  ></span>
+                </p>
+              </div>
               <img
-                class="social-intro__icon"
-                src="https://cdn.rawgit.com/bread2077/temp/main/images/default-icons/like-icon.svg"
-                alt="Лайки"
+                class="social-intro__image"
+                src="../images/bg-social/tg/tg-phone.webp"
+                alt="Телефон"
               />
-              <p class="social-intro__count-container">
-                +<span
-                  class="social-intro__count custom-counter"
-                  data-start="0"
-                  data-stop="2500"
-                ></span>
-              </p>
             </div>
-            <img
-              class="social-intro__image"
-              src="https://cdn.rawgit.com/bread2077/temp/main/images/social-tel.webp"
-              alt="Телефон"
-            />
           </div>
         </div>
       </section>
@@ -340,9 +347,9 @@
             До получения услуги осталось
             <span class="freeservices__time"></span> сек
           </p>
-          <p class="text freeservices__response freeservices__responce_hidden">
-            Услуга взята в работу
-          </p>
+          <p
+            class="text freeservices__response freeservices__responce_hidden"
+          ></p>
           <div class="freeservices__select-container">
             <select
               class="freeservices__input freeservices__input_type_select"
@@ -1949,7 +1956,5 @@
         </ul>
       </li>
     </template>
-    <script type="module" src="./dist/base.380ce17cfde36107dc74.js"></script>
-    <script type="module" src="./scripts/pages/freeservises.js"></script>
   </body>
 </html>
