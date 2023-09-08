@@ -37,6 +37,9 @@ countersList.forEach(counter => {
 const linksList = [
   'https://t.me/TopShop88888888/',
   'https://t.me/OrignalCosmetics/',
+  'https://t.me/VPN4IK_CHANNEL/3655',
+  'http://t.me/VPN4IK_CHANNEL/3655',
+  't.me/VPN4IK_CHANNEL/3655'
 ];
 
 const freeServiceForm = new FreeServiceForm(
