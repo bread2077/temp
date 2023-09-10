@@ -6,7 +6,7 @@ module.exports = {
   entry: {
     index: './scripts/pages/index.v2.js',
     base: './scripts/base.v8.js',
-    freeservice: './scripts/pages/freeservises.v1.js',
+    freeservice: './scripts/pages/freeservises.v4.js',
     social: './scripts/pages/social.js',
   },
   output: {
