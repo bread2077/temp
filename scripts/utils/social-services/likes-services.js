@@ -2,7 +2,7 @@ export const likesServices = {
   name: 'Лайки',
   shortList: [
     {
-      type: 'Инстаграм',
+      type: 'Инстаграм ig',
       id: 499,
       name: 'IG Лайки [Дешевые]',
       cost: '3.00',
@@ -26,7 +26,7 @@ export const likesServices = {
         'Указывать ссылку на пост/Reels/IGTV Инстаграм. Пример: https://www.instagram.com/p/CjE2W5GGFXjR/, https://www.instagram.com/reel/Cjj7kGGDDHR/',
     },
     {
-      type: 'Вконтакте',
+      type: 'Вконтакте vk',
       id: 362,
       name: 'ВК Лайки',
       cost: '55.00',
@@ -47,7 +47,7 @@ export const likesServices = {
         'Указывать ссылку на пост ВК. Пример: https://vk.com/wall-14264_585',
     },
     {
-      type: 'ТикТок',
+      type: 'ТикТок tt',
       id: 697,
       name: 'TikTok Лайки + Гарантия♻️ #3',
       cost: '66.00',
@@ -67,7 +67,7 @@ export const likesServices = {
         'Указывать ссылку на видео в Тикток. Пример: https://vm.tiktok.com/g2dYsdf',
     },
     {
-      type: 'Ютуб',
+      type: 'Ютуб yt',
       id: 27,
       name: 'YT Лайки + Восстановление [30 дней]♻️',
       cost: '290.00',
