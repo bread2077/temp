@@ -1,1 +1,88 @@
-eval(function(p,a,c,k,e,d){while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+c+'\\b','g'),k[c])}}return p}('90 23 63 62{61(15,27,26,30){1.60=15;1.2=59.3(`.${15}`);1.36=1.2.3(\'.58\');1.31=1.2.3(\'.57\');1.16=1.2.3(\'.52\');1.35=1.2.3(\'.56\');1.13=1.2.3(\'.55\');1.47=1.2.3(\'.54\');1.4=27;1.9=26;1.46=30}28(){1.4=12.53(1.4);1.9=12.49(1.9);21(12.49(12.51()*(1.9-1.4))+1.4)}18(){21 1.46.50(32=>{21 1.36.29.64(32)})}19(66){67(`89:).88(39=>17.25(39)).87(48=>17.86(48))}40(){85(84(1.31.29)){7 83:7 82:7 81:1.19(80);24;7 65:7 79:1.19(10);24;23:17.25(\'что-то пошло не так\')}}33(){78 8=1.28(5,6);77 34=22.76(()=>{8--;42(8<=0){22.75(34);1.35.14.44(\'74\');1.16.14.45(\'43\')}41{1.47.20=8}},73)}38(11){11.72();1.18();1.13.14.45(\'71\');1.16.14.44(\'43\');42(1.18()){1.13.20=\'Лимит исчерпан\'}41{1.40();1.13.20=\'Услуга взята в работу\'}}70(){1.2.37(\'69\',11=>1.38(11));22.37(\'68\',()=>1.33())}}',10,91,'|this|_form|querySelector|_MIN_TIMER|||case|num|_MAX_TIMER||e|Math|_response|classList|formSelector|_submit|console|_checkSericeLink|_fetchFreeService|textContent|return|window|default|break|log|max|min|_getRandomInt|value|linkList|_select|item|_startFreeService|timer|_waiting|_link|addEventListener|_sendFreeService|res|_choiceAmountFreeService|else|if|btn_disabled|add|remove|_linkList|_timer|err|floor|some|random|freeservices__submit|ceil|freeservices__time|freeservices__response|freeservices__waiting|freeservices__input_type_select|freeservices__input_type_link|document|_formSelector|constructor|FreeServiceForm|class|startsWith|869|amount|fetch|load|submit|setEventListeners|freeservices__responce_hidden|preventDefault|1000|freeservices__waiting_hidden|clearInterval|setInterval|const|let|499|100|753|764|708|Number|switch|error|catch|then|https|export'.split('|')))
+export default class FreeServiceForm {
+  constructor(formSelector, min, max, linkList) {
+    this._formSelector = formSelector;
+    this._form = document.querySelector(`.${formSelector}`);
+    this._link = this._form.querySelector('.freeservices__input_type_link');
+    this._select = this._form.querySelector('.freeservices__input_type_select');
+    this._submit = this._form.querySelector('.freeservices__submit');
+    this._waiting = this._form.querySelector('.freeservices__waiting');
+    this._response = this._form.querySelector('.freeservices__response');
+    this._timer = this._form.querySelector('.freeservices__time');
+    this._MIN_TIMER = min;
+    this._MAX_TIMER = max;
+    this._linkList = linkList;
+  }
+
+  _getRandomInt() {
+    this._MIN_TIMER = Math.ceil(this._MIN_TIMER);
+    this._MAX_TIMER = Math.floor(this._MAX_TIMER);
+    return (
+      Math.floor(Math.random() * (this._MAX_TIMER - this._MIN_TIMER)) +
+      this._MIN_TIMER
+    );
+  }
+
+  _checkSericeLink() {
+    return this._linkList.some(item => {
+      return this._link.value.startsWith(item);
+    });
+  }
+
+  _fetchFreeService(amount) {
+    fetch(
+      `https://smmprime.com/api/v2?key=3bced5ad3d39f53de6eb50a1e5d73843&action=add&service=${this._select.value}&link=${this._link.value}&quantity=${amount}`
+    )
+      .then(res => console.log(res))
+      .catch(err => console.error(err));
+  }
+
+  _choiceAmountFreeService() {
+    switch (Number(this._select.value)) {
+      case 708:
+      case 764:
+      case 753:
+        this._fetchFreeService(100);
+        break;
+      case 869:
+      case 499:
+        this._fetchFreeService(10);
+        break;
+      default:
+        console.log('что-то пошло не так');
+    }
+  }
+
+  _startFreeService() {
+    let num = this._getRandomInt(5, 6);
+
+    const timer = window.setInterval(() => {
+      num--;
+      if (num <= 0) {
+        window.clearInterval(timer);
+        this._waiting.classList.add('freeservices__waiting_hidden');
+        this._submit.classList.remove('btn_disabled');
+      } else {
+        this._timer.textContent = num;
+      }
+    }, 1000);
+  }
+
+  _sendFreeService(e) {
+    e.preventDefault();
+    this._checkSericeLink();
+
+    this._response.classList.remove('freeservices__responce_hidden');
+    this._submit.classList.add('btn_disabled');
+    if (this._checkSericeLink()) {
+      this._response.textContent = 'Лимит исчерпан';
+    } else {
+      this._choiceAmountFreeService();
+      this._response.textContent = 'Услуга взята в работу';
+    }
+  }
+
+  setEventListeners() {
+    this._form.addEventListener('submit', e => this._sendFreeService(e));
+    window.addEventListener('load', () => this._startFreeService());
+  }
+}
