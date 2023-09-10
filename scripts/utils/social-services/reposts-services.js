@@ -2,7 +2,7 @@ export const repostsServices = {
   name: 'Репосты',
   shortList: [
     {
-      type: 'Телеграм',
+      type: 'Телеграм tg',
       id: 658,
       name: 'TG Репосты RU + Статистика',
       cost: '35.00',
@@ -21,7 +21,7 @@ export const repostsServices = {
         'Указывать ссылку на пост Телеграм. Пример: https://t.me/channelname/1',
     },
     {
-      type: 'Вконтакте',
+      type: 'Вконтакте vk',
       id: 614,
       name: 'ВК Репосты [Высокое качество]⭐⭐⭐',
       cost: '199.00',
@@ -40,7 +40,7 @@ export const repostsServices = {
         'Указывать ссылку на пост ВК. Пример: https://vk.com/wall-14264_585',
     },
     {
-      type: 'Инстаграм',
+      type: 'Инстаграм ig',
       id: 510,
       name: 'IG Репосты поста',
       cost: '35.00',

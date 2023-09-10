@@ -2,7 +2,7 @@ export const followersServices = {
   name: 'Подписчики',
   shortList: [
     {
-      type: 'Телеграм',
+      type: 'Телеграм tg',
       id: 545,
       name: 'TG Подписчики [Гарантия 30 дней]♻️',
       cost: '80.00',
@@ -29,7 +29,7 @@ export const followersServices = {
         'Указывать ссылку на Телеграм-канал. Пример: https://t.me/CHANNELNAME',
     },
     {
-      type: 'Вконтакте',
+      type: 'Вконтакте vk',
       id: 364,
       name: 'ВК Друзья/Подписчики #1',
       cost: '110.00',
@@ -55,7 +55,7 @@ export const followersServices = {
         'Указывать ссылку на профиль/группу. Пример: https://vk.com/username, https://vk.com/groupname',
     },
     {
-      type: 'Инстаграм',
+      type: 'Инстаграм ig',
       id: 602,
       name: 'IG Подписчики [Промо #1] + Восстановление [30 дней]♻️',
       cost: '49.00',
@@ -77,7 +77,7 @@ export const followersServices = {
         'Указывать ссылку на профиль в Инстаграм*.Пример: https://instagram.com/username',
     },
     {
-      type: 'ТикТок',
+      type: 'ТикТок tt',
       id: 435,
       name: 'Тикток подписчики + гарантия #4♻️',
       cost: '240.00',
@@ -97,7 +97,7 @@ export const followersServices = {
         'Указывать ссылку на видео в Тикток. Пример: https://www.tiktok.com/@tiktok',
     },
     {
-      type: 'Ютуб',
+      type: 'Ютуб yt',
       id: 739,
       name: 'YT Подписчики + Восстановление [90 дней]♻️',
       cost: '1100.00',

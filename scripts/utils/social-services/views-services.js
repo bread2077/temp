@@ -2,7 +2,7 @@ export const viewsServices = {
   name: 'Просмотры',
   shortList: [
     {
-      type: 'Телеграм',
+      type: 'Телеграм tg',
       id: 708,
       name: 'TG Просмотры [Рандом]',
       cost: '0.30',
@@ -24,7 +24,7 @@ export const viewsServices = {
         'Указывать ссылку на пост Телеграм. Пример: https://t.me/channelname/1',
     },
     {
-      type: 'Телеграм',
+      type: 'Телеграм tg',
       id: 640,
       name: 'TG Подписка на Просмотры [30 дней] RU - плавные⭐⭐⭐',
       cost: '399.00',
@@ -48,7 +48,7 @@ export const viewsServices = {
         'Указывать ссылку на канал Телеграм. Пример: https://t.me/channelname',
     },
     {
-      type: 'Вконтакте',
+      type: 'Вконтакте vk',
       id: 612,
       name: 'ВК Просмотры на пост быстрые #1',
       cost: '3.20',
@@ -71,7 +71,7 @@ export const viewsServices = {
         'Указывать ссылку на профиль! Пример: https://vk.com/wall-14264_585',
     },
     {
-      type: 'Вконтакте',
+      type: 'Вконтакте vk',
       id: 608,
       name: 'ВК Просмотры Клипов',
       cost: '5.20',
@@ -92,7 +92,7 @@ export const viewsServices = {
         'Указывать ссылку на клип. Пример: https://vk.com/clip381242296653_45625569',
     },
     {
-      type: 'Инстаграм',
+      type: 'Инстаграм ig',
       id: 569,
       name: 'IG Просмотры Reels/IGTV/Видео [Промо]',
       cost: '6.00',
@@ -113,7 +113,7 @@ export const viewsServices = {
         'Указывать ссылку на пост/Reels/IGTV Инстаграм*. Пример: https://www.instagram.com/p/CjE2W5GGFXjR/, https://www.instagram.com/reel/Cjj7kGGDDHR/',
     },
     {
-      type: 'ТикТок',
+      type: 'ТикТок tt',
       id: 456,
       name: 'Тик Ток просмотры видео #3',
       cost: '0.40',
@@ -133,7 +133,7 @@ export const viewsServices = {
         'Указывать ссылку на видео в Тикток. Пример: https://vm.tiktok.com/g2dYsdf',
     },
     {
-      type: 'Ютуб',
+      type: 'Ютуб yt',
       id: 164,
       name: 'YT Просмотры из рекомендаций♻️',
       cost: '195.00',
@@ -158,7 +158,7 @@ export const viewsServices = {
         'Указывать ссылку на Youtube видео. Пример: https://www.youtube.com/watch?v=hs_r8EObvdes',
     },
     {
-      type: 'Вконтакте',
+      type: 'Вконтакте vk',
       id: 622,
       name: 'ВК Просмотры Видео',
       cost: '5.20',
