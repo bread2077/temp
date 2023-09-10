@@ -1,9 +1,11 @@
+import '../../styles/freeservice.v13.css';
+
 import ChoiceServiceText from '../components/ChoiceServiceText.js';
 import Faq from '../components/Faq.js';
 import HorizontalSwiper from '../components/HorizontalSwiper.js';
 import CustomerCounter from '../components/CustomerCounter.js';
 import { cyrcle, faqList, countersList } from '../utils/constants.v5.js';
-import FreeServiceForm from '../components/FreeServiceForm.v1.js';
+import FreeServiceForm from '../components/FreeServiceForm.v2.js';
 
 const thirdCulc = new ChoiceServiceText('third-culc');
 thirdCulc.renderSocials();
