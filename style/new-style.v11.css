@@ -301,6 +301,9 @@ a:focus {
   margin: 0px 0px !important;
   padding: 10px !important;
 }
+.form-control_type_search {
+  padding: 10px 30px !important;
+}
 
 .container-switch {
   padding: 0px;
