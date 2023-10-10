@@ -69,6 +69,6 @@
 }
 @media screen and (max-width: 600px) {
   .crypto__text {
-    font-size: 9px;
+    font-size: 9px !important;
   }
 }
