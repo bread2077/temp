@@ -11,7 +11,7 @@
 }
 .crypto__list {
   list-style: none;
-  padding: 0;
+  padding: 0 10px;
   margin: 0;
 }
 .crypto__item {
