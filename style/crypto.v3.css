@@ -1,12 +1,12 @@
 @keyframes btn-copy-anim {
   0% {
-    right: 0;
+    left: 0;
   }
   50% {
-    right: 120%;
+    left: 120%;
   }
   100% {
-    right: 0;
+    left: 0;
   }
 }
 .crypto__list {
@@ -34,7 +34,7 @@
   position: absolute;
   z-index: 1;
   top: 0;
-  right: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   border-radius: 50%;
