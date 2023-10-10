@@ -1,0 +1,74 @@
+@keyframes btn-copy-anim {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 120%;
+  }
+  100% {
+    left: 0;
+  }
+}
+.crypto__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.crypto__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.crypto__button-wrapper {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.crypto__button-wrapper::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: center / 70% no-repeat url("https://cdn.rawgit.com/bread2077/temp/main/images/icons/check.png");
+}
+.crypto__button-wrapper_active::before {
+  animation: btn-copy-anim 1.7s ease-in-out;
+}
+.crypto__button {
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  background: center / 60% #6a98ff no-repeat url("https://cdn.rawgit.com/bread2077/temp/main/images/icons/copy.png");
+}
+.crypto__text {
+  font-family: sans-serif;
+  margin: 0 0 15px;
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+.crypto__text-accent {
+  font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+  .crypto__text {
+    font-size: 9px;
+  }
+}
