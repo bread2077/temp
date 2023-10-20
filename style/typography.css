@@ -1,0 +1,33 @@
+.title3-bold {
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 600;
+}
+
+.text1 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+}
+
+.text1-bold {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+@media screen and (max-width: 600px) {
+  .title3-bold {
+    font-size: 18px;
+  }
+
+  .text1 {
+    font-size: 12px;
+  }
+
+  .text1-bold {
+    font-size: 12px;
+  }
+}

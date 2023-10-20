@@ -1,0 +1,26 @@
+import CustomerCounter from '../components/CustomerCounter.js';
+import PopupWithImage from '../components/PopupWithImage.js';
+
+const countersList = document.querySelectorAll('.custom-counter');
+const popupOpenButtons = document.querySelectorAll(
+  '.wallet-tutorial__pupup-button'
+);
+const imagePopup = new PopupWithImage('popup_type_image');
+imagePopup.setEventListeners();
+
+popupOpenButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const imageNumber = button
+      .closest('.wallet-tutorial__item')
+      .querySelector('.wallet-tutorial__count').textContent;
+    console.log('click');
+    imagePopup.open(
+      `http://127.0.0.1:5501/smmprime/images/wallet-tutorial/${imageNumber}.png`
+    );
+  });
+});
+
+countersList.forEach(counter => {
+  const customCounter = new CustomerCounter(counter);
+  customCounter.startTimer();
+});

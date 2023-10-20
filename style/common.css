@@ -1,0 +1,15 @@
+.btn-rounded {
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .btn-rounded {
+    width: 20px;
+    height: 20px;
+  }
+}
