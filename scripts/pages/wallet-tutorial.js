@@ -14,7 +14,7 @@ popupOpenButtons.forEach(button => {
       .closest('.wallet-tutorial__item')
       .querySelector('.wallet-tutorial__count').textContent;
     console.log('click');
-    imagePopup.open(`./images/wallet-tutorial/${imageNumber}.png`);
+    imagePopup.open(`../images/wallet-tutorial/${imageNumber}.png`);
   });
 });
 
