@@ -11,6 +11,7 @@
   --font: Montserrat, Arial, sans-serif;
   --width-max: 1160px;
   --space-primary: 60px;
+  --base-transition: 0.4s ease-in-out;
 }
 
 .root {

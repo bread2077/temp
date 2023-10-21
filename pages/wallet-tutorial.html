@@ -12,10 +12,10 @@
 
     <link rel="stylesheet" href="../style/wallet-tutorial.css" />
 
-    <link rel="stylesheet" href="../dist/base.bba6ab0c5d79a9f45266.css" />
-    <link rel="stylesheet" href="../dist/social.bba6ab0c5d79a9f45266.css" />
-    <script defer src="../dist/base.bba6ab0c5d79a9f45266.js"></script>
-    <script type="module" src="../scripts//pages/wallet-tutorial.js"></script>
+    <link rel="stylesheet" href="../dist/base.602229dacdbe52dda217.css" />
+    <link rel="stylesheet" href="../dist/social.602229dacdbe52dda217.css" />
+    <script defer src="../dist/base.602229dacdbe52dda217.js"></script>
+    <script type="module" src="../scripts/pages/wallet-tutorial.js"></script>
   </head>
   <body class="root">
     <header class="header">
@@ -238,7 +238,9 @@
         >
           <div class="social-intro__content">
             <div class="social-intro__container-text">
-              <h1 class="social-intro__title">Заголовок</h1>
+              <h1 class="social-intro__title">
+                Инструкция по оплате услуг с помощью иностранных карт
+              </h1>
             </div>
             <div class="social-intro__container-image">
               <div class="social-intro__social social-intro__social_pos_up">
@@ -282,26 +284,40 @@
       </section>
       <section class="wallet-tutorial">
         <div class="wallet-tutorial__video-container">
-          <p class="text1 wallet-tutorial__text">
+          <div class="wallet-tutorial__tabs">
+            <a
+              class="tab btn_color_orange wallet-tutorial__nav-button"
+              href="#instuction"
+              ><span
+                class="wallet-tutorial__button-icon wallet-tutorial__button-icon_type_instr"
+              ></span
+              >Инструкция</a
+            >
+            <a
+              class="tab btn_color_orange wallet-tutorial__nav-button"
+              href="#video"
+              ><span
+                class="wallet-tutorial__button-icon wallet-tutorial__button-icon_type_video"
+              ></span
+              >Видео</a
+            >
+          </div>
+
+          <p class="title5 wallet-tutorial__intro-text">
             Как известно, из-за последних событий в мире оплата услуг с помощью
             иностранных карт в России затруднена или невозможна. Мы предлагаем
             универсальное платежное решение, которое будет работать, несмотря ни
             на какие ограничения. При этом, оплата займет не больше 10 минут.
           </p>
           <video
-            allow="autoplay"
-            controls
-            class="wallet-tutorial__video"
-            src="https://cvws.icloud-content.com/B/AR7ROO1ScnmN1bvfqHvsFCgOll-wAdcQjPBKBOC3eAkWG0CYtP0SNxTd/wallet-tutorial.mov?o=AgrNY7j8phBJ3DfaouuTl1HQ1XyAF_Dhs3Em0OgIQ3gf&v=1&x=3&a=CAogGU3WBoCyEr0OkqjhzT-UrMduv-1qxIOjLGhzlT9Xl0MSbxDFyOv3tDEYxaXH-bQxIgEAUgQOll-wWgQSNxTdaifFzjDSKk2sUYQiYjy60zwX-GPE9hNTij6HVwcQogb2bD9u0dMOd_9yJ4-70hFNbQ5t2VbJ05km61gIa6fVp3FsHO7xq64ZBNxmAw2826vp_A&e=1697840747&fl=&r=86ccbe1f-6f9e-4daa-b42c-a97812795e15-1&k=DeCR-Wtx_K_ay12AyFV_vw&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=41&s=TrDf5ugmBhEIOCaJukgqdCSTboE&cd=i"
-          ></video>
-          <video
+            id="video"
             allow="autoplay"
             controls
             class="wallet-tutorial__video"
             src="../video/wallet-tutorial_compressed.mp4"
           ></video>
         </div>
-        <h3 class="title3-bold wallet-tutorial__subtitle">
+        <h3 id="instuction" class="title3-bold wallet-tutorial__subtitle">
           Для оплаты необходим аккаунт в Telegram и банковская карта любой
           страны. Порядок действий следующий:
         </h3>
