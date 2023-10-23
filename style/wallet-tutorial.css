@@ -27,7 +27,7 @@
 .wallet-tutorial__pupup-button {
   grid-area: button;
   background-color: var(--color-secondary);
-  background-image: url('../images/icons/image-icon.png');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/icons/image-icon.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 60%;
@@ -84,10 +84,10 @@
   background-repeat: no-repeat;
 }
 .wallet-tutorial__button-icon_type_instr {
-  background-image: url('../images/icons/text-icon.png');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/icons/text-icon.png');
 }
 .wallet-tutorial__button-icon_type_video {
-  background-image: url('../images/icons/video-icon.png');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/icons/video-icon.png');
 }
 .wallet-tutorial__intro-text {
   grid-area: text;
