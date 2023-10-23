@@ -13,7 +13,7 @@ popupOpenButtons.forEach(button => {
     const imageNumber = button
       .closest('.wallet-tutorial__item')
       .querySelector('.wallet-tutorial__count').textContent;
-    imagePopup.open(`../images/wallet-tutorial/${imageNumber}.png`);
+    imagePopup.open(`https://cdn.rawgit.com/bread2077/temp/main/images/wallet-tutorial/${imageNumber}.png`);
   });
 });
 
