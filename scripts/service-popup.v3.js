@@ -1,6 +1,6 @@
 const openServicePopup = id => {
   const servicePopup = document.getElementById("popup" + id);
-  
+  console.log(servicePopup);
   servicePopup.classList.add("message__show")
   document.body.style = "overflow: hidden;"
 }
