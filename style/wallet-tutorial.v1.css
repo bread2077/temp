@@ -62,6 +62,10 @@
 .wallet-tutorial__link-accent {
   text-decoration: none;
   color: var(--color-secondary);
+  transition: color 0.4s ease-in-out;
+}
+.wallet-tutorial__link-accent:hover {
+  color: var(--color-secondary-hover);
 }
 .wallet-tutorial__nav-buttons {
   display: flex;
