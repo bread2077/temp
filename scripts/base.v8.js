@@ -1,4 +1,4 @@
-// import '../styles/global.v17.css';
+import '../styles/global.v17.css';
 
 import ListOpener from './components/ListOpener.js';
 import {
@@ -23,6 +23,18 @@ if (menuBurger) {
       item.classList.toggle('menu-burger__item_active');
     });
   }
+
+  const isToday = date => {
+    const today = new Date();
+
+    const getCustomCurrentDate = dateObj => {
+      return `${dateObj.getDate()}/${
+        dateObj.getMonth() + 1
+      }/${dateObj.getFullYear()}`;
+    };
+
+    return getCustomCurrentDate(today) === getCustomCurrentDate(date);
+  };
 
   function closeHeaderMenu() {
     root.classList.remove('root_hidden');

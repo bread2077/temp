@@ -1,18 +1,21 @@
 :root {
-  --color-primary: #407BFF;
-  --color-secondary: #FF725E;
-  --color-secondary-hover: #FF472D;
-  --bg-color-primary: #F2F2FC;
-  --bg-color-secondary: #F8F9FD;
+  --color-primary: #407bff;
+  --color-secondary: #ff725e;
+  --color-secondary-hover: #ff472d;
+  --white: #fff;
+  --semi-gray: #f8f9fd;
+  --bg-color-primary: #f2f2fc;
+  --bg-color-secondary: #f8f9fd;
   --color-dark: rgba(26, 20, 45, 0.9);
   --color-semi-dark: rgba(26, 20, 45, 0.6);
   --font: Montserrat, Arial, sans-serif;
   --width-max: 1160px;
   --space-primary: 60px;
+  --base-transition: 0.4s ease-in-out;
 }
 
 .root {
-  background-color: #fff;
+  background-color: var(--white);
   font-family: var(--font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

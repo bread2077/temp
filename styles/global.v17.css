@@ -21,6 +21,7 @@
 @import url('../blocks/menu-burger/menu-burger.css');
 @import url('../blocks/menu-burger/__item/menu-burger__item.css');
 @import url('../blocks/menu-burger/__item/_active/menu-burger__item_active.css');
+@import url('../blocks/popup/popup.css');
 
 @import url('../blocks/root/root.v2.css');
 

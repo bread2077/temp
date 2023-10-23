@@ -63,6 +63,15 @@
   cursor: pointer;
   margin-left: auto;
 }
+.popup__close_type_image {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  color: #fff;
+}
+.popup__close_col_white {
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/icons/close-wh-icon.svg');
+}
 .popup__body {
   display: grid;
   grid-template-areas:
@@ -73,6 +82,10 @@
   grid-template-rows: min-content 1fr;
   grid-template-columns: repeat(2, 1fr);
   padding: 32px 30px 40px;
+}
+.popup__image-container {
+  margin: auto;
+  position: relative;
 }
 .popup__subtitle {
   margin: 0 0 16px;
@@ -162,6 +175,10 @@
     height: 16px;
     grid-area: close;
     justify-self: end;
+  }
+  .popup__close_type_image {
+    top: -30px;
+    right: 0;
   }
   .popup__button {
     justify-self: stretch;
