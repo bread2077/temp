@@ -3,8 +3,11 @@ p
 	padding: 0px;
 	margin: 0px;
 }
-html, body {
-  overflow-x: hidden !important;
+
+@media (max-width: 760px){
+	html, body {
+  		overflow-x: hidden;
+	}
 }
 .feedback__background2
 {
