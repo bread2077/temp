@@ -4,7 +4,7 @@ p
 	margin: 0px;
 }
 
-@media (max-width: 760px){
+@media (max-width: 1000px){
 	html, body {
   		overflow-x: hidden;
 	}
