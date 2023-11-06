@@ -52,7 +52,7 @@
   width: 30px;
   height: 30px;
   background-color: var(--color-primary);
-  background-image: url('../images/icons/arrow-bottom.svg');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/icons/arrow-bottom.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 60%;
