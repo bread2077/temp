@@ -5,6 +5,16 @@
   border: 0;
   border-radius: 50%;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  text-align: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.accent-link {
+  text-decoration: none;
+  color: var(--color-secondary);
+  font-weight: 500;
 }
 
 .tab {
