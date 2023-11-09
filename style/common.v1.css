@@ -11,10 +11,38 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.btn-rounded:hover {
+  opacity: 0.8;
+}
+
+.spoiler-btn {
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-primary);
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/icons/arrow-bottom.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  transition: all 0.4s linear;
+}
+
+.spoiler-btn_active {
+  transform: rotate(180deg);
+  background-color: var(--color-secondary);
+}
+
+.link {
+  text-decoration: none;
+}
+
 .accent-link {
   text-decoration: none;
   color: var(--color-secondary);
   font-weight: 500;
+}
+
+.accent-text {
+  color: var(--color-secondary);
 }
 
 .tab {
@@ -30,9 +58,18 @@
   transition: all var(--base-transition);
 }
 
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (max-width: 600px) {
   .btn-rounded {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+  }
+  .btn-rounded:hover {
+    opacity: 1;
   }
 }
