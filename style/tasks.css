@@ -7,9 +7,11 @@
   align-items: start;
   justify-content: space-between;
   position: relative;
+  overflow: visible;
 }
 
 .tasks__inner {
+  position: -webkit-sticky;
   position: sticky;
   top: 40px;
   max-width: 80%;
