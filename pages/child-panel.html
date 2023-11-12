@@ -232,6 +232,40 @@
       </nav>
     </header>
     <main class="content">
+      <!-- {%
+        set faqList = [
+          {
+            title: 'Что я получаю после оплаты франшизы?',
+            description:
+              'После оплаты франшизы вы получаете автоматизированный сервис, в котором вы можете настроить продажу услуг по накрутке в соц сетях. Платформа сразу же готова к работе, а навыки программирования не нужны',
+          },
+          {
+            title: 'Помогаете ли вы разобраться, как все работает?',
+            description:
+              'Да, конечно! Если у вас будут возникать вопросы - пишите нам, проконсультируем по настройке вашего сервиса, расскажем, как все работает, если что-то будет непонятно',
+          },
+          {
+            title: 'Как получить скидку 8% на услуги после покупки франшизы?',
+            description:
+              'Для получения скидки вам необходимо полностью оформить ваш сервис и подготовить его к запуску (подключить услуги и платежные системы) - после этого напишите нам и мы выдадим вам скидку!',
+          },
+          {
+            title:
+              'Я добавляю ваши услуги - клиент их заказывает. Как мне передать информацию о том, что я получил заказ?',
+            description:
+              'Вам не нужно ничего делать - сервис все сделает автоматически! Когда ваш клиент делает заказ, вся информация отправляется нам автоматически и мы запускаем услугу в работу - с вашей стороны не нужно предпринимать никаких действий',
+          },
+          {
+            title: 'Можно ли менять язык сайта?',
+            description: 'Да, есть перевод на несколько языков',
+          },
+          {
+            title: 'Можно ли менять дизайн сайта?',
+            description:
+              'Да, дизайн сайта менять можно - либо через визуальный редактор (установлен по умолчанию), либо через код (включаем его по запросу)',
+          },
+        ];
+      %} -->
       <section
         class="social-intro {% if user['auth'] %} social-intro_reg-styled {% else %} social-intro_unreg-styled {% endif %}"
       >
@@ -354,6 +388,16 @@
           <span class="accent-text">франшизы</span>
         </h2>
         <form class="child-form__form" action="">
+          <!-- {% if errorForm %}
+          <div
+            class="alert alert-dismissible alert-danger {% if site['rtl'] %} rtl-alert {% endif %}"
+          >
+            <button type="button" class="close" data-dismiss="alert">
+              &times;
+            </button>
+            {{ errorFormMessage }}
+          </div>
+          {% endif %} -->
           <div class="child-form__item-container">
             <div class="child-form__info">
               <p class="text1 child-form__info-text">
@@ -465,6 +509,20 @@
           <span class="accent-text">Ответы</span> на часто задаваемые вопросы
         </h2>
         <ul class="list child-faq__list">
+          <!-- {% for item in faqList %}
+            <li class="child-faq__item">
+              <div class="child-faq__head-wrapper">
+                <h3 class="title5-bold child-faq__item-title">{{ item.title }}</h3>
+                <button
+                  aria-label="Открыть описани"
+                  class="btn-rounded spoiler-btn child-faq__button"
+                ></button>
+              </div>
+              <div class="child-faq__item-description-wrapper">
+                <p class="text1 child-faq__item-description">{{ item.description }}</p>
+              </div>
+            </li>
+          {% endfor %} -->
           <li class="child-faq__item">
             <div class="child-faq__head-wrapper">
               <h3 class="title5-bold child-faq__item-title">
@@ -835,3 +893,136 @@
     </div>
   </body>
 </html>
+
+<ul class="payment__list">
+  <li class="payment__item">
+    <img
+      loading="lazy"
+      src="https://cdn.rawgit.com/bread2077/temp/main/images/payments/iomoney-logo.svg"
+      alt="Юмани"
+      class="payment__image"
+    />
+  </li>
+  <li class="payment__item">
+    <img
+      loading="lazy"
+      src="https://cdn.rawgit.com/bread2077/temp/main/images/payments/mir-logo.svg"
+      alt="Мир"
+      class="payment__image"
+    />
+  </li>
+  <li class="payment__item">
+    <img
+      loading="lazy"
+      src="https://cdn.rawgit.com/bread2077/temp/main/images/payments/qiwi-logo.svg"
+      alt="Киви"
+      class="payment__image"
+    />
+  </li>
+  <li class="payment__item">
+    <img
+      loading="lazy"
+      src="https://cdn.rawgit.com/bread2077/temp/main/images/payments/visa-logo.svg"
+      alt="Виза"
+      class="payment__image"
+    />
+  </li>
+  <li class="payment__item">
+    <img
+      loading="lazy"
+      src="https://cdn.rawgit.com/bread2077/temp/main/images/payments/mastercard-logo.svg"
+      alt="Мастеркард"
+      class="payment__image"
+    />
+  </li>
+  <li class="payment__item">
+    <img
+      loading="lazy"
+      src="https://cdn.rawgit.com/bread2077/temp/main/images/payments/wm-logo.svg"
+      alt="Вебмани"
+      class="payment__image"
+    />
+  </li>
+  <li class="payment__item">
+    <img
+      loading="lazy"
+      src="https://cdn.rawgit.com/bread2077/temp/main/images/icons/image 7.png"
+      alt="Оплата"
+      class="payment__image"
+    />
+  </li>
+  <li class="payment__item">
+    <img
+      loading="lazy"
+      src="https://cdn.rawgit.com/bread2077/temp/main/images/icons/image 8.png"
+      alt="Оплата"
+      class="payment__image"
+    />
+  </li>
+</ul>
+<ul aria-hidden="true" class="payment__list">
+  <li class="payment__item">
+    <img
+      loading="lazy"
+      src="https://cdn.rawgit.com/bread2077/temp/main/images/payments/iomoney-logo.svg"
+      alt="Юмани"
+      class="payment__image"
+    />
+  </li>
+  <li class="payment__item">
+    <img
+      loading="lazy"
+      src="https://cdn.rawgit.com/bread2077/temp/main/images/payments/mir-logo.svg"
+      alt="Мир"
+      class="payment__image"
+    />
+  </li>
+  <li class="payment__item">
+    <img
+      loading="lazy"
+      src="https://cdn.rawgit.com/bread2077/temp/main/images/payments/qiwi-logo.svg"
+      alt="Киви"
+      class="payment__image"
+    />
+  </li>
+  <li class="payment__item">
+    <img
+      loading="lazy"
+      src="https://cdn.rawgit.com/bread2077/temp/main/images/payments/visa-logo.svg"
+      alt="Виза"
+      class="payment__image"
+    />
+  </li>
+  <li class="payment__item">
+    <img
+      loading="lazy"
+      src="https://cdn.rawgit.com/bread2077/temp/main/images/payments/mastercard-logo.svg"
+      alt="Мастеркард"
+      class="payment__image"
+    />
+  </li>
+  <li class="payment__item">
+    <img
+      loading="lazy"
+      src="https://cdn.rawgit.com/bread2077/temp/main/images/payments/wm-logo.svg"
+      alt="Вебмани"
+      class="payment__image"
+    />
+  </li>
+  <li class="payment__item">
+    <img
+      loading="lazy"
+      src="https://cdn.rawgit.com/bread2077/temp/main/images/icons/image 7.png"
+      alt="Оплата"
+      class="payment__image"
+    />
+  </li>
+  <li class="payment__item">
+    <img
+      loading="lazy"
+      src="https://cdn.rawgit.com/bread2077/temp/main/images/icons/image 8.png"
+      alt="Оплата"
+      class="payment__image"
+    />
+  </li>
+</ul>
