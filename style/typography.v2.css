@@ -58,7 +58,7 @@
 }
 
 .menu {
-  font-size: 12px;
+  font-size: 10px;
   font-style: normal;
   font-weight: 300;
   line-height: 120%;
@@ -92,5 +92,11 @@
 
   .text1-bold {
     font-size: 12px;
+  }
+  .menu {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
   }
 }

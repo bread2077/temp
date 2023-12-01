@@ -90,9 +90,10 @@
   background: rgb(255, 255, 255);
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.8) 0%,
-    rgba(255, 255, 255, 0.8) 100%
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.3) 100%
   );
+  backdrop-filter: blur(5px);
   z-index: -1;
   backdrop-filter: 20px;
   opacity: 0;
@@ -103,6 +104,7 @@
 .reg-menu_opened::before {
   opacity: 1;
   visibility: visible;
+  pointer-events: all;
 }
 
 .reg-menu__short {
@@ -110,11 +112,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 10px 10px 5px;
+  padding: 10px 10px 10px;
   display: grid;
   align-items: center;
   justify-items: center;
-  grid-template-columns: repeat(2, 1fr) 1.5fr repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr) 1fr repeat(2, 1fr);
   border-radius: 15px;
   pointer-events: all;
   position: relative;
@@ -143,6 +145,8 @@
   border: none;
   background: transparent;
   cursor: pointer;
+  color: var(--color-dark);
+  text-align: center;
 }
 
 .reg-menu__short-item-accent {
@@ -209,6 +213,7 @@
   visibility: hidden;
   pointer-events: none;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  box-shadow: 0 4px 20px rgba(178, 185, 220, 0.43);
 }
 
 .reg-menu__long_opened {
@@ -231,7 +236,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--dark);
+  color: var(--color-dark);
 }
 
 .reg-menu__long-icon {
@@ -278,9 +283,11 @@
 
 .reg-menu__exit {
   grid-area: exit;
-  padding: 5px 8px;
+  padding: 8px 12px;
   border: 1px solid var(--color-secondary);
   background: transparent;
   border-radius: 15px;
+  color: var(--color-dark);
+  cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }

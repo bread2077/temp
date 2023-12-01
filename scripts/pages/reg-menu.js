@@ -12,8 +12,18 @@ const containerMenu = document.querySelector('.reg-menu');
 const longMenu = document.querySelector('.reg-menu__long');
 const root = document.querySelector('.root');
 
-buttonMenu.addEventListener('click', () => {
-  longMenu.classList.toggle('reg-menu__long_opened');
-  containerMenu.classList.toggle('reg-menu_opened');
-  root.classList.toggle('root_hidden');
+const toggleMenuVisibility = () => {
+  const isOpened = containerMenu.classList.contains('reg-menu_opened');
+
+  longMenu.classList[isOpened ? 'remove' : 'add']('reg-menu__long_opened');
+  containerMenu.classList[isOpened ? 'remove' : 'add']('reg-menu_opened');
+  root.classList[isOpened ? 'remove' : 'add']('root_hidden');
+};
+
+buttonMenu.addEventListener('click', toggleMenuVisibility);
+
+containerMenu.addEventListener('click', e => {
+  if (e.target === e.currentTarget) {
+    toggleMenuVisibility();
+  }
 });
