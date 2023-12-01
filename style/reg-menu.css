@@ -275,6 +275,10 @@
   background-color: var(--color-secondary);
   position: relative;
   z-index: 1;
+  background-image: url('../images/icons/plus.png');
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
   -webkit-animation: imageC infinite 30s;
   animation: imageC infinite 30s;
 }
