@@ -74,7 +74,7 @@
   height: 100%;
   width: 100%;
   z-index: 10;
-  padding: 20px 10px 5px;
+  padding: 20px 15px 5px;
   box-sizing: border-box;
   display: grid;
   grid-template-rows: 1fr min-content;
@@ -108,7 +108,8 @@
 }
 
 .reg-menu__short {
-  background-image: url('../images/menu-reg-bg12.svg');
+  background-image: url('../images/menu-reg-bg13.svg');
+  /* background-color: #ddddf0; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -203,7 +204,7 @@
   align-items: center;
   grid-template-rows: min-content 1fr;
   grid-template-columns: 1fr min-content;
-  background-color: var(--bg-color-primary);
+  background-color: #ddddf0;
   border-radius: 15px;
   box-sizing: border-box;
   margin-bottom: 20px;
