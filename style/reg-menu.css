@@ -108,7 +108,7 @@
 }
 
 .reg-menu__short {
-  background-image: url('../images/menu-reg-bg12.svg');
+  background-image: url('../images/menu-reg-bg15.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -199,7 +199,7 @@
   align-items: center;
   grid-template-rows: min-content 1fr;
   grid-template-columns: 1fr min-content;
-  background-color: var(--bg-color-primary);
+  background-color: #fff;
   border-radius: 15px;
   box-sizing: border-box;
   margin-bottom: 20px;
@@ -231,13 +231,13 @@
 .reg-menu__long-item {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   color: var(--color-dark);
 }
 
 .reg-menu__long-icon {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
 }
 
 .reg-menu__long-ballance {
