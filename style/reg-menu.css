@@ -112,14 +112,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 10px 10px 10px;
+  padding: 10px 10px 8px;
   display: grid;
   align-items: center;
   justify-items: center;
   grid-template-columns: repeat(2, 1fr) 1fr repeat(2, 1fr);
-  border-radius: 15px;
+  border-radius: 25px;
   pointer-events: all;
   position: relative;
+  border-bottom: 2px solid var(--color-secondary);
 }
 
 .reg-menu__short::before {
