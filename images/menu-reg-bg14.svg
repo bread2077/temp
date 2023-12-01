@@ -98,7 +98,7 @@
        sodipodi:nodetypes="ccccccsccc" />
     <path
        id="rect4779"
-       style="opacity:1;mix-blend-mode:normal;fill:#ff725e;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-opacity:1;stroke-dasharray:none"
+       style="opacity:1;mix-blend-mode:normal;fill:#f2f2fc;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-opacity:1;stroke-dasharray:none"
        d="M 0.43434378,0.33293686 V 37.056697 H 210.15022 V 0.33293686 H 121.16547 A 17.220671,17.000068 0 0 1 122.51319,6.9209413 17.220671,17.000068 0 0 1 105.29253,23.920991 17.220671,17.000068 0 0 1 88.071889,6.9209413 17.220671,17.000068 0 0 1 89.428912,0.33293686 Z" />
   </g>
 </svg>
