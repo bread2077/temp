@@ -18,6 +18,8 @@
   grid-template-rows: 1fr -webkit-min-content;
   grid-template-rows: 1fr min-content;
   pointer-events: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .reg-menu::before {
@@ -194,6 +196,7 @@
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   -webkit-box-shadow: -2px 4px 20px rgba(106, 110, 125, 0.2);
   box-shadow: -2px 4px 20px rgba(106, 110, 125, 0.2);
+  flex-grow: 1;
 }
 
 .reg-menu__long_opened {
