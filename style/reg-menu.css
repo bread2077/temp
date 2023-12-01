@@ -117,7 +117,7 @@
   align-items: center;
   justify-items: center;
   grid-template-columns: repeat(2, 1fr) 1fr repeat(2, 1fr);
-  border-radius: 25px;
+  border-radius: 10px;
   pointer-events: all;
   position: relative;
   border-bottom: 2px solid var(--color-secondary);
@@ -200,7 +200,7 @@
   grid-template-rows: min-content 1fr;
   grid-template-columns: 1fr min-content;
   background-color: #fff;
-  border-radius: 15px;
+  border-radius: 10px;
   box-sizing: border-box;
   margin-bottom: 20px;
   padding: 15px 25px;
