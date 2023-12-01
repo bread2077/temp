@@ -12,6 +12,12 @@
   line-height: 120%;
 }
 
+.title3 {
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 400;
+}
+
 .title3-bold {
   font-size: 20px;
   line-height: 120%;
@@ -37,6 +43,13 @@
   line-height: 120%;
 }
 
+.text1-bold {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
 .text2 {
   font-size: 10px;
   font-style: normal;
@@ -44,10 +57,10 @@
   line-height: 120%;
 }
 
-.text1-bold {
-  font-size: 14px;
+.menu {
+  font-size: 12px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 120%;
 }
 
