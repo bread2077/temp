@@ -230,7 +230,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 20px 15px 40px;
-  padding: 15px 25px;
+  padding: 25px 25px 20px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
