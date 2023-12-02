@@ -224,7 +224,7 @@
   -ms-grid-columns: 1fr min-content;
   grid-template-columns: 1fr -webkit-min-content;
   grid-template-columns: 1fr min-content;
-  gap: 40px;
+  gap: 30px;
   background-color: #fff;
   border-radius: 10px;
   -webkit-box-sizing: border-box;
