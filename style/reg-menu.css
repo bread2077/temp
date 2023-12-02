@@ -62,11 +62,11 @@
 }
 
 .reg-menu__short {
-  background-image: url('../images/menu-reg-bg17.svg');
+  background-image: url('../images/menu-reg-bg20.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 10px 5px 15px;
+  padding: 7px 5px 13px;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
