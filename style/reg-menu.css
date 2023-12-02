@@ -62,7 +62,7 @@
 }
 
 .reg-menu__short {
-  background-image: url('../images/menu-reg-bg16.svg');
+  background-image: url('../images/menu-reg-bg17.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -110,7 +110,7 @@
   border: none;
   background: transparent;
   cursor: pointer;
-  color: #fff;
+  color: var(--color-dark);
   text-align: center;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -150,7 +150,7 @@
   object-fit: contain;
   -o-object-position: center;
   object-position: center;
-  filter: brightness(0) invert(1);
+  /* filter: brightness(0) invert(1); */
 }
 
 .reg-menu__accent-link {
