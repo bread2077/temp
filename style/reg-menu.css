@@ -1,3 +1,14 @@
+@keyframes rotate {
+  0% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  90% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}
 .reg-menu {
   position: fixed;
   bottom: 0;
@@ -143,12 +154,13 @@
   background-color: var(--color-secondary);
   position: relative;
   z-index: 1;
-  background-image: url('../images/icons/plus.png');
-  background-size: 50%;
+  /* background-image: url('../images/icons/plus.png'); */
   background-position: center;
   background-repeat: no-repeat;
+  animation: rotate 20s infinite;
 }
-.reg-menu__short-item-accent::before {
+.reg-menu__short-item-accent::before,
+.reg-menu__short-item-accent::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -156,9 +168,15 @@
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 50%;
+  width: 3px;
   height: 50%;
+  background-color: #fff;
   border-radius: 5px;
+}
+.reg-menu__short-item-accent::after {
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+  -ms-transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 .reg-menu__short-item svg {
