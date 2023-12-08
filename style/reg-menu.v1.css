@@ -286,7 +286,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 80%;
-  /* max-width: 50px; */
+  text-decoration: none;
+  color: var(--color-dark);
 }
 
 .reg-menu__long-settings {
