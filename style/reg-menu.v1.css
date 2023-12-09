@@ -361,4 +361,9 @@
   border: 1px solid var(--color-primary);
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 35%;
+}
+
+.mobile-header__logo {
+  flex-shrink: 0;
 }
