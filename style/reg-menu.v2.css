@@ -340,3 +340,37 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   align-self: end;
 }
+
+.menu_is-mobile {
+  width: 100%;
+  display: none !important;
+}
+
+.mobile-header {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.mobile-header__link {
+  color: var(--color-dark);
+  text-decoration: none;
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid var(--color-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 32%;
+}
+
+@media screen and (max-width: 700px) {
+  .menu_is-desktop {
+    display: none;
+  }
+
+  .menu_is-mobile {
+    display: flex !important;
+  }
+}
