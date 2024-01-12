@@ -3,17 +3,17 @@
   "name": "SMMPrime",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "favicon.v1.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "android-chrome-192x192.png",
+      "src": "android-chrome-192x192.v1.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "android-chrome-512x512.png",
+      "src": "android-chrome-512x512.v1.png",
       "type": "image/png",
       "sizes": "512x512"
     }
