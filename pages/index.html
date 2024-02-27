@@ -9,8 +9,12 @@
     <meta name="description" content="" />
     <link rel="stylesheet" href="../styles/global.v17.css" />
     <link rel="stylesheet" href="../styles/index.v10.css" />
-    <script defer src="../dist/base.b75a9b7a21fa0958d031.js"></script>
-    <script defer src="../dist/index.b75a9b7a21fa0958d031.js"></script>
+    <link rel="stylesheet" href="../style/common.v2.css" />
+    <link rel="stylesheet" href="../style/servculc.css" />
+    <link rel="stylesheet" href="../style/culcwithadv.css" />
+    <script defer src="../dist/base.bf62d887ffeebbe2edd0.v1.js"></script>
+    <script defer src="../dist/index.5b231c3ecbc15bb5766f.v1.js"></script>
+    <script type="module" src="../scripts/components/ServCulc.js"></script>
     <title>Главная</title>
   </head>
   <body class="root">
@@ -475,6 +479,113 @@
           </li>
         </ul>
       </section>
+      <section class="culcwithadv">
+        <div class="culcwithadv__adv">
+          <div class="culcwithadv__item">
+            <h3 class="culcwithadv__subtitle">Гарантия результата</h3>
+            <p class="culcwithadv__text">
+              бесплатно докрутим, если кто-то отпишется в течение 30 дней
+            </p>
+          </div>
+          <div class="culcwithadv__item">
+            <h3 class="culcwithadv__subtitle">
+              Зарегистрируйся, чтобы попробовать бесплатную накрутку
+            </h3>
+            <div class="culcwithadv__services">
+              <ul class="list culcwithadv__services-list">
+                <li class="culcwithadv__services-item">
+                  <img
+                    class="culcwithadv__services-icon"
+                    src="https://cdn.rawgit.com/bread2077/temp/main/images/icons/like-cloud.svg"
+                    alt=""
+                  />
+                  <span class="culcwithadv__services-text">30 лайков</span>
+                </li>
+                <li class="culcwithadv__services-item">
+                  <img
+                    class="culcwithadv__services-icon"
+                    src="https://cdn.rawgit.com/bread2077/temp/main/images/icons/user-cloud.svg"
+                    alt=""
+                  />
+                  <span class="culcwithadv__services-text"
+                    >100 подписчиков</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <a href="/" class="btn btn_size_large btn_color_orange"
+              >Попробовать бесплатно</a
+            >
+          </div>
+          <div class="culcwithadv__item">
+            <h3 class="culcwithadv__subtitle">100% конфиденциальность</h3>
+            <p class="culcwithadv__text">
+              Никто не узнает, что вы накручивали показатели у нас — это
+              технически невозможно (Если вы не скажете самостоятельно)
+            </p>
+          </div>
+        </div>
+        <div class="servculc">
+          <div class="servculc__container" data-social="vk" data-type="views">
+            <h3 class="servculc__title">Калькулятор услуг</h3>
+            <div class="servculc__wrapper servculc__wrapper_type_select">
+              <h3 class="servculc__subtitle">Социальная сеть</h3>
+              <div class="servculc__select-container">
+                <div class="servculc__select"></div>
+              </div>
+            </div>
+            <div class="servculc__wrapper servculc__wrapper_type_type">
+              <h3 class="servculc__subtitle">Тип услуги</h3>
+              <div class="servculc__type-container">
+                <ul class="servculc__type-list list"></ul>
+              </div>
+            </div>
+            <div class="servculc__wrapper servculc__wrapper_type_semi">
+              <h3 class="servculc__subtitle">Тип накрутки</h3>
+              <div class="servculc__semi-container">
+                <ul class="servculc__semi-list list"></ul>
+              </div>
+            </div>
+            <div class="servculc__wrapper servculc__wrapper_type_variant">
+              <h3 class="servculc__subtitle">Вариант накрутки</h3>
+              <div class="servculc__variant-container">
+                <ul class="servculc__variant-list list"></ul>
+              </div>
+            </div>
+            <div class="servculc__wrapper servculc__wrapper_type_count">
+              <h3 class="servculc__subtitle">Количество</h3>
+              <p class="servculc__count">100000 шт.</p>
+              <input
+                type="range"
+                min="1"
+                max="1000000"
+                value="100000"
+                id="range2"
+                class="servculc__range"
+              />
+              <div class="servculc__range-caption-container">
+                <span class="servculc__range-caption">1 шт</span>
+                <span class="servculc__range-caption">1 млн. шт.</span>
+              </div>
+              <div class="servculc__cost-container">
+                <p class="servculc__price">
+                  Стоимость одного <span class="servculc__price-number"></span>
+                </p>
+                <div class="servculc__cost-result">
+                  <span class="servculc__cost-title">Итого</span>
+                  <span class="servculc__cost"></span>
+                </div>
+              </div>
+            </div>
+            <a
+              href="/"
+              class="btn btn_size_large btn_color_orange servculc__button"
+              >Зарегистрироваться и оформить задачу</a
+            >
+          </div>
+        </div>
+      </section>
+
       <section class="guarantee">
         <div class="guarantee__section guarantee__section_size_l">
           <h2 class="section-title guarantee__title">

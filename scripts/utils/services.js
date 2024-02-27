@@ -9,6 +9,10 @@ export const services = {
     img: `${SERVICE_IMAGES_URL}/likes-icon.svg`,
     name: 'Лайки',
   },
+  classes: {
+    img: `${SERVICE_IMAGES_URL}/likes-icon.svg`,
+    name: 'Классы',
+  },
   listenings: {
     img: `${SERVICE_IMAGES_URL}/listenings-icon.svg`,
     name: 'Прослушивания плейлиста',
@@ -20,6 +24,26 @@ export const services = {
   views: {
     img: `${SERVICE_IMAGES_URL}/views-icon.svg`,
     name: 'Просмотры',
+  },
+  viewsWithOptions: {
+    img: `${SERVICE_IMAGES_URL}/views-icon.svg`,
+    name: 'Просмотры с настройкой скорости',
+  },
+  viewsTranslations: {
+    img: `${SERVICE_IMAGES_URL}/views-icon.svg`,
+    name: 'Просмотры трансляций',
+  },
+  shorts: {
+    img: `${SERVICE_IMAGES_URL}/views-icon.svg`,
+    name: 'Shorts',
+  },
+  botStart: {
+    img: `${SERVICE_IMAGES_URL}/autoviews-icon.svg`,
+    name: 'Старт Бота',
+  },
+  boosts: {
+    img: `${SERVICE_IMAGES_URL}/autoviews-icon.svg`,
+    name: 'Бусты',
   },
   followers: {
     img: `${SERVICE_IMAGES_URL}/followers-icon.svg`,
@@ -67,7 +91,7 @@ export const services = {
   },
   plays: {
     img: `${SERVICE_IMAGES_URL}/listenings-icon.svg`,
-    name: 'Проигрывания',
+    name: 'Плейлист',
   },
   reels: {
     img: `${SERVICE_IMAGES_URL}/views-icon.svg`,
@@ -80,5 +104,9 @@ export const services = {
   visitors: {
     img: `${SERVICE_IMAGES_URL}/views-icon.svg`,
     name: 'Посещения',
+  },
+  statistics: {
+    img: `${SERVICE_IMAGES_URL}/views-icon.svg`,
+    name: 'Стастистика',
   },
 };

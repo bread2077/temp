@@ -1,0 +1,111 @@
+.culcwithadv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: var(--width-max);
+  margin: calc(var(--space-primary) + 20px) auto;
+}
+
+.culcwithadv__adv {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.culcwithadv__item {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 60px 50px;
+  border: 1px solid var(--color-primary);
+}
+
+.culcwithadv__subtitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 0 20px;
+  color: var(--color-primary);
+}
+.culcwithadv__text {
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  color: #1a142d99;
+  margin: 0;
+}
+
+.culcwithadv__services {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.culcwithadv__services-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.culcwithadv__services-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.culcwithadv__services-text {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #1a142d99;
+}
+.culcwithadv__services-icon {
+  width: 34px;
+  height: 30px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.culcwithadv__item {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1161px) {
+  .culcwithadv {
+    margin: var(--space-primary) 30px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .culcwithadv__adv {
+    gap: 20px;
+  }
+  .culcwithadv__item {
+    padding: 40px 10px;
+    border-radius: 10px;
+  }
+  .culcwithadv__subtitle {
+    font-size: 20px;
+    margin: 0 0 14px;
+  }
+  .culcwithadv__text {
+    font-size: 14px;
+  }
+  .culcwithadv__services {
+    margin-bottom: 32px;
+  }
+  .culcwithadv__services-list {
+    gap: 20px;
+  }
+  .culcwithadv__services-item {
+    gap: 6px;
+  }
+  .culcwithadv__services-text {
+    font-size: 13px;
+  }
+  .culcwithadv__services-icon {
+    width: 24px;
+    height: 20px;
+  }
+}
