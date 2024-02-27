@@ -695,7 +695,7 @@ export const socials = {
   twitch: {
     name: 'Twitch',
     type: 'twitch',
-    img: `${SOCIAL_IMAGES_URL}/twitch-icon.svg`,
+    img: `https://cdn.mypanel.link/6b0a4d/0org4elfchtb9l41.png`,
     services: {
       followers: [
         {
@@ -714,7 +714,7 @@ export const socials = {
   threads: {
     name: 'Threads',
     type: 'threads',
-    img: `${SOCIAL_IMAGES_URL}/threads-icon.svg`,
+    img: `https://cdn.mypanel.link/6b0a4d/atynk3esl4hctwol.png`,
     services: {
       followers: [
         {
@@ -808,7 +808,7 @@ export const socials = {
   rutube: {
     name: 'Rutube',
     type: 'rutube',
-    img: `${SOCIAL_IMAGES_URL}/rutube-icon.svg`,
+    img: `https://cdn.mypanel.link/6b0a4d/k2lm0y8tz1j0fhm5.png`,
     services: {
       followers: [
         {
@@ -827,7 +827,7 @@ export const socials = {
   dzen: {
     name: 'Дзен',
     type: 'dzen',
-    img: `${SOCIAL_IMAGES_URL}/dzen-icon.svg`,
+    img: `https://cdn.mypanel.link/6b0a4d/90rw72tu8xsk15lg.jpg`,
     services: {
       followers: [
         {
