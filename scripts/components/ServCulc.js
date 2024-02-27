@@ -278,7 +278,9 @@ class ServCulc {
   setCost = value => {
     const costReg = /\d{1,}(.\d{1,})?/g;
     this.costEl.textContent =
-      value > 0 ? `${this.devideNum(value * this.cost.match(costReg))} ₽` : '-';
+      value > 0 && +value <= +this.range.max
+        ? `${this.devideNum(value * this.cost.match(costReg))} ₽`
+        : '-';
     this.priceTitle.textContent = this.cost;
   };
 
@@ -293,7 +295,7 @@ class ServCulc {
     let residue = '';
 
     if (value % 1 !== 0) {
-      const strValue = String(value.toFixed(1));
+      const strValue = String(value.toFixed(2));
       const index = strValue.indexOf('.');
       residue = strValue.substring(index);
       value = strValue.substring(0, index);
