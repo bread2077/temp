@@ -275,8 +275,9 @@ class ServCulc {
   };
 
   setCost = value => {
+    const costReg = /\d{1,}.\d{1,}/g;
     this.costEl.textContent = `${this.devideNum(
-      value * parseFloat(this.cost)
+      value * this.cost.match(costReg)
     )} ₽`;
     this.priceTitle.textContent = this.cost;
   };
