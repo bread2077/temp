@@ -134,7 +134,7 @@
   line-height: 1.35;
   color: #1a142d;
   background-color: #fff;
-  border: 1px solid var(--color-primary);
+  border: 1px solid #c0c0e1;
   border-radius: 40px;
   transition: color 0.4s ease-in-out, background-color 0.2s ease-in-out;
 }
@@ -145,6 +145,7 @@
 
 .servculc__tag-button_selected {
   color: var(--color-primary);
+  border: 1px solid var(--color-primary);
 }
 
 .servculc__tag-cost {
