@@ -31,7 +31,10 @@
   flex-direction: column;
   position: relative;
   max-width: 560px;
+  box-shadow: 0 4px 20px #b2b9dc6e;
   margin: 0 auto; /* убрать после релиза*/
+  padding: 40px 24px;
+  border-radius: 20px;
 }
 
 .servculc__select-container {
@@ -65,6 +68,7 @@
   gap: 10px;
   padding: 12px 20px;
   font-size: 14px;
+  color: #1a142de5;
   background-color: transparent;
   transition: background-color 0.4s ease-in-out, border 0.4s ease-in-out;
 }
@@ -217,10 +221,6 @@
   color: #1a142de5;
   margin: 0 0 10px;
 }
-
-.servculc__range {
-}
-
 .servculc__range {
   -webkit-appearance: none;
   appearance: none;
@@ -230,6 +230,7 @@
   border-radius: 5px;
   height: 4px;
   background: #fff;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   border: 0.5px solid var(--color-primary);
 }
 
@@ -321,6 +322,10 @@
   /* .servculc {
     padding: 0 24px;
   } */
+
+  .servculc__container {
+    padding: 40px 30px;
+  }
 
   .servculc__title {
     font-size: 26px;
