@@ -9,6 +9,8 @@
 }
 
 .servculc__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 .servculc__wrapper_type_semi {
   /* height: 0;
@@ -219,8 +221,29 @@
   font-size: 18px;
   line-height: 1.1;
   color: #1a142de5;
-  margin: 0 0 10px;
+  margin: 0 0 24px;
+  border: 1px solid #c0c0e1;
+  padding: 12px;
+  border-radius: 10px;
+  transition: border 0.4s ease-in-out;
 }
+
+.servculc__count::-webkit-outer-spin-button,
+.servculc__count::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.servculc__count {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.servculc__count:focus {
+  border: 1px solid var(--color-primary);
+  outline: none;
+}
+
 .servculc__range {
   -webkit-appearance: none;
   appearance: none;
@@ -294,7 +317,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2px;
+  margin-top: 8px;
 }
 
 .servculc__range-caption {

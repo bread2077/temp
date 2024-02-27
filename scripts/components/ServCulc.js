@@ -1,5 +1,6 @@
 import { socials } from '../utils/socials.v2.js';
 import { services } from '../utils/services.js';
+import { debounce } from '../utils/utils.js';
 
 class ServCulc {
   static classes = {
@@ -276,10 +277,8 @@ class ServCulc {
 
   setCost = value => {
     const costReg = /\d{1,}(.\d{1,})?/g;
-    console.log(this.cost.match(costReg));
-    this.costEl.textContent = `${this.devideNum(
-      value * this.cost.match(costReg)
-    )} ₽`;
+    this.costEl.textContent =
+      value > 0 ? `${this.devideNum(value * this.cost.match(costReg))} ₽` : '-';
     this.priceTitle.textContent = this.cost;
   };
 
@@ -307,8 +306,18 @@ class ServCulc {
     return `${value}${res}${residue}`;
   };
 
+  debounceInputChange = target => {
+    this.setRange(target.value);
+    this.range.value = target.value || 0;
+  };
+
   onRangeChange = ({ target }) => {
     this.setRange(target.value);
+    this.count.value = target.value;
+  };
+
+  onInputChange = ({ target }) => {
+    debounce(this.debounceInputChange, 600)(target);
   };
 
   initSelect = () => {
@@ -364,6 +373,7 @@ class ServCulc {
     this.semiContainer.addEventListener('click', this.onSemiButtonClick);
     this.variantContainer.addEventListener('click', this.onVariantButtonClick);
     this.range.addEventListener('input', this.onRangeChange);
+    this.count.addEventListener('input', this.onInputChange);
   };
 }
 
