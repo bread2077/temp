@@ -65,6 +65,7 @@
 }
 
 .servculc__select-button {
+  border: none;
   display: flex;
   align-items: center;
   gap: 10px;
