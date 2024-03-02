@@ -21,9 +21,9 @@ class ServCulc {
     semiActiveClass: 'servculc__wrapper_type_semi_active',
   };
 
-  constructor() {
+  constructor(container) {
     this.socials = Object.values(socials);
-    this.culcContainer = document.querySelector('.servculc__container');
+    this.culcContainer = container;
     this.selectedSocial = this.culcContainer.dataset.social;
     this.selectedType = this.culcContainer.dataset.type;
 
@@ -379,4 +379,8 @@ class ServCulc {
   };
 }
 
-const survCulc = new ServCulc();
+const culcCont = document.querySelector('.servculc__container');
+
+if(culcCont) {
+  const survCulc = new ServCulc(culcCont);
+}

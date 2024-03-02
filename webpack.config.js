@@ -8,6 +8,7 @@ module.exports = {
     base: './scripts/base.v8.js',
     freeservice: './scripts/pages/freeservises.v4.js',
     social: './scripts/pages/social.js',
+    culc: './scripts/components/ServCulc.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),

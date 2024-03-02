@@ -1,18 +1,9 @@
 import '../../styles/index.v10.css';
 
-import ChoiceServiceImage from '../components/ChoiceServiceImage.js';
-import ChoiceServiceText from '../components/ChoiceServiceText.js';
 import Faq from '../components/Faq.js';
 import HorizontalSwiper from '../components/HorizontalSwiper.js';
 import { cyrcle, faqList } from '../utils/constants.v5.js';
 
-const secondCulc = new ChoiceServiceText('first-culc');
-secondCulc.renderSocials();
-secondCulc.setEventListeners();
-
-const firstCulc = new ChoiceServiceImage('second-culc');
-firstCulc.renderSocials();
-firstCulc.setEventListeners();
 
 faqList.forEach(faq => {
   const faqItem = new Faq(faq);
