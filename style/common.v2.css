@@ -1,10 +1,14 @@
+button {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .btn-rounded {
   width: 25px;
   height: 25px;
-  padding: 0;
-  border: 0;
   border-radius: 50%;
-  cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   text-align: center;

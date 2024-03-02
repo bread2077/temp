@@ -22,12 +22,12 @@ const setServicesItem = item => {
   serviceItem.initialize();
 };
 
-if (socialTitle) {
-  const servicesFilter = new ServiceFilter(
-    'service-list__form_role_filter',
-    socialTitle,
-    setServicesItem,
-    listContainer
-  );
-  servicesFilter.initializeFilter();
-}
+// if (socialTitle) {
+//   const servicesFilter = new ServiceFilter(
+//     'service-list__form_role_filter',
+//     socialTitle,
+//     setServicesItem,
+//     listContainer
+//   );
+//   servicesFilter.initializeFilter();
+// }

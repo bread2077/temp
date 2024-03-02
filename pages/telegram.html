@@ -7,11 +7,16 @@
     <meta name="author" content="" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="../dist/base.b75a9b7a21fa0958d031.css" />
-    <link rel="stylesheet" href="../dist/social.b75a9b7a21fa0958d031.css" />
-    <script type="module" src="../dist/base.b75a9b7a21fa0958d031.js"></script>
-    <script defer src="../dist/social.b75a9b7a21fa0958d031.js"></script>
-    <script type="module" src="../scripts/pages/telegram.js"></script>
+    <link rel="stylesheet" href="../dist/base.bf62d887ffeebbe2edd0.v2.css" />
+    <link rel="stylesheet" href="../dist/social.602229dacdbe52dda217.v1.css" />
+    <script type="module" src="../scripts/pages/social.js"></script>
+    <script type="module" src="../scripts/pages/telegram.v6.js"></script>
+
+    <link rel="stylesheet" href="../style/common.v2.css" />
+    <link rel="stylesheet" href="../style/servculc.css" />
+    <link rel="stylesheet" href="../style/culcwithadv.css" />
+    <script defer src="../dist/base.bf62d887ffeebbe2edd0.v1.js"></script>
+    <script type="module" src="../scripts/components/ServCulc.js"></script>
     <title>Телеграм</title>
   </head>
 
@@ -401,103 +406,119 @@
           </div>
         </div>
       </section>
-      <section class="service-list" id="service-list" data-socials="telegram">
-        <h2 class="section-title service-list__title">Накрутка Телеграм</h2>
-        <div class="service-list__description">
-          <h3 class="service-list__description-subtitle">Обозначения</h3>
-          <ul class="service-list__description-list">
-            <li class="service-list__description-item">
-              ⭐ - пользователи рекомендуют
-            </li>
-            <li class="service-list__description-item">🔞 - любая тематика</li>
-            <li class="service-list__description-item">
-              ♻️ - бесплатное восстановление
-            </li>
-            <li class="service-list__description-item">
-              🌱 - органическая накрутка
-            </li>
-          </ul>
-        </div>
-        <form
-          class="service-list__form service-list__form_hided service-list__form_role_filter"
-          action=""
-        >
-          <div class="service-list__select-container">
-            <select
-              class="service-list__input service-list__input_type_select"
-              name=""
-              id=""
-            >
-              <option value="" disabled selected>Тип услуги</option>
-            </select>
+      <section class="culcwithadv">
+        <div class="culcwithadv__adv">
+          <div class="culcwithadv__item">
+            <h3 class="culcwithadv__subtitle">Гарантия результата</h3>
+            <p class="culcwithadv__text">
+              бесплатно докрутим, если кто-то отпишется в течение 30 дней
+            </p>
           </div>
-        </form>
-        <div class="service-list__list-container">
-          <ul class="service-list__headers-list">
-            <li class="service-list__header-item">ID</li>
-            <li class="service-list__header-item">Название</li>
-            <li class="service-list__header-item">
-              Стоимость за&nbsp;1&nbsp;000
-            </li>
-            <li class="service-list__header-item">Время запуска</li>
-            <li class="service-list__header-item">Скорость</li>
-            <li class="service-list__header-item">Гарантия</li>
-            <li class="service-list__header-item"></li>
-          </ul>
-          <ul class="service-list__body"></ul>
+          <div class="culcwithadv__item">
+            <h3 class="culcwithadv__subtitle">
+              Зарегистрируйся, чтобы попробовать бесплатную накрутку
+            </h3>
+            <div class="culcwithadv__services">
+              <ul class="list culcwithadv__services-list">
+                <li class="culcwithadv__services-item">
+                  <img
+                    class="culcwithadv__services-icon"
+                    src="https://cdn.rawgit.com/bread2077/temp/main/images/icons/like-cloud.svg"
+                    alt=""
+                  />
+                  <span class="culcwithadv__services-text">30 лайков</span>
+                </li>
+                <li class="culcwithadv__services-item">
+                  <img
+                    class="culcwithadv__services-icon"
+                    src="https://cdn.rawgit.com/bread2077/temp/main/images/icons/user-cloud.svg"
+                    alt=""
+                  />
+                  <span class="culcwithadv__services-text"
+                    >100 подписчиков</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <a href="/" class="btn btn_size_large btn_color_orange"
+              >Попробовать бесплатно</a
+            >
+          </div>
+          <div class="culcwithadv__item">
+            <h3 class="culcwithadv__subtitle">100% конфиденциальность</h3>
+            <p class="culcwithadv__text">
+              Никто не узнает, что вы накручивали показатели у нас — это
+              технически невозможно (Если вы не скажете самостоятельно)
+            </p>
+          </div>
         </div>
-        <a
-          href="/services"
-          class="btn btn_color_orange btn_size_large service-list__button"
-          >Смотреть все цены</a
-        >
-      </section>
-      <section
-        class="optimization optimization_bg_white optimization_type_single"
-      >
-        <div class="optimization__container">
-          <div class="optimization__culc choice__culc culc" id="third-culc">
-            <h2 class="optimization__title optimization__title_type_black">
-              Выберите, какую соцсеть вам нужно раскрутить
-            </h2>
-            <ul
-              class="optimization__list optimization__list_pos_center choice__list culc__list"
-            ></ul>
-            <div
-              class="optimization__services choice__services choice__services_hided culc__service-container"
-            >
-              <h3
-                class="optimization__subtitle optimization__subtitle_type_black choice__subtitle"
-              >
-                Выберите тип услуги:
-              </h3>
-              <ul
-                class="optimization__sublist optimization__sublist_pos_center culc__sublist"
-              ></ul>
+        <div class="servculc">
+          <div
+            class="servculc__container"
+            data-social="telegram"
+            data-type="followers"
+          >
+            <h3 class="servculc__title">Калькулятор услуг</h3>
+            <div class="servculc__wrapper servculc__wrapper_type_select">
+              <h3 class="servculc__subtitle">Социальная сеть</h3>
+              <div class="servculc__select-container">
+                <div class="servculc__select"></div>
+              </div>
             </div>
-            <div
-              class="optimization__description optimization__description_pos_center choice__description choice__description_hided"
-            >
-              <h3
-                class="optimization__choice-title optimization__choice-title_type_black choice__subtitle"
-              >
-                Стоимость:
-              </h3>
-              <p
-                class="optimization__proposal optimization__proposal_pos_center choice__proposal"
-              >
-                от
-                <span class="choice__cost culc__cost"></span>
-                руб. за
-                <span class="choice__amount culc__amount"></span>
-                шт.
-              </p>
-              <a
-                href="/services"
-                class="btn btn_color_orange btn_size_large choice__button"
-                >Ознакомиться с услугами</a
-              >
+            <div class="servculc__wrapper servculc__wrapper_type_type">
+              <h3 class="servculc__subtitle">Тип услуги</h3>
+              <div class="servculc__type-container">
+                <ul class="servculc__type-list list"></ul>
+              </div>
             </div>
+            <div class="servculc__wrapper servculc__wrapper_type_semi">
+              <h3 class="servculc__subtitle">Тип накрутки</h3>
+              <div class="servculc__semi-container">
+                <ul class="servculc__semi-list list"></ul>
+              </div>
+            </div>
+            <div class="servculc__wrapper servculc__wrapper_type_variant">
+              <h3 class="servculc__subtitle">Вариант накрутки</h3>
+              <div class="servculc__variant-container">
+                <ul class="servculc__variant-list list"></ul>
+              </div>
+            </div>
+            <div class="servculc__wrapper servculc__wrapper_type_count">
+              <h3 class="servculc__subtitle">Количество</h3>
+              <!-- <p class="servculc__count">100000 шт.</p> -->
+              <input
+                class="servculc__count"
+                type="number"
+                min="0"
+                maxlength="6"
+              />
+              <input
+                type="range"
+                min="0"
+                max="200000"
+                value="0"
+                id="range2"
+                class="servculc__range"
+              />
+              <div class="servculc__range-caption-container">
+                <span class="servculc__range-caption">0 шт</span>
+                <span class="servculc__range-caption">200 тыс. шт</span>
+              </div>
+              <div class="servculc__cost-container">
+                <p class="servculc__price">
+                  Стоимость одного <span class="servculc__price-number"></span>
+                </p>
+                <div class="servculc__cost-result">
+                  <span class="servculc__cost-title">Итого</span>
+                  <span class="servculc__cost"></span>
+                </div>
+              </div>
+            </div>
+            <a
+              href="/"
+              class="btn btn_size_large btn_color_orange servculc__button"
+              >Зарегистрироваться и оформить задачу</a
+            >
           </div>
         </div>
       </section>
