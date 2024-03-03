@@ -72,6 +72,10 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.service-grid__link:active {
+  border: 1px solid var(--color-primary);
+}
+
 .service-grid__item-title {
   font-size: 22px;
   font-weight: 500;
