@@ -9,9 +9,13 @@
     <meta name="description" content="" />
     <link rel="stylesheet" href="../dist/base.bcb6e927fcac79f7a268.css" />
     <link rel="stylesheet" href="../dist/social.bcb6e927fcac79f7a268.css" />
+
+    <link rel="stylesheet" href="../style/service-grid.css" />
+
+
     <script type="module" src="../dist/social.bcb6e927fcac79f7a268.js"></script>
     <script defer src="../dist/base.bcb6e927fcac79f7a268.js"></script>
-    <!-- <script defer src="../dist/culc.bcb6e927fcac79f7a268.js"></script> -->
+    <script defer src="../dist/culc.bcb6e927fcac79f7a268.js"></script>
     <script type="module" src="../scripts/components/ServCulc.js"></script>
     <title>Телеграм</title>
   </head>
@@ -405,74 +409,26 @@
       <section class="service-grid">
         <h2 class="service-grid__title">Накрутка Телеграм</h2>
         <div class="service-grid__container">
-          <h3 class="service-grid__subtitle">Разовые</h3>
-          <p class="service-grid__text">
-            Разовые задачи на уже выпущенные посты
-          </p>
           <ul class="list service-grid__list">
-            <li class="service-grid__item">
-              <a class="link service-grid__link" href="/">
+            <li class="service-grid__item" itemscope itemtype="http://schema.org/Product">
                 <div class="service-grid__icon-container">
                   <img
+                    itemprop="image"
                     class="service-grid__icon"
                     src="../images/services/autolikes-icon.svg"
                     alt=""
                   />
                 </div>
-                <h4 class="service-grid__item-title">Реакции</h4>
-                <p class="service-grid__item-text">
+                <h3 itemprop="name" class="service-grid__item-title">Реакции</h3>
+                <p itemprop="description" class="service-grid__item-text">
                   Накрутка реакций на постах
                 </p>
-                <p class="service-grid__item-cost">0.012 руб</p>
-              </a>
-            </li>
-            <li class="service-grid__item">
-              <a class="link service-grid__link" href="/">
-                <div class="service-grid__icon-container">
-                  <img
-                    class="service-grid__icon"
-                    src="../images/services/friends-icon.svg"
-                    alt=""
-                  />
+                <div itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">
+                  <meta itemprop="priceCurrency" content="RUB">
+                  <link itemprop="availability" href="http://schema.org/InStock">
+                  <p itemprop="lowPrice" class="service-grid__item-cost">0.012 руб</p>
                 </div>
-                <h4 class="service-grid__item-title">Подписчики</h4>
-                <p class="service-grid__item-text">
-                  Качественные подписчикидля вашего канала или группы
-                </p>
-                <p class="service-grid__item-cost">0.09 руб</p>
-              </a>
-            </li>
-            <li class="service-grid__item">
-              <a class="link service-grid__link" href="/">
-                <div class="service-grid__icon-container">
-                  <img
-                    class="service-grid__icon"
-                    src="../images/services/views-icon.svg"
-                    alt=""
-                  />
-                </div>
-                <h4 class="service-grid__item-title">Просмотры</h4>
-                <p class="service-grid__item-text">
-                  Просмотры отрусскоязычных пользователей на любой пост или
-                  подписка на новые записи
-                </p>
-                <p class="service-grid__item-cost">0.0012 руб</p>
-              </a>
-            </li>
-            <li class="service-grid__item">
-              <a class="link service-grid__link" href="/">
-                <div class="service-grid__icon-container">
-                  <img
-                    class="service-grid__icon"
-                    src="../images/services/polls-icon.svg"
-                    alt=""
-                  />
-                </div>
-                <h4 class="service-grid__item-title">Голосование</h4>
-                <p class="service-grid__item-text">
-                  Поднимайте активность голосованиями и лайками
-                </p>
-                <p class="service-grid__item-cost">0.05 руб</p>
+                <a class="link service-grid__link" href="/">
               </a>
             </li>
           </ul>
