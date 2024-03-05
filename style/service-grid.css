@@ -66,15 +66,16 @@
   box-shadow: 0 4px 20px 0 #B2B9DC6E;
   transition: border .4s ease-in-out;
   position: relative;
+  overflow: hidden;
+}
+
+.service-grid__item:active {
+  border: 1px solid var(--color-primary);
 }
 
 .service-grid__link {
   position: absolute;
   inset: 0;
-}
-
-.service-grid__link:active {
-  border: 1px solid var(--color-primary);
 }
 
 .service-grid__item-title {
@@ -108,7 +109,7 @@
 }
 
 @media screen and (min-width: 1161px) {
-  .service-grid__link:hover {
+  .service-grid__item:hover {
     border: 1px solid var(--color-primary);
   }
 }
