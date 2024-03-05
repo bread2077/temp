@@ -73,7 +73,11 @@ class ServCulc {
 
     return `
       <button ${type ? `data-type="${type}"` : ''} class="${tagButtonClass}">
-        ${icon ? `<img class="${tagIconClass}" src="${icon}"/>` : ''}
+        ${
+          icon
+            ? `<img aria-hidden="true" class="${tagIconClass}" src="${icon}"/>`
+            : ''
+        }
         <span>${name}</span>
         ${cost ? `<span class="${tagCostClass}">${cost}</span>` : ''}
       </button>
@@ -336,7 +340,7 @@ class ServCulc {
     this.activeButton = document.createElement('button');
     this.activeButton.classList.add(selectButtonClass, activeButtonClass);
     this.activeButton.innerHTML = `
-        <img class="${selectIconClass}" src="${this.selectedSocial.img}"/>
+        <img aria-hidden="true" class="${selectIconClass}" src="${this.selectedSocial.img}"/>
         <span class="${selectTextClass}">${this.selectedSocial.name}</span>
     `;
     this.culcSelect.append(this.activeButton);
@@ -349,7 +353,7 @@ class ServCulc {
       const li = `
         <li class="${selectItemClass}">
           <button data-id="${social.type}" class="${selectButtonClass} ${activeClass}">
-            <img class="${selectIconClass}" src="${social.img}"/>
+            <img aria-hidden="true" class="${selectIconClass}" src="${social.img}"/>
             <span class="${selectTextClass}">${social.name}</span>
             </button>
         </li>
@@ -381,6 +385,6 @@ class ServCulc {
 
 const culcCont = document.querySelector('.servculc__container');
 
-if(culcCont) {
+if (culcCont) {
   const survCulc = new ServCulc(culcCont);
 }

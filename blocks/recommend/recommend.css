@@ -10,17 +10,20 @@
   border-radius: 20px;
   padding: 60px;
   box-sizing: border-box;
+  background-color: var(--color-primary);
+}
+
+.recommend__title ,
+.recommend__text {
+  max-width: 488px;
+  color: #fff;
 }
 
 .recommend__title {
-  max-width: 488px;
-  color: #fff;
   margin: 0 0 20px;
 }
 
 .recommend__text {
-  max-width: 488px;
-  color: #fff;
   margin: 0 0 40px;
 }
 

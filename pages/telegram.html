@@ -7,20 +7,12 @@
     <meta name="author" content="" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="../dist/base.2c3b15beaf05c0440ad4.css" />
-    <link rel="stylesheet" href="../dist/social.2c3b15beaf05c0440ad4.css" />
-    <script type="module" src="../scripts/pages/social.js"></script>
-    <script type="module" src="../scripts/pages/telegram.v6.js"></script>
-
-    <link rel="stylesheet" href="../style/common.v2.css" />
-    <link rel="stylesheet" href="../style/servculc.css" />
-
-    <link rel="stylesheet" href="../style/download-app.css" />
-    <link rel="stylesheet" href="../style/tg-bot.css" />
-
-    <link rel="stylesheet" href="../style/service-grid.css" />
-    <script defer src="../dist/base.bf62d887ffeebbe2edd0.v1.js"></script>
-    <script defer src="../dist/culc.2c3b15beaf05c0440ad4.js"></script>
+    <link rel="stylesheet" href="../dist/base.bcb6e927fcac79f7a268.css" />
+    <link rel="stylesheet" href="../dist/social.bcb6e927fcac79f7a268.css" />
+    <script type="module" src="../dist/social.bcb6e927fcac79f7a268.js"></script>
+    <script defer src="../dist/base.bcb6e927fcac79f7a268.js"></script>
+    <!-- <script defer src="../dist/culc.bcb6e927fcac79f7a268.js"></script> -->
+    <script type="module" src="../scripts/components/ServCulc.js"></script>
     <title>Телеграм</title>
   </head>
 
@@ -351,69 +343,6 @@
           бесплатно докрутим, если кто-то отпишется в течение 30 дней
         </p>
       </section>
-      <section class="download-app">
-        <div class="download-app__wrapper">
-          <div class="download-app__inner download-app__inner_with-text">
-            <h2 class="title-2 download-app__title">
-              Мобильное приложение smmprime.com
-            </h2>
-            <p class="text-1 download-app__text">
-              Можно пользоваться не только сайтом, но и мобильным приложением -
-              это удобно!
-            </p>
-            <div class="download-app__links">
-              <a href="/" class="download-app__link">
-                <img
-                  class="download-app__link-icon"
-                  src="../images/download-app/android-green.svg"
-                  alt="Андроид"
-                />
-                <p class="download-app__link-text">
-                  Загрузить на
-                  <span class="download-app__link-accent">Android</span>
-                </p>
-              </a>
-              <a href="/" class="download-app__link">
-                <img
-                  class="download-app__link-icon"
-                  src="../images/download-app/ios.svg"
-                  alt="Ios"
-                />
-                <p class="download-app__link-text">
-                  Загрузить на
-                  <span class="download-app__link-accent">IOS</span>
-                </p>
-              </a>
-            </div>
-          </div>
-          <div class="download-app__inner download-app__inner_with-img">
-            <picture class="download-app__img">
-              <source
-                srcset="../images/download-app/app-devices-desktop.png"
-                media="(min-width: 600px)"
-              />
-              <img
-                src="../images/download-app/app-devices-mobile.png"
-                alt="Телефоны"
-              />
-            </picture>
-          </div>
-        </div>
-      </section>
-      <section class="tg-bot">
-        <div class="tg-bot__wrapper">
-          <h2 class="title-2 tg-bot__title">
-            Оформляйте заказы без лишних усилий - прямо в Telegram!
-          </h2>
-          <p class="text-1 tg-bot__text">
-            Мы представляем нашего нового помощника - Telegram бот, который
-            позволит вам оформлять заказы быстрее и проще.
-          </p>
-          <a href="/" class="btn btn_size_large btn_color_light-orange"
-            >Попробовать</a
-          >
-        </div>
-      </section>
       <section class="optimization optimization_role_social">
         <div class="optimization__description">
           <h2
@@ -628,14 +557,21 @@
             </div>
             <div class="servculc__wrapper servculc__wrapper_type_count">
               <h3 class="servculc__subtitle">Количество</h3>
-              <!-- <p class="servculc__count">100000 шт.</p> -->
+              <label class="visually-hidden" for="culc-number"
+                >Выбор количества единиц</label
+              >
               <input
+                id="culc-number"
                 class="servculc__count"
                 type="number"
                 min="0"
                 maxlength="6"
               />
+              <label class="visually-hidden" for="culc-range"
+                >Выбор количества единиц</label
+              >
               <input
+                id="culc-range"
                 type="range"
                 min="0"
                 max="200000"

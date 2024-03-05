@@ -1,6 +1,6 @@
 @import url('../blocks/confidentiality/confidentiality.css');
 
-@import url('../blocks/non-block/non-block.css');
+/* @import url('../blocks/non-block/non-block.css'); */
 
 @import url('../blocks/connection/connection.css');
 
@@ -10,11 +10,7 @@
 
 @import url('../blocks/recommend/recommend.css');
 
-@import url('../blocks/call-action/call-action.css');
-
-@import url('../blocks/choice/choice.css');
-
-@import url('../blocks/culc/culc.v1.css');
+/* @import url('../blocks/call-action/call-action.css'); */
 
 @import url('../blocks/faq/faq.v1.css');
 
@@ -32,7 +28,7 @@
 
 @import url('../blocks/long-read/long-read.css');
 
-@import url('../blocks/guarantee/guarantee.css');
+/* @import url('../blocks/guarantee/guarantee.css'); */
 
 @import url('../blocks/rating/rating.v1.css');
 
@@ -44,8 +40,8 @@
 
 @import url('../blocks/social-intro/social-intro.v8.css');
 
-@import url('../blocks/service-list/service-list.css');
-
-@import url('../style/servculc.css');
+@import url('../style/service-grid.css');
 
 @import url('../style/culcwithadv.css');
+
+@import url('../style/servculc.css');

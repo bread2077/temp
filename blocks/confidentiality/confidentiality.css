@@ -3,6 +3,7 @@
 }
 .confidentiality__container {
   max-width: var(--width-max);
+  background-color: var(--color-primary);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -7,15 +7,12 @@
     <meta name="author" content="" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="../styles/global.v17.css" />
 
-    <link rel="stylesheet" href="../dist/index.8dd98163ee22118c52a1.css" />
-
-    <link rel="stylesheet" href="../style/common.v2.css" />
-    <script defer src="../dist/base.bf62d887ffeebbe2edd0.v1.js"></script>
-
-    <script defer src="../dist/index.8dd98163ee22118c52a1.js"></script>
-    <script defer src="../dist/culc.8dd98163ee22118c52a1.js"></script>
+    <link rel="stylesheet" href="../dist/base.bcb6e927fcac79f7a268.css" />
+    <link rel="stylesheet" href="../dist/index.bcb6e927fcac79f7a268.css" />
+    <script defer src="../dist/base.bcb6e927fcac79f7a268.js"></script>
+    <script defer src="../dist/index.bcb6e927fcac79f7a268.js"></script>
+    <script defer src="../dist/culc.bcb6e927fcac79f7a268.js"></script>
 
     <title>Главная</title>
   </head>
@@ -416,11 +413,13 @@
             <div class="intro__image-container">
               <p class="intro__cost">от 1₽ за 1000 результатов</p>
               <img
+                fetchpriority="high"
                 class="intro__image intro__image_type_primary"
                 src="https://cdn.rawgit.com/bread2077/temp/main/images/intro-main.webp"
                 alt="Наша накрутка"
               />
               <img
+                fetchpriority="high"
                 class="intro__image intro__image_type_secondary"
                 src="https://cdn.rawgit.com/bread2077/temp/main/images/intro-secondary.webp"
                 alt="Сторонняя накрутка"
@@ -481,6 +480,105 @@
           </li>
         </ul>
       </section>
+      <section class="guarantee">
+        <div class="guarantee__section guarantee__section_size_l">
+          <h2 class="section-title guarantee__title">
+            Зарегистрируйся, чтобы попробовать бесплатную накрутку
+          </h2>
+          <ul class="guarantee__services">
+            <li class="guarantee__service">
+              <img
+                class="guarantee__service-icon"
+                src="https://cdn.rawgit.com/bread2077/temp/main/images/like-icon.svg"
+                alt="Лайк"
+              />
+              <span class="text guarantee__service-name">30 лайков</span>
+            </li>
+            <li class="guarantee__service">
+              <img
+                class="guarantee__service-icon"
+                src="https://cdn.rawgit.com/bread2077/temp/main/images/user-icon.svg"
+                alt="Пользователь"
+              />
+              <span class="text guarantee__service-name">100 подписчиков</span>
+            </li>
+          </ul>
+          <a
+            href="/signup"
+            class="btn btn_size_large btn_color_white guarantee__button"
+            >Попробовать бесплатно</a
+          >
+        </div>
+        <div class="guarantee__section guarantee__section_size_s">
+          <h2 class="section-title guarantee__title">Гарантия результата</h2>
+          <p class="text guarantee__text">
+            бесплатно докрутим, если кто-то отпишется в течение 30 дней
+          </p>
+        </div>
+      </section>
+      <section class="download-app">
+        <div class="download-app__wrapper">
+          <div class="download-app__inner download-app__inner_with-text">
+            <h2 class="title-2 download-app__title">
+              Мобильное приложение smmprime.com
+            </h2>
+            <p class="text-1 download-app__text">
+              Можно пользоваться не только сайтом, но и мобильным приложением -
+              это удобно!
+            </p>
+            <div class="download-app__links">
+              <a href="/" class="download-app__link">
+                <img
+                  class="download-app__link-icon"
+                  src="../images/download-app/android-green.svg"
+                  alt="Андроид"
+                />
+                <p class="download-app__link-text">
+                  Загрузить на
+                  <span class="download-app__link-accent">Android</span>
+                </p>
+              </a>
+              <a href="/" class="download-app__link">
+                <img
+                  class="download-app__link-icon"
+                  src="../images/download-app/ios.svg"
+                  alt="Ios"
+                />
+                <p class="download-app__link-text">
+                  Загрузить на
+                  <span class="download-app__link-accent">IOS</span>
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="download-app__inner download-app__inner_with-img">
+            <picture class="download-app__img">
+              <source
+                srcset="../images/download-app/app-devices-desktop.png"
+                media="(min-width: 600px)"
+              />
+              <img
+                src="../images/download-app/app-devices-mobile.png"
+                alt="Телефоны"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="tg-bot">
+        <div class="tg-bot__wrapper">
+          <h2 class="title-2 tg-bot__title">
+            Оформляйте заказы без лишних усилий - прямо в Telegram!
+          </h2>
+          <p class="text-1 tg-bot__text">
+            Мы представляем нашего нового помощника - Telegram бот, который
+            позволит вам оформлять заказы быстрее и проще.
+          </p>
+          <a href="/" class="btn btn_size_large btn_color_light-orange"
+            >Попробовать</a
+          >
+        </div>
+      </section>
       <section class="culcwithadv">
         <div class="culcwithadv__adv">
           <div class="culcwithadv__item">
@@ -528,7 +626,11 @@
           </div>
         </div>
         <div class="servculc">
-          <div class="servculc__container" data-social="vk" data-type="views">
+          <div
+            class="servculc__container"
+            data-social="telegram"
+            data-type="followers"
+          >
             <h3 class="servculc__title">Калькулятор услуг</h3>
             <div class="servculc__wrapper servculc__wrapper_type_select">
               <h3 class="servculc__subtitle">Социальная сеть</h3>
@@ -556,18 +658,31 @@
             </div>
             <div class="servculc__wrapper servculc__wrapper_type_count">
               <h3 class="servculc__subtitle">Количество</h3>
-              <p class="servculc__count">100000 шт.</p>
+              <label class="visually-hidden" for="culc-number"
+                >Выбор количества единиц</label
+              >
               <input
+                id="culc-number"
+                class="servculc__count"
+                type="number"
+                min="0"
+                maxlength="6"
+              />
+              <label class="visually-hidden" for="culc-range"
+                >Выбор количества единиц</label
+              >
+              <input
+                id="culc-range"
                 type="range"
-                min="1"
-                max="1000000"
-                value="100000"
+                min="0"
+                max="200000"
+                value="0"
                 id="range2"
                 class="servculc__range"
               />
               <div class="servculc__range-caption-container">
-                <span class="servculc__range-caption">1 шт</span>
-                <span class="servculc__range-caption">1 млн. шт.</span>
+                <span class="servculc__range-caption">0 шт</span>
+                <span class="servculc__range-caption">200 тыс. шт</span>
               </div>
               <div class="servculc__cost-container">
                 <p class="servculc__price">
@@ -585,43 +700,6 @@
               >Зарегистрироваться и оформить задачу</a
             >
           </div>
-        </div>
-      </section>
-
-      <section class="guarantee">
-        <div class="guarantee__section guarantee__section_size_l">
-          <h2 class="section-title guarantee__title">
-            Зарегистрируйся, чтобы попробовать бесплатную накрутку
-          </h2>
-          <ul class="guarantee__services">
-            <li class="guarantee__service">
-              <img
-                class="guarantee__service-icon"
-                src="https://cdn.rawgit.com/bread2077/temp/main/images/like-icon.svg"
-                alt="Лайк"
-              />
-              <span class="text guarantee__service-name">30 лайков</span>
-            </li>
-            <li class="guarantee__service">
-              <img
-                class="guarantee__service-icon"
-                src="https://cdn.rawgit.com/bread2077/temp/main/images/user-icon.svg"
-                alt="Пользователь"
-              />
-              <span class="text guarantee__service-name">100 подписчиков</span>
-            </li>
-          </ul>
-          <a
-            href="/signup"
-            class="btn btn_size_large btn_color_white guarantee__button"
-            >Попробовать бесплатно</a
-          >
-        </div>
-        <div class="guarantee__section guarantee__section_size_s">
-          <h2 class="section-title guarantee__title">Гарантия результата</h2>
-          <p class="text guarantee__text">
-            бесплатно докрутим, если кто-то отпишется в течение 30 дней
-          </p>
         </div>
       </section>
       <!-- <section class="registration" id="signIn">
@@ -971,93 +1049,6 @@
             <p class="cyrcle__service-text">
               Не нашли необходимой услуги? Напишите нам и мы добавим её на сайт
             </p>
-          </div>
-        </div>
-      </section>
-      <section class="optimization optimization_role_main">
-        <h2 class="section-title optimization__title">
-          Низкие цены благодаря оптимизации
-        </h2>
-        <div class="optimization__description">
-          <p class="text optimization__text">
-            Мы оптимизировали систему накрутки, чтобы тратить меньше ресурсов.
-            Поэтому и цена ниже конкурентов
-          </p>
-          <figure class="optimization__review user-review">
-            <blockquote class="optimization__quote user-review__quote">
-              <p class="user-review__grade optimization__grade">
-                Оценка: <span class="user-review__span-accent">5.0</span>
-              </p>
-              <ul class="user-review__stars">
-                <li class="user-review__star user-review__star_type_full"></li>
-                <li class="user-review__star user-review__star_type_full"></li>
-                <li class="user-review__star user-review__star_type_full"></li>
-                <li class="user-review__star user-review__star_type_full"></li>
-                <li class="user-review__star user-review__star_type_full"></li>
-              </ul>
-              <p class="optimization__name user-review__review">
-                Дешевле, чем здесь, я не видела
-              </p>
-            </blockquote>
-            <img
-              src="https://cdn.rawgit.com/bread2077/temp/main/images/pankratova.png"
-              alt="Панкратова"
-              class="user-review__avatar"
-            />
-            <figcaption class="user-review__name">
-              Анна Панкратова,
-              <a
-                target="_blank"
-                href="https://in-scale.ru/service/smmprime/"
-                class="user-review__link"
-                >смотреть отзыв на сервисе</a
-              >
-            </figcaption>
-          </figure>
-        </div>
-        <div class="optimization__culc choice__culc culc" id="first-culc">
-          <div class="optimization__label">
-            <div
-              class="optimization__label-container optimization__label-container_role_bg"
-            >
-              <h3
-                class="optimization__label-title optimization__label-title_role_primary"
-              >
-                Скидка 8% навсегда
-              </h3>
-              <p
-                class="optimization__label-text optimization__label-text_role_primary"
-              >
-                при заказе от 10.000 рублей
-              </p>
-            </div>
-          </div>
-          <h3 class="optimization__subtitle">
-            Выберите, какую соцсеть вам нужно раскрутить
-          </h3>
-          <ul class="optimization__list culc__list"></ul>
-          <div
-            class="optimization__services choice__services choice__services_hided culc__service-container"
-          >
-            <h3 class="optimization__subtitle">Выберите тип услуги:</h3>
-            <ul class="optimization__sublist culc__sublist"></ul>
-          </div>
-          <div
-            class="optimization__description choice__description choice__description_hided"
-          >
-            <h3 class="optimization__choice-title">Стоимость:</h3>
-            <p class="optimization__proposal choice__proposal">
-              от
-              <span class="choice__cost culc__cost"></span>
-              руб. за
-              <span class="choice__amount culc__amount"></span>
-              шт.
-            </p>
-            <a
-              href="/services"
-              class="btn btn_color_orange btn_size_large choice__button"
-              >Ознакомиться с услугами</a
-            >
           </div>
         </div>
       </section>
@@ -1563,39 +1554,6 @@
           <span class="call-action__span-accent">больше заработаешь</span>
         </p>
       </section>
-      <section class="choice choice_bg_light">
-        <div class="choice__container">
-          <h2 class="section-title choice__title">
-            Выбери платформу, чтобы начать:
-          </h2>
-          <div class="choice__culc culc" id="second-culc">
-            <ul class="choice__list culc__list"></ul>
-            <div
-              class="choice__services choice__services_hided culc__service-container"
-            >
-              <h3 class="choice__subtitle choice__subtitle_role_cost">
-                Выберите тип услуги:
-              </h3>
-              <ul class="choice__sublist culc__sublist"></ul>
-            </div>
-            <div class="choice__description choice__description_hided">
-              <h3 class="choice__subtitle">Стоимость:</h3>
-              <p class="choice__proposal">
-                от
-                <span class="choice__cost culc__cost"></span>
-                руб. за
-                <span class="choice__amount culc__amount"></span>
-                шт.
-              </p>
-              <a
-                href="/services"
-                class="btn btn_color_orange btn_size_large choice__button"
-                >Ознакомиться с услугами</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="faq">
         <h2 class="section-title faq__title">FAQ</h2>
         <ul class="faq__list">
@@ -1851,7 +1809,7 @@
           </a>
         </div>
         <div class="footer__section footer__section_type_up">
-          <a href="#" class="footer__link-up"></a>
+          <a aria-label="Вернуться в начало" href="#" class="footer__link-up"></a>
         </div>
         <div class="footer__section footer__section_type_company">
           <a

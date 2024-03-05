@@ -4,7 +4,7 @@ import HorizontalSwiper from '../components/HorizontalSwiper.js';
 import CustomerCounter from '../components/CustomerCounter.js';
 import { cyrcle, faqList } from '../utils/constants.v5.js';
 
-// import '../../styles/social.css';
+import '../../styles/social.css';
 
 // const thirdCulc = new ChoiceServiceText('third-culc');
 // thirdCulc.renderSocials();

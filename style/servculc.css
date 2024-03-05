@@ -1,6 +1,3 @@
-.servculc {
-}
-
 .servculc__title {
   font-size: 32px;
   line-height: 1.2;
@@ -13,9 +10,6 @@
   flex-direction: column;
 }
 .servculc__wrapper_type_semi {
-  /* height: 0;
-  overflow: hidden;
-  transition: height 0.4s ease-in-out; */
   display: none;
 }
 .servculc__wrapper_type_semi_active {
