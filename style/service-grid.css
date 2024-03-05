@@ -55,10 +55,6 @@
 }
 
 .service-grid__item {
-
-}
-
-.service-grid__link {
   box-sizing: border-box;
   min-height: 298px;
   display: flex;
@@ -69,7 +65,12 @@
   border-radius: 20px;
   box-shadow: 0 4px 20px 0 #B2B9DC6E;
   transition: border .4s ease-in-out;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  position: relative;
+}
+
+.service-grid__link {
+  position: absolute;
+  inset: 0;
 }
 
 .service-grid__link:active {
@@ -144,7 +145,7 @@
     gap: 10px 7px;
   }
 
-  .service-grid__link {
+  .service-grid__item {
     min-height: 161px;
     border-radius: 10px;
     padding: 10px;
