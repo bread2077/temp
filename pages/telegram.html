@@ -7,15 +7,11 @@
     <meta name="author" content="" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="../dist/base.bf62d887ffeebbe2edd0.v2.css" />
-    <link rel="stylesheet" href="../dist/social.602229dacdbe52dda217.v1.css" />
-    <script type="module" src="../scripts/pages/social.js"></script>
-    <script type="module" src="../scripts/pages/telegram.v6.js"></script>
-
-    <link rel="stylesheet" href="../style/common.v2.css" />
-    <link rel="stylesheet" href="../style/servculc.css" />
-    <link rel="stylesheet" href="../style/culcwithadv.css" />
-    <script defer src="../dist/base.bf62d887ffeebbe2edd0.v1.js"></script>
+    <link rel="stylesheet" href="../dist/base.bcb6e927fcac79f7a268.css" />
+    <link rel="stylesheet" href="../dist/social.bcb6e927fcac79f7a268.css" />
+    <script type="module" src="../dist/social.bcb6e927fcac79f7a268.js"></script>
+    <script defer src="../dist/base.bcb6e927fcac79f7a268.js"></script>
+    <!-- <script defer src="../dist/culc.bcb6e927fcac79f7a268.js"></script> -->
     <script type="module" src="../scripts/components/ServCulc.js"></script>
     <title>Телеграм</title>
   </head>
@@ -406,6 +402,82 @@
           </div>
         </div>
       </section>
+      <section class="service-grid">
+        <h2 class="service-grid__title">Накрутка Телеграм</h2>
+        <div class="service-grid__container">
+          <h3 class="service-grid__subtitle">Разовые</h3>
+          <p class="service-grid__text">
+            Разовые задачи на уже выпущенные посты
+          </p>
+          <ul class="list service-grid__list">
+            <li class="service-grid__item">
+              <a class="link service-grid__link" href="/">
+                <div class="service-grid__icon-container">
+                  <img
+                    class="service-grid__icon"
+                    src="../images/services/autolikes-icon.svg"
+                    alt=""
+                  />
+                </div>
+                <h4 class="service-grid__item-title">Реакции</h4>
+                <p class="service-grid__item-text">
+                  Накрутка реакций на постах
+                </p>
+                <p class="service-grid__item-cost">0.012 руб</p>
+              </a>
+            </li>
+            <li class="service-grid__item">
+              <a class="link service-grid__link" href="/">
+                <div class="service-grid__icon-container">
+                  <img
+                    class="service-grid__icon"
+                    src="../images/services/friends-icon.svg"
+                    alt=""
+                  />
+                </div>
+                <h4 class="service-grid__item-title">Подписчики</h4>
+                <p class="service-grid__item-text">
+                  Качественные подписчикидля вашего канала или группы
+                </p>
+                <p class="service-grid__item-cost">0.09 руб</p>
+              </a>
+            </li>
+            <li class="service-grid__item">
+              <a class="link service-grid__link" href="/">
+                <div class="service-grid__icon-container">
+                  <img
+                    class="service-grid__icon"
+                    src="../images/services/views-icon.svg"
+                    alt=""
+                  />
+                </div>
+                <h4 class="service-grid__item-title">Просмотры</h4>
+                <p class="service-grid__item-text">
+                  Просмотры отрусскоязычных пользователей на любой пост или
+                  подписка на новые записи
+                </p>
+                <p class="service-grid__item-cost">0.0012 руб</p>
+              </a>
+            </li>
+            <li class="service-grid__item">
+              <a class="link service-grid__link" href="/">
+                <div class="service-grid__icon-container">
+                  <img
+                    class="service-grid__icon"
+                    src="../images/services/polls-icon.svg"
+                    alt=""
+                  />
+                </div>
+                <h4 class="service-grid__item-title">Голосование</h4>
+                <p class="service-grid__item-text">
+                  Поднимайте активность голосованиями и лайками
+                </p>
+                <p class="service-grid__item-cost">0.05 руб</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
       <section class="culcwithadv">
         <div class="culcwithadv__adv">
           <div class="culcwithadv__item">
@@ -485,14 +557,21 @@
             </div>
             <div class="servculc__wrapper servculc__wrapper_type_count">
               <h3 class="servculc__subtitle">Количество</h3>
-              <!-- <p class="servculc__count">100000 шт.</p> -->
+              <label class="visually-hidden" for="culc-number"
+                >Выбор количества единиц</label
+              >
               <input
+                id="culc-number"
                 class="servculc__count"
                 type="number"
                 min="0"
                 maxlength="6"
               />
+              <label class="visually-hidden" for="culc-range"
+                >Выбор количества единиц</label
+              >
               <input
+                id="culc-range"
                 type="range"
                 min="0"
                 max="200000"

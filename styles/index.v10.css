@@ -12,9 +12,9 @@
 
 @import url('../blocks/call-action/call-action.css');
 
-@import url('../blocks/culc/culc.v1.css');
+/* @import url('../blocks/culc/culc.v1.css'); */
 
-@import url('../blocks/choice/choice.css');
+/* @import url('../blocks/choice/choice.css'); */
 
 @import url('../blocks/faq/faq.v1.css');
 
@@ -26,7 +26,7 @@
 
 @import url('../blocks/payment/payment.css');
 
-@import url('../blocks/optimization/optimization.css');
+/* @import url('../blocks/optimization/optimization.css'); */
 
 @import url('../blocks/cyrcle/cyrcle.css');
 
@@ -43,4 +43,9 @@
 @import url('../style/servculc.css');
 
 @import url('../style/culcwithadv.css');
+
+@import url('../style/download-app.css');
+
+@import url('../style/tg-bot.css');
+
 

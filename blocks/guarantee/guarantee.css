@@ -21,8 +21,9 @@
   background-position: left;
 }
 .guarantee__section_size_s {
-  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/conf.webp');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/conf.v1.webp');
   background-position: center;
+  background-color: var(--color-primary);
 }
 .guarantee__title {
   color: #fff;

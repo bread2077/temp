@@ -4,6 +4,8 @@
 /* Шрифты */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
+@import url('../style/common.v2.css');
+
 /* Миксы */
 @import url('../blocks/btn/btn.v4.css');
 @import url('../blocks/btn/_color/btn_color_blue.v3.css');
