@@ -15,8 +15,6 @@
   position: relative;
   z-index: 3;
 }
-.header__logo {
-}
 .logo-title {
   position: relative;
   display: flex;
@@ -94,7 +92,7 @@
   display: inline-block;
   width: 10px;
   height: 5px;
-  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/arrow.svg');
+  background-image: url('https://cdn.rawgit.com/bread2077/temp/main/images/arrow.v1.svg');
   background-repeat: no-repeat;
   background-size: contain;
   margin-left: 3px;

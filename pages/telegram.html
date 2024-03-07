@@ -7,15 +7,11 @@
     <meta name="author" content="" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="../dist/base.ec1efe0be8849e77c77d.css" />
-    <link rel="stylesheet" href="../dist/social.ec1efe0be8849e77c77d.css" />
-
-    <link rel="stylesheet" href="../blocks/social-intro/social-intro.v8.css" />
-    <link rel="stylesheet" href="../style/common.v2.css" />
-
-    <script type="module" src="../dist/social.ec1efe0be8849e77c77d.js"></script>
-    <script defer src="../dist/base.ec1efe0be8849e77c77d.js"></script>
-    <script defer src="../dist/culc.ec1efe0be8849e77c77d.js"></script>
+    <link rel="stylesheet" href="../dist/base.022042cbed0e401f8600.css" />
+    <link rel="stylesheet" href="../dist/social.022042cbed0e401f8600.css" />
+    <script type="module" src="../dist/social.022042cbed0e401f8600.js"></script>
+    <script defer src="../dist/base.022042cbed0e401f8600.js"></script>
+    <script defer src="../dist/culc.022042cbed0e401f8600.js"></script>
     <title>Телеграм</title>
   </head>
 
@@ -240,17 +236,43 @@
         >
           <div class="social-intro__content">
             <div class="social-intro__container-text">
-              <ul class="social-intro__breadcrumbs">
-                <li class="social-intro__breadcrumb">
-                  <a href="/">Главная</a>
+              <ul
+                itemscope
+                itemtype="https://schema.org/BreadcrumbList"
+                class="social-intro__breadcrumbs"
+              >
+                <li
+                  itemprop="itemListElement"
+                  itemscope
+                  itemtype="https://schema.org/ListItem"
+                  class="social-intro__breadcrumb"
+                >
+                  <a itemprop="item" href="/"
+                    ><span itemprop="name">Главная</span>
+                  </a>
+                  <meta itemprop="position" content="1" />
                   <span class="social-intro__arr-right"></span>
                 </li>
-                <li class="social-intro__breadcrumb">
-                  <a href="/">Телеграм</a>
+                <li
+                  itemprop="itemListElement"
+                  itemscope
+                  itemtype="https://schema.org/ListItem"
+                  class="social-intro__breadcrumb"
+                >
+                  <a itemprop="item" href="/"
+                    ><span itemprop="name">Телеграм</span>
+                  </a>
+                  <meta itemprop="position" content="2" />
                   <span class="social-intro__arr-right"></span>
                 </li>
-                <li class="social-intro__breadcrumb">
-                  <p>Подписчики</p>
+                <li
+                  itemprop="itemListElement"
+                  itemscope
+                  itemtype="https://schema.org/ListItem"
+                  class="social-intro__breadcrumb"
+                >
+                  <p itemprop="item"><span itemprop="name">Подписчики</span></p>
+                  <meta itemprop="position" content="3" />
                 </li>
               </ul>
               <h1 class="social-intro__title">
