@@ -7,15 +7,15 @@
     <meta name="author" content="" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="../dist/base.759cef01a0dafddc69af.css" />
-    <!-- <link rel="stylesheet" href="../dist/social.759cef01a0dafddc69af.css" /> -->
+    <link rel="stylesheet" href="../dist/base.ec1efe0be8849e77c77d.css" />
+    <link rel="stylesheet" href="../dist/social.ec1efe0be8849e77c77d.css" />
 
-    <link rel="stylesheet" href="../style/service-grid.css" />
+    <link rel="stylesheet" href="../blocks/social-intro/social-intro.v8.css" />
+    <link rel="stylesheet" href="../style/common.v2.css" />
 
-
-    <script type="module" src="../dist/social.759cef01a0dafddc69af.js"></script>
-    <script defer src="../dist/base.759cef01a0dafddc69af.js"></script>
-    <script defer src="../dist/culc.759cef01a0dafddc69af.js"></script>
+    <script type="module" src="../dist/social.ec1efe0be8849e77c77d.js"></script>
+    <script defer src="../dist/base.ec1efe0be8849e77c77d.js"></script>
+    <script defer src="../dist/culc.ec1efe0be8849e77c77d.js"></script>
     <script type="module" src="../scripts/components/ServCulc.js"></script>
     <title>Телеграм</title>
   </head>
@@ -241,12 +241,63 @@
         >
           <div class="social-intro__content">
             <div class="social-intro__container-text">
+              <ul class="social-intro__breadcrumbs">
+                <li class="social-intro__breadcrumb">
+                  <a href="/">Главная</a>
+                  <span class="social-intro__arr-right"></span>
+                </li>
+                <li class="social-intro__breadcrumb">
+                  <a href="/">Телеграм</a>
+                  <span class="social-intro__arr-right"></span>
+                </li>
+                <li class="social-intro__breadcrumb">
+                  <p>Подписчики</p>
+                </li>
+              </ul>
               <h1 class="social-intro__title">
                 Накрутка подписчиков в&nbsp;Телеграм с гарантией
               </h1>
               <p class="text social-intro__text">
                 От 1 рубля за 1000 подписчиков
               </p>
+              <ul class="social-intro__social-grid">
+                <li class="social-intro__social-grid-item">
+                  <img
+                    src="https://cdn.rawgit.com/bread2077/temp/main/images/socials/telegram-icon.svg"
+                    alt="Телеграм"
+                  />
+                </li>
+                <li class="social-intro__social-grid-item">
+                  <img
+                    src="https://cdn.rawgit.com/bread2077/temp/main/images/socials/vk-icon.svg"
+                    alt="Вконтакте"
+                  />
+                </li>
+                <li class="social-intro__social-grid-item">
+                  <img
+                    src="https://cdn.rawgit.com/bread2077/temp/main/images/socials/tiktok-icon.svg"
+                    alt="Тикток"
+                  />
+                </li>
+                <li class="social-intro__social-grid-item">
+                  <img
+                    src="https://cdn.rawgit.com/bread2077/temp/main/images/socials/instagram-icon.svg"
+                    alt="Инстаграм"
+                  />
+                </li>
+                <li class="social-intro__social-grid-item">
+                  <img
+                    src="https://cdn.rawgit.com/bread2077/temp/main/images/socials/youtube-icon.svg"
+                    alt="Ютуб"
+                  />
+                </li>
+                <li class="social-intro__social-grid-item">
+                  <img
+                    src="https://cdn.rawgit.com/bread2077/temp/main/images/socials/ok-icon.svg"
+                    alt="Одноклассники"
+                  />
+                </li>
+              </ul>
               <a
                 href="#service-list"
                 class="btn btn_color_orange btn_size_large social-intro__button"
@@ -410,26 +461,38 @@
         <h2 class="service-grid__title">Накрутка Телеграм</h2>
         <div class="service-grid__container">
           <ul class="list service-grid__list">
-            <li class="service-grid__item" itemscope itemtype="http://schema.org/Product">
-                <div class="service-grid__icon-container">
-                  <img
-                    itemprop="image"
-                    class="service-grid__icon"
-                    src="../images/services/autolikes-icon.svg"
-                    alt=""
-                  />
-                </div>
-                <h3 itemprop="name" class="service-grid__item-title">Реакции</h3>
-                <p itemprop="description" class="service-grid__item-text">
-                  Накрутка реакций на постах
+            <li
+              class="service-grid__item"
+              itemscope
+              itemtype="http://schema.org/Product"
+            >
+              <div class="service-grid__icon-container">
+                <img
+                  itemprop="image"
+                  class="service-grid__icon"
+                  src="../images/services/autolikes-icon.svg"
+                  alt=""
+                />
+              </div>
+              <h3 itemprop="name" class="service-grid__item-title">Реакции</h3>
+              <p itemprop="description" class="service-grid__item-text">
+                Накрутка реакций на постах
+              </p>
+              <div
+                itemprop="offers"
+                itemscope
+                itemtype="http://schema.org/AggregateOffer"
+              >
+                <meta itemprop="priceCurrency" content="RUB" />
+                <link
+                  itemprop="availability"
+                  href="http://schema.org/InStock"
+                />
+                <p itemprop="lowPrice" class="service-grid__item-cost">
+                  0.012 руб
                 </p>
-                <div itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">
-                  <meta itemprop="priceCurrency" content="RUB">
-                  <link itemprop="availability" href="http://schema.org/InStock">
-                  <p itemprop="lowPrice" class="service-grid__item-cost">0.012 руб</p>
-                </div>
-                <a class="link service-grid__link" href="/">
-              </a>
+              </div>
+              <a class="link service-grid__link" href="/"> </a>
             </li>
           </ul>
         </div>
