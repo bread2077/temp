@@ -18,6 +18,7 @@
   background-size: cover;
   position: absolute;
   transform: rotate(10deg);
+  z-index: -1;
 }
 .social__container::before {
   top: 0;
@@ -79,7 +80,7 @@
 
 @media screen and (max-width: 1160px) {
   .social__container {
-    padding: var(--space-primary) 30px 280px;
+    padding: var(--space-primary) 30px 80px;
   }
   .social__title {
     margin: 0 auto 20px;

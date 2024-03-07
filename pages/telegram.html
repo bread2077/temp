@@ -7,16 +7,11 @@
     <meta name="author" content="" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <link rel="stylesheet" href="../dist/base.759cef01a0dafddc69af.css" />
-    <!-- <link rel="stylesheet" href="../dist/social.759cef01a0dafddc69af.css" /> -->
-
-    <link rel="stylesheet" href="../style/service-grid.css" />
-
-
-    <script type="module" src="../dist/social.759cef01a0dafddc69af.js"></script>
-    <script defer src="../dist/base.759cef01a0dafddc69af.js"></script>
-    <script defer src="../dist/culc.759cef01a0dafddc69af.js"></script>
-    <script type="module" src="../scripts/components/ServCulc.js"></script>
+    <link rel="stylesheet" href="../dist/base.022042cbed0e401f8600.css" />
+    <link rel="stylesheet" href="../dist/social.022042cbed0e401f8600.css" />
+    <script type="module" src="../dist/social.022042cbed0e401f8600.js"></script>
+    <script defer src="../dist/base.022042cbed0e401f8600.js"></script>
+    <script defer src="../dist/culc.022042cbed0e401f8600.js"></script>
     <title>Телеграм</title>
   </head>
 
@@ -241,12 +236,109 @@
         >
           <div class="social-intro__content">
             <div class="social-intro__container-text">
+              <ul
+                itemscope
+                itemtype="https://schema.org/BreadcrumbList"
+                class="social-intro__breadcrumbs"
+              >
+                <li
+                  itemprop="itemListElement"
+                  itemscope
+                  itemtype="https://schema.org/ListItem"
+                  class="social-intro__breadcrumb"
+                >
+                  <a itemprop="item" href="/"
+                    ><span itemprop="name">Главная</span>
+                  </a>
+                  <meta itemprop="position" content="1" />
+                  <span class="social-intro__arr-right"></span>
+                </li>
+                <li
+                  itemprop="itemListElement"
+                  itemscope
+                  itemtype="https://schema.org/ListItem"
+                  class="social-intro__breadcrumb"
+                >
+                  <a itemprop="item" href="/"
+                    ><span itemprop="name">Телеграм</span>
+                  </a>
+                  <meta itemprop="position" content="2" />
+                  <span class="social-intro__arr-right"></span>
+                </li>
+                <li
+                  itemprop="itemListElement"
+                  itemscope
+                  itemtype="https://schema.org/ListItem"
+                  class="social-intro__breadcrumb"
+                >
+                  <p itemprop="item"><span itemprop="name">Подписчики</span></p>
+                  <meta itemprop="position" content="3" />
+                </li>
+              </ul>
               <h1 class="social-intro__title">
                 Накрутка подписчиков в&nbsp;Телеграм с гарантией
               </h1>
               <p class="text social-intro__text">
                 От 1 рубля за 1000 подписчиков
               </p>
+              <ul class="social-intro__social-grid">
+                <li class="social-intro__social-grid-item">
+                  <a href="/telegram">
+                    <img
+                      src="https://cdn.rawgit.com/bread2077/temp/main/images/socials/telegram-icon.svg"
+                      alt="Телеграм"
+                  /></a>
+                </li>
+                <li class="social-intro__social-grid-item">
+                  <a href="/vkontakte"
+                    ><img
+                      src="https://cdn.rawgit.com/bread2077/temp/main/images/socials/vk-icon.svg"
+                      alt="Вконтакте"
+                  /></a>
+                </li>
+                <li class="social-intro__social-grid-item">
+                  <a href="/tiktok"
+                    ><img
+                      src="https://cdn.rawgit.com/bread2077/temp/main/images/socials/tiktok-icon.svg"
+                      alt="Тикток"
+                  /></a>
+                </li>
+                <li class="social-intro__social-grid-item">
+                  <a href="/instagram"
+                    ><img
+                      src="https://cdn.rawgit.com/bread2077/temp/main/images/socials/instagram-icon.svg"
+                      alt="Инстаграм"
+                  /></a>
+                </li>
+                <li class="social-intro__social-grid-item">
+                  <a href="/youtube"
+                    ><img
+                      src="https://cdn.rawgit.com/bread2077/temp/main/images/socials/youtube-icon.svg"
+                      alt="Ютуб"
+                  /></a>
+                </li>
+                <li class="social-intro__social-grid-item">
+                  <a href="/fecabook"
+                    ><img
+                      src="https://cdn.rawgit.com/bread2077/temp/main/images/socials/facebook-icon.svg"
+                      alt="Фейсбук"
+                  /></a>
+                </li>
+                <li class="social-intro__social-grid-item">
+                  <a href="/services"
+                    ><img
+                      src="https://cdn.rawgit.com/bread2077/temp/main/images/socials/twitter-icon.svg"
+                      alt="Твитте"
+                  /></a>
+                </li>
+                <li class="social-intro__social-grid-item">
+                  <a href="/services"
+                    ><img
+                      src="https://cdn.rawgit.com/bread2077/temp/main/images/socials/ok-icon.svg"
+                      alt="Одноклассники"
+                  /></a>
+                </li>
+              </ul>
               <a
                 href="#service-list"
                 class="btn btn_color_orange btn_size_large social-intro__button"
@@ -410,26 +502,38 @@
         <h2 class="service-grid__title">Накрутка Телеграм</h2>
         <div class="service-grid__container">
           <ul class="list service-grid__list">
-            <li class="service-grid__item" itemscope itemtype="http://schema.org/Product">
-                <div class="service-grid__icon-container">
-                  <img
-                    itemprop="image"
-                    class="service-grid__icon"
-                    src="../images/services/autolikes-icon.svg"
-                    alt=""
-                  />
-                </div>
-                <h3 itemprop="name" class="service-grid__item-title">Реакции</h3>
-                <p itemprop="description" class="service-grid__item-text">
-                  Накрутка реакций на постах
+            <li
+              class="service-grid__item"
+              itemscope
+              itemtype="http://schema.org/Product"
+            >
+              <div class="service-grid__icon-container">
+                <img
+                  itemprop="image"
+                  class="service-grid__icon"
+                  src="../images/services/autolikes-icon.svg"
+                  alt=""
+                />
+              </div>
+              <h3 itemprop="name" class="service-grid__item-title">Реакции</h3>
+              <p itemprop="description" class="service-grid__item-text">
+                Накрутка реакций на постах
+              </p>
+              <div
+                itemprop="offers"
+                itemscope
+                itemtype="http://schema.org/AggregateOffer"
+              >
+                <meta itemprop="priceCurrency" content="RUB" />
+                <link
+                  itemprop="availability"
+                  href="http://schema.org/InStock"
+                />
+                <p itemprop="lowPrice" class="service-grid__item-cost">
+                  0.012 руб
                 </p>
-                <div itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">
-                  <meta itemprop="priceCurrency" content="RUB">
-                  <link itemprop="availability" href="http://schema.org/InStock">
-                  <p itemprop="lowPrice" class="service-grid__item-cost">0.012 руб</p>
-                </div>
-                <a class="link service-grid__link" href="/">
-              </a>
+              </div>
+              <a class="link service-grid__link" href="/"> </a>
             </li>
           </ul>
         </div>
