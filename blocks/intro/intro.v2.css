@@ -26,6 +26,7 @@
 .intro__section {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 .intro__section_type_primary {
   z-index: 1;
@@ -167,6 +168,10 @@
     display: flex;
     max-width: 100%;
     margin: 10px 0 0;
+  }
+
+  .intro__section {
+    align-items: stretch;
   }
   .intro__section_type_secondary {
     position: static;
