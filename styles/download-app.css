@@ -1,0 +1,115 @@
+.download-app {
+  max-width: var(--width-max);
+  margin: calc(var(--space-primary) + 20px) auto;
+}
+.download-app__list {
+  display: grid;
+  gap: 30px;
+}
+.download-app__item {
+  padding: 20px 30px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-primary);
+  border-radius: 20px;
+}
+.download-app__head-wrapper {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  gap: 10px;
+  align-items: center;
+}
+
+.download-app__wrapper {
+  height: 0;
+  overflow: hidden;
+}
+
+.download-app__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px 0px;
+}
+
+.download-app__drop {
+  background-color: transparent;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.download-app__step {
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0 0 15px;
+}
+
+.download-app__video {
+  width: 200px;
+  height: 400px;
+}
+
+.download-app__item-title {
+  margin: 0;
+  cursor: pointer;
+  justify-self: start;
+  color: var(--color-dark);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.download-app__item-description-wrapper {
+  height: 0;
+  transition: height 0.4s ease-in-out;
+  max-width: 90%;
+  overflow: hidden;
+}
+.download-app__item-description {
+  margin: 0;
+  width: 100%;
+  padding: 10px 0 5px;
+  overflow: hidden;
+  visibility: hidden;
+  transition: visibility 0.4s linear;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download-app__item-description_active {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (max-width: 1161px) {
+  .download-app {
+    margin: var(--space-primary) 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .download-app {
+    margin: var(--space-primary) 30px;
+  }
+  .download-app__list {
+    gap: 15px;
+  }
+  .download-app__item {
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+  .download-app__item-description {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .download-app__item-description-wrapper {
+    max-width: 100%;
+  }
+  .download-app__item-title {
+    font-size: 16px;
+  }
+  .download-app__step {
+    font-size: 14px;
+    margin: 0 0 8px;
+  }
+}
