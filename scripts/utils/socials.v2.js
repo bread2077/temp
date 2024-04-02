@@ -22,7 +22,7 @@ export const socials = {
         },
         {
           name: 'Живые',
-          cost: '1.29 ₽',
+          cost: '3.5 ₽',
         },
         {
           name: 'Премиум',
