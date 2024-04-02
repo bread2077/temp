@@ -9,6 +9,7 @@
   grid-template-columns: 1.5fr repeat(3, 1fr);
   grid-template-areas:
     'copyright company services contacts social'
+    'sbp company services contacts social'
     'meta . . . up';
   max-width: var(--width-max);
   margin: 0 auto;
@@ -41,6 +42,22 @@
 .footer__section_type_contacts {
   grid-area: contacts;
 }
+
+.footer__section_type_sbp {
+  grid-area: sbp;
+  height: 100px;
+  width: 180px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer__section_type_sbp img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
 .footer__links,
 .footer__contact-container,
 .footer__sublinks {
@@ -187,6 +204,7 @@
       'services services'
       'contacts contacts'
       'social social'
+      'sbp sbp'
       'meta meta';
     gap: 30px 70px;
   }
@@ -254,6 +272,11 @@
   }
   .footer__section_type_social {
     justify-content: flex-start;
+  }
+
+  .footer__section_type_sbp {
+    width: 100%;
+    align-items: center;
   }
 }
 
