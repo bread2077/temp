@@ -402,7 +402,7 @@ export const socials = {
       followers: [
         {
           name: 'Стандарт',
-          cost: '0.003 ₽',
+          cost: '0.03 ₽',
         },
         {
           name: 'С Гарантией',
