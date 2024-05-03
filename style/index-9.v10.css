@@ -1165,8 +1165,9 @@ footer
 	border: none;
 	background-color: #FF725E;
 	position: relative;
-	right: -46px;
+	transform: translateX(25px);
 	border: 1px solid rgba(255, 114, 94,0.32);
+	z-index: 2;
 }
 .first_active_text{
 	font-family: Montserrat;
@@ -1364,30 +1365,12 @@ footer
 .m-logout{
 	margin-left: 40px;
 }
-.first_active{
-	border-radius: 50px;
-	border: none;
-	background-color: #FF725E;
-	position: relative;
-	right: -46px;
-	border: 1px solid rgba(255, 114, 94,0.32);
-}
-.first_active_text{
-	font-family: Montserrat;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 24px;
-	letter-spacing: 0.02em;
-	color: white;
-	padding: 11px 22px 11px 22px;
-	margin: 0px;
-}
 .note_active{
 	border-radius: 50px;
 	border: none;
 	border: 1px solid  rgba(255, 114, 94,0.32);
 	background-color: white;
+	transform: translateX(-25px);
 }
 .note_active_text{
 	font-family: Montserrat;
