@@ -1,5 +1,5 @@
-import { socials } from '../utils/socials.v3.js';
-import { services } from '../utils/services.v1.js';
+import { socials } from '../utils/socials.v2.js';
+import { services } from '../utils/services.js';
 import { debounce } from '../utils/utils.js';
 
 class ServCulc {

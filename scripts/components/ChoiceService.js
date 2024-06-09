@@ -1,4 +1,4 @@
-import { services } from '../utils/services.v1.js';
+import { services } from '../utils/services.js';
 import { socials } from '../utils/socials.js';
 
 export default class ChoiceService {
