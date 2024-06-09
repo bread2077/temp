@@ -6,6 +6,12 @@ export const socials = {
     type: 'telegram',
     img: `${SOCIAL_IMAGES_URL}/telegram-icon.svg`,
     services: {
+      hamsterBot: [
+        {
+          name: 'Рефералы',
+          cost: '50 ₽',
+        },
+      ],
       followers: [
         {
           name: 'Стандартные',
