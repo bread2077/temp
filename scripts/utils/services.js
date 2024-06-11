@@ -47,7 +47,7 @@ export const services = {
   },
   catizenBot: {
     img: `${SERVICE_IMAGES_URL}/followers-icon.svg`,
-    name: 'Hamster Kombat',
+    name: 'Catizen',
   },
   boosts: {
     img: `${SERVICE_IMAGES_URL}/autoviews-icon.svg`,
