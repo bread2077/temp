@@ -42,7 +42,11 @@ export const services = {
     name: 'Старт Бота',
   },
   hamsterBot: {
-    img: `${SERVICE_IMAGES_URL}/autoviews-icon.svg`,
+    img: `${SERVICE_IMAGES_URL}/followers-icon.svg`,
+    name: 'Hamster Kombat',
+  },
+  catizenBot: {
+    img: `${SERVICE_IMAGES_URL}/followers-icon.svg`,
     name: 'Hamster Kombat',
   },
   boosts: {
