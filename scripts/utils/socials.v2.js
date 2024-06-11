@@ -12,6 +12,12 @@ export const socials = {
           cost: '50 ₽',
         },
       ],
+      catizenBot: [
+        {
+          name: 'Рефералы',
+          cost: '60 ₽',
+        },
+      ],
       followers: [
         {
           name: 'Стандартные',
