@@ -9,7 +9,7 @@ export const socials = {
       hamsterBot: [
         {
           name: 'Рефералы',
-          cost: '50 ₽',
+          cost: '70 ₽',
         },
       ],
       catizenBot: [
