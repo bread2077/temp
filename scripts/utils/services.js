@@ -49,6 +49,14 @@ export const services = {
     img: `${SERVICE_IMAGES_URL}/followers-icon.svg`,
     name: 'Catizen',
   },
+  pixelTapBot: {
+    img: `${SERVICE_IMAGES_URL}/followers-icon.svg`,
+    name: 'PixelTap',
+  },
+  tapSwapBot: {
+    img: `${SERVICE_IMAGES_URL}/followers-icon.svg`,
+    name: 'TapSwap',
+  },
   boosts: {
     img: `${SERVICE_IMAGES_URL}/autoviews-icon.svg`,
     name: 'Бусты',
