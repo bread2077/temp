@@ -18,6 +18,18 @@ export const socials = {
           cost: '60 ₽',
         },
       ],
+      pixelTapBot: [
+        {
+          name: 'Рефералы',
+          cost: '70 ₽',
+        },
+      ],
+      tapSwapBot: [
+        {
+          name: 'Рефералы',
+          cost: '70 ₽',
+        },
+      ],
       followers: [
         {
           name: 'Стандартные',
