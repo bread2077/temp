@@ -27,7 +27,7 @@ export const socials = {
       tapSwapBot: [
         {
           name: 'Рефералы',
-          cost: '70 ₽',
+          cost: '30 ₽',
         },
       ],
       followers: [
