@@ -57,6 +57,10 @@ export const services = {
     img: `${SERVICE_IMAGES_URL}/followers-icon.svg`,
     name: 'TapSwap',
   },
+  blumBot: {
+    img: `${SERVICE_IMAGES_URL}/followers-icon.svg`,
+    name: 'Blum',
+  },
   boosts: {
     img: `${SERVICE_IMAGES_URL}/autoviews-icon.svg`,
     name: 'Бусты',

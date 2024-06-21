@@ -30,6 +30,12 @@ export const socials = {
           cost: '30 ₽',
         },
       ],
+      blumBot: [
+        {
+          name: 'Рефералы',
+          cost: '30 ₽',
+        },
+      ],
       followers: [
         {
           name: 'Стандартные',
