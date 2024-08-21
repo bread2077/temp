@@ -1,0 +1,466 @@
+<section class="container">
+  <div class="row align-center">
+    <div class="col-md-6 col-xs-12 sec1__left">
+      <h1>Личный SMM-помощник по раскрутке соцсетей</h1>
+      <p>Лайки, подписчики, репосты и живые комментарии в Instagram*, TikTok, Telegram, YouTube, Twitch и VK.</p>
+      <div class="btns__head">
+      <a onclick="document.getElementById('signIn').scrollIntoView({block: 'center',
+            inline: 'center'})" class="btn__head__item btn__head__item__blue" style="font-size:26px !important;">Начать</a>
+      <a onclick="/manager" class="btn__head__item">Персональный <br/> менеджер</a>
+      </div>
+    </div>
+    <div class="col-md-6 col-xs-12 parallax__img">
+     <!--<img class="img-responsive" src="https://cdn.mypanel.link/6b0a4d/al21rdudnxe0tpee.png" alt="">-->
+
+  		<img class="img-responsive __img __img3" src="https://cdn.rawgit.com/bread2077/temp/main/images/img3.png" alt="">
+      <img class="img-responsive __img __img2" src="https://cdn.rawgit.com/bread2077/temp/main/images/img2.png" alt="">
+      <img class="img-responsive __img1" src="https://cdn.rawgit.com/bread2077/temp/main/images/img1.png" alt="">
+    </div>
+  </div>
+</section>
+
+<div class="container">
+    <div class="row inform_block" id="anchor">
+      <div class="col-md-4 col-xs-6 growth__text">
+        <div class="inform_block_text">200+</div>
+        <p class="inform_block_text_mini">предоставлемых услуг</p>
+      </div>
+      <div class="col-md-4 col-xs-6 growth__text">
+        <div class="inform_block_text" id="out_num">0</div>
+        <p class="inform_block_text_mini">выполненных заказов</p>
+      </div>
+      <div class="col-md-4 col-xs-12 growth__text">
+        <div class="inform_block_text">60 тыс.</div>
+        <p class="inform_block_text_mini">довольных клиентов</p>
+      </div>
+    </div>
+
+</div>
+<div class="container" id="signIn">
+
+
+  <form {% if site['rtl'] %}class="rtl-form"{% endif %} method="post" target="_self" action="{{ page['url'] }}">
+	{% if error %}
+      <script type="text/javascript">
+   $(document).ready(function(){
+     var divLoc = $('#signIn').offset();
+     $('html, body').animate({scrollTop: divLoc.top}, "slow");
+ });
+ </script>
+
+            <div class="alert alert-dismissible alert-danger {% if site['rtl'] %} rtl-alert {% endif %}">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              {{ errorMessage }}
+            </div>
+          {% endif %}
+
+          {% if success %}
+            <div class="alert alert-success alert-dismissible" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              {{successMessage}}
+            </div>
+          {% endif %}
+    <div class="row align-center">
+		  <div class="col-md-5">
+          	<div class="form-group">
+            <input type="text" class="form-control" placeholder="Логин" id="username" name="LoginForm[username]">
+          </div>
+    	  </div>
+    	<div class="col-md-5">
+          <div class="form-group form-group__password" id="passwordField">
+            <input type="password" class="form-control" placeholder="Пароль" id="password" name="LoginForm[password]">
+
+          </div>
+    </div>
+      <div class="container align-center visible-xs visible-sm" style="margin-top: -15px;">
+
+             <label  class="pull-left pull-right-middle">
+              <input type="checkbox"  style="margin-right: 10px;" name="LoginForm[remember]" value="1" id="remember">
+      </label>
+      <span class="pull-left pull-left-middle checkbox vopros" style="line-height: 15px !important;"> Запомнить меня</span>
+            <label  class="pull-right pull-right-middle">
+              {% if site['resetPassword'] %}
+                <a href="resetpassword" class="blue__link">Забыли пароль?</a>
+              {% endif %}
+      </label>
+
+
+      </div>
+
+    	<div class="col-md-2 text-center">
+              <input type="hidden" name="_csrf" value="{{csrftoken}}">
+    		<button class="first_active_login" type="submit">
+						<p class="first_active_text_login">Войти</p>
+			</button>
+    </div>
+    </div>
+    <div class="row align-center hidden-xs hidden-sm">
+      <div class="col-md-5">
+          {% if registration %}
+            <span class="pull-left pull-left-middle checkbox vopros">Нет аккаунта? <a class="blue__link" href="signup">Зарегистрироваться</a></span>
+          {% endif %}
+
+    </div>
+    	<div class="col-md-5">
+             <label  class="pull-left pull-right-middle">
+              <input type="checkbox"  style="margin-right: 10px;" name="LoginForm[remember]" value="1" id="remember">
+      </label>
+      <span class="pull-left pull-left-middle checkbox vopros"> Запомнить меня</span>
+            <label  class="pull-right pull-right-middle">
+              {% if site['resetPassword'] %}
+                <a href="resetpassword" class="blue__link">Забыли пароль?</a>
+              {% endif %}
+      </label>
+    </div>
+    </div>
+    <div class="row align-center visible-xs visible-sm">
+          {% if registration %}
+            <span class="checkbox vopros">Нет аккаунта? <a class="blue__link" href="signup">Зарегистрироваться</a></span>
+          {% endif %}
+    </div>
+    <div>
+          {% if captcha %}
+            {{ captchaCode }}
+          {% endif %}
+    </div>
+        </form>
+        <button onclick="#" class="btn__manager__red">Персональный менеджер</button>
+</div>
+<div class="services container" id="services">
+  <h2 class="advices_block_title advices_block_title_text" >Услуги</h2>
+  <div class="sevice__group d-flex" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+    <div class="service">
+      <div class="service__top d-flex-left">
+        <img src="https://cdn.rawgit.com/bread2077/temp/main/images/telegram.png" alt="">
+        <div>Telegram</div>
+      </div>
+      <div class="service__body">
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">Быстрое продвижение</p>
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">Качественные подписчики</p>
+          <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png"
+alt="">С гарантией </p>
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png"
+                alt="">Без отписок</p>
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">Автопросмотры постов</p>
+
+              </div>
+      <div class="number">
+      <span class="number bold11 no-margin-top col-xs-12">1000 подписчиков — 28₽</span>
+      <button onclick="location.href = '/telegram';"  class="btn btn__red no-margin-top">Подробнее</button>
+      </div>
+    </div>
+    <div class="service">
+      <div class="service__top d-flex-left">
+        <img src="https://cdn.rawgit.com/bread2077/temp/main/images/vk.png" alt="">
+        <div>VK</div>
+      </div>
+      <div class="service__body">
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">Качественные подписчики</p>
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">❤️ и живые комментарии </p>
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png"
+alt="">С гарантией </p>
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">Повышение охватов</p>
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">Без блокировок</p>
+
+      </div>
+      <div class="number">
+      <span class="number bold11 no-margin-top col-xs-12">1000 лайков — 39₽</span>
+      <button onclick="location.href = '/vkontakte';"  class="btn btn__red no-margin-top">Подробнее</button>
+      </div>
+    </div>
+        <div class="service">
+      <div class="service__top d-flex-left">
+        <img src="https://cdn.mypanel.link/6b0a4d/4jtogngrj7e51ay2.png" alt="">
+        <div>Instagram*</div>
+      </div>
+      <div class="service__body">
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">Качественные подписчики</p>
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">Быстрое продвижение</p>
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">❤️ и живые комментарии </p>
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">Повышение охватов</p>
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">Рассылка в Direct</p>
+           </div>
+      <div class="number">
+      <span class="number bold11 no-margin-top col-xs-12">1000❤️ — 3₽</span>
+      <button onclick="location.href = '/instagram';"  class="btn btn__red no-margin-top">Подробнее</button>
+      </div>
+    </div>
+
+    <div class="service">
+      <div class="service__top d-flex-left">
+        <img src="https://cdn.rawgit.com/bread2077/temp/main/images/YouTube.png" alt="">
+        <div>Youtube</div>
+      </div>
+      <div class="service__body">
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">Быстрое продвижение</p>
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">Качественные подписчики</p>
+         <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">С гарантией </p>
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">❤️ и живые комментарии </p>
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">Без блокировок</p>
+              </div>
+      <div class="number">
+      <span class="number bold11 no-margin-top col-xs-12">1000 просмотров — 85₽</span>
+      <button onclick="location.href = '/youtube';"  class="btn btn__red no-margin-top">Подробнее</button>
+      </div>
+    </div>
+    <div class="service d-non">
+      <div class="service__top d-flex-left">
+        <img src="https://cdn.rawgit.com/bread2077/temp/main/images/tic_toc.png" alt="">
+        <div>TikTok</div>
+      </div>
+      <div class="service__body">
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">Быстрое продвижение</p>
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">Качественные подписчики</p>
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">С Гарантией</p>
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">❤️ и живые комментарии</p>
+        <p><img class="mr-5px" src="https://cdn.rawgit.com/bread2077/temp/main/images/succes.png" alt="">Без блокировок</p>
+
+      </div>
+      <div class="number">
+      <span class="number bold11 no-margin-top col-xs-12">1000 просмотров — 0.09₽</span>
+      <button onclick="location.href = '/tiktok';"  class="btn btn__red no-margin-top">Подробнее</button>
+      </div>
+      </div>
+
+  </div>
+</div>
+<div class="container">
+  <div class="bank_cards table__bottom">
+    <img src="https://cdn.rawgit.com/bread2077/temp/main/images/icons/image 8.png" alt="" class="bank_card_image">
+    <img src="https://cdn.rawgit.com/bread2077/temp/main/images/icons/image 9.png" alt="" class="bank_card_image">
+    <img src="https://cdn.rawgit.com/bread2077/temp/main/images/icons/image 4.png" alt="">
+    <img src="https://cdn.rawgit.com/bread2077/temp/main/images/icons/image 3.png" alt="" class="bank_card_image">
+    <img src="https://cdn.rawgit.com/bread2077/temp/main/images/icons/image 2.png" alt="" class="bank_card_image">
+    <img src="https://cdn.rawgit.com/bread2077/temp/main/images/icons/image 10.png" alt="" class="bank_card_image">
+    <img src="https://cdn.rawgit.com/bread2077/temp/main/images/icons/image 5.png" alt="" class="bank_card_image">
+    <img src="https://cdn.rawgit.com/bread2077/temp/main/images/icons/image 6.png" alt="" class="bank_card_image">
+        <img src="https://cdn.rawgit.com/bread2077/temp/main/images/icons/image 7.png" alt="">
+  </div>
+  <div class="advices container">
+    <div class="row">
+      <div class="col-12 advices_block_title">
+        <h2 class="advices_block_title_text">Преимущества</h2>
+      </div>
+      <div class="advices_body">
+        <div class="advices_body_element col-md-6 col-12">
+          <div class="body_element_cont mooving__text">
+            <img src="https://cdn.rawgit.com/bread2077/temp/main/images/advices/coin.png" alt="" class="element_image">
+            <div class="element_text">
+              <p class="element_text_title">Выгодная цена</p>
+              <p class="body_1">Сервис SMMPrime является лидером рынка по цене, качеству и скорость накрутки. Все новые клиенты в восторге от нашей платформы, а постоянные — получают дополнительную скидку на наши услуги.
+              </p>
+            </div>
+          </div>
+          <div class="body_element_cont_m mooving__text">
+            <img src="https://cdn.mypanel.link/7c005b/p83reo665ikwdcoy.png" alt="" class="element_image">
+            <div class="element_text">
+              <p class="element_text_title">Выбор пола аудитории</p>
+              <p class="body_1">Революционная технология на рынке, которая даёт вам возможность получить активность от желаемого пола аудитории.
+У вас салон красоты? Добавьте живых женских комментариев. Потенциальные клиенты обратят внимание на вашу активность.
+</p>
+            </div>
+          </div>
+          <div class="body_element_cont_m mooving__text">
+            <img src="https://cdn.rawgit.com/bread2077/temp/main/images/advices/Group.png" alt="" class="element_image">
+            <div class="element_text">
+              <p class="element_text_title">Автонакрутка</p>
+              <p class="body_1">Сервис SMMPrime — полностью автоматизирован, все заказы запускаются в работу автоматически. Вам не потребуется общение с менеджерами технической поддержки.
+
+У вас есть возможность подключить автоматическое отслеживание активности на вашей страницы для автоматизированной накрутки лайков.
+
+</p>
+            </div>
+          </div>
+        </div>
+        <div class="advices_body_element col-md-6 col-12">
+          <div class="body_element_cont mooving__text">
+            <img src="https://cdn.rawgit.com/bread2077/temp/main/images/advices/high-quality.png" class="element_image">
+            <div class="element_text">
+              <p class="element_text_title">Гарантия</p>
+              <p class="body_1">Мы — официальная компания и на все наши услуги распространяется гарантия выполнения.  Каждый заказ обрабатывается и выполняется. В ином случае происходит возврат денежных средств в кратчайшие сроки.</p>
+            </div>
+          </div>
+          <div class="body_element_cont_m mooving__text">
+            <img src="https://cdn.rawgit.com/bread2077/temp/main/images/advices/customer.png" alt="" class="element_image">
+            <div class="element_text">
+              <p class="element_text_title">Живые комментарии</p>
+              <p class="body_1">Уникальная технология, аналогов которой не существует. Вы получите комментарии по теме вашего поста от реальных пользователей социальной сети. Также мы можем устроить дискуссию под вашим постом. Гарантируем, никто не заметит накрутку.
+
+
+</p>
+            </div>
+          </div>
+          <div class="body_element_cont_m mooving__text">
+            <img src="https://cdn.mypanel.link/7c005b/sap8389zkf5s1426.png" alt="" class="element_image">
+            <div class="element_text">
+              <p class="element_text_title">Реферальная программа</p>
+              <p class="body_1">Давно хотели завести пассивный доход? У вас есть отличная возможность сделать это благодаря нашему сервису! Система вознаграждения за каждое пополнение счета пользователя, зарегистрировавшегося по вашей реферальной ссылке — до 6% от суммы пополнения. Вы можете обменять вознаграждение на реальные деньги. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<div class="container bloghide hide_elem">
+    <h1 class="title">Наш блог</h1>
+    <div class="slider__blog">
+      <div class="blog">
+        <div class="blog__img"><img class="news-img" src="https://cdn.rawgit.com/bread2077/temp/main/images/phone1.png" alt=""></div>
+        <i>2 апреля 2021</i>
+        <h3 class="blog__title">Новости и обновления на сайте</h3>
+        <p class="blog__text">Здесь собрана информация о всех обновлениях на сайте, а также о новых услугах</p>
+      </div>
+      <div class="blog">
+        <div class="blog__img"><img class="news-img" src="https://cdn.rawgit.com/bread2077/temp/main/images/twitter.png" alt=""></div>
+        <i>2 апреля 2021</i>
+        <h3 class="blog__title">Наш Телеграм-канал</h3>
+        <p class="blog__text">На нашем канале вы можете максимально оперативно получить информацию обо всех новых услугах нашего сайта.</p>
+      </div>
+      <div class="blog">
+        <div class="blog__img"><img class="news-img" src="https://cdn.rawgit.com/bread2077/temp/main/images/phone1.png" alt=""></div>
+        <i>2 апреля 2021</i>
+        <h3 class="blog__title">Наш Инстаграм*</h3>
+        <p class="blog__text">А это наш профиль в инстаграм* - заходите, наслаждайтесь)</p>
+      </div>
+      <div class="blog">
+        <div class="blog__img"><img class="news-img" src="https://cdn.rawgit.com/bread2077/temp/main/images/twitter.png" alt=""></div>
+        <i>2 апреля 2021</i>
+        <h3 class="blog__title">Lorem ipsum dolor sit amet</h3>
+        <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus ex tellus,
+          sed tincidunt tellus molestie ac.</p>
+      </div>
+      <div class="blog">
+        <div class="blog__img"><img class="news-img" src="https://cdn.rawgit.com/bread2077/temp/main/images/phone1.png" alt=""></div>
+        <i>2 апреля 2021</i>
+        <h3 class="blog__title">Lorem ipsum dolor sit amet</h3>
+        <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus ex tellus,
+          sed tincidunt tellus molestie ac.</p>
+      </div>
+      <div class="blog">
+        <div class="blog__img"><img class="news-img" src="https://cdn.rawgit.com/bread2077/temp/main/images/twitter.png" alt=""></div>
+        <i>2 апреля 2021</i>
+        <h3 class="blog__title">Lorem ipsum dolor sit amet</h3>
+        <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus ex tellus,
+          sed tincidunt tellus molestie ac.</p>
+      </div>
+    </div>
+  </div>-->
+  <div class="container feedback_cont">
+    <h2 class="advices_block_title advices_block_title_text">Отзывы</h2>
+    <div class="feedback__slider">
+      <div class="feedback">
+        <div class="feedback__background bw"></div>
+        <div class="feedback__background2 bw"></div>
+
+        <div class="feedback__title">Николай</div>
+        <div class="feedback__stars">
+          <div class="star"><img src="https://cdn.rawgit.com/bread2077/temp/main/images/star.png" alt=""></div>
+          <div class="star"><img src="https://cdn.rawgit.com/bread2077/temp/main/images/star.png" alt=""></div>
+          <div class="star"><img src="https://cdn.rawgit.com/bread2077/temp/main/images/star.png" alt=""></div>
+          <div class="star"><img src="https://cdn.rawgit.com/bread2077/temp/main/images/star.png" alt=""></div>
+          <div class="star"><img src="https://cdn.rawgit.com/bread2077/temp/main/images/star.png" alt=""></div>
+        </div>
+        <p class="feedback_text">Пользуюсь услугами сайта smmprime.com в течение продолжительного времени, и всё устраивает. Отзывчивая администрация, все заказы выполнили, результат соответствует ожиданиям, буду пользоваться сервисом ещё!</p>
+      </div>
+      <div class="feedback">
+        <div class="feedback__background bw"></div>
+        <div class="feedback__background2 bw"></div>
+
+        <div class="feedback__title">Дарья</div>
+        <div class="feedback__stars">
+          <div class="star"><img src="https://cdn.rawgit.com/bread2077/temp/main/images/star.png" alt=""></div>
+          <div class="star"><img src="https://cdn.rawgit.com/bread2077/temp/main/images/star.png" alt=""></div>
+          <div class="star"><img src="https://cdn.rawgit.com/bread2077/temp/main/images/star.png" alt=""></div>
+          <div class="star"><img src="https://cdn.rawgit.com/bread2077/temp/main/images/star.png" alt=""></div>
+          <div class="star"><img src="https://cdn.rawgit.com/bread2077/temp/main/images/star.png" alt=""></div>
+        </div>
+        <p class="feedback_text">Воспользовалась вашим сервисом в первый раз и осталась довольна. Возникла проблема с заказом, но работники сайта мне помогли и объяснили, в чём была проблема. Надеюсь на дальнейшее сотрудничество!</p>
+      </div>
+      <div class="feedback">
+        <div class="feedback__background bw"></div>
+        <div class="feedback__background2 bw"></div>
+
+        <div class="feedback__title">Анастасия</div>
+        <div class="feedback__stars">
+          <div class="star"><img src="https://cdn.rawgit.com/bread2077/temp/main/images/star.png" alt=""></div>
+          <div class="star"><img src="https://cdn.rawgit.com/bread2077/temp/main/images/star.png" alt=""></div>
+          <div class="star"><img src="https://cdn.rawgit.com/bread2077/temp/main/images/star.png" alt=""></div>
+          <div class="star"><img src="https://cdn.rawgit.com/bread2077/temp/main/images/star.png" alt=""></div>
+          <div class="star"><img src="https://cdn.rawgit.com/bread2077/temp/main/images/star.png" alt=""></div>
+        </div>
+        <p class="feedback_text">Отличный сайт, парни молодцы. Всё понятно и быстро, накрутка качественная.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container faq-cont">
+    <h2 class="advices_block_title advices_block_title_text">FAQ</h2>
+    <div class="faq__slider">
+      <div class="faq">
+        <div>Q: Вы даёте гарантию на ваши услуги?</div>
+        <p><b>A: </b>Да, на все наши услуги распространяется гарантия выполнения. Мы — официальная компания и дорожим нашей репутацией.</p>
+        <p> По всем вопросам вы можете написать помощнику Николаю или в поддежку на сайте.</p>
+      </div>
+      <div class="faq">
+        <div>Q: Что такое восстановление?</div>
+        <p><b>A: </b>Восстановление — это дополнительная гарантия, что ваши лайки, подписчики и просмотры никуда не исчезнут. В случае, если количество показателей уменьшится из-за алгоритмов социальных сетей — наш алгоритм отследит изменения и сразу же вернёт показатели.
+</p>
+      </div>
+      <div class="faq">
+        <div>Q: Насколько ваш сервис конфиденциален?</div>
+        <p><b>A: </b>Сервис SMMPrime несёт полную ответственность за данные наших пользователей и гарантирует, что никакие данные не попадут в публичное пользование.</p>
+      </div>
+      <!-- <div class="faq">
+        <h3>Q: Зачем нужна накрутка?</h3>
+        <p><b>A: </b>У накрутки есть различные цели. Самые популярные: создание активности на странице в социальной сети и, как следствие, повышение стоимости различных услуг.</p>
+          <p>Не секрет, что 90% рынка пользуются услугами нашего или аналогичных сервисов именно с такими целями. Наш сервис за равные шансы на хорошую прибыль у всех пользователей социальных сетей.</p>
+        <p>Возьмем потенциального клиента. Он бродит по просторам Инстаграма и ищет интересный паблик, хочет провести время, узнать что-то новое и, как следствие, поделиться с друзьями. Безусловно, у страницы с хорошими показателями лайков/подписчиков больше шанса привлечь внимание пользователя.
+      </p>
+      </div> -->
+      <div class="faq">
+        <div>Q: Как происходит продвижение в социальных сетях?</div>
+        <p><b>A: </b>Сразу после регистрации на нашем сайте (все данные строго конфиденциальны) вам на почту приходит приветственное письмо.</p>
+        <p>Сразу после вы можете выбрать нужный вам вид накрутки и заказать услугу.
+</p>
+      </div>
+      <div class="faq">
+        <div>Q: Не испортит ли накрутка статистику в инстаграме, тиктоке и других соц. сетях?</div>
+        <p><b>A: </b>Накрутка Никаким образом не сказывается на статистике в Instagram, Тикток и других соц. сетях. Нами не было зафиксировано ни одного случая снижения реальной активности и других показателей после использования накрутки.</p>
+      </div>
+      <!-- <div class="faq">
+        <h3>Q: Зачем нужно накручивать лайки?</h3>
+        <p><b>A: </b>Совершенно неважно, в какой области вы развиваетесь, клиентам всегда важно видеть социальные доказательства вашей востребованности.</p>
+        <p>Раскрутиться и пробиться в ТОП по всем показателям благодаря органическим механикам будет сложно и дорого. Без какой-либо активности ваши социальные сети будут мертвыми. Именно активность на вашей странице даёт понять людям, что ваша услуга пользуется спросом.</p>
+        <p>Лайки являются первичным показателем активности на вашей странице и именно на них целевой пользователь первым делом обратит внимание.</p>
+      </div> -->
+      <div class="faq">
+        <div>Q: Зачем нужно накручивать комментарии?</div>
+        <p><b>A: </b>Комментарии — показатель уже существующего взаимодействия с вашей социальной сетью. Именно с цель увеличения данного показателя мы и рекомендуем накручивать комментарии. Важно! Комментарии по тебе — добавляют лояльность и доверие к вам, как к бренду.</p>
+      </div>
+      <div class="faq">
+        <div>Q: Зачем нужно накручивать просмотры?</div>
+        <p><b>A: </b>Основная цель накрутки просмотров — показатель потенциальному покупателю или подписчику, что ваш аккаунт уже интересен другим людям. Психология человека такова — он обратит внимание сам и привлечёт внимание друга — отправить ему ссылку или сделает репост.</p>
+      </div>
+      <!-- <div class="faq">
+        <h3>Q:  Зачем нужно выбирать пол аудитории?</h3>
+        <p><b>A: </b>Совсем недавно Инстаграм ввёл новые механики — анализирует ваших подписчиков по критериям пол/город/возраст и отдаёт приоритет показов вашего контента большей массе ваших подписчиков.</p>
+        <p>Например, вы мастер маникюра из Уфы, но раннее ваша страница была лайф-аккаунтом или выбрали неграмотную стратегию продвижения, на вас подписано много мужчин. В преимуществе именно мужчинам инстаграм начнёт показывать ваш контент. Являются ли мужчины целевой аудиторией вашего продукта? Точно нет! Увеличьте показатели вашей женской аудитории и вуаля — проблема решена.
+      </p>
+      </div> -->
+      <div class="faq">
+        <div>Q: Как у вас реализуется технология живых комментариев?</div>
+        <p><b>A: </b>Никакого секрета нет — после выгрузки заказа в систему, избранные исполнители — живые люди, изучают профиль и фотографии. На основе того, что изображено на фотографии — пишут комментарии. Все комментарии полностью относятся к теме вашего поста или фотографии.</p>
+      </div>
+      <div class="faq">
+        <div>Q: Как накрутка поможет моему заработку?</div>
+        <p><b>A: </b>Все очень просто. Чем больше на вашей странице активность — тем более вашему аккаунту доверяет целевой пользователь. Согласитесь, вы не станете покупать какой-то продукт в магазине без покупателя. Точно такую же аналоги можно провести и с миром социальных сетей.</p>
+      </div>
+      <div class="faq">
+        <div>Q: Почему на вашем сайте такие низкие цены?</div>
+        <p><b>A: </b>Мы разработали уникальную систему, которая позволяет автоматизировать процесс увеличения показателей. Это экономит ресурсы, силы и позволяет снизить стоимость услуг по сравнению с конкурентами.
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+<button onclick="document.getElementById('signIn').scrollIntoView({block: 'center',
+            inline: 'center'})" class="blue__button btn__blue">Начать</button>
