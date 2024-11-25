@@ -15,7 +15,7 @@
   grid-template-columns: repeat(2, 1fr);
   max-width: var(--width-max);
   margin: 0 auto;
-  gap: 13px 40px;
+  gap: 14px 40px;
   align-items: center;
 }
 
@@ -94,7 +94,6 @@
 
 .faq__button:active {
   outline: none;
-
 }
 
 .faq__button_type_close {
