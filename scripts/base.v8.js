@@ -99,6 +99,6 @@ const checkScrollBlock = (e, blockId) => {
   }
 };
 
-signInButtons.forEach(btn => {
-  btn.addEventListener('click', e => checkScrollBlock(e, 'signIn'));
-});
+// signInButtons.forEach(btn => {
+//   btn.addEventListener('click', e => checkScrollBlock(e, 'signIn'));
+// });
