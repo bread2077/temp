@@ -436,7 +436,7 @@ export const socials = {
         },
         {
           name: 'С Гарантией',
-          cost: '0.085 ₽',
+          cost: '0.5 ₽',
         },
         {
           name: 'РФ',
@@ -456,19 +456,19 @@ export const socials = {
             items: [
               {
                 name: 'Микс',
-                cost: '0.003 ₽',
+                cost: '0.005 ₽',
               },
               {
                 name: 'С Гарантией',
-                cost: '0.015 ₽',
+                cost: '0.03 ₽',
               },
               {
                 name: 'С Охватом',
-                cost: '0.012 ₽',
+                cost: '0.015 ₽',
               },
               {
                 name: 'РФ',
-                cost: '0.017 ₽',
+                cost: '0.022 ₽',
                 icon: 'https://cdn.rawgit.com/bread2077/temp/main/images/icons/rus-icon.svg',
               },
             ],
@@ -483,15 +483,15 @@ export const socials = {
               },
               {
                 name: 'С Гарантией',
-                cost: '0.015 ₽',
+                cost: '0.03 ₽',
               },
               {
                 name: 'С Охватом',
-                cost: '0.012 ₽',
+                cost: '0.015 ₽',
               },
               {
                 name: 'РФ',
-                cost: '0.017 ₽',
+                cost: '0.022 ₽',
                 icon: 'https://cdn.rawgit.com/bread2077/temp/main/images/icons/rus-icon.svg',
               },
             ],
@@ -506,11 +506,11 @@ export const socials = {
             items: [
               {
                 name: 'Стандарт',
-                cost: '0.01 ₽',
+                cost: '0.005 ₽',
               },
               {
                 name: 'С Охватом',
-                cost: '0.033 ₽',
+                cost: '0.01 ₽',
               },
               {
                 name: 'С Удержанием',
@@ -524,11 +524,11 @@ export const socials = {
             items: [
               {
                 name: 'Стандарт',
-                cost: '0.01 ₽',
+                cost: '0.005 ₽',
               },
               {
                 name: 'С Охватом',
-                cost: '0.033 ₽',
+                cost: '0.01 ₽',
               },
             ],
           },
@@ -542,15 +542,15 @@ export const socials = {
             items: [
               {
                 name: 'Охваты',
-                cost: '0.007 ₽',
-              },
-              {
-                name: 'Сохранения',
                 cost: '0.008 ₽',
               },
               {
+                name: 'Сохранения',
+                cost: '0.01 ₽',
+              },
+              {
                 name: 'Посещения',
-                cost: '0.014 ₽',
+                cost: '0.03 ₽',
               },
               {
                 name: 'Репосты',
@@ -564,15 +564,15 @@ export const socials = {
             items: [
               {
                 name: 'Охваты',
-                cost: '0.007 ₽',
-              },
-              {
-                name: 'Сохранения',
                 cost: '0.008 ₽',
               },
               {
+                name: 'Сохранения',
+                cost: '0.01 ₽',
+              },
+              {
                 name: 'Посещения',
-                cost: '0.014 ₽',
+                cost: '0.03 ₽',
               },
               {
                 name: 'Репосты',
@@ -585,25 +585,25 @@ export const socials = {
       stories: [
         {
           name: 'Просмотры',
-          cost: '0.015 ₽',
+          cost: '0.021 ₽',
         },
         {
           name: 'Репосты',
-          cost: '0.17 ₽',
+          cost: '0.228 ₽',
         },
         {
           name: 'Опросы',
-          cost: '0.036 ₽',
+          cost: '0.228 ₽',
         },
       ],
       comments: [
         {
           name: 'Стандарт',
-          cost: '0.21 ₽',
+          cost: '0.4 ₽',
         },
         {
           name: 'РФ',
-          cost: '0.31 ₽',
+          cost: '5.5 ₽',
           icon: 'https://cdn.rawgit.com/bread2077/temp/main/images/icons/rus-icon.svg',
         },
       ],
