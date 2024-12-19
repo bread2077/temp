@@ -39,20 +39,20 @@ export const socials = {
       followers: [
         {
           name: 'Стандартные',
-          cost: '0.09 ₽',
+          cost: '0.13 ₽',
         },
         {
           name: 'РФ',
-          cost: '0.11 ₽',
+          cost: '0.21 ₽',
           icon: 'https://cdn.rawgit.com/bread2077/temp/main/images/icons/rus-icon.svg',
         },
         {
           name: 'С Онлайном',
-          cost: '1.89 ₽',
+          cost: '1.99 ₽',
         },
         {
           name: 'Живые',
-          cost: '3.5 ₽',
+          cost: '3.8 ₽',
         },
         {
           name: 'Премиум',
@@ -60,7 +60,7 @@ export const socials = {
         },
         {
           name: 'Премиум РФ',
-          cost: '1.5 ₽',
+          cost: '3 ₽',
           icon: 'https://cdn.rawgit.com/bread2077/temp/main/images/icons/rus-icon.svg',
         },
       ],
@@ -72,28 +72,28 @@ export const socials = {
             items: [
               {
                 name: 'Стандарт',
-                cost: '0.0014 ₽',
+                cost: '0.0025 ₽',
               },
               {
                 name: 'Плавные',
-                cost: '0.01 ₽',
+                cost: '0.026 ₽',
               },
               {
                 name: 'Умные',
-                cost: '0.01 ₽',
+                cost: '0.026 ₽',
               },
               {
                 name: 'РФ',
-                cost: '0.008 ₽',
+                cost: '0.012 ₽',
                 icon: 'https://cdn.rawgit.com/bread2077/temp/main/images/icons/rus-icon.svg',
               },
               {
                 name: 'США',
-                cost: '0.004 ₽',
+                cost: '0.005 ₽',
               },
               {
                 name: 'Др. Страны',
-                cost: '0.008 ₽',
+                cost: '0.013 ₽',
               },
             ],
           },
@@ -104,28 +104,28 @@ export const socials = {
             items: [
               {
                 name: 'Стандарт',
-                cost: '0.0014 ₽',
+                cost: '0.0025 ₽',
               },
               {
                 name: 'Плавные',
-                cost: '0.01 ₽',
+                cost: '0.026 ₽',
               },
               {
                 name: 'Умные',
-                cost: '0.01 ₽',
+                cost: '0.026 ₽',
               },
               {
                 name: 'РФ',
-                cost: '0.008 ₽',
+                cost: '0.012 ₽',
                 icon: 'https://cdn.rawgit.com/bread2077/temp/main/images/icons/rus-icon.svg',
               },
               {
                 name: 'США',
-                cost: '0.004 ₽',
+                cost: '0.005 ₽',
               },
               {
                 name: 'Др. Страны',
-                cost: '0.008 ₽',
+                cost: '0.013 ₽',
               },
             ],
           },
@@ -140,67 +140,67 @@ export const socials = {
             items: [
               {
                 name: 'Микс Положительных',
-                cost: '0.012 ₽',
-              },
-              {
-                name: 'Премиум реакции',
                 cost: '0.014 ₽',
               },
               {
+                name: 'Премиум реакции',
+                cost: '0.015 ₽',
+              },
+              {
                 name: 'Микс Отрицательных',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '👍',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '❤️',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '🤩',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '😱',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '😁',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '👎',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '💩',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '🎉',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '🤬',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '🤮',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '😢',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '🙏',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '😍',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
             ],
           },
@@ -210,67 +210,67 @@ export const socials = {
             items: [
               {
                 name: 'Микс Положительных',
-                cost: '0.012 ₽',
-              },
-              {
-                name: 'Премиум реакции',
                 cost: '0.014 ₽',
               },
               {
+                name: 'Премиум реакции',
+                cost: '0.015 ₽',
+              },
+              {
                 name: 'Микс Отрицательных',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '👍',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '❤️',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '🤩',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '😱',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '😁',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '👎',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '💩',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '🎉',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '🤬',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '🤮',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '😢',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '🙏',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
               {
                 name: '😍',
-                cost: '0.012 ₽',
+                cost: '0.013 ₽',
               },
             ],
           },
@@ -279,13 +279,13 @@ export const socials = {
       polls: [
         {
           name: 'Голос',
-          cost: '0.04 ₽',
+          cost: '0.06 ₽',
         },
       ],
       botStart: [
         {
           name: 'Обычные',
-          cost: '0.18 ₽',
+          cost: '0.23 ₽',
         },
         {
           name: 'Премиум',
@@ -295,31 +295,31 @@ export const socials = {
       reposts: [
         {
           name: 'Репост',
-          cost: '0.036 ₽',
+          cost: '0.045 ₽',
         },
       ],
       boosts: [
         {
           name: 'Буст',
-          cost: '3.7 ₽',
+          cost: '4.9 ₽',
         },
       ],
       viewsWithOptions: [
         {
           name: '3 Дня',
-          cost: '0.17 ₽',
+          cost: '0.35 ₽',
         },
         {
           name: '7 Дней',
-          cost: '0.21 ₽',
+          cost: '0.65 ₽',
         },
         {
           name: '15 Дней',
-          cost: '0.29 ₽',
+          cost: '1.2 ₽',
         },
         {
           name: '30 Дней',
-          cost: '0.48 ₽',
+          cost: '1.99 ₽',
         },
       ],
     },
@@ -332,81 +332,81 @@ export const socials = {
       friends: [
         {
           name: 'Стандартные',
-          cost: '0.095 ₽',
+          cost: '0.12 ₽',
         },
         {
           name: 'РФ',
-          cost: '0.28 ₽',
+          cost: '0.44 ₽',
           icon: 'https://cdn.rawgit.com/bread2077/temp/main/images/icons/rus-icon.svg',
         },
         {
           name: 'Живые',
-          cost: '1.99 ₽',
+          cost: '2.6 ₽',
         },
       ],
       likes: [
         {
           name: 'Стандартные',
-          cost: '0.05 ₽',
+          cost: '0.06 ₽',
         },
         {
           name: 'РФ',
-          cost: '0.5 ₽',
+          cost: '0.18 ₽',
           icon: 'https://cdn.rawgit.com/bread2077/temp/main/images/icons/rus-icon.svg',
         },
       ],
       reposts: [
         {
           name: 'Стандартные',
-          cost: '0.2 ₽',
+          cost: '0.3 ₽',
         },
         {
           name: 'Женские РФ',
-          cost: '0.85 ₽',
+          cost: '0.18 ₽',
           icon: 'https://cdn.rawgit.com/bread2077/temp/main/images/icons/rus-icon.svg',
         },
         {
           name: 'Мужские РФ',
-          cost: '0.85 ₽',
+          cost: '0.18 ₽',
           icon: 'https://cdn.rawgit.com/bread2077/temp/main/images/icons/rus-icon.svg',
         },
       ],
       views: [
         {
           name: 'На пост',
-          cost: '0.001 ₽',
+          cost: '0.002 ₽',
         },
         {
           name: 'На видео',
-          cost: '0.002 ₽',
+          cost: '0.005 ₽',
         },
         {
           name: 'На клип',
-          cost: '0.002 ₽',
+          cost: '0.005 ₽',
         },
       ],
       autoviews: [
         {
           name: '5 дней',
-          cost: '0.025 ₽',
+          cost: '0.04 ₽',
         },
         {
           name: '10 дней',
-          cost: '0.045 ₽',
+          cost: '0.07 ₽',
         },
         {
           name: '20 дней',
-          cost: '0.08 ₽',
+          cost: '0.135 ₽',
         },
         {
           name: '30 дней',
-          cost: '0.12 ₽',
+          cost: '0.2 ₽',
         },
       ],
       polls: [
         {
           name: 'Голос',
-          cost: '0.85 ₽',
+          cost: '1.2 ₽',
         },
       ],
       plays: [
@@ -418,7 +418,7 @@ export const socials = {
       comments: [
         {
           name: 'Комментарий РФ',
-          cost: '3 ₽',
+          cost: '5.5 ₽',
           icon: 'https://cdn.rawgit.com/bread2077/temp/main/images/icons/rus-icon.svg',
         },
       ],
