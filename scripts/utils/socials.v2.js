@@ -617,7 +617,7 @@ export const socials = {
       followers: [
         {
           name: 'С Восстановлением',
-          cost: '0.23 ₽',
+          cost: '0.31 ₽',
         },
       ],
       views: {
@@ -628,7 +628,7 @@ export const socials = {
             items: [
               {
                 name: 'Стандарт',
-                cost: '0.00015 ₽',
+                cost: '0.00032 ₽',
               },
             ],
           },
@@ -638,7 +638,7 @@ export const socials = {
             items: [
               {
                 name: 'Стандарт',
-                cost: '0.00015 ₽',
+                cost: '0.00032 ₽',
               },
             ],
           },
@@ -653,19 +653,19 @@ export const socials = {
       conservations: [
         {
           name: 'Стандарт',
-          cost: '0.02 ₽',
+          cost: '0.07 ₽',
         },
       ],
       reposts: [
         {
           name: 'Стандарт',
-          cost: '0.022 ₽',
+          cost: '0.056 ₽',
         },
       ],
       comments: [
         {
           name: 'Умные',
-          cost: '3.5 ₽',
+          cost: '5.5 ₽',
         },
       ],
     },
@@ -678,17 +678,17 @@ export const socials = {
       followers: [
         {
           name: 'С Гарантией',
-          cost: '1.32 ₽',
+          cost: '0.7 ₽',
         },
       ],
       views: [
         {
           name: 'С Гарантией',
-          cost: '0.21 ₽',
+          cost: '0.29 ₽',
         },
         {
           name: 'РФ',
-          cost: '0.29 ₽',
+          cost: '0.4 ₽',
           icon: 'https://cdn.rawgit.com/bread2077/temp/main/images/icons/rus-icon.svg',
         },
       ],
@@ -699,19 +699,19 @@ export const socials = {
         },
         {
           name: 'Лайки',
-          cost: '0.095 ₽',
+          cost: '0.13 ₽',
         },
       ],
       likes: [
         {
           name: 'С Гарантией',
-          cost: '0.18 ₽',
+          cost: '0.099 ₽',
         },
       ],
       comments: [
         {
-          name: 'Стандарт',
-          cost: '1.7 ₽',
+          name: 'Умные РФ',
+          cost: '5.5 ₽',
         },
       ],
       viewsTranslations: [
@@ -730,13 +730,13 @@ export const socials = {
       followers: [
         {
           name: 'С Гарантией',
-          cost: '0.12 ₽',
+          cost: '0.16 ₽',
         },
       ],
       audience: [
         {
           name: 'Стандарт',
-          cost: 'от 0.46 ₽',
+          cost: 'от 0.64 ₽',
         },
       ],
     },
@@ -749,13 +749,13 @@ export const socials = {
       followers: [
         {
           name: 'С Гарантией',
-          cost: '0.4 ₽',
+          cost: '0.55 ₽',
         },
       ],
       likes: [
         {
           name: 'С Гарантией',
-          cost: 'от 0.8 ₽',
+          cost: 'от 1.1 ₽',
         },
       ],
     },
@@ -768,13 +768,13 @@ export const socials = {
       followers: [
         {
           name: 'Стандарт',
-          cost: '0.5 ₽',
+          cost: '0.8 ₽',
         },
       ],
       likes: [
         {
           name: 'Стандарт',
-          cost: '0.34 ₽',
+          cost: '0.5 ₽',
         },
       ],
     },
@@ -793,13 +793,13 @@ export const socials = {
       likes: [
         {
           name: 'Стандарт',
-          cost: '0.35 ₽',
+          cost: '0.46 ₽',
         },
       ],
       retweets: [
         {
           name: 'Стандарт',
-          cost: '0.35 ₽',
+          cost: '0.45 ₽',
         },
       ],
     },
@@ -812,13 +812,13 @@ export const socials = {
       followers: [
         {
           name: 'С Гарантией',
-          cost: '0.28 ₽',
+          cost: '0.37 ₽',
         },
       ],
       classes: [
         {
           name: 'Стандарт',
-          cost: '0.16 ₽',
+          cost: '0.17 ₽',
         },
       ],
       views: [
@@ -830,7 +830,7 @@ export const socials = {
       reposts: [
         {
           name: 'Стандарт',
-          cost: '1.3 ₽',
+          cost: '1.8 ₽',
         },
       ],
     },
@@ -843,13 +843,13 @@ export const socials = {
       followers: [
         {
           name: 'С Гарантией',
-          cost: '0.5 ₽',
+          cost: '0.56 ₽',
         },
       ],
       comments: [
         {
           name: 'Стандарт',
-          cost: '1.35 ₽',
+          cost: '1.7 ₽',
         },
       ],
     },
@@ -862,13 +862,13 @@ export const socials = {
       followers: [
         {
           name: 'Стандарт',
-          cost: '0.6 ₽',
+          cost: '0.81 ₽',
         },
       ],
       likes: [
         {
           name: 'Стандарт',
-          cost: '0.6 ₽',
+          cost: '0.81 ₽',
         },
       ],
     },
@@ -881,7 +881,7 @@ export const socials = {
       visitors: [
         {
           name: 'Стандарт',
-          cost: '0.015 ₽',
+          cost: '0.04 ₽',
         },
       ],
     },
