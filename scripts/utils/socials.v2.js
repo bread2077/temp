@@ -430,23 +430,11 @@ export const socials = {
     img: `${SOCIAL_IMAGES_URL}/instagram-icon.svg`,
     services: {
       followers: [
-        {
-          name: 'Стандарт',
-          cost: '0.03 ₽',
-        },
+      
         {
           name: 'С Гарантией',
           cost: '0.5 ₽',
-        },
-        {
-          name: 'РФ',
-          cost: '0.24 ₽',
-          icon: 'https://cdn.rawgit.com/bread2077/temp/main/images/icons/rus-icon.svg',
-        },
-        {
-          name: 'В Канал',
-          cost: '1.8 ₽',
-        },
+        },      
       ],
       likes: {
         examples: [
@@ -512,10 +500,7 @@ export const socials = {
                 name: 'С Охватом',
                 cost: '0.01 ₽',
               },
-              {
-                name: 'С Удержанием',
-                cost: '0.085 ₽',
-              },
+             
             ],
           },
           {
