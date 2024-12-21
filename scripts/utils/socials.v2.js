@@ -15,13 +15,13 @@ export const socials = {
       tapSwapBot: [
         {
           name: 'Рефералы',
-          cost: '30 ₽',
+          cost: '45 ₽',
         },
       ],
       blumBot: [
         {
           name: 'Рефералы',
-          cost: '30 ₽',
+          cost: '45 ₽',
         },
       ],
       followers: [
