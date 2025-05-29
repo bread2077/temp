@@ -6,7 +6,13 @@ export const socials = {
     type: 'telegram',
     img: `${SOCIAL_IMAGES_URL}/telegram-icon.svg`,
     services: {
-        pixelTapBot: [
+      stars: [
+        {
+          name: 'Звезды',
+          cost: '1.5 ₽',
+        },
+      ],
+      pixelTapBot: [
         {
           name: 'Рефералы',
           cost: '70 ₽',
@@ -418,11 +424,10 @@ export const socials = {
     img: `${SOCIAL_IMAGES_URL}/instagram-icon.svg`,
     services: {
       followers: [
-      
         {
           name: 'С Гарантией',
           cost: '0.5 ₽',
-        },      
+        },
       ],
       likes: {
         examples: [
@@ -488,7 +493,6 @@ export const socials = {
                 name: 'С Охватом',
                 cost: '0.01 ₽',
               },
-             
             ],
           },
           {

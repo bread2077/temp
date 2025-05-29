@@ -41,6 +41,10 @@ export const services = {
     img: `${SERVICE_IMAGES_URL}/autoviews-icon.svg`,
     name: 'Старт Бота',
   },
+  stars: {
+    img: `${SERVICE_IMAGES_URL}/likes-icon.svg`,
+    name: 'Stars',
+  },
   hamsterBot: {
     img: `${SERVICE_IMAGES_URL}/followers-icon.svg`,
     name: 'Hamster Kombat',
