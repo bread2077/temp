@@ -863,4 +863,29 @@ export const socials = {
       ],
     },
   },
+  wibes: {
+    name: 'Wibes',
+    type: 'wibes',
+    img: `${SOCIAL_IMAGES_URL}/wibes-logo.png`,
+    services: {
+      followers: [
+        {
+          name: 'Стандартные',
+          cost: '20 ₽',
+        },
+      ],
+      views: [
+        {
+          name: 'Стандартные',
+          cost: '0.1 ₽',
+        },
+      ],
+      likes: [
+        {
+          name: 'Стандартные',
+          cost: '15 ₽',
+        },
+      ],
+    },
+  },
 };
