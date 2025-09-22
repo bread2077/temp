@@ -37,7 +37,7 @@ export default class FilterCategories {
 
     if (!button) return;
 
-    const platformName = button.dataset.platform;
+    const platformName = button.dataset.social;
 
     this._cleanSelector();
 
