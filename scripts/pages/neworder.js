@@ -1,3 +1,5 @@
+import '../../styles/neworder.css';
+
 import FilterCategories from '../components/FilterCategories.js';
 
 const select = document.querySelector('select.select_card_type_category');
@@ -5,17 +7,23 @@ const select = document.querySelector('select.select_card_type_category');
 const categories = [
   {
     id: -1,
-    name: '\u0418\u0437\u0431\u0440\u0430\u043d\u043d\u044b\u0435 \u0443\u0441\u043b\u0443\u0433\u0438',
-    icon: { icon_type: 'icon', icon: 'fas fa-star' },
+    name: 'Избранные услуги',
+    icon: {
+      icon_type: 'icon',
+      icon: 'fas fa-star',
+    },
   },
   {
     id: 8104,
-    name: '\u041f\u043e\u043b\u0443\u0447\u0438 \u0414\u0435\u043d\u044c\u0433\u0438 \u043d\u0430 \u0431\u0430\u043b\u0430\u043d\u0441 SMMPRIME \u0437\u0430 \u041e\u0442\u0437\u044b\u0432',
-    icon: { icon_type: 'icon', icon: 'fas fa-search-dollar' },
+    name: 'Получи Деньги на баланс SMMPRIME за Отзыв',
+    icon: {
+      icon_type: 'icon',
+      icon: 'fas fa-search-dollar',
+    },
   },
   {
     id: 3387,
-    name: 'Telegram \u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u044b \u0441 \u043d\u0430\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u0435\u043c\u043e\u0439 \u0441\u043a\u043e\u0440\u043e\u0441\u0442\u044c\u044e',
+    name: 'Telegram Просмотры с настраиваемой скоростью',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/nk5zswqhq3w97m1k.png',
@@ -24,7 +32,7 @@ const categories = [
   },
   {
     id: 2680,
-    name: '\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435 \u041b\u0443\u0447\u0448\u0438\u0435 \u0423\u0441\u043b\u0443\u0433\u0438',
+    name: 'Вконтакте Лучшие Услуги',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/ubkhl1t8cerh4sxz.png',
@@ -33,7 +41,7 @@ const categories = [
   },
   {
     id: 2681,
-    name: 'Telegram \u041b\u0443\u0447\u0448\u0438\u0435 \u0423\u0441\u043b\u0443\u0433\u0438',
+    name: 'Telegram Лучшие Услуги',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/6fr7fbrez4t2c16q.png',
@@ -42,7 +50,7 @@ const categories = [
   },
   {
     id: 2682,
-    name: 'TikTok \u041b\u0443\u0447\u0448\u0438\u0435 \u0423\u0441\u043b\u0443\u0433\u0438',
+    name: 'TikTok Лучшие Услуги',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/hscf8azm5j8ocqj3.png',
@@ -51,7 +59,7 @@ const categories = [
   },
   {
     id: 2683,
-    name: 'Instagram* \u041b\u0443\u0447\u0448\u0438\u0435 \u0423\u0441\u043b\u0443\u0433\u0438',
+    name: 'Instagram* Лучшие Услуги',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/1nu75ao4p01d7pdb.png',
@@ -61,11 +69,14 @@ const categories = [
   {
     id: 8958,
     name: 'Wibes',
-    icon: { icon_type: 'emoji', icon: '\ud83d\uded2' },
+    icon: {
+      icon_type: 'emoji',
+      icon: '🛒',
+    },
   },
   {
     id: 4754,
-    name: 'Telegram \u0411\u0443\u0441\u0442\u044b - \u041f\u0423\u0411\u041b\u0418\u0427\u041d\u042b\u0419 \u043a\u0430\u043d\u0430\u043b',
+    name: 'Telegram Бусты - ПУБЛИЧНЫЙ канал',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/3ikw7n4bd6ufariq.png',
@@ -74,7 +85,7 @@ const categories = [
   },
   {
     id: 8738,
-    name: 'Telegram \u0411\u0443\u0441\u0442\u044b - \u041f\u0420\u0418\u0412\u0410\u0422\u041d\u042b\u0419 \u043a\u0430\u043d\u0430\u043b',
+    name: 'Telegram Бусты - ПРИВАТНЫЙ канал',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/krxh3f3x86shlifc.png',
@@ -83,7 +94,7 @@ const categories = [
   },
   {
     id: 6291,
-    name: '\u041a\u0440\u0430\u0441\u0438\u0432\u044b\u0435 \u0433\u0440\u0430\u0444\u0438\u043a\u0438 \u0434\u043b\u044f Tgstat \u0438 Telemetr',
+    name: 'Красивые графики для Tgstat и Telemetr',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/krxh3f3x86shlifc.png',
@@ -92,7 +103,7 @@ const categories = [
   },
   {
     id: 8629,
-    name: 'Telegram \u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u044b \u0434\u043b\u044f \u0422\u041e\u041f\u0430',
+    name: 'Telegram Просмотры для ТОПа',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/krxh3f3x86shlifc.png',
@@ -101,7 +112,7 @@ const categories = [
   },
   {
     id: 4666,
-    name: 'Telegram PREMIUM \u041f\u043e\u0434\u043f\u0438\u0441\u0447\u0438\u043a\u0438',
+    name: 'Telegram PREMIUM Подписчики',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/3ikw7n4bd6ufariq.png',
@@ -110,7 +121,7 @@ const categories = [
   },
   {
     id: 6290,
-    name: 'Telegram PREMIUM \u041f\u043e\u0434\u043f\u0438\u0441\u0447\u0438\u043a\u0438 \u0420\u0424',
+    name: 'Telegram PREMIUM Подписчики РФ',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/3ikw7n4bd6ufariq.png',
@@ -119,7 +130,7 @@ const categories = [
   },
   {
     id: 8418,
-    name: 'Telegram PREMIUM \u041f\u043e\u0434\u043f\u0438\u0441\u0447\u0438\u043a\u0438 \u0432 \u0411\u041e\u0422',
+    name: 'Telegram PREMIUM Подписчики в БОТ',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/2x9c3q0e7cqnru5n.png',
@@ -137,17 +148,23 @@ const categories = [
   },
   {
     id: 7078,
-    name: '\u0420\u0435\u0444\u0435\u0440\u0430\u043b\u044b \u0432 \u0438\u0433\u0440\u044b \u0432 Telegram',
-    icon: { icon_type: 'emoji', icon: '\ud83d\ude3a' },
+    name: 'Рефералы в игры в Telegram',
+    icon: {
+      icon_type: 'emoji',
+      icon: '😺',
+    },
   },
   {
     id: 3064,
-    name: '\u041e\u0442\u0437\u044b\u0432\u044b \u0438 \u0410\u043a\u0442\u0438\u0432\u043d\u043e\u0441\u0442\u044c \u0432 \u0438\u043d\u0442\u0435\u0440\u043d\u0435\u0442\u0435',
-    icon: { icon_type: 'emoji', icon: '?' },
+    name: 'Отзывы и Активность в интернете',
+    icon: {
+      icon_type: 'emoji',
+      icon: '?',
+    },
   },
   {
     id: 6580,
-    name: '\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435 \u041f\u043e\u0434\u043f\u0438\u0441\u043a\u0430 \u043d\u0430 \u0443\u0441\u043b\u0443\u0433\u0438 (\u0410\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u0443\u0441\u043b\u0443\u0433\u0438)',
+    name: 'Вконтакте Подписка на услуги (Автоматические услуги)',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/5rdxwtzpks2chyfu.png',
@@ -156,7 +173,7 @@ const categories = [
   },
   {
     id: 6101,
-    name: '\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435 \u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u044b',
+    name: 'Вконтакте Просмотры',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/5rdxwtzpks2chyfu.png',
@@ -165,7 +182,7 @@ const categories = [
   },
   {
     id: 2050,
-    name: '\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435 \u041b\u0430\u0439\u043a\u0438',
+    name: 'Вконтакте Лайки',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/k4k4sujajfl6uz3z.png',
@@ -174,7 +191,7 @@ const categories = [
   },
   {
     id: 19,
-    name: '\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435 \u041f\u043e\u0434\u043f\u0438\u0441\u0447\u0438\u043a\u0438 \u0438 \u0414\u0440\u0443\u0437\u044c\u044f',
+    name: 'Вконтакте Подписчики и Друзья',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/1n6x1nhlc5g6ifxr.png',
@@ -183,7 +200,7 @@ const categories = [
   },
   {
     id: 2118,
-    name: '\u0412\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u0435 (\u041a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0438, \u0440\u0435\u043f\u043e\u0441\u0442\u044b \u0438 \u0434\u0440.)',
+    name: 'Вконтакте (Комментарии, репосты и др.)',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/i9jpi2uwxy67pxce.png',
@@ -192,7 +209,7 @@ const categories = [
   },
   {
     id: 6678,
-    name: 'Telegram \u041f\u043e\u0434\u043f\u0438\u0441\u043a\u0430 \u043d\u0430 \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u044b \u043e\u0442 \u041f\u043e\u0434\u043f\u0438\u0441\u0447\u0438\u043a\u043e\u0432 + \u0421\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043a\u0430 (\u0410\u0432\u0442\u043e\u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u044b)',
+    name: 'Telegram Подписка на просмотры от Подписчиков + Статистика (Автопросмотры)',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/0re7x2arxp75zewd.png',
@@ -201,7 +218,7 @@ const categories = [
   },
   {
     id: 2255,
-    name: 'Telegram \u041f\u043e\u0434\u043f\u0438\u0441\u043a\u0430 \u043d\u0430 \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u044b (\u0410\u0432\u0442\u043e\u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u044b)',
+    name: 'Telegram Подписка на просмотры (Автопросмотры)',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/79dxflh4lbb65taj.png',
@@ -210,7 +227,7 @@ const categories = [
   },
   {
     id: 3388,
-    name: 'Telegram \u041f\u043e\u0434\u043f\u0438\u0441\u043a\u0430 \u043d\u0430 \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u044b (\u0410\u0432\u0442\u043e\u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u044b) \u0441 \u043f\u043b\u0430\u0432\u043d\u043e\u0439 \u0441\u043a\u043e\u0440\u043e\u0441\u0442\u044c\u044e\ud83c\udf31',
+    name: 'Telegram Подписка на просмотры (Автопросмотры) с плавной скоростью🌱',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/79dxflh4lbb65taj.png',
@@ -219,7 +236,7 @@ const categories = [
   },
   {
     id: 5733,
-    name: 'Telegram \u041f\u043e\u0434\u043f\u0438\u0441\u0447\u0438\u043a\u0438 \u0420\u0424',
+    name: 'Telegram Подписчики РФ',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/9yadtq2w8a8lxnql.png',
@@ -228,7 +245,7 @@ const categories = [
   },
   {
     id: 3145,
-    name: 'Telegram \u041f\u043e\u0434\u043f\u0438\u0441\u0447\u0438\u043a\u0438 \u0420\u0424 - VIP \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u043e',
+    name: 'Telegram Подписчики РФ - VIP качество',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/8o1c4y81od4fwslb.png',
@@ -237,7 +254,7 @@ const categories = [
   },
   {
     id: 15,
-    name: 'Telegram \u041f\u043e\u0434\u043f\u0438\u0441\u0447\u0438\u043a\u0438',
+    name: 'Telegram Подписчики',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/8o1c4y81od4fwslb.png',
@@ -246,7 +263,7 @@ const categories = [
   },
   {
     id: 3305,
-    name: 'Telegram \u041f\u043e\u0434\u043f\u0438\u0441\u0447\u0438\u043a\u0438 - \u041b\u044e\u0431\u0430\u044f \u0422\u0435\u043c\u0430\u0442\u0438\u043a\u0430\ud83d\udd1e',
+    name: 'Telegram Подписчики - Любая Тематика🔞',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/8o1c4y81od4fwslb.png',
@@ -255,7 +272,7 @@ const categories = [
   },
   {
     id: 218,
-    name: 'Telegram \u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u044b \u0438 \u041a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0438',
+    name: 'Telegram Просмотры и Комментарии',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/nk5zswqhq3w97m1k.png',
@@ -264,7 +281,7 @@ const categories = [
   },
   {
     id: 2607,
-    name: 'Telegram \u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u044b \u0416\u0438\u0432\u044b\u0435 \u0441\u043e \u0421\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043a\u043e\u0439 \u0422\u0430\u0440\u0433\u0435\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0435',
+    name: 'Telegram Просмотры Живые со Статистикой Таргетированные',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/nk5zswqhq3w97m1k.png',
@@ -273,7 +290,7 @@ const categories = [
   },
   {
     id: 219,
-    name: 'Telegram \u0420\u0435\u0430\u043a\u0446\u0438\u0438',
+    name: 'Telegram Реакции',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/k8p6r1spsua75k20.png',
@@ -282,7 +299,7 @@ const categories = [
   },
   {
     id: 2535,
-    name: 'Telegram \u041f\u043e\u0434\u043f\u0438\u0441\u043a\u0430 \u043d\u0430 \u0440\u0435\u0430\u043a\u0446\u0438\u0438 (\u0410\u0432\u0442\u043e\u0440\u0435\u0430\u043a\u0446\u0438\u0438)',
+    name: 'Telegram Подписка на реакции (Автореакции)',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/ce5au6b86maar3ni.png',
@@ -291,7 +308,7 @@ const categories = [
   },
   {
     id: 3066,
-    name: 'Telegram \u0420\u0435\u043f\u043e\u0441\u0442\u044b \u0438 \u0410\u0432\u0442\u043e\u0440\u0435\u043f\u043e\u0441\u0442\u044b',
+    name: 'Telegram Репосты и Авторепосты',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/tpwkftjsd3ll4n68.png',
@@ -300,7 +317,7 @@ const categories = [
   },
   {
     id: 220,
-    name: 'Telegram \u0413\u043e\u043b\u043e\u0441\u043e\u0432\u0430\u043d\u0438\u0435 \u0432 \u043e\u043f\u0440\u043e\u0441\u0430\u0445',
+    name: 'Telegram Голосование в опросах',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/tpwkftjsd3ll4n68.png',
@@ -318,7 +335,7 @@ const categories = [
   },
   {
     id: 5916,
-    name: 'TikTok \u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u044b',
+    name: 'TikTok Просмотры',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/x4ih49t7x7qrr8ft.png',
@@ -327,7 +344,7 @@ const categories = [
   },
   {
     id: 1003,
-    name: 'TikTok \u041b\u0430\u0439\u043a\u0438',
+    name: 'TikTok Лайки',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/2f6di4nk1p037hg7.png',
@@ -336,7 +353,7 @@ const categories = [
   },
   {
     id: 1004,
-    name: 'TikTok \u041f\u043e\u0434\u043f\u0438\u0441\u0447\u0438\u043a\u0438',
+    name: 'TikTok Подписчики',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/uduinpb2jaqaa0ct.png',
@@ -345,7 +362,7 @@ const categories = [
   },
   {
     id: 1131,
-    name: 'TikTok \u0414\u0440\u0443\u0433\u0438\u0435 \u0443\u0441\u043b\u0443\u0433\u0438',
+    name: 'TikTok Другие услуги',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/un02c8q86co0b1yt.png',
@@ -363,7 +380,7 @@ const categories = [
   },
   {
     id: 50,
-    name: 'Instagram* \u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u044b Reels/IGTV/\u0412\u0438\u0434\u0435\u043e',
+    name: 'Instagram* Просмотры Reels/IGTV/Видео',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/3fi6h3rp9qeikqjx.png',
@@ -381,7 +398,7 @@ const categories = [
   },
   {
     id: 37,
-    name: 'Instagram* \u041f\u043e\u0434\u043f\u0438\u0441\u043a\u0430 \u043d\u0430 \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u044b (\u0410\u0432\u0442\u043e\u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u044b)',
+    name: 'Instagram* Подписка на просмотры (Автопросмотры)',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/45ywkp44al9fpogh.png',
@@ -390,7 +407,7 @@ const categories = [
   },
   {
     id: 6,
-    name: 'Instagram* \u0423\u0432\u0435\u043b\u0438\u0447\u0435\u043d\u0438\u0435 \u041e\u0445\u0432\u0430\u0442\u0430/\u0421\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043a\u0438/\u0421\u043e\u0445\u0440\u0430\u043d\u0435\u043d\u0438\u0439/\u0420\u0435\u043f\u043e\u0441\u0442\u043e\u0432',
+    name: 'Instagram* Увеличение Охвата/Статистики/Сохранений/Репостов',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/kjf33os3qj922buu.png',
@@ -399,7 +416,7 @@ const categories = [
   },
   {
     id: 40,
-    name: 'Instagram* \u041f\u043e\u0434\u043f\u0438\u0441\u043a\u0430 \u043d\u0430 \u041e\u0445\u0432\u0430\u0442\u044b/\u0421\u043e\u0445\u0440\u0430\u043d\u0435\u043d\u0438\u044f (\u0410\u0432\u0442\u043e\u0441\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043a\u0430)',
+    name: 'Instagram* Подписка на Охваты/Сохранения (Автостатистика)',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/qn50j9fad8lql7h2.png',
@@ -408,7 +425,7 @@ const categories = [
   },
   {
     id: 7,
-    name: 'Instagram* \u041a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0438',
+    name: 'Instagram* Комментарии',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/wb6a1ys3n0be3w3x.png',
@@ -417,7 +434,7 @@ const categories = [
   },
   {
     id: 52,
-    name: 'Instagram* \u041f\u043e\u0434\u043f\u0438\u0441\u043a\u0430 \u043d\u0430 \u0423\u043c\u043d\u044b\u0435 \u041a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0438 (\u0410\u0432\u0442\u043e\u043a\u043e\u043c\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0438)',
+    name: 'Instagram* Подписка на Умные Комментарии (Автокомментарии)',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/n1jqmqt8icl7ye3r.png',
@@ -426,7 +443,7 @@ const categories = [
   },
   {
     id: 5462,
-    name: 'Instagram* \u041b\u0430\u0439\u043a\u0438',
+    name: 'Instagram* Лайки',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/9mzo7r6s7jq4zyhb.png',
@@ -435,7 +452,7 @@ const categories = [
   },
   {
     id: 35,
-    name: 'Instagram* \u041f\u043e\u0434\u043f\u0438\u0441\u043a\u0430 \u043d\u0430 \u041b\u0430\u0439\u043a\u0438 (\u0410\u0432\u0442\u043e\u043b\u0430\u0439\u043a\u0438)',
+    name: 'Instagram* Подписка на Лайки (Автолайки)',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/rzasm6dmn773ylur.png',
@@ -444,7 +461,7 @@ const categories = [
   },
   {
     id: 16,
-    name: 'Instagram* \u041f\u043e\u0434\u043f\u0438\u0441\u0447\u0438\u043a\u0438 \u0441 \u0412\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435\u043c',
+    name: 'Instagram* Подписчики с Восстановлением',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/bea9w9jiofplnwga.png',
@@ -453,7 +470,7 @@ const categories = [
   },
   {
     id: 14,
-    name: 'Instagram* \u041f\u0440\u044f\u043c\u043e\u0439 \u044d\u0444\u0438\u0440',
+    name: 'Instagram* Прямой эфир',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/3fi6h3rp9qeikqjx.png',
@@ -489,7 +506,7 @@ const categories = [
   },
   {
     id: 22,
-    name: '\u0422\u0440\u0430\u0444\u0438\u043a \u043d\u0430 \u0421\u0430\u0439\u0442',
+    name: 'Трафик на Сайт',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/pdsu1uqxo0kxfigi.png',
@@ -498,7 +515,7 @@ const categories = [
   },
   {
     id: 53,
-    name: '\u041e\u0434\u043d\u043e\u043a\u043b\u0430\u0441\u0441\u043d\u0438\u043a\u0438',
+    name: 'Одноклассники',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/prtrs6l482n07hzz.png',
@@ -507,7 +524,7 @@ const categories = [
   },
   {
     id: 45,
-    name: '\u0420\u0443\u0442\u0443\u0431',
+    name: 'Рутуб',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/k2lm0y8tz1j0fhm5.png',
@@ -516,7 +533,7 @@ const categories = [
   },
   {
     id: 3304,
-    name: '\u042f\u043d\u0434\u0435\u043a\u0441. \u0414\u0437\u0435\u043d',
+    name: 'Дзен',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/90rw72tu8xsk15lg.jpg',
@@ -525,7 +542,7 @@ const categories = [
   },
   {
     id: 8847,
-    name: '\u0422\u0435\u043b\u0435\u0433\u0440\u0430\u043c \u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u044b - \u0420\u0415\u0417\u0415\u0420\u0412',
+    name: 'Телеграм Просмотры - РЕЗЕРВ',
     icon: {
       icon_type: 'image',
       url: 'https://storage2.perfectcdn.com/6b0a4d/kjkgwzegidfa0m6n.png',
@@ -535,14 +552,24 @@ const categories = [
   {
     id: 8957,
     name: 'Kick',
-    icon: { icon_type: 'icon', icon: 'fab fa-kickstarter-k' },
+    icon: {
+      icon_type: 'icon',
+      icon: 'fab fa-kickstarter-k',
+    },
   },
   {
     id: 11079,
     name: 'MAX',
-    icon: { icon_type: 'icon', icon: 'far fa-comment' },
+    icon: {
+      icon_type: 'icon',
+      icon: 'far fa-comment',
+    },
   },
-  { id: 0, name: '\u0414\u0440\u0443\u0433\u043e\u0435', icon: null },
+  {
+    id: 0,
+    name: 'Другое',
+    icon: null,
+  },
 ];
 
 const btns = document.querySelector('.platform-btn-container');
