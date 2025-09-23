@@ -5,36 +5,23 @@ export default class FilterCategories {
     this._categories = categories;
     this._options = options;
 
-    this._asd = this._btns.querySelectorAll('[data-social-main]');
-    this._mainCategories = Array.from(this._asd)
+    this._mainBtns = this._btns.querySelectorAll('[data-social-main]');
+
+    this._mainCategories = Array.from(this._mainBtns)
       .map(btn => btn.dataset.social)
       .join('|');
-
-    // this._mainCategories = [
-    //   'telegram',
-    //   'instagram',
-    //   'вконтакте',
-    //   'tiktok',
-    //   'youtube',
-    //   'twitch',
-    //   'twitter',
-    //   'facebook',
-    //   'рутуб',
-    //   'max',
-    // ];
   }
 
   _createCategoryImage = category => {
-    if (category.icon?.icon_type === 'icon') {
-      return `<span class="${category.icon.icon}"></span>`;
-    }
-
-    if (category.icon?.icon_type === 'emoji') {
-      return `<span>${category.icon.icon}</span>`;
-    }
-
-    if (category.icon?.icon_type === 'image') {
-      return `<img src="${category.icon.url}" alt="${category.name}" class="img-responsive btn-group-vertical">`;
+    switch (true) {
+      case category.icon?.icon_type === 'icon':
+        return `<span class="${category.icon.icon}"></span>`;
+      case category.icon?.icon_type === 'emoji':
+        return `<span>${category.icon.icon}</span>`;
+      case category.icon?.icon_type === 'image':
+        return `<img src="${category.icon.url}" alt="${category.name}" class="img-responsive btn-group-vertical">`;
+      default:
+        return '';
     }
   };
 
