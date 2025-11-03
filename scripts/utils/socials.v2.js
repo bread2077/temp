@@ -888,4 +888,27 @@ export const socials = {
       ],
     },
   },
+  max: {
+    name: 'Max (Макс)',
+    type: 'max',
+    img: `${SOCIAL_IMAGES_URL}/max-icon.png`,
+    services: {
+      followers: [
+        {
+          name: 'Живые',
+          cost: '20 ₽',
+        },
+        {
+          name: 'Офферные',
+          cost: '12 ₽',
+        },
+      ],
+      reactions: [
+        {
+          name: 'Стандартные',
+          cost: '2.82 ₽',
+        },
+      ],
+    },
+  },
 };
