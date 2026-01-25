@@ -55,8 +55,14 @@
 .header__nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-grow: 1;
   margin-left: 20px;
+}
+.header__mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .header__links-list {
   padding: 0;
@@ -184,7 +190,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 100;
     justify-content: space-between;
     width: 100%;
     padding: 20px 30px;

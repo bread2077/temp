@@ -14,18 +14,13 @@
   width: 100%;
   position: absolute;
   background-color: var(--color-primary);
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .menu-burger__item:nth-child(1)::before {
-  top: -8px;
+  transform: translateY(-4px);
 }
 
-.menu-burger__item:nth-child(2)::before,
-.menu-burger__item:nth-child(3)::before {
-  top: 0px;
-}
-
-.menu-burger__item:nth-child(4)::before {
-  top: 8px;
+.menu-burger__item:nth-child(2)::before {
+  transform: translateY(4px);
 }

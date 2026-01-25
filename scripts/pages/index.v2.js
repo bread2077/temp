@@ -4,7 +4,6 @@ import Faq from '../components/Faq.js';
 import HorizontalSwiper from '../components/HorizontalSwiper.js';
 import { cyrcle, faqList } from '../utils/constants.v5.js';
 
-
 faqList.forEach(faq => {
   const faqItem = new Faq(faq);
   faqItem.setEventListeners();

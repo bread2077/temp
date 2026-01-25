@@ -2,26 +2,39 @@ import '../styles/global.v17.css';
 
 import ListOpener from './components/ListOpener.js';
 import {
-  menuBurger,
+  menuBurgers,
   root,
   upperFooterLinks,
   dateElement,
   header,
-  signInButtons,
+  burgerMenu,
 } from './utils/constants.v5.js';
 
-if (menuBurger) {
-  const menuBurgerSpans = menuBurger.querySelectorAll('.menu-burger__item');
+if (menuBurgers?.length) {
+  menuBurgers.forEach(burger => {
+    burger.addEventListener('click', toggleHeaderMenu);
+  });
+
   const headerMenu = header.querySelector('.header__nav');
   const signinButton = header.querySelector('.header__button_role_signin');
 
-  function toggleHeaderMenu() {
-    root.classList.toggle('root_hidden');
-    header.classList.toggle('header__mobile_opened');
-    headerMenu.classList.toggle('header__nav_opened');
-    menuBurgerSpans.forEach(item => {
-      item.classList.toggle('menu-burger__item_active');
+  function toggleHeaderMenu(e) {
+    const burger = e?.currentTarget.closest('.menu-burger');
+
+    if (!burger) return;
+
+    const isOpen = burgerMenu.classList.contains('_is-opened');
+
+    menuBurgers.forEach(burger => {
+      const menuBurgerSpans = burger.querySelectorAll('.menu-burger__item');
+      burger.classList[isOpen ? 'remove' : 'add']('_active');
+      menuBurgerSpans.forEach(item => {
+        item.classList[isOpen ? 'remove' : 'add']('menu-burger__item_active');
+      });
     });
+
+    root.classList[isOpen ? 'remove' : 'add']('root_hidden');
+    burgerMenu.classList[isOpen ? 'remove' : 'add']('_is-opened');
   }
 
   const isToday = date => {
@@ -45,7 +58,6 @@ if (menuBurger) {
     });
   }
 
-  menuBurger.addEventListener('click', toggleHeaderMenu);
   signinButton.addEventListener('click', closeHeaderMenu);
 
   if (document.documentElement.clientWidth < 980) {
