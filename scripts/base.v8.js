@@ -44,7 +44,7 @@ if (menuBurgers?.length) {
       });
     });
     root.classList.remove('root_hidden');
-    burgerMenu.remove('_is-opened');
+    burgerMenu.classList.remove('_is-opened');
   }
 
   Array.from(signinButtons).forEach(btn =>
