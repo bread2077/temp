@@ -14,14 +14,12 @@ if (menuBurgers?.length) {
   menuBurgers.forEach(burger => {
     burger.addEventListener('click', toggleHeaderMenu);
   });
-
-  const headerMenu = header.querySelector('.header__nav');
-  const signinButton = header.querySelector('.header__button_role_signin');
+  const signinButtons = header.querySelectorAll('.header__button_role_signin');
 
   function toggleHeaderMenu(e) {
-    const burger = e?.currentTarget.closest('.menu-burger');
+    const burgerEl = e?.currentTarget.closest('.menu-burger');
 
-    if (!burger) return;
+    if (!burgerEl) return;
 
     const isOpen = burgerMenu.classList.contains('_is-opened');
 
@@ -37,28 +35,21 @@ if (menuBurgers?.length) {
     burgerMenu.classList[isOpen ? 'remove' : 'add']('_is-opened');
   }
 
-  const isToday = date => {
-    const today = new Date();
-
-    const getCustomCurrentDate = dateObj => {
-      return `${dateObj.getDate()}/${
-        dateObj.getMonth() + 1
-      }/${dateObj.getFullYear()}`;
-    };
-
-    return getCustomCurrentDate(today) === getCustomCurrentDate(date);
-  };
-
   function closeHeaderMenu() {
-    root.classList.remove('root_hidden');
-    header.classList.remove('header__mobile_opened');
-    headerMenu.classList.remove('header__nav_opened');
-    menuBurgerSpans.forEach(item => {
-      item.classList.remove('menu-burger__item_active');
+    menuBurgers.forEach(burger => {
+      const menuBurgerSpans = burger.querySelectorAll('.menu-burger__item');
+      burger.classList.remove('_active');
+      menuBurgerSpans.forEach(item => {
+        item.classList.remove('menu-burger__item_active');
+      });
     });
+    root.classList.remove('root_hidden');
+    burgerMenu.remove('_is-opened');
   }
 
-  signinButton.addEventListener('click', closeHeaderMenu);
+  Array.from(signinButtons).forEach(btn =>
+    btn.addEventListener('click', closeHeaderMenu)
+  );
 
   if (document.documentElement.clientWidth < 980) {
     const mainMenu = new ListOpener(
