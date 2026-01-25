@@ -147,7 +147,9 @@ body:has(.burger-menu._is-opened) {
 }
 
 .burger-menu__title-icon {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
   overflow: hidden;
