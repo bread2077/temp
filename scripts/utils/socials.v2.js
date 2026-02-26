@@ -718,25 +718,6 @@ export const socials = {
       ],
     },
   },
-  threads: {
-    name: 'Threads',
-    type: 'threads',
-    img: `https://cdn.mypanel.link/6b0a4d/atynk3esl4hctwol.png`,
-    services: {
-      followers: [
-        {
-          name: 'С Гарантией',
-          cost: '0.55 ₽',
-        },
-      ],
-      likes: [
-        {
-          name: 'С Гарантией',
-          cost: 'от 1.1 ₽',
-        },
-      ],
-    },
-  },
   facebook: {
     name: 'Facebook',
     type: 'facebook',
