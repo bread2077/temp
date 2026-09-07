@@ -6,30 +6,6 @@ export const socials = {
     type: 'telegram',
     img: `${SOCIAL_IMAGES_URL}/telegram-icon.svg`,
     services: {
-      stars: [
-        {
-          name: 'Звезды',
-          cost: '1.5 ₽',
-        },
-      ],
-      pixelTapBot: [
-        {
-          name: 'Рефералы',
-          cost: '70 ₽',
-        },
-      ],
-      tapSwapBot: [
-        {
-          name: 'Рефералы',
-          cost: '45 ₽',
-        },
-      ],
-      blumBot: [
-        {
-          name: 'Рефералы',
-          cost: '45 ₽',
-        },
-      ],
       followers: [
         {
           name: 'Стандартные',
