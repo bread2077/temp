@@ -1,0 +1,47 @@
+name: Sync calculator from Google Sheets
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+    inputs:
+      allow_large_changes:
+        description: 'Разрешить намеренное удаление разделов или более 20% строк'
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: calculator-release-main
+  cancel-in-progress: false
+jobs:
+  sync:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Install reader
+        run: python -m pip install openpyxl==3.1.5
+      - name: Build and validate catalog
+        env:
+          ALLOW_LARGE_CHANGES: ${{ inputs.allow_large_changes || false }}
+        run: python scripts/sync_calculator.py
+      - name: Publish only calculator changes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add -- calculator/manifest.json calculator/releases/
+          if git diff --cached --quiet; then
+            echo 'No changes.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Update calculator catalog from Google Sheets'
+          git push origin HEAD:main
+          echo 'Calculator release published.' >> "$GITHUB_STEP_SUMMARY"
