@@ -1,0 +1,44 @@
+[
+  {
+    "name": "app-mobile-332.webp",
+    "width": 332,
+    "height": 277,
+    "bytes": 11622,
+    "source_bytes": 35968
+  },
+  {
+    "name": "app-mobile-592.webp",
+    "width": 592,
+    "height": 494,
+    "bytes": 27074,
+    "source_bytes": 35968
+  },
+  {
+    "name": "app-desktop-508.webp",
+    "width": 508,
+    "height": 455,
+    "bytes": 26750,
+    "source_bytes": 100320
+  },
+  {
+    "name": "app-desktop-996.webp",
+    "width": 996,
+    "height": 892,
+    "bytes": 76182,
+    "source_bytes": 100320
+  },
+  {
+    "name": "solovov-100.webp",
+    "width": 100,
+    "height": 99,
+    "bytes": 4864,
+    "source_bytes": 7268
+  },
+  {
+    "name": "eto-razvod-100.webp",
+    "width": 100,
+    "height": 21,
+    "bytes": 1430,
+    "source_bytes": 4662
+  }
+]

@@ -1,0 +1,1302 @@
+<style id="sp-image-intrinsic-sizing">
+.intro__image_type_primary[width][height] { aspect-ratio: 1200 / 910; box-sizing: content-box; }
+.intro__image_type_secondary[width][height] { aspect-ratio: 960 / 729; box-sizing: content-box; }
+
+/* Preserve responsive height when HTML dimensions reserve the image ratio. */
+.intro__image[width][height], .long-read__image[width][height],
+.recommend__image[width][height], .advantages__phone-image[width][height] { height: auto; }
+
+.culcwithadv.sp-home-section{display:flex;flex-direction:column;align-items:stretch;gap:20px}
+.sp-home-section .sp-benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;width:100%;padding:22px 8px;background:#f7f9fe;border:1px solid #e8edf7;border-radius:18px;box-sizing:border-box}
+.sp-home-section .sp-benefit{display:flex;align-items:flex-start;gap:12px;min-width:0;padding:0 20px;box-sizing:border-box}
+.sp-home-section .sp-benefit+.sp-benefit{border-left:1px solid #e0e7f3}
+.sp-home-section .sp-benefit-icon{display:grid;place-items:center;width:38px;height:38px;flex:0 0 38px;border-radius:12px;background:#eaf0ff;color:#4c7cf3}
+.sp-home-section .sp-benefit-icon svg{width:23px;height:23px}
+.sp-home-section .sp-benefit h3{margin:1px 0 6px;font-family:inherit;font-size:14px;font-weight:600;line-height:1.4;color:#28395f}
+.sp-home-section .sp-benefit p{margin:0;font-family:inherit;font-size:12px;line-height:1.65;color:#727b90}
+.sp-home-section .sp-benefit a{display:inline-block;margin-top:8px;color:#3868dd;font-size:12px;font-weight:600;text-decoration:none}
+.sp-home-section .sp-benefit a:hover{text-decoration:underline}
+#sp-home-calculator .side .btn{width:100%;height:auto;min-height:48px;padding:12px 16px;white-space:normal;line-height:1.4;border-radius:24px;background:#ff7467;color:#fff;font-size:14px}
+@media(max-width:700px){
+ .sp-home-section .sp-benefits{grid-template-columns:minmax(0,1fr);padding:4px 18px}
+ .sp-home-section .sp-benefit{padding:16px 0}
+ .sp-home-section .sp-benefit+.sp-benefit{border-left:0;border-top:1px solid #e0e7f3}
+}
+</style>
+<section class="intro intro_bg_gradient">
+        <div class="intro__container">
+          <div class="intro__section intro__section_type_primary">
+            <p class="intro__uppertitle">Имитируй органический рост в соцсетях</p>
+            <h1 class="section-title intro__title">
+              SMM накрутка подписчиков и лайков в&nbsp;социальных сетях
+            </h1>
+            <p class="text intro__text">
+              Вывод каналов и ботов ТГ в ТОП, просмотры и реакции, улучшение статистики, умная комплексная нейросетевая накрутка*, которую <br>не отличить от органики
+            </p>
+            <p class="intro__text-accent">*в услугах она отмечена значком 🌱</p>
+            <a class="btn btn_size_large btn_color_orange intro__button" href="#signIn"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Заказать Накрутку&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
+            >
+          </div>
+          <div class="intro__section intro__section_type_secondary">
+            <div class="intro__image-container">
+              <p class="intro__cost">от 1₽ за 1000 результатов</p>
+              <img width="1200" height="910" decoding="async" loading="eager"
+                fetchpriority="high"
+                class="intro__image intro__image_type_primary"
+                srcset="https://cdn.jsdelivr.net/gh/bread2077/temp@main/assets/smmprime-speed-v5/intro-main-mobile.webp 660w, https://cdn.jsdelivr.net/gh/bread2077/temp@main/assets/smmprime-speed-v5/intro-main.webp 1200w" sizes="(max-width: 600px) 80vw, (max-width: 980px) 60vw, 575px" src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/assets/smmprime-speed-v5/intro-main.webp"
+                alt="Наша накрутка"
+              />
+              <img width="960" height="729" decoding="async" loading="eager"
+                fetchpriority="auto"
+                class="intro__image intro__image_type_secondary"
+                srcset="https://cdn.jsdelivr.net/gh/bread2077/temp@main/assets/smmprime-speed-v5/intro-secondary-mobile.webp 520w, https://cdn.jsdelivr.net/gh/bread2077/temp@main/assets/smmprime-speed-v5/intro-secondary.webp 960w" sizes="(max-width: 600px) 62vw, (max-width: 980px) 48vw, 450px" src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/assets/smmprime-speed-v5/intro-secondary.webp"
+                alt="Сторонняя накрутка"
+              />
+            </div>
+            <p class="intro__transp-text">
+              Лайки, подписчики, просмотры и живые комментарии в Телеграм, ВК,
+              Инстаграм*, ТикТок и Ютуб.
+            </p>
+          </div>
+        </div>
+      </section>
+<section class="rating rating_pos_top">
+  <h2 class="visually-hidden">Рейтинг Smmprime</h2>
+  <ul class="rating__list">
+    {%
+    set ratingList = [
+    {
+    scale: '4,9',
+    value: '221',
+    description: '+ отзывов',
+    src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/grades/in-scale-logo.webp',
+    alt: 'In-scale'
+    },
+    {
+    scale: '4,6',
+    value: '142',
+    description: '+ отзывов',
+    src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/assets/smmprime-speed-v12/solovov-100.webp',
+    alt: 'Соловов'
+    },
+    {
+    scale: '4,8',
+    value: '175',
+    description: '+ отзывов',
+    src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/grades/otzyv-marketing-logo.png',
+    alt: 'Отзыв-маркетинг'
+    },
+    {
+    scale: '4,7',
+    value: '155',
+    description: '+ отзывов',
+    src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/assets/smmprime-speed-v12/eto-razvod-100.webp',
+    alt: 'Это развод?'
+    }
+    ]
+    %}
+    {% for rating in ratingList %}
+    <li class="rating__item">
+      <div class="rating__logo-container">
+        <div class="visually-hidden">
+          <span >SMMPRIME</span>
+        </div>
+        <img decoding="async" loading="lazy"
+             class="rating__logo"
+             src="{{ rating.src }}"
+             alt="{{ rating.alt }}"
+             />
+      </div>
+      <h3 class="rating__grade">{{ rating.scale }}</h3>
+      <p class="rating__count"><span>{{ rating.value }}</span>+ отзывов</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+<section class="culcwithadv sp-home-section">
+<style>#sp-home-calculator{--bg:#f5f6fa;--surface:#fff;--text:#252b42;--text2:#5e667c;--muted:#9aa2b4;--line:#e6eaf2;--blue:#4c7cf3;--blue2:#3868dd;--blue-soft:#f1f5ff;--coral:#ff7467;--shadow:0 15px 40px rgba(38,53,92,.08)}#sp-home-calculator *{box-sizing:border-box}#sp-home-calculator{scroll-behavior:smooth}#sp-home-calculator{margin:0;background:var(--bg);color:var(--text);font-family:Montserrat,Arial,sans-serif;-webkit-font-smoothing:antialiased}#sp-home-calculator button,#sp-home-calculator input{font:inherit}#sp-home-calculator button{cursor:pointer}#sp-home-calculator a{text-decoration:none}#sp-home-calculator .container{width:min(1160px,calc(100% - 40px));margin:auto}#sp-home-calculator .header{background:#fff;border-bottom:1px solid #f0f1f5}#sp-home-calculator .nav{height:72px;display:flex;align-items:center;gap:26px}#sp-home-calculator .logo{display:flex;align-items:center;gap:8px}#sp-home-calculator .logo-mark{font-size:35px;font-weight:700;color:var(--blue)}#sp-home-calculator .logo-name{font-weight:700;color:#22283a;font-size:21px;letter-spacing:-.7px}#sp-home-calculator .logo-name b{color:var(--blue)}#sp-home-calculator .logo-note{font-size:10px;color:#9ba1ae;line-height:1.15}#sp-home-calculator .nav-links{margin-left:auto;display:flex;gap:24px}#sp-home-calculator .nav-links a{font-size:13px;color:#747b8d}#sp-home-calculator .auth{display:flex;gap:8px}#sp-home-calculator .btn{min-height:42px;padding:0 20px;border-radius:999px;border:0;font-weight:600;display:inline-flex;align-items:center;justify-content:center}#sp-home-calculator .btn-outline{border:1px solid var(--blue);color:var(--blue);background:#fff}#sp-home-calculator .btn-primary{background:var(--coral);color:#fff;box-shadow:0 8px 18px rgba(255,116,103,.2)}#sp-home-calculator .btn.disabled{opacity:.48;pointer-events:none;box-shadow:none}#sp-home-calculator .hero{padding:40px 0 20px}#sp-home-calculator .hero h1{margin:0;font-size:48px;line-height:1.05;letter-spacing:-1.7px}#sp-home-calculator .hero p{max-width:720px;margin:12px 0 0;color:#7f8798;font-size:15px;line-height:1.55}#sp-home-calculator .calc-wrap{padding:8px 0 70px}#sp-home-calculator .calc-heading{margin:0 0 15px;font-size:25px;color:#28395f}#sp-home-calculator .calculator{background:#fff;border-radius:22px;box-shadow:var(--shadow);padding:28px;display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:28px}#sp-home-calculator .main{min-width:0}#sp-home-calculator .side{border-left:1px solid var(--line);padding-left:28px;align-self:start;position:sticky;top:20px}#sp-home-calculator .section{margin-bottom:26px}#sp-home-calculator .head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:11px}#sp-home-calculator .label{font-size:14px;font-weight:600;color:#313b57}#sp-home-calculator .step{font-size:11px;color:#a2a8b6}#sp-home-calculator .platform-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}#sp-home-calculator .platform{position:relative;min-height:72px;background:#fff;border:1px solid #dfe4ee;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;color:#606a80;font-size:11px;font-weight:600;padding:8px}#sp-home-calculator .platform.active,#sp-home-calculator .type-card.active,#sp-home-calculator .choice-card.active{border-color:var(--blue);background:var(--blue-soft);color:#2f63d3}#sp-home-calculator .platform.active:after,#sp-home-calculator .type-card.active:after,#sp-home-calculator .choice-card.active:after{content:'✓';position:absolute;right:7px;top:7px;width:16px;height:16px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-size:9px}#sp-home-calculator .picon,#sp-home-calculator .select-icon,#sp-home-calculator .type-icon{display:grid;place-items:center;flex:0 0 auto}#sp-home-calculator .picon{width:30px;height:30px;border-radius:10px;color:#fff}#sp-home-calculator .summary-card .picon{width:38px;height:38px;border-radius:12px}#sp-home-calculator .select-icon{width:36px;height:36px;border-radius:12px;color:#fff}#sp-home-calculator .type-icon{width:32px;height:32px;border-radius:9px;background:#f2f5fb;color:#5570c8}#sp-home-calculator .type-icon svg,#sp-home-calculator .picon svg,#sp-home-calculator .select-icon svg{width:18px;height:18px;display:block}#sp-home-calculator .picon svg,#sp-home-calculator .select-icon svg{fill:currentColor}#sp-home-calculator .type-icon svg{stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}#sp-home-calculator .type-card.active .type-icon{background:#fff;color:#3f68dd}#sp-home-calculator .platform.telegram .picon,#sp-home-calculator .select-icon.telegram,#sp-home-calculator .picon.telegram{background:#2ca5e0}#sp-home-calculator .platform.vk .picon,#sp-home-calculator .select-icon.vk,#sp-home-calculator .picon.vk{background:#2787f5}#sp-home-calculator .platform.instagram .picon,#sp-home-calculator .select-icon.instagram,#sp-home-calculator .picon.instagram{background:linear-gradient(135deg,#7043db,#ed4f91,#f4a23b)}#sp-home-calculator .platform.tiktok .picon,#sp-home-calculator .select-icon.tiktok,#sp-home-calculator .picon.tiktok{background:#171717}#sp-home-calculator .platform.youtube .picon,#sp-home-calculator .select-icon.youtube,#sp-home-calculator .picon.youtube{background:#f32c3d}#sp-home-calculator .platform.twitch .picon,#sp-home-calculator .select-icon.twitch,#sp-home-calculator .picon.twitch{background:#8754dc}#sp-home-calculator .platform.max .picon,#sp-home-calculator .select-icon.max,#sp-home-calculator .picon.max{background:#426af4}#sp-home-calculator .platform.wibes .picon,#sp-home-calculator .select-icon.wibes,#sp-home-calculator .picon.wibes{background:#fd6c79}#sp-home-calculator .platform.rutube .picon,#sp-home-calculator .select-icon.rutube,#sp-home-calculator .picon.rutube{background:#252b42}#sp-home-calculator .platform.ok .picon,#sp-home-calculator .select-icon.ok,#sp-home-calculator .picon.ok{background:#ef932e}#sp-home-calculator .type-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}#sp-home-calculator .type-card{position:relative;min-height:58px;border:1px solid #dfe4ee;border-radius:11px;background:#fff;display:flex;align-items:center;gap:9px;padding:9px 11px;text-align:left;color:#46506a;font-size:12px;font-weight:600}#sp-home-calculator .choice-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:8px}#sp-home-calculator .choice-card{position:relative;min-height:58px;border:1px solid #dfe4ee;border-radius:11px;background:#fff;display:flex;align-items:center;justify-content:center;gap:8px;padding:10px 25px 10px 12px;color:#46506a;font-size:12px;font-weight:600;text-align:center}#sp-home-calculator .choice-card .emoji{font-size:18px}#sp-home-calculator .empty-state,#sp-home-calculator .warning-state{border:1px dashed #d9dfeb;border-radius:11px;background:#fafbfe;padding:16px;color:#8a92a5;font-size:12px;line-height:1.5}#sp-home-calculator .warning-state{border-style:solid;background:#fffaf0;color:#8b7041}#sp-home-calculator .amount{border:1px solid #e0e5ee;border-radius:11px;padding:13px}#sp-home-calculator .amount-control{width:280px;max-width:100%;height:44px;border:1px solid #bfd0ff;border-radius:9px;overflow:hidden;display:flex}#sp-home-calculator .amount-control button{width:44px;border:0;background:#fff;color:var(--blue);font-size:20px}#sp-home-calculator .amount-control input{flex:1;min-width:0;border:0;outline:0;text-align:center;color:#34405d;font-size:14px;font-weight:700}#sp-home-calculator .amount input[type=range]{width:100%;margin-top:13px;accent-color:var(--blue)}#sp-home-calculator .range-labels{display:flex;justify-content:space-between;font-size:10px;color:#a4aab7}#sp-home-calculator .side h3{font-size:20px;margin:0 0 15px;color:#26365b}#sp-home-calculator .summary-card{border:1px solid var(--line);border-radius:11px;padding:13px;display:flex;gap:10px;align-items:center}#sp-home-calculator .summary-card strong{font-size:12px;display:block;color:#303a56}#sp-home-calculator .summary-card span{font-size:10px;color:#9298a8;display:block;margin-top:4px;line-height:1.45}#sp-home-calculator .summary-lines{margin:10px 0 14px}#sp-home-calculator .summary-line{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #edf0f5;font-size:11px}#sp-home-calculator .summary-line span{color:#9198a8}#sp-home-calculator .summary-line strong{color:#38425c;text-align:right}#sp-home-calculator .service-description{display:none;margin:-4px 0 12px;padding:11px 12px;border-radius:9px;background:#f7f8fc;border:1px solid #edf0f5}#sp-home-calculator .service-description.visible{display:block}#sp-home-calculator .service-description .description-label{display:block;font-size:10px;color:#9198a8;margin-bottom:4px}#sp-home-calculator .service-description .description-text{display:block;font-size:12px;line-height:1.45;color:#38425c;font-weight:700;white-space:pre-line}#sp-home-calculator .service-id{font-size:11px;color:#8f96a6;margin:10px 0}#sp-home-calculator .side .btn{width:100%;border-radius:9px;min-height:46px;font-size:12px}#sp-home-calculator .note{margin-top:14px;background:#f7f8fc;border-radius:9px;padding:11px;font-size:10px;line-height:1.45;color:#8f96a6}#sp-home-calculator .mobile-smart,#sp-home-calculator .mobile-summary{display:none}@media(max-width:720px){
+#sp-home-calculator{background:#f5f6f8}#sp-home-calculator .header{display:none}#sp-home-calculator .container{width:100%;padding:0 16px}#sp-home-calculator .hero{padding:22px 16px 10px}#sp-home-calculator .hero h1{font-size:28px;letter-spacing:-.8px}#sp-home-calculator .hero p{font-size:13px;line-height:1.45;margin-top:8px}#sp-home-calculator .calc-wrap{padding:6px 0 34px}#sp-home-calculator .calc-heading{font-size:20px;margin:0 0 10px;padding:0 16px}#sp-home-calculator .calculator{display:block;margin:0 12px;padding:0;border-radius:16px;box-shadow:0 8px 28px rgba(37,50,88,.07);overflow:visible}#sp-home-calculator .main{padding:16px}#sp-home-calculator .side{display:none}#sp-home-calculator .desktop-social,#sp-home-calculator .desktop-type{display:none}#sp-home-calculator .mobile-smart,#sp-home-calculator .mobile-summary{display:block}#sp-home-calculator .section{margin-bottom:18px}#sp-home-calculator .head{margin-bottom:8px}#sp-home-calculator .label{font-size:13px}#sp-home-calculator .step{display:none}#sp-home-calculator .mobile-field{margin-bottom:14px}#sp-home-calculator .mobile-field label{display:block;font-size:11px;font-weight:600;color:#9aa3b8;letter-spacing:.08em;text-transform:uppercase;margin:0 0 8px}#sp-home-calculator .select-wrap{position:relative}#sp-home-calculator .select-display{width:100%;height:58px;border:2px solid var(--blue);border-radius:16px;background:#fff;display:flex;align-items:center;gap:14px;padding:0 48px 0 14px;color:#101528;font-size:17px;font-weight:600;text-align:left;position:relative}#sp-home-calculator .select-display:after{content:'';position:absolute;right:18px;top:50%;width:9px;height:9px;border-right:2px solid var(--blue);border-bottom:2px solid var(--blue);transform:translateY(-65%) rotate(45deg)}#sp-home-calculator .select-text{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#sp-home-calculator .custom-menu{display:none;position:absolute;z-index:50;left:0;right:0;top:calc(100% + 7px);padding:7px;background:#fff;border:1px solid #dfe4ee;border-radius:16px;box-shadow:0 14px 35px rgba(30,42,78,.16);max-height:320px;overflow:auto}#sp-home-calculator .select-wrap.open .custom-menu{display:block}#sp-home-calculator .menu-option{width:100%;min-height:52px;border:0;background:#fff;border-radius:11px;display:flex;align-items:center;gap:12px;padding:8px 12px;color:#252b42;text-align:left;font-size:15px;font-weight:700;position:relative}#sp-home-calculator .menu-option.selected{background:var(--blue-soft);color:#2f63d3}#sp-home-calculator .menu-option.selected:after{content:'✓';margin-left:auto;color:var(--blue);font-weight:700}#sp-home-calculator .menu-option .type-icon{width:34px;height:34px}#sp-home-calculator .choice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#sp-home-calculator .choice-card{min-height:54px;font-size:13px}#sp-home-calculator .amount-control{width:100%;height:48px}#sp-home-calculator .mobile-summary{border-top:1px solid #edf0f5;background:#fff;padding:15px 16px 16px;border-radius:0 0 16px 16px}#sp-home-calculator .mobile-summary-top{display:flex;align-items:center;gap:10px;margin-bottom:12px}#sp-home-calculator .mobile-summary .picon{width:36px;height:36px}#sp-home-calculator .mobile-summary-text{min-width:0}#sp-home-calculator .mobile-summary-text strong{display:block;font-size:12px;color:#303a56}#sp-home-calculator .mobile-summary-text span{display:block;font-size:10px;color:#8c94a5;line-height:1.4;margin-top:3px}#sp-home-calculator .mobile-summary .btn{width:100%;min-height:48px;border-radius:10px;font-size:14px}#sp-home-calculator .mobile-note{margin-top:9px;font-size:10px;color:#8f96a6;text-align:center}}@media(max-width:1120px) and (min-width:721px){
+#sp-home-calculator .platform-grid{grid-template-columns:repeat(4,1fr)}#sp-home-calculator .type-grid{grid-template-columns:repeat(2,1fr)}#sp-home-calculator .calculator{grid-template-columns:minmax(0,1fr) 290px}}#sp-home-calculator .summary-price{align-items:center;margin-top:3px;padding:12px 0}#sp-home-calculator .summary-price span{color:#5e667c}#sp-home-calculator .summary-price strong{font-size:18px;color:var(--blue);white-space:nowrap}#sp-home-calculator .summary-line strong,#sp-home-calculator .choice-card,#sp-home-calculator .type-card{overflow-wrap:anywhere}#sp-home-calculator button:focus-visible,#sp-home-calculator a:focus-visible{outline:3px solid #4c7cf3;outline-offset:3px}#sp-home-calculator button,#sp-home-calculator input,#sp-home-calculator a{-webkit-tap-highlight-color:transparent}#sp-home-calculator .hero h1{font-weight:700;letter-spacing:-.04em;line-height:1.16}#sp-home-calculator .hero p{line-height:1.7}#sp-home-calculator .calc-heading{font-weight:700;letter-spacing:-.025em}#sp-home-calculator .calculator{line-height:1.5}#sp-home-calculator .label{font-weight:600;font-size:14px}#sp-home-calculator .side h3{font-weight:700;letter-spacing:-.02em}#sp-home-calculator .platform{min-height:86px;font-size:12px;font-weight:600;gap:9px;transition:border-color .18s,background .18s,box-shadow .18s}#sp-home-calculator .picon,#sp-home-calculator .select-icon{background:transparent!important;overflow:hidden;border-radius:10px;width:32px;height:32px}#sp-home-calculator .picon svg,#sp-home-calculator .select-icon svg,#sp-home-calculator .picon img,#sp-home-calculator .select-icon img{display:block;width:100%;height:100%;object-fit:contain;fill:none;margin:0;max-width:none}#sp-home-calculator .summary-card .picon{width:38px;height:38px}#sp-home-calculator .type-icon{width:36px;height:36px;border-radius:11px;background:#eff3ff;color:#4275f5}#sp-home-calculator .type-icon svg{width:22px;height:22px}#sp-home-calculator .type-card{font-size:12px;line-height:1.45;min-height:68px;padding:12px 24px 12px 12px;gap:10px;font-weight:600}#sp-home-calculator .type-card>span:last-child{min-width:0}#sp-home-calculator .choice-card{font-size:12px;line-height:1.5;font-weight:500;padding:12px 25px 12px 12px}#sp-home-calculator .param-icon{display:grid;place-items:center;flex:0 0 22px;width:22px;height:22px;color:#8596b7}#sp-home-calculator .param-icon svg{width:21px;height:21px;display:block}#sp-home-calculator .choice-card.active .param-icon{color:#4275f5}#sp-home-calculator .summary-card strong,#sp-home-calculator .mobile-summary-text strong{font-size:13px;line-height:1.5;font-weight:600}#sp-home-calculator .summary-card span,#sp-home-calculator .mobile-summary-text span{font-size:11px;line-height:1.6}#sp-home-calculator .summary-line{font-size:12px;line-height:1.6;align-items:baseline}#sp-home-calculator .summary-line strong{font-weight:600}#sp-home-calculator .summary-price strong{font-size:19px;font-weight:700;font-variant-numeric:tabular-nums}#sp-home-calculator .summary-price span{font-size:11px}#sp-home-calculator .btn{font-weight:600;letter-spacing:0}#sp-home-calculator .side .btn{font-size:13px}#sp-home-calculator .logo-mark{width:36px;height:36px}#sp-home-calculator .logo-mark svg{display:block;width:100%;height:100%}#sp-home-calculator .note,#sp-home-calculator .mobile-note,#sp-home-calculator .service-id{font-size:11px;line-height:1.65}#sp-home-calculator .platform.active:after,#sp-home-calculator .type-card.active:after,#sp-home-calculator .choice-card.active:after{content:'';width:15px;height:15px;background:var(--blue) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m4 8 2.5 2.5L12 5' fill='none' stroke='white' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/15px no-repeat}@media(hover:hover){
+#sp-home-calculator .platform:hover,#sp-home-calculator .type-card:hover,#sp-home-calculator .choice-card:hover{border-color:#80a2ff;box-shadow:0 3px 12px rgba(66,117,245,.08)}}@media(min-width:721px) and (max-width:1020px){
+#sp-home-calculator .calculator{grid-template-columns:minmax(0,1fr) 280px;gap:20px;padding:20px}#sp-home-calculator .side{padding-left:20px}#sp-home-calculator .type-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:720px){
+#sp-home-calculator .hero h1{font-size:27px;line-height:1.25}#sp-home-calculator .select-display{font-size:15px;font-weight:600;gap:12px}#sp-home-calculator .menu-option{font-size:14px;font-weight:500}#sp-home-calculator .choice-card{font-size:12px}#sp-home-calculator .mobile-field label{font-size:11px;letter-spacing:.035em;font-weight:600}#sp-home-calculator .mobile-summary .btn{font-weight:600}#sp-home-calculator .summary-line{font-size:12px}#sp-home-calculator .param-icon{flex-basis:20px}#sp-home-calculator .summary-price strong{font-size:19px}}@media(prefers-reduced-motion:reduce){
+#sp-home-calculator .platform,#sp-home-calculator .type-card,#sp-home-calculator .choice-card{transition:none}}
+
+#sp-home-calculator .country-flag{display:inline-flex;flex:none;width:27px;height:18px;border-radius:3px;overflow:hidden;box-shadow:0 0 0 1px rgba(20,40,70,.12);vertical-align:middle;background:#fff}
+#sp-home-calculator .country-flag svg{display:block;width:100%;height:100%}
+#sp-home-calculator .choice-card:has(.country-flag) .param-icon{width:27px;flex-basis:27px}
+#sp-home-calculator .summary-country{display:inline-flex;align-items:center;justify-content:flex-end;gap:8px}
+#sp-home-calculator .summary-country>svg{width:20px;height:20px}
+
+#sp-home-calculator .param-icon:has(.world-planet){width:27px;height:27px;flex-basis:27px}
+#sp-home-calculator .param-icon .world-planet,#sp-home-calculator .summary-country .world-planet{width:27px;height:27px;display:block;flex:none}
+
+#sp-home-calculator .price-status{font-size:11px;line-height:1.5;color:#8590a4;margin:0 0 12px}
+#sp-home-calculator .price-status:empty{display:none}
+
+#sp-home-calculator .calc-wrap{padding-top:0;display:flow-root}
+#sp-home-calculator .mode-switch{display:flex;gap:8px;width:100%;margin:24px 0 28px;padding:6px;background:#e9edf5;border:1px solid #e2e7f0;border-radius:16px;box-sizing:border-box}
+#sp-home-calculator .mode-switch__button{flex:1 1 50%;min-width:0;min-height:52px;padding:12px 10px;border:0;border-radius:12px;background:transparent;color:var(--text2);display:flex;align-items:center;justify-content:center;text-align:center;font:inherit;font-size:15px;font-weight:700;line-height:1.4;text-decoration:none;transition:background .18s ease,color .18s ease,box-shadow .18s ease}
+#sp-home-calculator a.mode-switch__button:hover{background:rgba(255,255,255,.6);color:var(--blue2);text-decoration:none}
+#sp-home-calculator .mode-switch__button.is-active{background:#fff;color:var(--blue2);box-shadow:0 4px 14px -4px rgba(20,34,66,.25);cursor:default}
+#sp-home-calculator .mode-switch__button:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+@media(max-width:680px){
+  #sp-home-calculator .calc-wrap{padding-top:0}
+  #sp-home-calculator .mode-switch{width:calc(100% - 32px);margin:16px 16px 18px;gap:4px;padding:5px}
+  #sp-home-calculator .mode-switch__button{min-height:48px;padding:10px 6px;font-size:13px}
+}
+
+
+#sp-home-calculator{width:100%;min-width:0;background:transparent;font-family:inherit}
+#sp-home-calculator .calc-wrap{padding:0}
+#sp-home-calculator .container{width:100%;max-width:none;margin:0;padding:0}
+#sp-home-calculator .home-calc-title{margin:0 0 22px;color:var(--text);font-family:inherit;font-weight:700;font-size:28px;line-height:1.25}
+#sp-home-calculator .side .btn,#sp-home-calculator .mobile-summary .btn{width:100%;height:auto;min-height:48px;padding:12px 16px;white-space:normal;line-height:1.4;background:#ff7467;color:#fff}
+@media(min-width:721px){
+ #sp-home-calculator .desktop-social,#sp-home-calculator .desktop-type{display:block}
+ #sp-home-calculator .mobile-smart,#sp-home-calculator .mobile-summary{display:none}
+}
+@media(max-width:720px){
+ #sp-home-calculator .home-calc-title{font-size:24px;margin-bottom:18px;text-align:center}
+ #sp-home-calculator .calculator{margin:0}
+}
+</style>
+<div id="sp-home-calculator">
+
+<section class="calc-wrap"><div class="container">
+
+<h3 class="home-calc-title">Калькулятор услуг</h3><div class="calculator">
+<div class="main">
+  <div class="section desktop-social"><div class="head"><div class="label">Социальная сеть</div></div><div class="platform-grid" id="platformGrid"></div></div>
+  <div class="section desktop-type"><div class="head"><div class="label">Тип услуги</div></div><div class="type-grid" id="typeGrid"></div></div>
+  <div class="mobile-smart section">
+    <div class="mobile-field"><label>Социальная сеть</label><div class="select-wrap" id="platformSelectWrap"><button class="select-display" id="platformDisplay" type="button" aria-haspopup="listbox" aria-expanded="false"><span class="select-icon telegram" id="platformDisplayIcon"></span><span class="select-text" id="platformDisplayText"></span></button><div class="custom-menu" id="platformMenu" role="listbox"></div></div></div>
+    <div class="mobile-field"><label>Тип услуги</label><div class="select-wrap" id="typeSelectWrap"><button class="select-display" id="typeDisplay" type="button" aria-haspopup="listbox" aria-expanded="false"><span class="type-icon" id="typeDisplayIcon"></span><span class="select-text" id="typeDisplayText"></span></button><div class="custom-menu" id="typeMenu" role="listbox"></div></div></div>
+  </div>
+  <div id="parameterSections"></div>
+  <div class="section" id="emptySection" hidden><div class="empty-state">Для этого типа услуги связки пока не добавлены. Тип услуги остаётся доступным в списке, но дополнительные параметры появятся только после добавления строк с Service ID в таблицу.</div></div>
+  <div class="section" id="serviceChoiceSection" hidden><div class="head"><div class="label">Тариф</div></div><div class="choice-grid" id="serviceChoices"></div></div>
+  <div class="section" id="warningSection" hidden><div class="warning-state" id="warningText"></div></div>
+  <div class="section" id="amountSection" hidden><div class="head"><div class="label">Количество</div></div><div class="amount"><div class="amount-control"><button id="minus" type="button">−</button><input id="qty" value="1" inputmode="numeric"><button id="plus" type="button">+</button></div><input id="range" type="range" value="1"><div class="range-labels"><span id="minLabel"></span><span id="maxLabel"></span></div></div></div>
+</div>
+<aside class="side"><h3>Ваш выбор</h3><div class="summary-card"><div class="picon telegram" id="summaryIcon"></div><div><strong id="summaryTitle"></strong><span id="summarySub"></span></div></div><div class="summary-lines" id="summaryLines" aria-live="polite"></div><div class="service-description" id="serviceDescription"><span class="description-label">Описание</span><span class="description-text" id="serviceDescriptionText"></span></div><div class="price-status" id="priceStatus" aria-live="polite"></div><div class="service-id" id="serviceIdText"></div><a class="btn btn-primary disabled" id="desktopCta" href="https://smmprime.com/signup" aria-disabled="true">Зарегистрироваться и оформить задачу</a><div class="note" id="summaryNote">Кнопка станет активной, когда выбранная комбинация однозначно соответствует одной услуге.</div></aside>
+<div class="mobile-summary"><div class="mobile-summary-top"><div class="picon telegram" id="mobileSummaryIcon"></div><div class="mobile-summary-text"><strong id="mobileSummaryTitle"></strong><span id="mobileSummarySub"></span></div></div><div class="summary-lines" id="mobileSummaryLines" aria-live="polite"></div><div class="service-description" id="mobileServiceDescription"><span class="description-label">Описание</span><span class="description-text" id="mobileServiceDescriptionText"></span></div><div class="price-status" id="mobilePriceStatus" aria-live="polite"></div><a class="btn btn-primary disabled" id="mobileCta" href="https://smmprime.com/signup" aria-disabled="true">Зарегистрироваться и оформить задачу</a><div class="mobile-note" id="mobileNote">Выберите параметры услуги</div></div>
+</div></div></section>
+
+</div>
+<script defer src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/assets/smmprime-speed-v5/home-calculator.cdn-v6.js"></script>
+<div class="sp-benefits" aria-label="Преимущества сервиса">
+  <div class="sp-benefit">
+    <span class="sp-benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6Z"/><path d="m8 12 3 3 5-6"/></svg></span>
+    <div><h3>Гарантия результата</h3><p>Бесплатно докрутим отписки в течение 30 дней.</p></div>
+  </div>
+  <div class="sp-benefit">
+    <span class="sp-benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h18v4H3zM5 12v9h14v-9M12 8v13"/><path d="M12 8H8a3 3 0 1 1 3-3Zm0 0h4a3 3 0 1 0-3-3Z"/></svg></span>
+    <div><h3>Попробуйте бесплатно</h3><p>10 лайков и 100 просмотров после регистрации.</p><a href="https://smmprime.com/free">Попробовать бесплатно <span aria-hidden="true">→</span></a></div>
+  </div>
+  <div class="sp-benefit">
+    <span class="sp-benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></svg></span>
+    <div><h3>Конфиденциальность</h3><p>Информация о ваших заказах остаётся приватной.</p></div>
+  </div>
+</div>
+</section>
+<section class="registration sp-login" id="signIn">
+<style>
+/* Только форма входа: цвета кнопки, ссылок и заголовка берутся из темы сайта. */
+#signIn.sp-login {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  float: none;
+  width: calc(100% - 40px);
+  max-width: 1100px;
+  min-width: 0;
+  height: auto;
+  min-height: 0;
+  margin: 64px auto;
+  padding: 40px;
+  border: 1px solid rgba(0, 0, 0, .08);
+  border-radius: 24px;
+  box-shadow: none;
+  scroll-margin-top: 100px;
+}
+#signIn.sp-login *, #signIn.sp-login *::before, #signIn.sp-login *::after { box-sizing: border-box; }
+#signIn.sp-login .registration__title {
+  position: static;
+  width: 100%;
+  max-width: none;
+  margin: 0 0 32px;
+  padding: 0;
+  text-align: center;
+  scroll-margin-top: 100px;
+}
+#signIn.sp-login .registration__form {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  grid-template-rows: none !important;
+  grid-template-areas: none !important;
+  grid-auto-flow: row;
+  align-items: start;
+  gap: 20px 24px;
+  position: static;
+  float: none;
+  width: 100% !important;
+  max-width: 900px !important;
+  min-width: 0 !important;
+  height: auto;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+#signIn.sp-login .registration__form > * {
+  grid-area: auto !important;
+  grid-column: 1 / -1 !important;
+  min-width: 0;
+  max-width: 100%;
+  order: 0;
+}
+#signIn.sp-login .registration__form > input[type="hidden"],
+#signIn.sp-login .registration__form > script { display: none !important; }
+#signIn.sp-login .registration__form > .sp-login-field { grid-column: auto !important; }
+#signIn.sp-login .sp-login-field { display: flex; flex-direction: column; gap: 10px; width: 100%; margin: 0; }
+#signIn.sp-login .sp-login-label { display: block; margin: 0; padding: 0; font-family: inherit; font-size: 15px; font-weight: 600; line-height: 1.4; color: inherit; }
+#signIn.sp-login .registration__input_type_text {
+  position: static !important;
+  display: block !important;
+  float: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: 56px;
+  margin: 0 !important;
+  padding: 15px 18px;
+  border: 1px solid rgba(0, 0, 0, .18);
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 16px !important;
+  line-height: 24px;
+  transform: none !important;
+  box-shadow: none;
+}
+#signIn.sp-login .registration__input_type_text:focus-visible { outline: auto; outline-offset: 3px; }
+#signIn.sp-login .sp-login-options { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 20px; width: 100%; }
+#signIn.sp-login .registration__checkbox-label {
+  position: static; display: inline-flex; align-items: center; flex: 0 1 auto;
+  width: auto; max-width: 100%; gap: 10px; margin: 0; padding: 8px 0;
+  font-family: inherit; cursor: pointer;
+}
+#signIn.sp-login .registration__checkbox-label::before,
+#signIn.sp-login .registration__checkbox-label::after,
+#signIn.sp-login .registration__checkbox-label .registration__text::before,
+#signIn.sp-login .registration__checkbox-label .registration__text::after { display: none !important; }
+#signIn.sp-login .registration__input_type_checkbox {
+  appearance: auto !important; -webkit-appearance: checkbox !important;
+  position: static !important; display: inline-block !important;
+  flex: 0 0 18px; width: 18px !important; height: 18px !important;
+  min-width: 18px; margin: 0 !important; padding: 0;
+  opacity: 1 !important; visibility: visible !important;
+  clip: auto !important; clip-path: none !important; transform: none !important;
+  cursor: pointer;
+}
+#signIn.sp-login .registration__text { margin: 0; padding: 0; font-family: inherit; font-size: 15px; line-height: 1.5; }
+#signIn.sp-login .registration__link { position: static; display: inline; width: auto; max-width: 100%; margin: 0; font-family: inherit; font-size: 15px; line-height: 1.5; white-space: normal; overflow-wrap: anywhere; }
+#signIn.sp-login .registration__link_grid_forget { flex: 0 1 auto; padding: 8px 0; }
+#signIn.sp-login .registration__capcha { display: flex; justify-content: center; width: 100%; min-width: 0; margin: 0; padding: 0; }
+#signIn.sp-login .registration__button {
+  position: static !important; display: flex; align-items: center; justify-content: center;
+  float: none !important; justify-self: center;
+  width: 100% !important; max-width: 440px !important; min-width: 0 !important;
+  height: auto; min-height: 56px; margin: 0 !important; padding: 16px 24px;
+  font-family: inherit; font-size: 18px; line-height: 1.4;
+  white-space: normal; text-align: center; cursor: pointer;
+}
+#signIn.sp-login .registration__text_grid_registration {
+  order: 10; display: flex; justify-content: center; align-items: baseline;
+  flex-wrap: wrap; gap: 6px 10px; width: 100%; margin: 4px 0 0; padding: 20px 0 0;
+  border-top: 1px solid rgba(0, 0, 0, .08); text-align: center;
+}
+#signIn.sp-login .registration__google-signin-wrapper { display: flex; flex-direction: column; align-items: center; gap: 16px; width: 100%; margin: 0; padding: 0; }
+#signIn.sp-login .registration__google-signin-capture { display: flex; align-items: center; gap: 16px; width: 100%; max-width: 440px; margin: 0; }
+#signIn.sp-login .registration__google-signin-capture::before,
+#signIn.sp-login .registration__google-signin-capture::after { content: ''; position: static; display: block; flex: 1; height: 1px; background: currentColor; opacity: .12; }
+#signIn.sp-login .registration__google-signin { display: flex; justify-content: center; width: 100%; max-width: 100%; min-width: 0; margin: 0; padding: 0; }
+#signIn.sp-login .alert { position: relative; width: 100%; margin: 0; padding: 16px 40px 16px 16px; border-radius: 12px; line-height: 1.5; overflow-wrap: anywhere; }
+#signIn.sp-login .alert .close { position: absolute; top: 10px; right: 12px; }
+@media (max-width: 767px) {
+  #signIn.sp-login { width: calc(100% - 24px) !important; max-width: 100% !important; min-width: 0 !important; margin: 36px auto !important; padding: 24px 16px !important; border-radius: 20px; }
+  #signIn.sp-login .registration__title { margin-bottom: 24px; font-size: 28px; line-height: 1.2; }
+  #signIn.sp-login .registration__form { grid-template-columns: minmax(0, 1fr) !important; gap: 18px !important; }
+  #signIn.sp-login .registration__form > .sp-login-field { grid-column: 1 / -1 !important; }
+  #signIn.sp-login .registration__button { max-width: 100% !important; font-size: 16px; }
+  #signIn.sp-login .registration__text, #signIn.sp-login .registration__link { font-size: 14px; }
+  #signIn.sp-login .sp-login-options { gap: 4px 12px; }
+}
+@media (max-width: 359px) {
+  #signIn.sp-login .sp-login-options { flex-direction: column; align-items: flex-start; }
+  #signIn.sp-login .registration__capcha .g-recaptcha { zoom: .85; }
+}
+</style>
+
+        <h2 class="section-title registration__title" id="enter1">Вход в кабинет</h2>
+        <form class="registration__form {% if site['rtl'] %}rtl-form{% endif %}" method="post" target="_self" action="{{ page['url'] }}">
+          {% if error %}
+          <script type="text/javascript">
+           document.addEventListener('DOMContentLoaded', function () {
+             var target = document.getElementById('signIn');
+             if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+           }, { once: true });
+          </script>
+                    <div class="registration__error alert alert-dismissible alert-danger {% if site['rtl'] %} rtl-alert {% endif %}">
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Закрыть уведомление">&times;</button>
+                      {{ errorMessage }}
+                    </div>
+                  {% endif %}
+
+                  {% if success %}
+                    <div class="alert alert-success alert-dismissible" role="alert">
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      {{successMessage}}
+                    </div>
+                  {% endif %}
+                  <input type="hidden" name="_csrf" value="{{csrftoken}}" />
+          <div class="sp-login-field">
+            <label class="sp-login-label" for="username">Логин</label>
+          <input
+            placeholder="Введите логин" id="username" autocomplete="username" name="LoginForm[username]"
+            class="registration__input registration__input_type_text registration__input_grid_login"
+            type="text"
+          />
+          </div>
+          <div class="sp-login-field">
+            <label class="sp-login-label" for="password">Пароль</label>
+          <input
+            placeholder="Введите пароль" id="password" autocomplete="current-password" name="LoginForm[password]"
+            class="registration__input registration__input_type_text registration__input_grid_password"
+            type="password"
+          />
+          </div>
+          <div class="sp-login-options">
+          <label
+            for="remember"
+            class="registration__checkbox-label registration__input_grid_remember"
+          >
+            <input
+              name="LoginForm[remember]" value="1" id="remember"
+              class="registration__input registration__input_type_checkbox"
+              type="checkbox"
+            />
+            <p class="registration__text">Запомнить меня</p>
+          </label>
+
+          <a class="registration__link registration__link_grid_forget" href="resetpassword"
+          >Забыли пароль?</a
+          >
+ 
+          </div>
+          {% if captcha %}
+          <div class="registration__capcha">
+                  {{ captchaCode }}
+          </div>
+          {% endif %}
+          <button type="submit" class="btn btn_color_orange registration__button">
+            Войти в кабинет
+          </button>
+    {% if googleSignIn %}
+          <div class="registration__google-signin-wrapper">
+            <div class="registration__text registration__google-signin-capture">или</div>
+            <div class="form-group registration__google-signin">
+                    <div id="g_id_onload"
+                       data-client_id="{{ googleClientId }}"
+                       data-login_uri="{{ googleSignInRedirectUrl }}"
+                       data-auto_prompt="false"
+                       data-_csrf="{{csrftoken}}">
+                    </div>
+                    <div class="g_id_signin"
+                       data-width="250"
+                       data-type="standard"
+                       data-size="large"
+                       data-theme="outline"
+                       data-text="sign_in_with"
+                       data-shape="rectangular"
+                       data-logo_alignment="left">
+                    </div>
+                  </div>
+          </div>
+                  
+                {% endif %}      
+          <p class="registration__text registration__text_grid_registration">
+            Нет аккаунта?
+            <a class="registration__link" href="/signup">Зарегистрироваться</a>
+          </p>
+        </form>
+      </section>
+<section class="download-app">
+  <div class="download-app__wrapper">
+    <div class="download-app__inner download-app__inner_with-text">
+      <h2 class="title-2 download-app__title">
+        Мобильное приложение smmprime.com
+      </h2>
+      <p class="text-1 download-app__text">
+        Можно пользоваться не только сайтом, но и мобильным приложением -
+        это удобно!
+      </p>
+      <div class="download-app__links">
+        <a href="/download-app" class="download-app__link">
+          <img decoding="async" loading="lazy"
+               class="download-app__link-icon"
+               src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/download-app/android-green.svg"
+               alt="Андроид"
+               />
+          <p class="download-app__link-text">
+            Загрузить на
+            <span class="download-app__link-accent">Android</span>
+          </p>
+        </a>
+        <a href="/download-app" class="download-app__link">
+          <img decoding="async" loading="lazy"
+               class="download-app__link-icon"
+               src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/download-app/ios.svg"
+               alt="Ios"
+               />
+          <p class="download-app__link-text">
+            Загрузить на
+            <span class="download-app__link-accent">IOS</span>
+          </p>
+        </a>
+      </div>
+    </div>
+    <div class="download-app__inner download-app__inner_with-img">
+      <picture class="download-app__img">
+        <source
+                srcset="https://cdn.jsdelivr.net/gh/bread2077/temp@main/assets/smmprime-speed-v12/app-desktop-508.webp 508w, https://cdn.jsdelivr.net/gh/bread2077/temp@main/assets/smmprime-speed-v12/app-desktop-996.webp 996w" sizes="(max-width: 980px) 80vw, 508px"
+                media="(min-width: 600px)"
+                />
+        <img width="592" height="494" decoding="async" loading="lazy"
+             src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/assets/smmprime-speed-v12/app-mobile-592.webp" srcset="https://cdn.jsdelivr.net/gh/bread2077/temp@main/assets/smmprime-speed-v12/app-mobile-332.webp 332w, https://cdn.jsdelivr.net/gh/bread2077/temp@main/assets/smmprime-speed-v12/app-mobile-592.webp 592w" sizes="(max-width: 600px) calc(100vw - 80px), 508px"
+             alt="Телефоны"
+             />
+      </picture>
+    </div>
+  </div>
+</section>
+<article class="long-read" id="long-read">
+        <div class="long-read__container">
+          <section
+            class="long-read__section long-read__section_theme_dark long-read__section_pos_center"
+          >
+            <h2 class="section-title long-read__title">
+              Обычная накрутка всегда заметна
+            </h2>
+            <p class="text long-read__subtitle">
+              и рекламодатели, и обычные пользователи давно научились её
+              вычислять
+            </p>
+          </section>
+          <div
+            class="long-read__subcontainer long-read__subcontainer_theme_dark"
+          >
+            <section class="long-read__section long-read__section_theme_dark">
+              <img width="560" height="277" decoding="async"
+                class="long-read__image"
+                loading="lazy"
+                src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/long-read/long-read-first.png"
+                alt="Диаграмма"
+              />
+              <p class="text long-read__text">
+                Резкие скачки, большая цифра за короткое время — явные признаки
+                накрутки
+              </p>
+            </section>
+            <section class="long-read__section long-read__section_theme_dark">
+              <img decoding="async"
+                class="long-read__image"
+                loading="lazy"
+                src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/assets/smmprime-speed-v5/long-read-second-v6.webp"
+                alt="Подписчики"
+              />
+              <p class="text long-read__text">
+                Много подписчиков, мало активности, комментарии не по теме,
+                подписчики-боты
+              </p>
+            </section>
+          </div>
+          <section
+            class="long-read__section long-read__section_pos_center long-read__section_theme_dark long-read__section_size_l long-read__section_type_curve"
+          >
+            <h3 class="long-read__description">
+              Такому не доверяют. Накручивая обычным способом, вы теряете
+              доверие и деньги
+            </h3>
+          </section>
+          <section class="long-read__section long-read__section_pos_center">
+            <h2 class="section-title long-read__title">
+              Мы же используем ИИ и самый надежный метод накрутки
+            </h2>
+            <p class="text long-read__subtitle">
+              при котором процесс идет плавно, и всё выглядит натурально
+            </p>
+          </section>
+          <div class="long-read__subcontainer">
+            <section class="long-read__section">
+              <h3 class="long-read__accent-title">
+                Постепенный рост показателей
+              </h3>
+              <img decoding="async"
+                class="long-read__image"
+                loading="lazy"
+                src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/long-read/long-read-third.png"
+                alt="Накрутка"
+              />
+              <p class="text long-read__text">
+                Накрутка не заметна, потому что прирост показателей происходит
+                по интервалам, последовательно и гармонично
+              </p>
+            </section>
+            <section class="long-read__section">
+              <h3 class="long-read__accent-title">Живые комментарии по теме</h3>
+              <img width="560" height="234" decoding="async"
+                class="long-read__image"
+                loading="lazy"
+                src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/long-read/long-read-fourth.v1.png"
+                alt="Комментарии"
+              />
+              <p class="text long-read__text">
+                Живые комментарии по теме поста от реальных пользователей
+                помогут увеличить доверие
+              </p>
+            </section>
+          </div>
+          <div class="long-read__subcontainer">
+            <section class="long-read__section">
+              <h3 class="long-read__accent-title">
+                Аккаунты, неотличимые от реальных людей
+              </h3>
+              <img width="560" height="234" decoding="async"
+                class="long-read__image"
+                loading="lazy"
+                src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/long-read/long-read-fifth.v1.png"
+                alt="Имидж"
+              />
+              <p class="text long-read__text">
+                Они помогут сделать имидж аккаунту и увеличить доверие при
+                небольших затратах
+              </p>
+            </section>
+            <section class="long-read__section long-read__section_pos_center">
+              <figure class="long-read__review user-review">
+                <blockquote class="long-read__quote user-review__quote">
+                  <p class="user-review__grade long-read__grade">
+                    Оценка: <span class="user-review__span-accent">5.0</span>
+                  </p>
+                  <ul class="user-review__stars">
+                    <li
+                      class="user-review__star user-review__star_type_full"
+                    ></li>
+                    <li
+                      class="user-review__star user-review__star_type_full"
+                    ></li>
+                    <li
+                      class="user-review__star user-review__star_type_full"
+                    ></li>
+                    <li
+                      class="user-review__star user-review__star_type_full"
+                    ></li>
+                    <li
+                      class="user-review__star user-review__star_type_full"
+                    ></li>
+                  </ul>
+                  <p class="user-review__review">
+                    Надежный и качественный сервис. Результат меня порадовал, оправдал мои ожидания. Буду обращаться к сервису еще, там работают настоящие профессионалы.
+                  </p>
+                </blockquote>
+                <img decoding="async" loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/default-user-avatar.svg"
+                  alt="Блар"
+                  class="user-review__avatar"
+                />
+                <figcaption class="long-read__name user-review__name">
+                  Светлана Фадеева,
+                  <a 
+                     target="_blank"
+                     href="https://otzyvmarketing.ru/smmprime-com/" 
+                     class="user-review__link"
+                    >смотреть отзыв на сервисе</a
+                  >
+                </figcaption>
+              </figure>
+            </section>
+          </div>
+          <section
+            class="long-read__section long-read__section_size_l long-read__section_pos_center"
+          >
+            <h2 class="section-title long-read__title">
+              Заказать имитацию органического роста через персонального
+              менеджера
+            </h2>
+            <a
+              target="_blank"
+              href="https://t.me/Smmprimesupportbot"
+              class="btn btn_size_large btn_color_orange long-read__button"
+              >Написать менеджеру</a
+            >
+          </section>
+        </div>
+      </article>
+<section class="tg-bot">
+  <div class="tg-bot__wrapper">
+    <h2 class="title-2 tg-bot__title">
+      Оформляйте заказы без лишних усилий - прямо в Telegram!
+    </h2>
+    <p class="text-1 tg-bot__text">
+      Мы представляем нашего нового помощника - Telegram бот, который
+      позволит вам оформлять заказы быстрее и проще.
+    </p>
+    <a href="https://t.me/SmmprimeOrder_bot" class="btn btn_size_large btn_color_light-orange"
+       >Попробовать</a
+      >
+  </div>
+</section>
+<section class="cyrcle">
+        <h2 class="section-title cyrcle__title">
+          У нас есть накрутка под любые бюджеты и цели
+        </h2>
+        <p class="text cyrcle__text">
+          В том числе и быстрая, если нужны мгновенные результаты
+        </p>
+        <p class="text cyrcle__accent">Более 11 платформ</p>
+        <div class="cyrcle__figure">
+          <div class="cyrcle__socials">
+            <ul class="cyrcle__container">
+          {%
+          set cyrcleServices = [
+          { href: '/tiktok', 
+          	src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/socials/tiktok-icon.svg', text: 'Тикток' },
+          { href: '/telegram', 
+          	src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/socials/telegram-icon.svg', text: 'Телеграм' },
+          { href: '/vkontakte', 
+          	src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/socials/vk-icon.svg', text: 'Вконтакте' },
+          { href: '/youtube', 
+          	src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/socials/youtube-icon.svg', text: 'Ютуб' },
+          { href: '/services', 
+          	src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/socials/twitter-icon.svg', text: 'Услуги' },
+          { href: '/services', 
+          	src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/socials/ok-icon.svg', text: 'Услуги' },
+          { href: '/services', 
+          	src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/socials/spotify-icon.svg', text: 'Услуги' },
+          { href: '/services', 
+          	src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/socials/internet-icon.svg', text: 'Услуги' },
+          { href: '/facebook', 
+          	src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/socials/facebook-icon.svg', text: 'Фейсбук' },
+          { href: '/services', 
+          	src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/socials/soundcloud-icon.svg', text: 'Услуги' },
+          { href: '/instagram', 
+          	src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/socials/instagram-icon.svg', text: 'Инстаграм' }
+          ]
+          %}
+          {% for item in cyrcleServices %}
+          <li class="cyrcle__item">
+            <a href="{{item.href}}">
+              <img decoding="async" loading="lazy"
+                   class="cyrcle__image" src="{{item.src}}"
+                   alt="{{item.text}}" aria-label="Перейти на страницу {{item.text}}"
+                   />
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+            <a href="/services" class="cyrcle__button btn btn_color_orange"
+              >Смотреть все варианты</a
+            >
+          </div>
+          <div class="cyrcle__service">
+            <h3 class="cyrcle__service-title">Внедрим услугу для вас</h3>
+            <p class="cyrcle__service-text">
+              Не нашли необходимой услуги? Напишите нам и мы добавим её на сайт
+            </p>
+          </div>
+        </div>
+      </section>
+<section class="service-grid">
+  <h2 class="service-grid__title service-grid__title_is-centered ">Услуги по накрутке</h2>
+  <div class="service-grid__container">
+    {%
+    set serviceItems = [
+    { name: 'Лайки', description: 'Накрутка лайков', src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/services/likes-icon.svg', cost: '0.003', href:'/layki' },
+    { name: 'Подписчики', description: 'Подписчики на страницу', src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/services/followers-icon.svg', cost: '0.09', href:'/podpischiki' },
+    { name: 'Комментарии', description: 'Комментарии к постам', src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/services/comments-icon.svg', cost: '0.21', href:'/kommentarii' },
+    { name: 'Просмотры', description: 'Просмотры постов/видео/клипов', src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/services/views-icon.svg', cost: '0.001', href:'/prosmotry' },
+    { name: 'Репосты', description: 'Накрутка репостов', src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/services/reposts-icon.svg', cost: '0.022', href:'/reposty' },
+    { name: 'Цены', description: 'Цены на услуги по накрутке', src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/services/polls-icon.svg', cost: '0.001', href:'/services' },
+    ]
+    %}
+    <ul class="list service-grid__list">
+      {% for item in serviceItems %}
+      <li class="service-grid__item" itemscope itemtype="http://schema.org/Product">
+          <div class="service-grid__icon-container">
+            <img decoding="async" loading="lazy"
+                 itemprop="image"
+                 class="service-grid__icon"
+                 src="{{ item.src }}"
+                 alt="{{ item.alt }}"
+                 />
+          </div>
+          <h3 itemprop="name" class="service-grid__item-title">{{ item.name }}</h3>
+          <p itemprop="description" class="service-grid__item-text">
+            {{ item.description }}
+          </p>
+          <div itemprop="offers" itemscope itemtype="http://schema.org/AggregateOffer">
+            <meta itemprop="priceCurrency" content="RUB">
+            <link itemprop="availability" href="http://schema.org/InStock">
+            <p class="service-grid__item-cost">от <span itemprop="lowPrice">{{ item.cost }}</span> руб</p>
+          </div>
+        <a class="link service-grid__link" aria-label="Перейти на страницу {{item.name}}" href="{{ item.href }}"></a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+<section class="payment">
+        <div class="payment__container">
+          <h2 class="section-title payment__title">Оплачивай любым способом</h2>
+          <p class="text payment__text">
+            Даже с иностранных карт или с юр. лица
+          </p>
+          <div class="payment__list-container">
+            <ul class="payment__list">
+{%
+set paymentList = [
+  {
+    src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/payments/iomoney-logo.svg',
+    alt: 'Юмани',
+  },
+  {
+    src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/payments/mir-logo.svg',
+    alt: 'Мир',
+  },
+    {
+    src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/payments/visa-logo.svg',
+    alt: 'Виза',
+  },
+  {
+    src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/payments/mastercard-logo.svg',
+    alt: 'Мастеркард',
+  },
+  {
+    src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/icons/image 7.png',
+    alt: 'Оплата',
+  },
+  {
+    src: 'https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/icons/image 8.png',
+    alt: 'Оплата',
+  }
+]
+              %}
+              {% for payment in paymentList %}
+                <li class="payment__item">
+                  <img decoding="async"
+                    loading="lazy"
+                    src="{{ payment.src }}"
+                    alt="{{ payment.alt }}"
+                    class="payment__image"
+                  />
+                </li>
+              {% endfor %}
+            </ul>
+            <ul aria-hidden="true" class="payment__list">
+              {% for payment in paymentList %}
+                <li class="payment__item">
+                  <img decoding="async"
+                    loading="lazy"
+                    src="{{ payment.src }}"
+                    alt="{{ payment.alt }}"
+                    class="payment__image"
+                  />
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="payment__guarantee">
+            <h3 class="payment__guarantee-title">Гарантируем возврат</h3>
+            <p class="payment__guarantee-text">
+              Вернём 100% оплаты, если заказ не выполнится или произойдёт ошибка
+            </p>
+          </div>
+        </div>
+      </section>
+<section class="performe">
+        <h2 class="section-title performe__title">
+          Выбирай пол, страну и качество исполнителей
+        </h2>
+        <p class="text performe__text">
+          чтобы не получилось так, что на ваш салон красоты подписаны только
+          суровые мужчины 😏
+        </p>
+        <img decoding="async"
+          loading="lazy"
+          src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/choice-girls.webp"
+          alt="Выбор услуги"
+          class="performe__image"
+        />
+      </section>
+<section class="advantages">
+        <div class="advantages__container">
+          <a
+            href="/signup"
+            class="advantages__button btn btn_color_orange btn_size_large"
+            >Зарегистрироваться</a
+          >
+          <ul class="advantages__items-list">
+            <li class="advantages__text">Увеличивай доверие</li>
+            <li class="advantages__text">Становись популярнее</li>
+            <li class="advantages__text">Прокачивай имидж</li>
+            <li class="advantages__text">Продавай рекламу дороже</li>
+            <li class="advantages__text">Зарабатывай больше</li>
+          </ul>
+          <ul class="advantages__reviews">
+            <li class="advantages__review-container">
+              <figure
+                class="advantages__review advantages__review_pos_left user-review"
+              >
+                <blockquote
+                  class="advantages__quote advantages__quote_pos_left user-review__quote"
+                >
+                  <p class="user-review__grade advantages__grade">
+                    Оценка: <span class="user-review__span-accent">4.8</span>
+                  </p>
+                  <ul class="user-review__stars">
+                    <li
+                      class="user-review__star user-review__star_type_full"
+                    ></li>
+                    <li
+                      class="user-review__star user-review__star_type_full"
+                    ></li>
+                    <li
+                      class="user-review__star user-review__star_type_full"
+                    ></li>
+                    <li
+                      class="user-review__star user-review__star_type_full"
+                    ></li>
+                    <li
+                      class="user-review__star user-review__star_type_semi"
+                    ></li>
+                  </ul>
+                  <p class="advantages-review__review user-review__review">
+                    Теперь даже в рекомендациях болтаюсь иногда
+                  </p>
+                </blockquote>
+                <img decoding="async" loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/orlova.png"
+                  alt="Орлова"
+                  class="user-review__avatar"
+                />
+                <figcaption
+                  class="advantages__name advantages__name_pos_left user-review__name"
+                >
+                  Анна Орлова,
+                  <a 
+                     target="_blank"
+                     href="https://niksolovov.ru/services/smmprime" 
+                     class="user-review__link"
+                    >смотреть отзыв на сервисе</a
+                  >
+                </figcaption>
+              </figure>
+            </li>
+            <li
+              class="advantages__review-container advantages__review-container_pos_right"
+            >
+              <figure
+                class="advantages__review advantages__review_pos_right user-review"
+              >
+                <blockquote
+                  class="advantages__quote advantages__quote_pos_right user-review__quote"
+                >
+                  <p class="user-review__grade advantages__grade">
+                    Оценка: <span class="user-review__span-accent">4.8</span>
+                  </p>
+                  <ul class="user-review__stars">
+                    <li
+                      class="user-review__star user-review__star_type_full"
+                    ></li>
+                    <li
+                      class="user-review__star user-review__star_type_full"
+                    ></li>
+                    <li
+                      class="user-review__star user-review__star_type_full"
+                    ></li>
+                    <li
+                      class="user-review__star user-review__star_type_full"
+                    ></li>
+                    <li
+                      class="user-review__star user-review__star_type_semi"
+                    ></li>
+                  </ul>
+                  <p class="advantages-review__review user-review__review">
+                    Продажи товаров стали потихонечку увеличиваться
+                  </p>
+                </blockquote>
+                <img decoding="async" loading="lazy"
+                  src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/default-user-avatar.svg"
+                  alt="Пользователь"
+                  class="user-review__avatar"
+                />
+                <figcaption
+                  class="advantages__name advantages__name_pos_right user-review__name"
+                >
+                  Марина Захарова,
+                  <a 
+                     target="_blank"
+                     href="https://in-scale.ru/service/smmprime/" 
+                     class="user-review__link"
+                    >смотреть отзыв на сервисе</a
+                  >
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+          <ul class="advantages__phones">
+            <li
+              class="advantages__item advantages__item_type_phone advantages__item_active"
+            >
+              <p class="advantages__phone-text">До:</p>
+              <img width="1250" height="2509" decoding="async"
+                loading="lazy"
+                class="advantages__phone-image"
+                src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/advantages-before.webp"
+                alt="Аккаунт до накрутки"
+              />
+            </li>
+            <li
+              class="advantages__item advantages__item_type_phone advantages__item_pos_left"
+            >
+              <p class="advantages__phone-text">После:</p>
+              <img decoding="async"
+                loading="lazy"
+                class="advantages__phone-image"
+                src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/advantages-after.webp"
+                alt="Аккаунт после накрутки"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+<section class="confidentiality">
+        <div
+          class="confidentiality__container confidentiality__container_bg_orange"
+        >
+          <h2 class="section-title confidentiality__title">
+            100% конфиденциальность
+          </h2>
+          <p class="text confidentiality__text">
+            Никто не узнает, что вы накручивали показатели у нас — это
+            технически невозможно (Если вы не скажете самостоятельно)
+          </p>
+        </div>
+      </section>
+<section class="non-block">
+        <h2 class="section-title non-block__title">За накрутку не блокируют</h2>
+        <p class="text non-block__text">
+          Вк, Инста, Тикток, Ютуб и т. д. блокируют только за спам-действия:
+          массовые подписки, спам в сообщения и т.д.
+        </p>
+        <div class="non-block__img-container">
+          <img decoding="async"
+            loading="lazy"
+            class="non-block__img non-block__img_pos_left"
+            src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/non-block-left.svg"
+            alt="Соцсети"
+          />
+          <img decoding="async"
+            loading="lazy"
+            class="non-block__img non-block__img_pos_right"
+            src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/non-block-right.v1.svg"
+            alt="Блокировка"
+          />
+        </div>
+      </section>
+<section class="connection connection_bg_light">
+        <div class="connection__container">
+          <div class="connection__description">
+            <h2 class="section-title connection__title">Мы на связи 24/7</h2>
+            <p class="text connection__text">
+              Ответим на любой вопрос и поможем воспользоваться сервисом
+            </p>
+            <a
+              target="_blank"
+              href="https://t.me/Smmprimesupportbot"
+              class="btn btn_size_large btn_color_orange connection__button"
+              >Написать в поддержку</a
+            >
+          </div>
+          <figure class="connection__review user-review">
+            <blockquote class="connection__quote user-review__quote">
+              <p class="user-review__grade connection__grade">
+                Оценка: <span class="user-review__span-accent">4.8</span>
+              </p>
+              <ul class="user-review__stars">
+                <li class="user-review__star user-review__star_type_full"></li>
+                <li class="user-review__star user-review__star_type_full"></li>
+                <li class="user-review__star user-review__star_type_full"></li>
+                <li class="user-review__star user-review__star_type_full"></li>
+                <li class="user-review__star user-review__star_type_semi"></li>
+              </ul>
+              <p class="user-review__review">
+                Стоит отметить, что тех поддержка на высшем уровне. Если что-то
+                не ясно, они точно ответят, и достаточно быстро!
+              </p>
+            </blockquote>
+            <img decoding="async" loading="lazy"
+              src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/urmeeva.v1.png"
+              alt="Урмеева"
+              class="user-review__avatar"
+            />
+            <figcaption class="user-review__name">
+              Диана Урмеева,
+              <a 
+                 target="_blank"
+                 href="https://otzyvmarketing.ru/smmprime-com/" 
+                 class="user-review__link"
+                >смотреть отзыв на сервисе</a
+              >
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+<section class="auto-windup">
+        <div class="auto-windup__container">
+          <h2 class="section-title auto-windup__title">
+            Автоматизируй все действия
+          </h2>
+          <p class="text auto-windup__text">
+            Больше не нужно на каждый новый пост запускать накрутку вручную:
+            настрой один раз — и увеличивай показатели автоматически
+          </p>
+          <div class="auto-windup__image-container">
+            <img decoding="async"
+              loading="lazy"
+              src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/auto.webp"
+              alt="Автонакрутка"
+              class="auto-windup__image"
+            />
+          </div>
+          <a
+            href="/signup"
+            type="button"
+            class="btn btn_color_orange btn_size_large auto-windup__button"
+          >
+            Зарегистрироваться и автоматизировать
+          </a>
+        </div>
+      </section>
+<article class="about about_bg_light">
+        <div class="about__container">
+          <h2 class="section-title about__title">Мы официальная компания</h2>
+          <p class="text about__text">
+            поэтому не боимся показывать нашу команду
+          </p>
+          <ul class="about__list">
+            <li class="about__item">
+              <img decoding="async"
+                loading="lazy"
+                class="about__avatar"
+                src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/nikita.png"
+                alt="Никита"
+              />
+              <div class="about__description">
+                <h3 class="about__name">Это Никита, ему 26 лет</h3>
+                <p class="about__about">
+                  СЕО проекта SMMPRIME. Он отвечает за техническую часть работы
+                  сервиса. Благодаря нему работа идет стабильно и без сбоев
+                </p>
+              </div>
+            </li>
+            <li class="about__item">
+              <img decoding="async"
+                loading="lazy"
+                class="about__avatar"
+                src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/oleg.png"
+                alt="Олег"
+              />
+              <div class="about__description">
+                <h3 class="about__name">Это Олег, ему тоже 26 лет</h3>
+                <p class="about__about">
+                  Он — лицо компании. Обеспечивает взаимодействие с клиентами и
+                  помогает нашему Николаю
+                </p>
+              </div>
+            </li>
+            <li class="about__item">
+              <img width="160" height="160" decoding="async"
+                loading="lazy"
+                class="about__avatar"
+                src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/nikolay.png"
+                alt="Николай"
+              />
+              <div class="about__description">
+                <h3 class="about__name">А это Николай, он вечно молодой:)</h3>
+                <p class="about__about">
+                  Николай - жемчужина нашего проекта. Именно этот парень
+                  находится на передовой и помогает вам с решением возникающих
+                  вопросов. Не обижайте Николая — он старается изо всех сил
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </article>
+<section class="recommend">
+        <div class="recommend__container">
+          <h2 class="section-title recommend__title">
+            Рекомендуй нас и получай 6% с каждой оплаты
+          </h2>
+          <p class="text recommend__text">
+            выйди на пассивный доход с помощью партнёрской программы
+          </p>
+          <a
+            target="_blank"
+            href="https://t.me/Smmprimesupportbot"
+            type="button"
+            class="btn btn_color_white btn_size_large recommend__button"
+            >Узнать подробнее</a
+          >
+        </div>
+        <img width="719" height="1316" decoding="async" loading="lazy"
+          src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/images/recommend-tel.webp"
+          alt="Телефон"
+          class="recommend__image"
+        />
+      </section>
+<section class="call-action">
+        <p class="call-action__text call-action__text_pos_top">
+          <span class="call-action__span-accent">Чем раньше</span> начнешь
+          развивать аккаунты,
+        </p>
+        <p class="call-action__text call-action__text_pos_bottom">
+          тем быстрее станешь
+          <span class="call-action__span-accent">популярным</span> и
+          <span class="call-action__span-accent">больше заработаешь</span>
+        </p>
+      </section>
+<section class="faq">
+  {%
+  	set faqList = [
+  		{
+  			title: 'Вы даёте гарантию на ваши услуги?',
+            description: 'Да, на все наши услуги распространяется гарантия выполнения. Мы
+          – официальная компания и дорожим нашей репутацией. По всем
+          вопросам вы можете написать помощнику Николая или в поддержку на
+          сайте.'
+        },
+  		{
+  			title: 'Зачем нужно накручивать комментарии?',
+            description: 'Комментарии – показатель уже существующего взаимодействия с
+          вашей социальной сетью. Именно с целью увеличения данного
+          показателя мы и рекомендуем накручивать комментарии. Важно!
+          Комментарии по тебе – добавляют лояльность и доверие к вам, как
+          к бренду.'
+         },
+  		{
+  			title: 'Что такое восстановление?',
+            description: 'Восстановление – это дополнительная гарантия, что ваши лайки,
+          подписчики и просмотры никуда не исчезнут. В случае, если
+          количество показателей уменьшится из-за алгоритмов социальных
+          сетей – наш алгоритм отследит изменения и сразу же вернёт
+          показатели.'
+         },
+  		{
+  			title: 'Зачем нужно накручивать просмотры?',
+            description: 'Основная цель накрутки просмотров- показатель потенциальному
+          покупателю или подписчику, что ваш аккаунт уже интересен другим
+          людям. Психология человека такова – он обратит внимание сам и
+          привлечёт внимание друга – отправить ему ссылку и сделать
+          репост.'
+         },
+  		{
+  			title: 'Как происходит продвижение в социальных сетях?',
+            description: 'Сразу после регистрации на нашем сайте (все данные строго
+          конфиденциальны) вам на почту приходит приветственное письмо.
+          Сразу после вы можете выбрать нужный вам вид накрутки и заказать
+          услугу.'
+         },
+  		{
+  			title: 'Как у вас реализуется технология живых комментариев?',
+            description: 'Никакого секрета нет – после выгрузки заказа в систему,
+          избранные исполнители – живые люди, изучают профиль и
+          фотографии. На основе того, что изображено на фотографии – пишут
+          комментарии. Все комментарии полностью относятся к теме вашего
+          поста или фотографии.'
+         },
+  		{
+  			title: 'Насколько ваш сервис конфиденциален?',
+            description: 'Сервис SMMPrime несёт полную ответственность за данные наших
+          пользователей и гарантирует, что никакие данные не попадут в
+          публичное пользование.'
+         },
+  		{
+  			title: 'Как накрутка поможет моему заработку?',
+            description: 'Все очень просто. Чем больше на вашей странице активность – тем
+          более вашему аккаунту доверяет целевой пользователь.
+          Согласитесь, вы не станете покупать какой-то продукт в магазине
+          без покупателя. Точно такую же аналогию можно провести и с миром
+          социальных сетей.'
+         },
+  		{
+  			title: 'Не испортит ли накрутка статистику в инстаграме, тиктоке и
+          других соц. сетях?',
+            description: 'Накрутка никаким образом не сказывается на статистике в
+          Instargram, Тикток и других соц. сетях. Нами не было
+          зафиксировано ни одного случая снижения реальной активности и
+          других показателей после использования накрутки.'
+         },
+  		{
+  			title: 'Почему на вашем сайте такие низкие цены?',
+            description: 'мы разработали уникальную систему, которая позволяет
+          автоматизировать процесс увеличения показателей. Это экономит
+          ресурсы, силы и позволяет снизить стоимость услуг по сравнению с
+          конкурентами.'
+         },
+  	]
+  %}
+  <h2 class="section-title faq__title">FAQ</h2>
+  <ul class="faq__list">
+    {% for faq in faqList %}
+      <li class="faq__item">
+        <div class="faq__announce">
+          <p class="faq__subtitle">{{ faq.title }}</p>
+          <button
+                  type="button"
+                  aria-label="Открыть описание"
+                  class="btn faq__button"
+                  ></button>
+        </div>
+        <div class="faq__description faq__description_closed">
+          <p class="faq__text faq__text_closed">{{ faq.description }}</p>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+<section class="know">
+  <div class="know__container">
+    <h2 class="section-title know__title">Не знаешь, что выбрать?</h2>
+    <p class="text know__subtitle">Ответим в течение 30 минут</p>
+    <p class="know__text">
+      Если ты не можешь выбрать, с чего начать, или есть какие-то вопросы
+      — напиши нам и мы поможем подобрать самую эффективную накрутку для
+      твоей задачи
+    </p>
+    <a 
+       target="_blank" 
+       href="https://t.me/Smmprimesupportbot" 
+       class="btn btn_color_orange btn_size_large know__button"
+       >Написать менеджеру</a
+      >
+  </div>
+</section>
+  <script defer src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/dist/index.cb4f81ebe498185749c4.js"></script>
+{% if captcha %}
+<script defer type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=ru"></script>
+{% endif %}
