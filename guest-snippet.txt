@@ -1,0 +1,4 @@
+<div data-smmprime-calculator data-mode="guest" data-title="true" data-switcher="false">
+  <p>Загрузка калькулятора… <a href="/signup">Открыть регистрацию</a></p>
+</div>
+<script defer src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/calculator/loader-v1.js"></script>

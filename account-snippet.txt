@@ -1,0 +1,4 @@
+<div data-smmprime-calculator data-mode="account" data-title="false" data-switcher="true">
+  <p>Загрузка калькулятора… <a href="/services">Открыть услуги</a></p>
+</div>
+<script defer src="https://cdn.jsdelivr.net/gh/bread2077/temp@main/calculator/loader-v1.js"></script>
